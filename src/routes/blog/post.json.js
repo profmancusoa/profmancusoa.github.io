@@ -9,7 +9,7 @@ export const GET = async () => {
 			metadata['path'] = postPath;
 
 			return {
-				metadata
+				metadata: metadata
 			};
 		})
 	);

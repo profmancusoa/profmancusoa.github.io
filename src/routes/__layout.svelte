@@ -44,6 +44,7 @@
 			<div class="col-lg-3">
 				<!-- Search widget-->
 				<Search />
+                
 				<!-- Categories widget-->
 				<Categories />
 

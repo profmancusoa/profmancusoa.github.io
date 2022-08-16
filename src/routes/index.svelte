@@ -5,7 +5,7 @@
 
 		return {
 			props: {
-				posts: allPosts
+				allPosts: allPosts
 			}
 		};
 	};
@@ -13,24 +13,29 @@
 
 <script>
 	import PostPreview from '$lib/components/PostPreview.svelte';
-	export let posts;
+	export let allPosts;
 
-	// find featured posts
-	let featured = posts.filter((item) => item.metadata.featured == true);
-	featured = featured[0];
-	//remove featured from posts
-	let featured_idx = posts.indexOf(featured);
-	posts.splice(featured_idx, 1);
+    //necessario per le visualizzazioni successive della home
+    let posts = [...allPosts]; 
+
+	// find featured posts and remove it from posts
+    let featured = posts.filter((item) => item.metadata.featured == true);
+    if (featured.length > 0) {
+        let featured_idx = posts.indexOf(featured[0]);
+        posts.splice(featured_idx, 1);
+    }
 </script>
 
 <!-- Blog entries-->
 <div class="col-lg-12">
+    {#if featured[0]} <!-- visualizza solo se c'e' un featured -->
 	<div class="row">
 		<div class="col-lg-12">
 			<!-- Featured blog post-->
-			<PostPreview metadata={featured.metadata} />
+			<PostPreview metadata={featured[0].metadata} />
 		</div>
 	</div>
+    {/if}
 
 	<!-- il codice seguente (mostruoso) è dovuto ad un bug di svelte
     che non permette di avere un tag aperto in un ciclo {#each}
@@ -67,6 +72,7 @@
 	</div>
 
 	<!-- Pagination-->
+    {#if posts.length > 4}
 	<nav aria-label="Pagination">
 		<hr class="my-0" />
 		<ul class="pagination justify-content-center my-4">
@@ -81,4 +87,5 @@
 			<li class="page-item"><a class="page-link" href="#!">Older</a></li>
 		</ul>
 	</nav>
+    {/if}
 </div>

@@ -8,7 +8,7 @@
 						<div class="card testimonial-card shadow">
 							<div class="card-up bg-primary" />
 							<div class="avatar mx-auto bg-white">
-								<img src="/avatar_profmancuso.jpg" class="rounded-circle img-fluid" />
+								<img src="/img/avatars/profmancuso.jpg" class="rounded-circle img-fluid" />
 							</div>
 							<div class="card-body">
 								<h4 class="mb-4">ProfMancusoa</h4>
@@ -21,7 +21,7 @@
 								<p class="dark-grey-text fs-5">
 									Questo blog è un semplice strumento per condividere informazioni con gli studenti
 									e tutti i lettori interessati. E' anche uno spazio in cui gli studenti possono
-									pubblicare i loro articoli.
+									pubblicare i loro articoli. <br><i>Buona Lettura!!</i>
 								</p>
 							</div>
 						</div>
