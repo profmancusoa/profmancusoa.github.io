@@ -31,8 +31,8 @@
 import { Test } from '@pga/test';
 
 const f = () => {
-    console.log("this is a func");
-}
+	console.log('this is a func');
+};
 ```
 
 ```bash
@@ -42,7 +42,6 @@ if [ $VAR -lt 3 ];
     echo "ciao";
 fi
 ```
-
 
 ```c
 #include <stdio.h>
