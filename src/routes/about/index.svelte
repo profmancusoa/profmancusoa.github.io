@@ -21,7 +21,7 @@
 								<p class="dark-grey-text fs-5">
 									Questo blog è un semplice strumento per condividere informazioni con gli studenti
 									e tutti i lettori interessati. E' anche uno spazio in cui gli studenti possono
-									pubblicare i loro articoli. <br><i>Buona Lettura!!</i>
+									pubblicare i loro articoli. <br /><i>Buona Lettura!!</i>
 								</p>
 							</div>
 						</div>

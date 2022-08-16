@@ -9,66 +9,24 @@
 	//     categorie: [ 'Informatica', 'C' ],
 	//     path: '/blog/4'
 	// }
-	export let metadata;
-    
-    // adatta i metadata per la home page
-    // converte la data in formato  gg MESE yyyy
-	metadata.data = convert_data(metadata.data);
 
-	function convert_data(data) {
-		let date = new Date(data);
-		return (
-			date.toLocaleDateString('it-IT', { day: 'numeric' }) +
-			' ' +
-			date.toLocaleDateString('it-IT', { month: 'long' }).toLocaleUpperCase() +
-			' ' +
-			date.toLocaleDateString('it-IT', { year: 'numeric' })
-		);
-	}
+	import { date_convert, cover_assign } from '$lib/helpers/helpers';
+
+	export let metadata;
+	let post = { ...metadata }; // necessario per il routing lato client
 </script>
 
-<!-- {#if metadata.featured}
-	<div class="card mb-4">
-		<a href="#!"
-			><img
-				class="card-img-top"
-				src="/850x350.jpg"
-				alt="..."
-			/></a
-		>
-		<div class="card-body">
-			<div class="small text-muted">{metadata.data}</div>
-			<h2 class="card-title text-truncate" class:h4="{!metadata.featured}">{@html metadata.titolo}</h2>
-			<p class="card-text text-truncate text-truncate-2">{@html metadata.introduzione}</p>
-			<a class="btn btn-primary" href="post.html">Read more →</a>
-		</div>
-	</div>
-{:else}
-	<div class="card mb-4">
-		<a href="#!"
-			><img class="card-img-top" src="/414x207.jpg" alt="..." /></a
-		>
-		<div class="card-body">
-			<div class="small text-muted">{metadata.data}</div>
-			<h2 class="card-title text-truncate" class:h4="{!metadata.featured}">{@html metadata.titolo}</h2>
-			<p class="card-text text-truncate text-truncate-2">{@html metadata.introduzione}</p>
-			<a class="btn btn-primary" href="#!">Read more →</a>
-		</div>
-	</div>
-{/if} -->
-
 <div class="card mb-4">
-    <a href="#!"
-        ><img class="card-img-top" src="/img/posts/missing_post.jpg" alt="..." /></a
-    >
-    <div class="card-body">
-        <div class="small text-muted">{metadata.data}</div>
-        <h2 class="card-title text-truncate" class:h4="{!metadata.featured}">{@html metadata.titolo}</h2>
-        <p class="card-text text-truncate text-truncate-2">{@html metadata.introduzione}</p>
-        <a class="btn btn-primary" href="#!">Read more →</a>
-    </div>
+	<a href={post.path}>
+		<img class="card-img-top" src={cover_assign(post.cover)} alt={post.titolo} />
+	</a>
+	<div class="card-body">
+		<div class="small text-muted">{date_convert(post.data)}</div>
+		<h2 class="card-title text-truncate" class:h4={!post.featured}>{@html post.titolo}</h2>
+		<p class="card-text text-truncate text-truncate-2">{@html post.introduzione}</p>
+		<a class="btn btn-primary" href={post.path}>Leggi →</a>
+	</div>
 </div>
-
 
 <style>
 	.text-truncate-2 {

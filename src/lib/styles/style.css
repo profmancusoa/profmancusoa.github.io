@@ -7631,15 +7631,22 @@ fieldset:disabled .btn {
 	margin-top: 0.25rem !important;
 }
 
-.mt-2 {
+.mt-2,
+.post > h5,
+.post > h6 {
 	margin-top: 0.5rem !important;
 }
 
-.mt-3 {
+.mt-3,
+.post > h3,
+.post > h4 {
 	margin-top: 1rem !important;
 }
 
-.mt-4 {
+.mt-4,
+.post > p,
+.post > h1,
+.post > h2 {
 	margin-top: 1.5rem !important;
 }
 
@@ -7687,15 +7694,22 @@ fieldset:disabled .btn {
 	margin-bottom: 0.25rem !important;
 }
 
-.mb-2 {
+.mb-2,
+.post > h5,
+.post > h6 {
 	margin-bottom: 0.5rem !important;
 }
 
-.mb-3 {
+.mb-3,
+.post > h3,
+.post > h4 {
 	margin-bottom: 1rem !important;
 }
 
-.mb-4 {
+.mb-4,
+.post > p,
+.post > h1,
+.post > h2 {
 	margin-bottom: 1.5rem !important;
 }
 
@@ -7935,7 +7949,12 @@ fieldset:disabled .btn {
 	font-size: calc(1.275rem + 0.3vw) !important;
 }
 
-.fs-5 {
+.fs-5,
+.post > p,
+.post > ul > li,
+.post > ol > li,
+.post > blockquote > p,
+.post > blockquote > blockquote > p {
 	font-size: 1.25rem !important;
 }
 
@@ -7967,7 +7986,9 @@ fieldset:disabled .btn {
 	font-weight: 700 !important;
 }
 
-.fw-bolder {
+.fw-bolder,
+.post > h1,
+.post > h2 {
 	font-weight: bolder !important;
 }
 
@@ -11609,4 +11630,22 @@ fieldset:disabled .btn {
 	.d-print-none {
 		display: none !important;
 	}
+}
+
+.post > p {
+	text-align: justify;
+}
+
+.post > blockquote,
+.post > blockquote > blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 1em 10px 0.1em 10px;
+	quotes: '\201C''\201D''\2018''\2019';
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 40px;
+	margin-inline-end: 40px;
 }

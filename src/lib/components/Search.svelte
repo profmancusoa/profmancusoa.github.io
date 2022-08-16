@@ -9,6 +9,7 @@
 				placeholder="Inserisci una parola..."
 				aria-label="Inserisci una parola..."
 				aria-describedby="button-search"
+				disabled
 			/>
 			<button class="btn btn-primary" id="button-search" type="button">Cerca!</button>
 		</div>

@@ -11,6 +11,9 @@
 {#if pagina != null}
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary shadow">
 		<div class="container">
+			<div class="avatar">
+				<img src="/img/avatars/profmancuso.jpg" class="rounded-circle img-fluid" />
+			</div>
 			<a class="navbar-brand" href="/"><b>ProfMancusoa</b></a>
 			<button
 				class="navbar-toggler"
@@ -32,3 +35,12 @@
 		</div>
 	</nav>
 {/if}
+
+<style>
+	.avatar {
+		width: 40px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		margin-right: 2rem;
+	}
+</style>
