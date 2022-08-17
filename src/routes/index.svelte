@@ -13,8 +13,12 @@
 
 <script>
 	import PostPreview from '$lib/components/PostPreview.svelte';
+    import { all_posts } from '$lib/stores/store';
+
 	export let allPosts;
 
+    // scrivo tutti i post nello store perchè utile in altri componenti
+    $all_posts = allPosts;
 	//necessario per le visualizzazioni successive della home
 	let posts = [...allPosts];
 

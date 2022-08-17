@@ -1,5 +1,6 @@
 <script>
 	// metadata : {
+    //     id: 1
 	//     titolo: 'Programmare in C',
 	//     featured: false,
 	//     autore: 'Marco',

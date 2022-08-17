@@ -1,5 +1,26 @@
 <script>
 	import Categoria from '$lib/components/Categoria.svelte';
+    import { all_posts } from '$lib/stores/store';
+
+    let categorie = [];
+    let categorie_left, categorie_right;
+
+    // ricato la lista delle catagerie dai post e le suddividi in desto e sinistro
+    (function () {
+        let _categorie = new Set();
+        $all_posts.forEach(post => {
+            post.metadata.categorie.forEach(categoria => {
+                _categorie.add(categoria);
+            })
+        })
+        categorie = [..._categorie];
+        let middle_cat = Math.round(categorie.length / 2);
+        categorie_left = categorie.slice(0, middle_cat);
+        categorie_right = categorie.slice(middle_cat);
+    })();
+
+    console.log(categorie_left);
+    console.log(categorie_right)
 </script>
 
 <!-- Categories widget-->
@@ -9,22 +30,16 @@
 		<div class="row">
 			<div class="col-sm-6 d-flex justify-content-center">
 				<ul class="list-unstyled mb-0">
-					<Categoria text="Web Design" />
-					<Categoria text="HTML" />
-					<Categoria text="Freebies" />
-					<Categoria text="JavaScript" />
-					<Categoria text="CSS" />
-					<Categoria text="Tutorials" />
+                    {#each categorie_left as categoria}
+                        <Categoria text="{categoria}" />
+                    {/each}    
 				</ul>
 			</div>
 			<div class="col-sm-6 d-flex justify-content-center">
 				<ul class="list-unstyled mb-0">
-					<Categoria text="JavaScript" />
-					<Categoria text="CSS" />
-					<Categoria text="Tutorials" />
-					<Categoria text="Web Design" />
-					<Categoria text="HTML" />
-					<Categoria text="Freebies" />
+					{#each categorie_right as categoria}
+                        <Categoria text="{categoria}" />
+                    {/each}    
 				</ul>
 			</div>
 		</div>

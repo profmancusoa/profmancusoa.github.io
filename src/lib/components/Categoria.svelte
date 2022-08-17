@@ -14,11 +14,11 @@
 </script>
 
 <li>
-	<span class="categoria badge {color} text-truncate">{text}</span>
+	<span class="categoria badge {color} text-truncate mb-1">{text}</span>
 </li>
 
 <style>
 	.categoria {
-		width: 100%;
+		width: 7rem;
 	}
 </style>

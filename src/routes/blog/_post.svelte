@@ -2,6 +2,7 @@
 	import { date_convert, cover_assign } from '$lib/helpers/helpers';
 	import Categoria from '$lib/components/Categoria.svelte';
 
+    export let id;
 	export let titolo;
 	export let featured;
 	export let autore;
@@ -9,8 +10,6 @@
 	export let cover;
 	export let introduzione;
 	export let categorie;
-
-	console.log(categorie);
 </script>
 
 <article>
