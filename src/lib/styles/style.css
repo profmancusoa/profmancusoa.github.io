@@ -3,6 +3,15 @@
 * Start Bootstrap - Blog Home v5.0.8 (https://startbootstrap.com/template/blog-home)
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  */
+
+@font-face {
+	font-family: 'titillium_webregular';
+	src: url('/titillium-web.regular-webfont.woff2') format('woff2'),
+		url('/titillium-web.regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 :root {
 	--bs-blue: #0d6efd;
 	--bs-indigo: #6610f2;
@@ -46,20 +55,30 @@
 	--bs-black-rgb: 0, 0, 0;
 	--bs-body-color-rgb: 33, 37, 41;
 	--bs-body-bg-rgb: 255, 255, 255;
-	--bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+	/* --bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
 		'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-		'Segoe UI Symbol', 'Noto Color Emoji';
+		'Segoe UI Symbol', 'Noto Color Emoji'; */
+	--bs-font-sans-serif: titillium_webregular;
 	--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
 		monospace;
 	--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 	--bs-body-font-family: var(--bs-font-sans-serif);
+
 	--bs-body-font-size: 1rem;
 	--bs-body-font-weight: 400;
 	--bs-body-line-height: 1.5;
 	--bs-body-color: #212529;
 	--bs-body-bg: #fff;
+	--post-base-font-size: 1.375rem;
+	--post-base-h-line-height: 48px;
+	--post-p-line-height: 38px;
+    --post-text-color: rgba(24,24,24,0.639);
+    --post-li-text-color: rgb(64, 0, 253, 0.75);
+    --post-blockquote-bg-color: rgba(64, 0, 253, 0.2);
+    --post-blockquote-margin-color: rgba(64, 0, 253, 0.6);
 }
 
+/* #region Main */
 *,
 *::before,
 *::after {
@@ -7631,22 +7650,15 @@ fieldset:disabled .btn {
 	margin-top: 0.25rem !important;
 }
 
-.mt-2,
-.post > h5,
-.post > h6 {
+.mt-2 {
 	margin-top: 0.5rem !important;
 }
 
-.mt-3,
-.post > h3,
-.post > h4 {
+.mt-3 {
 	margin-top: 1rem !important;
 }
 
-.mt-4,
-.post > p,
-.post > h1,
-.post > h2 {
+.mt-4 {
 	margin-top: 1.5rem !important;
 }
 
@@ -7694,22 +7706,15 @@ fieldset:disabled .btn {
 	margin-bottom: 0.25rem !important;
 }
 
-.mb-2,
-.post > h5,
-.post > h6 {
+.mb-2 {
 	margin-bottom: 0.5rem !important;
 }
 
-.mb-3,
-.post > h3,
-.post > h4 {
+.mb-3 {
 	margin-bottom: 1rem !important;
 }
 
-.mb-4,
-.post > p,
-.post > h1,
-.post > h2 {
+.mb-4 {
 	margin-bottom: 1.5rem !important;
 }
 
@@ -7949,12 +7954,7 @@ fieldset:disabled .btn {
 	font-size: calc(1.275rem + 0.3vw) !important;
 }
 
-.fs-5,
-.post > p,
-.post > ul > li,
-.post > ol > li,
-.post > blockquote > p,
-.post > blockquote > blockquote > p {
+.fs-5 {
 	font-size: 1.25rem !important;
 }
 
@@ -7986,9 +7986,7 @@ fieldset:disabled .btn {
 	font-weight: 700 !important;
 }
 
-.fw-bolder,
-.post > h1,
-.post > h2 {
+.fw-bolder {
 	font-weight: bolder !important;
 }
 
@@ -11631,15 +11629,117 @@ fieldset:disabled .btn {
 		display: none !important;
 	}
 }
+/* #endregion */
+
+header > h1 {
+	font-size: calc(var(--post-base-font-size) * 2.5);
+	line-height: var(--post-base-h-line-height);
+	font-weight: bolder;
+}
+
+
+.post > h1, .post > h2, .post > h3, .post > h4, .post > h5, .post > h6, header > h1 {
+    color: var(--post-text-color); 
+}
+
+.post > h1 {
+	font-size: calc(var(--post-base-font-size) * 2.2);
+	line-height: var(--post-base-h-line-height);
+	font-weight: bolder;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.post > h2 {
+	font-size: calc(var(--post-base-font-size) * 1.7);
+	line-height: var(--post-base-h-line-height);
+	font-weight: bolder;
+	margin-top: 2.1rem;
+	margin-bottom: 2.1rem;
+}
+
+.post > h3 {
+	font-size: calc(var(--post-base-font-size) * 1.2);
+	line-height: calc(var(--post-base-h-line-height) / 2);
+	font-weight: bold;
+	margin-top: 1.7rem;
+	margin-bottom: 1.7rem;
+}
+
+.post > h4 {
+	font-size: calc(var(--post-base-font-size) * 0.7);
+	line-height: calc(var(--post-base-h-line-height) / 2);
+	font-weight: bold;
+	margin-top: 1.3rem;
+	margin-bottom: 1.3rem;
+}
+
+.post > h5 {
+	font-size: calc(var(--post-base-font-size) * 0.7);
+	line-height: calc(var(--post-base-h-line-height) / 4);
+	margin-top: 0.9rem;
+	margin-bottom: 0.9rem;
+}
+
+.post > h6 {
+	font-size: calc(var(--post-base-font-size) * 0.2);
+	line-height: calc(var(--post-base-h-line-height) / 4);
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
 
 .post > p {
 	text-align: justify;
+	font-size: var(--post-base-font-size);
+	line-height: var(--post-p-line-height);
+	margin-top: 0px;
+	margin-bottom: 2rem;
+    color: var(--post-text-color);
+}
+
+.post ol,
+ul {
+	margin-bottom: 2rem;
+	list-style: none;
+	padding-left: 3rem;
+	counter-reset: section;
+}
+
+.post > * > li {
+	font-size: var(--post-base-font-size);
+	line-height: 32px;
+	margin-bottom: 8px;
+    color: var(--post-text-color);
+}
+
+.post > ul li:before {
+	content: '•';
+    color: var(--post-li-text-color);
+	font-weight: bold;
+	font-size: 2rem;
+	display: inline-block;
+	left: -1rem;
+	top: 0.18rem;
+	position: relative;
+}
+
+.post > ol li:before {
+	counter-increment: section;
+	content: counters(section, '.') '.';
+	color: var(--post-li-text-color);
+	font-weight: bolder;
+	display: inline-block;
+	left: -1rem;
+	top: 0.18rem;
+	position: relative;
 }
 
 .post > blockquote,
 .post > blockquote > blockquote {
-	background: #f9f9f9;
-	border-left: 10px solid #ccc;
+	font-size: var(--post-base-font-size);
+	line-height: 32px;
+    background-color: var(--post-blockquote-bg-color);
+    border-left: 10px solid var(--post-blockquote-margin-color);
 	margin: 1.5em 10px;
 	padding: 1em 10px 0.1em 10px;
 	quotes: '\201C''\201D''\2018''\2019';
@@ -11648,4 +11748,16 @@ fieldset:disabled .btn {
 	margin-block-end: 1em;
 	margin-inline-start: 40px;
 	margin-inline-end: 40px;
+    color: var(--post-text-color);
+}
+
+.post > hr {
+	height: 2px;
+}
+
+.post > pre {
+    margin-bottom: 2rem !important;
+}
+.card-body > p {
+    font-size: calc(var(--post-base-font-size) / 1.4);
 }

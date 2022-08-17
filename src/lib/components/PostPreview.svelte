@@ -22,9 +22,9 @@
 	</a>
 	<div class="card-body">
 		<div class="small text-muted">{date_convert(post.data)}</div>
-		<h2 class="card-title text-truncate" class:h4={!post.featured}>{@html post.titolo}</h2>
-		<p class="card-text text-truncate text-truncate-2">{@html post.introduzione}</p>
-		<a class="btn btn-primary" href={post.path}>Leggi →</a>
+		<h2 class="card-title text-truncate fw-bold" class:h4={!post.featured}>{@html post.titolo}</h2>
+		<p class="card-text text-truncate text-truncate-2 intro">{@html post.introduzione}</p>
+		<a class="btn btn-primary fw-bolder" href={post.path}>Leggi →</a>
 	</div>
 </div>
 
@@ -34,6 +34,11 @@
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 		white-space: normal;
-		height: 3rem;
+		height: 3.7rem;
 	}
+
+    .intro {
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
 </style>

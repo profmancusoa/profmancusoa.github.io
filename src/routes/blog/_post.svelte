@@ -13,30 +13,13 @@
 	console.log(categorie);
 </script>
 
-<!-- <h1>{titolo}</h1>
-
-<p><span>Published: {data}</span> <span>Autore: {autore}</span></p>
-<p>Featured: {featured}</p>
-<div class="post">
-	<slot />
-</div>
-
-<style>
-	.post {
-		border: 2px solid black;
-		border-radius: 1rem;
-		padding: 1rem;
-		margin-top: 2rem;
-	}
-</style> -->
-
 <article>
 	<!-- Post header-->
 	<header class="mb-4">
 		<!-- titolo -->
-		<h1 class="fw-bolder mb-0">{titolo}</h1>
+		<h1 class="fw-bolder mb-2">{titolo}</h1>
 		<!-- metadata-->
-		<div class="text-muted fst-italic mb-3">{autore} - {date_convert(data)}</div>
+		<div class="text-muted fst-italic mb-3 fs-5">{autore} - {date_convert(data)}</div>
 		<!-- categorie-->
 		{#each categorie as categoria}
 			<span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1"

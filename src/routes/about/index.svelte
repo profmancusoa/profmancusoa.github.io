@@ -1,32 +1,31 @@
 <div class="outer">
 	<div class="middle">
 		<div class="inner">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-3" />
-					<div class="col-md-6">
-						<div class="card testimonial-card shadow">
-							<div class="card-up bg-primary" />
-							<div class="avatar mx-auto bg-white">
-								<img src="/img/avatars/profmancuso.jpg" class="rounded-circle img-fluid" />
-							</div>
-							<div class="card-body">
-								<h4 class="mb-4">ProfMancusoa</h4>
-								<hr />
-								<p class="dark-grey-text fs-5">
-									Ciao, sono il prof. Mancuso Antonio e insegno Informatica, Tecnologie di
-									Progettazione e Sistemi e Reti agli studenti del triennio presso l'Istitituto
-									Internazionale E.Agnelli a Torino.
-								</p>
-								<p class="dark-grey-text fs-5">
-									Questo blog è un semplice strumento per condividere informazioni con gli studenti
-									e tutti i lettori interessati. E' anche uno spazio in cui gli studenti possono
-									pubblicare i loro articoli. <br /><i>Buona Lettura!!</i>
-								</p>
-							</div>
-						</div>
-					</div>
+			<div class="container-fluid">
+				<div class="row text-center mt-5">
+                    <div class="col-sm-2" />
+                    <div class="col-sm-8">
+                        <div class="avatar mx-auto">
+                            <img src="/img/avatars/profmancuso.jpg" class="rounded-circle img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-sm-2" />
 				</div>
+                <div class="row text-center about mt-5">
+                    <div class="col-sm-3" />
+                    <div class="col-sm-6">
+                        <p class="dark-grey-text fs-3">
+                            Ciao, sono il prof. Mancuso Antonio e insegno le materie d'indirizzo agli studenti del triennio informatico  presso l'Istitituto
+                            Internazionale E.Agnelli a Torino.
+                        </p>
+                        <p class="dark-grey-text fs-3">
+                            Questo blog è un semplice strumento per condividere informazioni con gli studenti
+                            e tutti i lettori interessati. E' anche uno spazio in cui gli studenti possono
+                            pubblicare i loro articoli. <br /><i>Buona Lettura!!</i>
+                        </p>
+                    </div>
+                    <div class="col-sm-2" />
+                </div>
 			</div>
 		</div>
 	</div>
@@ -34,6 +33,7 @@
 
 <style>
 	.outer {
+        background-image: url('/img/about_bg.jpg');
 		display: table;
 		position: absolute;
 		top: 0;
@@ -51,18 +51,18 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.testimonial-card .card-up {
-		height: 120px;
-		overflow: hidden;
-		border-top-left-radius: 0.25rem;
-		border-top-right-radius: 0.25rem;
+
+    .avatar {
+		width: 250px;
+		/* margin-top: -260px; */
+		/* overflow: hidden; */
+		/* border: 3px solid #fff; */
+		/* border-radius: 50%; */
 	}
 
-	.testimonial-card .avatar {
-		width: 200px;
-		margin-top: -60px;
-		overflow: hidden;
-		border: 3px solid #fff;
-		border-radius: 50%;
-	}
+    .about {
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+    }
 </style>
