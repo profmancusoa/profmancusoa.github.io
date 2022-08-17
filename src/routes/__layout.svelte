@@ -18,7 +18,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Categories from '$lib/components/Categories.svelte';
 	import Search from '$lib/components/Search.svelte';
-
+    
 	export let currentRoute;
 </script>
 

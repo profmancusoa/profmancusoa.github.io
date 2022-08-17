@@ -18,9 +18,6 @@
         categorie_left = categorie.slice(0, middle_cat);
         categorie_right = categorie.slice(middle_cat);
     })();
-
-    console.log(categorie_left);
-    console.log(categorie_right)
 </script>
 
 <!-- Categories widget-->

@@ -13,21 +13,29 @@
 
 <script>
 	import PostPreview from '$lib/components/PostPreview.svelte';
+    import Paginatore from '$lib/components/Paginatore.svelte';
     import { all_posts } from '$lib/stores/store';
 
 	export let allPosts;
+    const PAGE_SIZE = 4; // numero di post sulla home
 
     // scrivo tutti i post nello store perchè utile in altri componenti
     $all_posts = allPosts;
 	//necessario per le visualizzazioni successive della home
 	let posts = [...allPosts];
-
+    // indice inizio e fine pagina dei post corrente
+    let post_page_start = 0;
+   
 	// find featured posts and remove it from posts
 	let featured = posts.filter((item) => item.metadata.featured == true);
 	if (featured.length > 0) {
 		let featured_idx = posts.indexOf(featured[0]);
 		posts.splice(featured_idx, 1);
 	}
+    
+    function cambio_pagina(event) {
+        post_page_start = event.detail.idx_start;
+    }
 </script>
 
 <!-- Blog entries-->
@@ -51,46 +59,33 @@
         {/fi}
     {/each}
     Quindi non si rieace a generare le righe in modo dinamico -->
-	<div class="row">
+    <div class="row">
 		<div class="col-lg-6">
-			{#if posts[0]}
-				<PostPreview metadata={posts[0].metadata} />
+			{#if posts[post_page_start]}
+				<PostPreview  metadata={posts[post_page_start].metadata} />
 			{/if}
 		</div>
 		<div class="col-lg-6">
-			{#if posts[1]}
-				<PostPreview metadata={posts[1].metadata} />
+			{#if posts[post_page_start + 1]}
+				<PostPreview metadata={posts[post_page_start + 1].metadata} />
 			{/if}
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-6">
-			{#if posts[2]}
-				<PostPreview metadata={posts[2].metadata} />
+			{#if posts[post_page_start + 2]}
+				<PostPreview metadata={posts[post_page_start + 2].metadata} />
 			{/if}
 		</div>
 		<div class="col-lg-6">
-			{#if posts[3]}
-				<PostPreview metadata={posts[3].metadata} />
+			{#if posts[post_page_start + 3]}
+				<PostPreview metadata={posts[post_page_start + 3].metadata} />
 			{/if}
 		</div>
 	</div>
 
 	<!-- Pagination-->
 	{#if posts.length > 4}
-		<nav aria-label="Pagination">
-			<hr class="my-0" />
-			<ul class="pagination justify-content-center my-4">
-				<li class="page-item disabled">
-					<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-				</li>
-				<li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
-				<li class="page-item"><a class="page-link" href="#!">2</a></li>
-				<li class="page-item"><a class="page-link" href="#!">3</a></li>
-				<li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-				<li class="page-item"><a class="page-link" href="#!">15</a></li>
-				<li class="page-item"><a class="page-link" href="#!">Older</a></li>
-			</ul>
-		</nav>
+        <Paginatore page_size={PAGE_SIZE} posts={posts} on:cambioPagina={cambio_pagina}/>
 	{/if}
 </div>

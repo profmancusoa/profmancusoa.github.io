@@ -14,7 +14,8 @@
 	import { date_convert, cover_assign } from '$lib/helpers/helpers';
 
 	export let metadata;
-	let post = { ...metadata }; // necessario per il routing lato client
+
+	$: post = { ...metadata }; // necessario per il routing lato client e per il re-rendering
 </script>
 
 <div class="card mb-4">
