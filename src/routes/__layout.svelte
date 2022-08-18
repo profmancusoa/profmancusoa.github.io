@@ -1,10 +1,11 @@
 <script context="module">
-	export const load = ({ url }) => {
-		const currentRoute = url.pathname;
+    export const load = async ({ fetch }) => {
+		const posts = await fetch('/blog/post.json');
+		const allPosts = await posts.json();
 
 		return {
 			props: {
-				currentRoute
+				allPosts: allPosts
 			}
 		};
 	};
@@ -18,8 +19,13 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Categories from '$lib/components/Categories.svelte';
 	import Search from '$lib/components/Search.svelte';
+    import { all_posts } from '$lib/stores/store';
+
+    export let allPosts;
     
-	export let currentRoute;
+    // scrivo tutti i post nello store perchè utile in altri componenti
+    $all_posts = allPosts;
+
 </script>
 
 <Navbar pagina={$page.routeId} />

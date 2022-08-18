@@ -1,28 +1,12 @@
-<script context="module">
-	export const load = async ({ fetch }) => {
-		const posts = await fetch('/blog/post.json');
-		const allPosts = await posts.json();
-
-		return {
-			props: {
-				allPosts: allPosts
-			}
-		};
-	};
-</script>
-
 <script>
 	import PostPreview from '$lib/components/PostPreview.svelte';
     import Paginatore from '$lib/components/Paginatore.svelte';
     import { all_posts } from '$lib/stores/store';
 
-	export let allPosts;
     const PAGE_SIZE = 4; // numero di post sulla home
-
-    // scrivo tutti i post nello store perchè utile in altri componenti
-    $all_posts = allPosts;
 	//necessario per le visualizzazioni successive della home
-	let posts = [...allPosts];
+    let posts = [...$all_posts];
+
     // indice inizio e fine pagina dei post corrente
     let post_page_start = 0;
    
