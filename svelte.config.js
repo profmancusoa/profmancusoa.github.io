@@ -12,7 +12,8 @@ const config = {
 		}),
 		prerender: {
 			default: true
-		}
+		},
+        trailingSlash: 'always'
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [
