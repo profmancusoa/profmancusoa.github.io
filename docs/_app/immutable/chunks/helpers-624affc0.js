@@ -1,0 +1,1 @@
+const o="/img/posts/",i="/img/posts/missing_post.jpg";function s(t){let e=new Date(t);return e.toLocaleDateString("it-IT",{day:"numeric"})+" "+function(){let n=e.toLocaleDateString("it-IT",{month:"long"});return n.slice(0,1).toUpperCase()+n.slice(1).toLowerCase()}()+" "+e.toLocaleDateString("it-IT",{year:"numeric"})}function r(t){return!t||t==null?i:o+t}export{r as c,s as d};
