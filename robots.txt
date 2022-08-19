@@ -3,8 +3,7 @@
 
 User-agent: *
 Disallow:
-Sitemap: https://www.html.it/sitemap_index.xml
-https://profmancusoa.github.io/sitemap.xml
+Sitemap: https://profmancusoa.github.io/sitemap.xml
 
 User-agent: 01h4x.com
 Disallow:/
