@@ -101,6 +101,16 @@
 		<slot />
 	</section>
 
+    <hr>
 	<!-- disqus comments -->
 	<div id="disqus_thread" />
 </article>
+
+<style>
+    hr {
+        border: 2px solid blue;
+        border-radius: 5px;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+</style>

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-86e187fb.js",
+    "file": "_app/immutable/start-bbaedae2.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -16,7 +16,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-294fb485.js",
+    "file": "_app/immutable/pages/__layout.svelte-ba862cde.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -53,7 +53,7 @@
     ]
   },
   "src/routes/blog/come-scrivere-un-post-in-markdown.md": {
-    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-ed7ba39e.js",
+    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-d3f1a76d.js",
     "src": "src/routes/blog/come-scrivere-un-post-in-markdown.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -61,6 +61,9 @@
       "_index-d1f77492.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-98566ca6.js"
+    ],
+    "css": [
+      "_app/immutable/assets/come-scrivere-un-post-in-markdown-86d7e987.css"
     ]
   },
   "src/routes/index.svelte": {
@@ -105,17 +108,21 @@
       "_index-c824edcc.js"
     ]
   },
-  "src/routes/index.css": {
-    "file": "_app/immutable/assets/index-1527f175.css",
-    "src": "src/routes/index.css"
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-f64b60f3.css",
     "src": "src/routes/about/index.css"
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
+  "src/routes/blog/come-scrivere-un-post-in-markdown.css": {
+    "file": "_app/immutable/assets/come-scrivere-un-post-in-markdown-86d7e987.css",
+    "src": "src/routes/blog/come-scrivere-un-post-in-markdown.css"
+  },
+  "src/routes/index.css": {
+    "file": "_app/immutable/assets/index-1527f175.css",
+    "src": "src/routes/index.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-7dfa9a8c.css",
