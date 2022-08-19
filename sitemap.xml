@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<!-- <url>
+		<loc>https://www.html.it/guide/creare-app-in-html5-la-guida/</loc>
+		<lastmod>2018-09-20T12:35:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.html.it/app/uploads/2016/09/html5@2x.png</image:loc>
+		</image:image>
+	</url> -->
+    <url>
+        <loc>https://profmancusoa.github.io/</loc>
+        <lastmod>2022-08-19T15:12:00+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://profmancusoa.github.io/comingsoon.jpg</image:loc>
+        </image:image>
+    </url>
+</urlset>
