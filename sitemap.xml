@@ -6,25 +6,25 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
         <image:image>
-            <image:loc>http://localhost:5173/img/blog_banner.png</image:loc>
+            <image:loc>https://profmancusoa.github.io/img/blog_banner.png</image:loc>
         </image:image>
     </url>
     <url>
-        <loc>http://localhost:5173/about/</loc>
+        <loc>https://profmancusoa.github.io/about/</loc>
         <lastmod>2022-08-19T23:23:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
         <image:image>
-            <image:loc>http://localhost:5173/img/avatars/profmancuso.jpg</image:loc>
+            <image:loc>https://profmancusoa.github.io/img/avatars/profmancuso.jpg</image:loc>
         </image:image>
     </url>
      <url>
-        <loc>http://localhost:5173/blog/post-template/</loc>
+        <loc>https://profmancusoa.github.io/blog/come-scrivere-un-post-in-markdown/</loc>
         <lastmod>2022-08-19T23:23:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
         <image:image>
-            <image:loc>http://localhost:5173/img/posts/blog-post-template/cover.jpg</image:loc>
+            <image:loc>https://profmancusoa.github.io/img/posts/come-scrivere-un-post-in-markdown/cover.jpg</image:loc>
         </image:image>
     </url>
 </urlset>

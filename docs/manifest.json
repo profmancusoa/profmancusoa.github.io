@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-09f9ce9f.js",
+    "file": "_app/immutable/start-86e187fb.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -11,7 +11,7 @@
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
-      "src/routes/blog/post-template.md",
+      "src/routes/blog/come-scrivere-un-post-in-markdown.md",
       "src/routes/index.svelte"
     ]
   },
@@ -52,9 +52,9 @@
       "_app/immutable/assets/index-f64b60f3.css"
     ]
   },
-  "src/routes/blog/post-template.md": {
-    "file": "_app/immutable/pages/blog/post-template.md-5167bc1a.js",
-    "src": "src/routes/blog/post-template.md",
+  "src/routes/blog/come-scrivere-un-post-in-markdown.md": {
+    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-ed7ba39e.js",
+    "src": "src/routes/blog/come-scrivere-un-post-in-markdown.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -105,17 +105,17 @@
       "_index-c824edcc.js"
     ]
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
+  "src/routes/index.css": {
+    "file": "_app/immutable/assets/index-1527f175.css",
+    "src": "src/routes/index.css"
   },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-f64b60f3.css",
     "src": "src/routes/about/index.css"
   },
-  "src/routes/index.css": {
-    "file": "_app/immutable/assets/index-1527f175.css",
-    "src": "src/routes/index.css"
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-7dfa9a8c.css",
