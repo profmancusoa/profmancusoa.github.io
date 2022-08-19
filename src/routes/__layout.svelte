@@ -1,7 +1,14 @@
 <script context="module">
-    export const load = async ({ fetch }) => {
+	import { title_to_slug } from '$lib/helpers/helpers';
+
+	export const load = async ({ fetch }) => {
 		const posts = await fetch('/blog/post.json');
 		const allPosts = await posts.json();
+
+		//la cover del post deve essere in /img/posts/<slug>/<cover>
+		allPosts.forEach((post) => {
+			post.metadata.cover = title_to_slug(post.metadata.titolo) + '/' + post.metadata.cover;
+		});
 
 		return {
 			props: {
@@ -19,13 +26,12 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Categories from '$lib/components/Categories.svelte';
 	import Search from '$lib/components/Search.svelte';
-    import { all_posts } from '$lib/stores/store';
+	import { all_posts } from '$lib/stores/store';
 
-    export let allPosts;
-    
-    // scrivo tutti i post nello store perchè utile in altri componenti
-    $all_posts = allPosts;
+	export let allPosts;
 
+	// scrivo tutti i post nello store perchè utile in altri componenti
+	$all_posts = allPosts;
 </script>
 
 <Navbar pagina={$page.routeId} />
@@ -48,7 +54,7 @@
 
 			<!-- Sidebar-->
 			<div class="col-lg-3">
-				<Search />
+				<!-- <Search /> -->
 				<Categories />
 			</div>
 		</div>

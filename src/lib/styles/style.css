@@ -10,7 +10,7 @@
 		url('/titillium-web.regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-    font-display: swap;
+	font-display: swap;
 }
 
 :root {
@@ -73,10 +73,10 @@
 	--post-base-font-size: 1.375rem;
 	--post-base-h-line-height: 48px;
 	--post-p-line-height: 38px;
-    --post-text-color: rgba(24,24,24,0.639);
-    --post-li-text-color: rgb(64, 0, 253, 0.75);
-    --post-blockquote-bg-color: rgba(64, 0, 253, 0.2);
-    --post-blockquote-margin-color: rgba(64, 0, 253, 0.6);
+	--post-text-color: rgba(24, 24, 24, 0.639);
+	--post-li-text-color: rgb(64, 0, 253, 0.75);
+	--post-blockquote-bg-color: rgba(64, 0, 253, 0.2);
+	--post-blockquote-margin-color: rgba(64, 0, 253, 0.6);
 }
 
 /* #region Main */
@@ -11638,9 +11638,14 @@ header > h1 {
 	font-weight: bolder;
 }
 
-
-.post > h1, .post > h2, .post > h3, .post > h4, .post > h5, .post > h6, header > h1 {
-    color: var(--post-text-color); 
+.post > h1,
+.post > h2,
+.post > h3,
+.post > h4,
+.post > h5,
+.post > h6,
+header > h1 {
+	color: var(--post-text-color);
 }
 
 .post > h1 {
@@ -11695,7 +11700,7 @@ header > h1 {
 	line-height: var(--post-p-line-height);
 	margin-top: 0px;
 	margin-bottom: 2rem;
-    color: var(--post-text-color);
+	color: var(--post-text-color);
 }
 
 .post ol,
@@ -11710,12 +11715,12 @@ ul {
 	font-size: var(--post-base-font-size);
 	line-height: 32px;
 	margin-bottom: 8px;
-    color: var(--post-text-color);
+	color: var(--post-text-color);
 }
 
 .post > ul li:before {
 	content: '•';
-    color: var(--post-li-text-color);
+	color: var(--post-li-text-color);
 	font-weight: bold;
 	font-size: 2rem;
 	display: inline-block;
@@ -11739,8 +11744,8 @@ ul {
 .post > blockquote > blockquote {
 	font-size: var(--post-base-font-size);
 	line-height: 32px;
-    background-color: var(--post-blockquote-bg-color);
-    border-left: 10px solid var(--post-blockquote-margin-color);
+	background-color: var(--post-blockquote-bg-color);
+	border-left: 10px solid var(--post-blockquote-margin-color);
 	margin: 1.5em 10px;
 	padding: 1em 10px 0.1em 10px;
 	quotes: '\201C''\201D''\2018''\2019';
@@ -11749,7 +11754,7 @@ ul {
 	margin-block-end: 1em;
 	margin-inline-start: 40px;
 	margin-inline-end: 40px;
-    color: var(--post-text-color);
+	color: var(--post-text-color);
 }
 
 .post > hr {
@@ -11757,8 +11762,15 @@ ul {
 }
 
 .post > pre {
-    margin-bottom: 2rem !important;
+	margin-bottom: 2rem !important;
 }
+
+.post > p > code {
+	color: blue;
+	background-color: #d4caca; /* #F7F7F7; */
+	padding: 0.3rem;
+}
+
 .card-body > p {
-    font-size: calc(var(--post-base-font-size) / 1.4);
+	font-size: calc(var(--post-base-font-size) / 1.4);
 }

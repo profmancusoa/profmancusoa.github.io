@@ -8,12 +8,12 @@ const config = {
 			pages: 'docs',
 			assets: 'docs',
 			fallback: null,
-			precompress: false
+			precompress: true
 		}),
 		prerender: {
 			default: true
 		},
-        trailingSlash: 'always'
+		trailingSlash: 'always'
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [

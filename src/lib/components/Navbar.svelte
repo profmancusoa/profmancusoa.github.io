@@ -12,7 +12,13 @@
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary shadow">
 		<div class="container">
 			<div class="avatar">
-				<img src="/img/avatars/profmancuso.jpg" class="rounded-circle img-fluid" />
+				<img
+					src="/img/avatars/profmancuso.jpg"
+					class="rounded-circle img-fluid"
+					alt="ProfMancusoa"
+					width="36"
+					height="36"
+				/>
 			</div>
 			<a class="navbar-brand" href="/"><b>ProfMancusoa</b></a>
 			<button

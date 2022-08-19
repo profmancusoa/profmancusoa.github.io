@@ -1,6 +1,6 @@
 <script>
 	// metadata : {
-    //     id: 1
+	//     id: 1
 	//     titolo: 'Programmare in C',
 	//     featured: false,
 	//     autore: 'Marco',
@@ -8,6 +8,7 @@
 	//     cover: 'img4.jpg',
 	//     introduzione: "Introduzione dell'articolo 4",
 	//     categorie: [ 'Informatica', 'C' ],
+	//     sezione: Programmazione
 	//     path: '/blog/4'
 	// }
 
@@ -20,7 +21,13 @@
 
 <div class="card mb-4">
 	<a href={post.path}>
-		<img class="card-img-top" src={cover_assign(post.cover)} alt={post.titolo} />
+		<img
+			class="card-img-top img-fluid"
+			src={cover_assign(post.cover)}
+			alt={post.titolo}
+			width="850"
+			height="350"
+		/>
 	</a>
 	<div class="card-body">
 		<div class="small text-muted">{date_convert(post.data)}</div>
@@ -39,8 +46,8 @@
 		height: 3.7rem;
 	}
 
-    .intro {
-        font-weight: 200;
-        font-size: 1.2rem;
-    }
+	.intro {
+		font-weight: 200;
+		font-size: 1.2rem;
+	}
 </style>

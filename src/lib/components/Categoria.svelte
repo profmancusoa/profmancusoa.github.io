@@ -21,4 +21,8 @@
 	.categoria {
 		width: 7rem;
 	}
+
+	li {
+		margin-bottom: 0.3rem;
+	}
 </style>

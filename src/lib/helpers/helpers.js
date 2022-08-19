@@ -1,5 +1,5 @@
 const _COVER_DIR = '/img/posts/';
-const _COVER_PLACEHOLDER = '/img/posts/missing_post.jpg';
+const _COVER_PLACEHOLDER = '/img/posts/missing_post.png';
 
 // converte la data da 2022-07-11T00:00:00.000 a 11 LUGLIO 2022
 export function date_convert(data) {
@@ -18,6 +18,12 @@ export function date_convert(data) {
 
 // se assente assegna una cover placeholder
 export function cover_assign(cover) {
-	if (!cover || cover == null) return _COVER_PLACEHOLDER;
+	if (cover.split('/').includes('undefined') || cover.split('/').includes('null'))
+		return _COVER_PLACEHOLDER;
 	else return _COVER_DIR + cover;
+}
+
+//convert a human readable title into sluf
+export function title_to_slug(title) {
+	return title.toLowerCase().split(' ').join('-');
 }
