@@ -1,6 +1,6 @@
 ---
 id: 2022-08-20-1
-titolo: Il blog ProFmancusoa
+titolo: Il blog ProfMancusoa
 featured: true
 autore: ProfMancusoa
 data: 2022-08-20
