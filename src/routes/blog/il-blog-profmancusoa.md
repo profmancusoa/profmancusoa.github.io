@@ -4,7 +4,7 @@ titolo: Il blog ProfMancusoa
 featured: true
 autore: ProfMancusoa
 data: 2022-08-20
-cover: profmancusoa.png
+cover: profmancusoa.webp
 introduzione: Un blog diverso, inteso come spazio di condivisione, cooperazione ed apprendimento.
 sezione: Blog
 categorie:

@@ -4,7 +4,7 @@ titolo: Come scrivere un post in Markdown
 featured: false
 autore: ProfMancusoa
 data: 2022-08-19
-cover: cover.jpg
+cover: cover.webp
 introduzione: Questo post descrive brevemente come creare nuovi post
 sezione: Blog
 categorie:
@@ -25,7 +25,7 @@ Per semplificare e razionalizzare, la struttura di questo Blog è necessario ris
 Ogni articolo o post di questo blog è rappresentato da un file testuale in formato Markdown.
 Il file del post deve essere localizzato nella directory `src/routes/blog` e deve avere un estensione `.md`
 
-Il file deve avere un `frontmatter`  che permette all'autore di specificare alcuni importanti metadati relativi al posto stesso.
+Il file deve avere un `frontmatter` che permette all'autore di specificare alcuni importanti metadati relativi al posto stesso.
 Il frontmatter è scritto in `YAML` deve essere così composto:
 
 ```yaml
@@ -65,15 +65,15 @@ categorie:
 ```
 
 Il file .md deve aver per nome lo `slug` del titolo. In altre parole il nome del file deve essere uguale al titolo dove:
-- tutte le lettere sono convertite in minuscolo
-- gli spazi sono conventiti in **-**  (dash)
 
+- tutte le lettere sono convertite in minuscolo
+- gli spazi sono conventiti in **-** (dash)
 
 ### Cover image
 
 In modo analogo al nome del file .md, anche il file della cover del post, indicato nel frontmatter, deve essere posizionato nella directory `static/img/posts/[slug]`
 
-dove la sub-directory ***[slug]*** è esattamente uguale al nome del file.
+dove la sub-directory **_[slug]_** è esattamente uguale al nome del file.
 
 Vediamo un esempio:
 
@@ -90,4 +90,4 @@ Il file _cover.jpg_ deve essere posizionato in `static/img/posts/blog-post-templ
 Come anticipato le convenzioni sono pochissime ed utili a mantener eil blog ordinato nel tempo.
 Non ci sono altre convenzioni da rispettare.
 
-**Non mi resta che augurarvi buon blogging !!!!**  <span style="font-size: 50px;">&#129322;</span>
+**Non mi resta che augurarvi buon blogging !!!!** <span style="font-size: 50px;">&#129322;</span>
