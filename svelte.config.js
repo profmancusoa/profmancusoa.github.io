@@ -14,7 +14,7 @@ const config = {
 			default: true
 		},
 		trailingSlash: 'always',
-        inlineStyleThreshold: 350000
+		inlineStyleThreshold: 350000
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [
