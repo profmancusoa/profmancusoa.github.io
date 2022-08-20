@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="avatar">
 				<img
-					src="/img/avatars/profmancuso.jpg"
+					src="/img/avatars/profmancuso-round.jpg"
 					class="rounded-circle img-fluid"
 					alt="ProfMancusoa"
 					width="36"
