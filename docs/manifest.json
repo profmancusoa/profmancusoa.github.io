@@ -1,128 +1,150 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-fcdbadd9.js",
+    "file": "_app/immutable/start-53dce7bb.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-d1f77492.js",
-      "_index-c824edcc.js"
+      "_index-02a6647b.js",
+      "_index-efb87244.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
       "src/routes/blog/come-scrivere-un-post-in-markdown.md",
+      "src/routes/blog/il-blog-profmancusoa.md",
       "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-006a459e.js",
+    "file": "_app/immutable/pages/__layout.svelte-91055c5b.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d1f77492.js",
+      "_index-02a6647b.js",
       "_helpers-e147ed77.js",
-      "_Categoria.svelte_svelte_type_style_lang-98566ca6.js",
-      "_store-417cc7a0.js",
-      "_index-c824edcc.js"
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js",
+      "_store-a1d7f94c.js",
+      "_index-efb87244.js"
     ],
     "css": [
       "_app/immutable/assets/__layout-7dfa9a8c.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "_app/immutable/pages/__error.svelte-946da00e.js",
+    "file": "_app/immutable/pages/__error.svelte-8ef94834.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d1f77492.js"
+      "_index-02a6647b.js"
     ]
   },
   "src/routes/about/index.svelte": {
-    "file": "_app/immutable/pages/about/index.svelte-7a25d334.js",
+    "file": "_app/immutable/pages/about/index.svelte-6e9be422.js",
     "src": "src/routes/about/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d1f77492.js"
+      "_index-02a6647b.js"
     ],
     "css": [
       "_app/immutable/assets/index-f64b60f3.css"
     ]
   },
   "src/routes/blog/come-scrivere-un-post-in-markdown.md": {
-    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-d3f1a76d.js",
+    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-13e95236.js",
     "src": "src/routes/blog/come-scrivere-un-post-in-markdown.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d1f77492.js",
+      "_index-02a6647b.js",
+      "__post-a7638e37.js",
       "_helpers-e147ed77.js",
-      "_Categoria.svelte_svelte_type_style_lang-98566ca6.js"
-    ],
-    "css": [
-      "_app/immutable/assets/come-scrivere-un-post-in-markdown-86d7e987.css"
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/il-blog-profmancusoa.md": {
+    "file": "_app/immutable/pages/blog/il-blog-profmancusoa.md-81cec9ed.js",
+    "src": "src/routes/blog/il-blog-profmancusoa.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-a7638e37.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-fed3c039.js",
+    "file": "_app/immutable/pages/index.svelte-5d1364cb.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d1f77492.js",
+      "_index-02a6647b.js",
       "_helpers-e147ed77.js",
-      "_store-417cc7a0.js",
-      "_index-c824edcc.js"
+      "_store-a1d7f94c.js",
+      "_index-efb87244.js"
     ],
     "css": [
       "_app/immutable/assets/index-1527f175.css"
     ]
   },
-  "_index-d1f77492.js": {
-    "file": "_app/immutable/chunks/index-d1f77492.js"
+  "_index-02a6647b.js": {
+    "file": "_app/immutable/chunks/index-02a6647b.js"
   },
-  "_index-c824edcc.js": {
-    "file": "_app/immutable/chunks/index-c824edcc.js",
+  "_index-efb87244.js": {
+    "file": "_app/immutable/chunks/index-efb87244.js",
     "imports": [
-      "_index-d1f77492.js"
+      "_index-02a6647b.js"
     ]
   },
   "_helpers-e147ed77.js": {
     "file": "_app/immutable/chunks/helpers-e147ed77.js"
   },
-  "_Categoria.svelte_svelte_type_style_lang-98566ca6.js": {
-    "file": "_app/immutable/chunks/Categoria.svelte_svelte_type_style_lang-98566ca6.js",
+  "_Categoria.svelte_svelte_type_style_lang-56b3738a.js": {
+    "file": "_app/immutable/chunks/Categoria.svelte_svelte_type_style_lang-56b3738a.js",
     "imports": [
-      "_index-d1f77492.js"
+      "_index-02a6647b.js"
     ],
     "css": [
       "_app/immutable/assets/Categoria-d423eea6.css"
     ]
   },
-  "_store-417cc7a0.js": {
-    "file": "_app/immutable/chunks/store-417cc7a0.js",
+  "_store-a1d7f94c.js": {
+    "file": "_app/immutable/chunks/store-a1d7f94c.js",
     "imports": [
-      "_index-c824edcc.js"
+      "_index-efb87244.js"
     ]
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
-  },
-  "src/routes/blog/come-scrivere-un-post-in-markdown.css": {
-    "file": "_app/immutable/assets/come-scrivere-un-post-in-markdown-86d7e987.css",
-    "src": "src/routes/blog/come-scrivere-un-post-in-markdown.css"
+  "__post-a7638e37.js": {
+    "file": "_app/immutable/chunks/_post-a7638e37.js",
+    "imports": [
+      "_index-02a6647b.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_post-dc5f4020.css"
+    ]
   },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
   },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-dc5f4020.css",
+    "src": "_post.css"
+  },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
+  },
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-7dfa9a8c.css",

@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://profmancusoa.github.io/</loc>
-        <lastmod>2022-08-20T20:37:58.751Z</lastmod>
+        <lastmod>2022-08-20T22:09:33.735Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
         <image:image>
@@ -20,11 +20,20 @@
     </url>
 <url>
 <loc>https://profmancusoa.github.io/blog/come-scrivere-un-post-in-markdown/</loc>
-<lastmod>2022-08-20T20:37:58.751Z</lastmod>
+<lastmod>2022-08-20T22:09:33.735Z</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.7</priority>
 <image:image>
     <image:loc>https://profmancusoa.github.io/img/posts/come-scrivere-un-post-in-markdown/cover.jpg</image:loc>
+</image:image>
+</url>
+<url>
+<loc>https://profmancusoa.github.io/blog/il-blog-profmancusoa/</loc>
+<lastmod>2022-08-20T22:09:33.735Z</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.7</priority>
+<image:image>
+    <image:loc>https://profmancusoa.github.io/img/posts/il-blog-profmancusoa/profmancusoa.png</image:loc>
 </image:image>
 </url>
 </urlset>

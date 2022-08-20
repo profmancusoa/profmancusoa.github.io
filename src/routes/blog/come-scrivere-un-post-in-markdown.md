@@ -1,7 +1,7 @@
 ---
 id: 2022-08-19-0
 titolo: Come scrivere un post in Markdown
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2022-08-19
 cover: cover.jpg

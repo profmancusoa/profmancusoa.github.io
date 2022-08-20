@@ -4,6 +4,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { title_to_slug } from '$lib/helpers/helpers';
+	import { dev } from '$app/env';
 
 	export let id;
 	export let titolo;
@@ -23,19 +24,22 @@
 	cover = title_to_slug(titolo) + '/' + cover;
 
 	onMount(() => {
-		var disqus_config = function () {
-			this.page.url = post_url;
-			this.page.identifier = post_uid;
-		};
+		if (!dev) {
+			//commenti solo in produzione
+			var disqus_config = function () {
+				this.page.url = post_url;
+				this.page.identifier = post_uid;
+			};
 
-		(function () {
-			// DON'T EDIT BELOW THIS LINE
-			var d = document,
-				s = d.createElement('script');
-			s.src = 'https://profmancusoa.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
+			(function () {
+				// DON'T EDIT BELOW THIS LINE
+				var d = document,
+					s = d.createElement('script');
+				s.src = 'https://profmancusoa.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		}
 	});
 </script>
 
@@ -101,16 +105,16 @@
 		<slot />
 	</section>
 
-    <hr>
+	<hr />
 	<!-- disqus comments -->
 	<div id="disqus_thread" />
 </article>
 
 <style>
-    hr {
-        border: 2px solid blue;
-        border-radius: 5px;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-    }
+	hr {
+		border: 2px solid blue;
+		border-radius: 5px;
+		margin-top: 5rem;
+		margin-bottom: 3rem;
+	}
 </style>
