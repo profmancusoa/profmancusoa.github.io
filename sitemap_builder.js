@@ -48,7 +48,7 @@ let post_to_fname = (post) => {
 let post_to_cover = async (post) => {
 	try {
 		const data = await fs.readFile(POST_DIR + post, { encoding: 'utf8' });
-		if (data.indexOf('categoria') > 0) {
+		if (data.indexOf('cover') > 0) {
 			var rx = /\ncover:(.*)\n/g;
 			return rx.exec(data)[1].replace(/ /g, '');
 		}
@@ -62,9 +62,12 @@ let post_to_cover = async (post) => {
 	let SITEMAP_ENTRIES = '';
 
 	let posts_files = await find_posts(POST_DIR);
+	//console.log(posts_files);
 	for (const post of posts_files) {
 		let post_file = await post_to_fname(post);
 		let cover = await post_to_cover(post);
+
+		// console.log(`${post} - ${post_file} - ${cover} `);
 
 		SITEMAP_ENTRIES = SITEMAP_ENTRIES.concat(
 			SITEMAP_ENTRY.replaceAll('{post_fname}', post_file).replace('{post_cover}', cover)

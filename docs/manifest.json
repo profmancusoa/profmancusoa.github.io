@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-183eb204.js",
+    "file": "_app/immutable/start-313f8c28.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -11,6 +11,7 @@
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
+      "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
       "src/routes/blog/come-scrivere-un-post-in-markdown.md",
       "src/routes/blog/il-blog-profmancusoa.md",
       "src/routes/index.svelte"
@@ -51,6 +52,18 @@
     ],
     "css": [
       "_app/immutable/assets/index-f64b60f3.css"
+    ]
+  },
+  "src/routes/blog/come-pubblicare-un-post-sul-blog.md": {
+    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-7274fc4f.js",
+    "src": "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-468b936d.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
   "src/routes/blog/come-scrivere-un-post-in-markdown.md": {
