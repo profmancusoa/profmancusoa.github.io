@@ -53,7 +53,7 @@
 			<div class="col-lg-1" />
 
 			<!-- Sidebar-->
-			<div class="col-lg-3">
+			<div class="col-lg-3 d-none d-lg-block">
 				<!-- <Search /> -->
 				<Categories />
 			</div>
