@@ -9,6 +9,8 @@ introduzione: Questo post descrive dettagliatamente come creare e pubblicare un 
 sezione: Blog
 categorie:
   - Blog
+  - git
+  - GitHub
 ---
 
 <script>
