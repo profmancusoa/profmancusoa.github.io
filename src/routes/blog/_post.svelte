@@ -31,6 +31,7 @@
 				this.page.identifier = post_uid;
 			};
 
+			console.log(post_url);
 			(function () {
 				// DON'T EDIT BELOW THIS LINE
 				var d = document,
@@ -39,6 +40,8 @@
 				s.setAttribute('data-timestamp', +new Date());
 				(d.head || d.body).appendChild(s);
 			})();
+			//aggiorna il contatore dei commenti
+			DISQUSWIDGETS.getCount({ reset: true });
 		}
 	});
 </script>
@@ -80,7 +83,12 @@
 		<!-- titolo -->
 		<h1 class="fw-bolder mb-2">{titolo}</h1>
 		<!-- metadata-->
-		<div class="text-muted fst-italic mb-3 fs-5">{autore} - {date_convert(data)}</div>
+		<div class="text-muted fst-italic mb-3 fs-5">
+			{autore} - {date_convert(data)}
+			{#if !dev}
+				- <a class="text-muted" href="{post_url.slice(0, -1)}#disqus_thread">Counter</a>
+			{/if}
+		</div>
 		<!-- categorie-->
 		{#each categorie as categoria}
 			<span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1"
