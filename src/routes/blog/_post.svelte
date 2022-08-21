@@ -86,7 +86,7 @@
 		<div class="text-muted fst-italic mb-3 fs-5">
 			{autore} - {date_convert(data)}
 			{#if !dev}
-				- <a class="text-muted" href="{post_url.slice(0, -1)}#disqus_thread">Counter</a>
+				- <a class="text-muted" href="{post_url.slice(0, -1)}#disqus_thread">0 commenti</a>
 			{/if}
 		</div>
 		<!-- categorie-->
