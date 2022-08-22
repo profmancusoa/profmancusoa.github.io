@@ -5,13 +5,15 @@
 	let categorie = [];
 	let categorie_left, categorie_right;
 
-	// ricato la lista delle catagerie dai post e le suddividi in desto e sinistro
+	// ricavo la lista delle catagerie dai post e le suddividi in desto e sinistro
 	(function () {
 		let _categorie = new Set();
 		$all_posts.forEach((post) => {
-			post.metadata.categorie.forEach((categoria) => {
-				_categorie.add(categoria);
-			});
+            if(post.metadata.pubblicato == true) {   
+                post.metadata.categorie.forEach((categoria) => {
+                    _categorie.add(categoria);
+                });
+            }
 		});
 		categorie = [..._categorie];
 		let middle_cat = Math.round(categorie.length / 2);
