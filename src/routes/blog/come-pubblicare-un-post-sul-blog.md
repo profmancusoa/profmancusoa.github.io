@@ -6,6 +6,7 @@ autore: ProfMancusoa
 data: 2022-08-21
 cover: cover.webp
 introduzione: Questo post descrive dettagliatamente come creare e pubblicare un post sul blog ProfMancusoa
+pubblicato: true
 sezione: Blog
 categorie:
   - Blog

@@ -6,6 +6,7 @@ autore: ProfMancusoa
 data: 2022-08-19
 cover: cover.webp
 introduzione: Questo post descrive brevemente come creare nuovi post
+pubblicato: true
 sezione: Blog
 categorie:
   - Blog

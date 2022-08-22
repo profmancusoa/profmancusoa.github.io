@@ -13,6 +13,7 @@
 	export let data;
 	export let cover;
 	export let introduzione;
+    export let pubblicato;
 	export let categorie;
 	export let sezione;
 

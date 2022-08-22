@@ -58,6 +58,19 @@ let post_to_cover = async (post) => {
 	}
 };
 
+let post_pubblicato = async (post) => {
+	try {
+		const data = await fs.readFile(POST_DIR + post, { encoding: 'utf8' });
+		if (data.indexOf('pubblicato') > 0) {
+			var rx = /\npubblicato:(.*)\n/g;
+			return rx.exec(data)[1].replace(/ /g, '').toLowerCase() === 'true';
+		}
+		return false;
+	} catch (err) {
+		console.log(err);
+	}
+};
+
 (async function () {
 	let SITEMAP_ENTRIES = '';
 
@@ -66,16 +79,18 @@ let post_to_cover = async (post) => {
 	for (const post of posts_files) {
 		let post_file = await post_to_fname(post);
 		let cover = await post_to_cover(post);
+        let pubblicato = await post_pubblicato(post);
 
 		// console.log(`${post} - ${post_file} - ${cover} `);
 
-		SITEMAP_ENTRIES = SITEMAP_ENTRIES.concat(
-			SITEMAP_ENTRY.replaceAll('{post_fname}', post_file).replace('{post_cover}', cover)
-		);
+        if (pubblicato == true)
+            SITEMAP_ENTRIES = SITEMAP_ENTRIES.concat(
+                SITEMAP_ENTRY.replaceAll('{post_fname}', post_file).replace('{post_cover}', cover)
+            );
 	}
 
 	let xml = SITEMAP_HEADER + SITEMAP_ENTRIES + SITEMAP_TAIL;
 	let now = new Date().toISOString();
 	fs.writeFile('sitemap.xml', xml.replaceAll('{timestamp}', now));
-	console.log('sitemap.xml creato con successo!!!');
+    console.log(`sitemap.xml [${SITEMAP_ENTRIES.split('<url>').length + 1} entry] creato con successo!!!`);
 })();

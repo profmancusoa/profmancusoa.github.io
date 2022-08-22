@@ -6,6 +6,7 @@ autore: ProfMancusoa
 data: 2022-08-20
 cover: profmancusoa.webp
 introduzione: Un blog diverso, inteso come spazio di condivisione, cooperazione ed apprendimento.
+pubblicato: true
 sezione: Blog
 categorie:
   - Blog

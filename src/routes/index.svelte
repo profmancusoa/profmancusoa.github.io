@@ -11,11 +11,12 @@
 	let post_page_start = 0;
 
 	// find featured posts and remove it from posts
-	let featured = posts.filter((item) => item.metadata.featured == true);
+	let featured = posts.filter((item) => item.metadata.featured == true && item.metadata.pubblicato ==  true);
 	if (featured.length > 0) {
 		let featured_idx = posts.indexOf(featured[0]);
 		posts.splice(featured_idx, 1);
 	}
+    posts = posts.filter((item) => item.metadata.pubblicato ==  true);
 
 	function cambio_pagina(event) {
 		post_page_start = event.detail.idx_start;

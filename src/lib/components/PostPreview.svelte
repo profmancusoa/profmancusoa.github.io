@@ -7,6 +7,7 @@
 	//     data: '2022-04-20T00:00:00.000Z',
 	//     cover: 'img4.jpg',
 	//     introduzione: "Introduzione dell'articolo 4",
+    //     pubblicato: true
 	//     categorie: [ 'Informatica', 'C' ],
 	//     sezione: Programmazione
 	//     path: '/blog/4'
