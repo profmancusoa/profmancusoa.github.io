@@ -2,6 +2,7 @@
 	import PostPreview from '$lib/components/PostPreview.svelte';
 	import Paginatore from '$lib/components/Paginatore.svelte';
 	import { all_posts } from '$lib/stores/store';
+    import { dev } from '$app/env';
 
 	const PAGE_SIZE = 4; // numero di post sulla home
 	//necessario per le visualizzazioni successive della home
@@ -16,7 +17,7 @@
 		let featured_idx = posts.indexOf(featured[0]);
 		posts.splice(featured_idx, 1);
 	}
-    posts = posts.filter((item) => item.metadata.pubblicato ==  true);
+    posts = posts.filter((item) => item.metadata.pubblicato ==  true || dev);
 
 	function cambio_pagina(event) {
 		post_page_start = event.detail.idx_start;

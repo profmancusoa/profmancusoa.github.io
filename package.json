@@ -12,7 +12,8 @@
 		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
 		"test": "playwright test",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+        "article_new": "node article.js"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.22.2",
