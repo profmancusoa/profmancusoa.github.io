@@ -1,16 +1,17 @@
 ---
 id: 2022-08-25-0
-titolo: come generare e gestire le password
+titolo: Come generare e gestire le password
 featured: false
 autore: Dario Ruggieri
 data: 2022-08-25
 cover: cover.webp
 introduzione: Post dedicato alla generazione e gestione delle password
+pubblicato: true
 sezione: IT
 categorie: 
-  -password
-  -Linux
-  -sicurezza
+  - Password
+  - Linux
+  - Sicurezza
 ---
 
 # Password
@@ -52,7 +53,7 @@ man pwgen
 ## Password Manager
 
 Abbiamo visto come generare una password, ora scopriamo come custodirla. Un password manager è un programma che ci permette di custodire in modo sicuro le nostre password. Anche qui esistono migliaia di password manager. In questo post vorrei approfondire il password manager _KeePassXC_
-_KeePassXC_ è disponibile per Windows, Linux e MacOS. Installarlo è semplicissimo, accedendo alla [pagina ufficiale](https://keepassxc.org/) nella sezione _download_ è possibile scaricare ed installare _KeePassXC_.
+_KeePassXC_ è disponibile per Windows, Linux e MacOS. Installarlo è semplicissimo, accedendo alla <a href="https://keepassxc.org/" target="_blank">pagina ufficiale</a> nella sezione _download_ è possibile scaricare ed installare _KeePassXC_.
 
 ### Come Funziona
 
