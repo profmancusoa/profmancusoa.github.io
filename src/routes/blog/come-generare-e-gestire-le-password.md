@@ -1,13 +1,15 @@
 ---
 id: 2022-08-25-0
-titolo: Come generare e gestire le password
+titolo: come generare e gestire le password
 featured: false
-autore: Dario-Ruggieri
+autore: Dario Ruggieri
 data: 2022-08-25
 cover: cover.webp
 introduzione: Post dedicato alla generazione e gestione delle password
 sezione: IT
-categorie: -password
+categorie: 
+-password
+-Linux
 ---
 
 # Password
@@ -28,28 +30,22 @@ Esistono migliaia se non milioni di programmi per generare password. Tra i più 
 
 Queste sono sicuramente valide scelte, ma per coloro che usano _Linux_ tutto ciò non servirà. Come sempre, _Linux_ ha un tool al nostro servizio. Questo tool è _pwgen_, comando da terminale che ci permette di generare qualsiasi tipo di password. Usarlo è semplicissimo, basta digitare il comando ed eseguire:
 
-```yaml
----
+```bash
 pwgen
----
 ```
 
 Installare _pwgen_ è semplicissimo, esegui questi due comandi e il gioco sarà fatto:
 
-```yaml
----
+```bash
 sudo apt-get update
 sudo apt-get install pwgen
----
 ```
 
 _pwgen_ ti permette di generare le password che vuoi, esistono tantissime varianti. Puoi specificare il numero di caratteri, la tipologia, la complessità della tua password....
 Se vuoi scoprire queste funzioni semplicemente consulta il manuale:
 
-```yaml
----
+```bash
 man pwgen
----
 ```
 
 ## Password Manager
