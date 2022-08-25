@@ -11632,145 +11632,306 @@ fieldset:disabled .btn {
 }
 /* #endregion */
 
-header > h1 {
-	font-size: calc(var(--post-base-font-size) * 2.5);
-	line-height: var(--post-base-h-line-height);
-	font-weight: bolder;
+@media screen and (min-width: 576px) {
+	header > h1 {
+		font-size: calc(var(--post-base-font-size) * 2.2);
+		line-height: var(--post-base-h-line-height);
+		font-weight: bolder;
+	}
+
+	.post > h1,
+	.post > h2,
+	.post > h3,
+	.post > h4,
+	.post > h5,
+	.post > h6,
+	header > h1 {
+		color: var(--post-text-color);
+	}
+
+	.post > h1 {
+		font-size: calc(var(--post-base-font-size) * 2.1);
+		line-height: var(--post-base-h-line-height);
+		font-weight: bolder;
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.post > h2 {
+		font-size: calc(var(--post-base-font-size) * 1.6);
+		line-height: var(--post-base-h-line-height);
+		font-weight: bolder;
+		margin-top: 2.1rem;
+		margin-bottom: 2.1rem;
+	}
+
+	.post > h3 {
+		font-size: calc(var(--post-base-font-size) * 1.1);
+		line-height: calc(var(--post-base-h-line-height) / 2);
+		font-weight: bold;
+		margin-top: 1.7rem;
+		margin-bottom: 1.7rem;
+	}
+
+	.post > h4 {
+		font-size: calc(var(--post-base-font-size) * 0.7);
+		line-height: calc(var(--post-base-h-line-height) / 2);
+		font-weight: bold;
+		margin-top: 1.3rem;
+		margin-bottom: 1.3rem;
+	}
+
+	.post > h5 {
+		font-size: calc(var(--post-base-font-size) * 0.7);
+		line-height: calc(var(--post-base-h-line-height) / 4);
+		margin-top: 0.9rem;
+		margin-bottom: 0.9rem;
+	}
+
+	.post > h6 {
+		font-size: calc(var(--post-base-font-size) * 0.2);
+		line-height: calc(var(--post-base-h-line-height) / 4);
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.post > p {
+		text-align: justify;
+		font-size: var(--post-base-font-size);
+		line-height: var(--post-p-line-height);
+		margin-top: 0px;
+		margin-bottom: 2rem;
+		color: var(--post-text-color);
+	}
+
+	.post ol,
+	ul {
+		margin-bottom: 2rem;
+		list-style: none;
+		padding-left: 3rem;
+		counter-reset: section;
+	}
+
+	.post > * > li {
+		font-size: var(--post-base-font-size);
+		line-height: 32px;
+		margin-bottom: 8px;
+		color: var(--post-text-color);
+	}
+
+	.post > ul li:before {
+		content: '•';
+		color: var(--post-li-text-color);
+		font-weight: bold;
+		font-size: 2rem;
+		display: inline-block;
+		left: -1rem;
+		top: 0.18rem;
+		position: relative;
+	}
+
+	.post > ol li:before {
+		counter-increment: section;
+		content: counters(section, '.') '.';
+		color: var(--post-li-text-color);
+		font-weight: bolder;
+		display: inline-block;
+		left: -1rem;
+		top: 0.18rem;
+		position: relative;
+	}
+
+	.post > blockquote,
+	.post > blockquote > blockquote {
+		font-size: var(--post-base-font-size);
+		line-height: 32px;
+		background-color: var(--post-blockquote-bg-color);
+		border-left: 10px solid var(--post-blockquote-margin-color);
+		margin: 1.5em 10px;
+		padding: 1em 10px 0.1em 10px;
+		quotes: '\201C''\201D''\2018''\2019';
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 40px;
+		margin-inline-end: 40px;
+		color: var(--post-text-color);
+	}
+
+	.post > hr {
+		height: 2px;
+	}
+
+	.post > pre {
+		margin-bottom: 2rem !important;
+	}
+
+	.post > p > code {
+		color: blue;
+		background-color: #d4caca; /* #F7F7F7; */
+		padding: 0.3rem;
+	}
+
+	.post > p > img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.card-body > p {
+		font-size: calc(var(--post-base-font-size) / 1.4);
+	}
 }
 
-.post > h1,
-.post > h2,
-.post > h3,
-.post > h4,
-.post > h5,
-.post > h6,
-header > h1 {
-	color: var(--post-text-color);
-}
+@media screen and (max-width: 576px) {
+    article {
+        padding: 0rem 1rem 1rem 1rem;
+    }
 
-.post > h1 {
-	font-size: calc(var(--post-base-font-size) * 2.2);
-	line-height: var(--post-base-h-line-height);
-	font-weight: bolder;
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-}
+	header > h1 {
+		font-size: calc(var(--post-base-font-size) * 2.0);
+		line-height: var(--post-base-h-line-height);
+		font-weight: bolder;
+	}
 
-.post > h2 {
-	font-size: calc(var(--post-base-font-size) * 1.7);
-	line-height: var(--post-base-h-line-height);
-	font-weight: bolder;
-	margin-top: 2.1rem;
-	margin-bottom: 2.1rem;
-}
+	.post > h1,
+	.post > h2,
+	.post > h3,
+	.post > h4,
+	.post > h5,
+	.post > h6,
+	header > h1 {
+		color: var(--post-text-color);
+	}
 
-.post > h3 {
-	font-size: calc(var(--post-base-font-size) * 1.2);
-	line-height: calc(var(--post-base-h-line-height) / 2);
-	font-weight: bold;
-	margin-top: 1.7rem;
-	margin-bottom: 1.7rem;
-}
+	.post > h1 {
+		font-size: calc(var(--post-base-font-size) * 1.5);
+		line-height: var(--post-base-h-line-height);
+		font-weight: bolder;
+		margin-top: 2.0rem;
+		margin-bottom: 2.0rem;
+	}
 
-.post > h4 {
-	font-size: calc(var(--post-base-font-size) * 0.7);
-	line-height: calc(var(--post-base-h-line-height) / 2);
-	font-weight: bold;
-	margin-top: 1.3rem;
-	margin-bottom: 1.3rem;
-}
+	.post > h2 {
+		font-size: calc(var(--post-base-font-size) * 1.2);
+		line-height: var(--post-base-h-line-height);
+		font-weight: bolder;
+		margin-top: 1.6rem;
+		margin-bottom: 1.6rem;
+	}
 
-.post > h5 {
-	font-size: calc(var(--post-base-font-size) * 0.7);
-	line-height: calc(var(--post-base-h-line-height) / 4);
-	margin-top: 0.9rem;
-	margin-bottom: 0.9rem;
-}
+	.post > h3 {
+		font-size: calc(var(--post-base-font-size) * 0.9);
+		line-height: calc(var(--post-base-h-line-height) / 2);
+		font-weight: bold;
+		margin-top: 1.2rem;
+		margin-bottom: 1.2rem;
+	}
 
-.post > h6 {
-	font-size: calc(var(--post-base-font-size) * 0.2);
-	line-height: calc(var(--post-base-h-line-height) / 4);
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-}
+	.post > h4 {
+		font-size: calc(var(--post-base-font-size) * 0.4);
+		line-height: calc(var(--post-base-h-line-height) / 2);
+		font-weight: bold;
+		margin-top: 0.8rem;
+		margin-bottom: 0.8rem;
+	}
 
-.post > p {
-	text-align: justify;
-	font-size: var(--post-base-font-size);
-	line-height: var(--post-p-line-height);
-	margin-top: 0px;
-	margin-bottom: 2rem;
-	color: var(--post-text-color);
-}
+	.post > h5 {
+		font-size: calc(var(--post-base-font-size) * 0.4);
+		line-height: calc(var(--post-base-h-line-height) / 4);
+		margin-top: 0.4rem;
+		margin-bottom: 0.4rem;
+	}
 
-.post ol,
-ul {
-	margin-bottom: 2rem;
-	list-style: none;
-	padding-left: 3rem;
-	counter-reset: section;
-}
+	.post > h6 {
+		font-size: calc(var(--post-base-font-size) * 0.4);
+		line-height: calc(var(--post-base-h-line-height) / 4);
+		margin-top: 0.1rem;
+		margin-bottom: 0.1rem;
+	}
 
-.post > * > li {
-	font-size: var(--post-base-font-size);
-	line-height: 32px;
-	margin-bottom: 8px;
-	color: var(--post-text-color);
-}
+	.post > p {
+		text-align: justify;
+		font-size: calc(var(--post-base-font-size) / 1.1);
+		line-height: calc(var(--post-p-line-height) / 1.2);
+		margin-top: 0px;
+		margin-bottom: 2rem;
+		color: var(--post-text-color);
+	}
 
-.post > ul li:before {
-	content: '•';
-	color: var(--post-li-text-color);
-	font-weight: bold;
-	font-size: 2rem;
-	display: inline-block;
-	left: -1rem;
-	top: 0.18rem;
-	position: relative;
-}
+	.post ol,
+	ul {
+		margin-bottom: 2rem;
+		list-style: none;
+		padding-left: 3rem;
+		counter-reset: section;
+	}
 
-.post > ol li:before {
-	counter-increment: section;
-	content: counters(section, '.') '.';
-	color: var(--post-li-text-color);
-	font-weight: bolder;
-	display: inline-block;
-	left: -1rem;
-	top: 0.18rem;
-	position: relative;
-}
+	.post > * > li {
+		font-size: calc(var(--post-base-font-size) / 1.1);
+		line-height: 32px;
+		margin-bottom: 8px;
+		color: var(--post-text-color);
+	}
 
-.post > blockquote,
-.post > blockquote > blockquote {
-	font-size: var(--post-base-font-size);
-	line-height: 32px;
-	background-color: var(--post-blockquote-bg-color);
-	border-left: 10px solid var(--post-blockquote-margin-color);
-	margin: 1.5em 10px;
-	padding: 1em 10px 0.1em 10px;
-	quotes: '\201C''\201D''\2018''\2019';
-	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 40px;
-	margin-inline-end: 40px;
-	color: var(--post-text-color);
-}
+	.post > ul li:before {
+		content: '•';
+		color: var(--post-li-text-color);
+		font-weight: bold;
+		font-size: 2rem;
+		display: inline-block;
+		left: -1rem;
+		top: 0.18rem;
+		position: relative;
+	}
 
-.post > hr {
-	height: 2px;
-}
+	.post > ol li:before {
+		counter-increment: section;
+		content: counters(section, '.') '.';
+		color: var(--post-li-text-color);
+		font-weight: bolder;
+		display: inline-block;
+		left: -1rem;
+		top: 0.18rem;
+		position: relative;
+	}
 
-.post > pre {
-	margin-bottom: 2rem !important;
-}
+	.post > blockquote,
+	.post > blockquote > blockquote {
+		font-size: calc(var(--post-base-font-size) / 1.1);
+		line-height: 32px;
+		background-color: var(--post-blockquote-bg-color);
+		border-left: 10px solid var(--post-blockquote-margin-color);
+		margin: 1.5em 10px;
+		padding: 1em 10px 0.1em 10px;
+		quotes: '\201C''\201D''\2018''\2019';
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 40px;
+		margin-inline-end: 40px;
+		color: var(--post-text-color);
+	}
 
-.post > p > code {
-	color: blue;
-	background-color: #d4caca; /* #F7F7F7; */
-	padding: 0.3rem;
-}
+	.post > hr {
+		height: 1px;
+	}
 
-.card-body > p {
-	font-size: calc(var(--post-base-font-size) / 1.4);
+	.post > pre {
+		margin-bottom: 2rem !important;
+	}
+
+	.post > p > code {
+		color: blue;
+		background-color: #d4caca;
+		padding: 0.3rem;
+	}
+
+	.post > p > img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.card-body > p {
+		font-size: calc(var(--post-base-font-size) / 1.4);
+	}
 }
