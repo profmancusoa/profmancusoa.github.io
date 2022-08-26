@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-93a36332.js",
+    "file": "_app/immutable/start-aed4b1f3.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -59,7 +59,7 @@
     ]
   },
   "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md": {
-    "file": "_app/immutable/pages/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md-039b9490.js",
+    "file": "_app/immutable/pages/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md-1089679d.js",
     "src": "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -195,6 +195,10 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-dc5f4020.css",
+    "src": "_post.css"
+  },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
@@ -206,10 +210,6 @@
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
-  },
-  "_post.css": {
-    "file": "_app/immutable/assets/_post-dc5f4020.css",
-    "src": "_post.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-4e02b81a.css",

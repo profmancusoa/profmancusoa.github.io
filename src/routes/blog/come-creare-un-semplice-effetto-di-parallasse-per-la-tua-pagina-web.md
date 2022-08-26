@@ -1,7 +1,7 @@
 ---
 id: 2022-08-26-0
 titolo: Come creare un semplice effetto di parallasse per la tua pagina web
-featured: true
+featured: false
 autore: Alexandru Ioan Chindris
 data: 2022-08-26
 cover: cover.webp
