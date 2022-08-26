@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-092d8f9a.js",
+    "file": "_app/immutable/start-93a36332.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -11,6 +11,7 @@
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
+      "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
       "src/routes/blog/come-generare-e-gestire-le-password.md",
       "src/routes/blog/come-installare-projectlibre-su-linux.md",
       "src/routes/blog/come-navigare-tra-le-finestre-di-popos.md",
@@ -21,7 +22,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-9d78e540.js",
+    "file": "_app/immutable/pages/__layout.svelte-856ad28c.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -55,6 +56,18 @@
     ],
     "css": [
       "_app/immutable/assets/index-f64b60f3.css"
+    ]
+  },
+  "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md": {
+    "file": "_app/immutable/pages/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md-039b9490.js",
+    "src": "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
   "src/routes/blog/come-generare-e-gestire-le-password.md": {
