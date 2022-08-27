@@ -4,16 +4,16 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run post_build",
-		"post_build": "npm run sitemap && touch docs/.nojekyll && cp google30f827e09b16a4e0.html docs && cp robots.txt docs && cp sitemap.xml docs",
+		"post_build": "npm run sitemap && touch docs/.nojekyll && cp google30f827e09b16a4e0.html docs && cp BingSiteAuth.xml docs && cp robots.txt docs && cp sitemap.xml docs",
 		"sitemap": "node sitemap_builder.js",
-        "package": "svelte-kit package",
+		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
 		"test": "playwright test",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
-        "article_new": "node article.js"
+		"article_new": "node article.js"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.22.2",
@@ -23,7 +23,9 @@
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"image-size": "^1.0.2",
 		"imagemin-cli": "^7.0.0",
+		"js-yaml": "^4.1.0",
 		"mdsvex": "^0.10.6",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
