@@ -4,35 +4,26 @@ const BASE_URL = 'https://profmancusoa.github.io/';
 const POST_DIR = './src/routes/blog/';
 
 const SITEMAP_HEADER = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://profmancusoa.github.io/</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://profmancusoa.github.io/img/blog_banner.png</image:loc>
-        </image:image>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://profmancusoa.github.io/about/</loc>
-        <lastmod>2022-08-19T23:23:00+00:00</lastmod>
+        <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://profmancusoa.github.io/img/avatars/profmancuso.jpg</image:loc>
-        </image:image>
+        <priority>0.5</priority>
     </url>
 `;
-const SITEMAP_ENTRY = `<url>
-<loc>https://profmancusoa.github.io/blog/{post_fname}/</loc>
-<lastmod>{timestamp}</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.7</priority>
-<image:image>
-    <image:loc>https://profmancusoa.github.io/img/posts/{post_fname}/{post_cover}</image:loc>
-</image:image>
-</url>
+const SITEMAP_ENTRY = `    <url>
+        <loc>https://profmancusoa.github.io/blog/{post_fname}/</loc>
+        <lastmod>{timestamp}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
 `;
 const SITEMAP_TAIL = '</urlset>';
 
