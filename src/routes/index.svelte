@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog ProfmMancusoa</title>
+	<title>Blog ProfMancusoa</title>
 	<meta
 		name="description"
 		content="Smanettando si impara. Blog di tecnologie informatiche per studenti e giovani informatici"

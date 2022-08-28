@@ -20,7 +20,7 @@
 					height="36"
 				/>
 			</div>
-			<a class="navbar-brand" href="/"><b>ProfMancusoa</b></a>
+			<a class="navbar-brand" href="/"><h1>ProfMancusoa</h1></a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -49,4 +49,7 @@
 		border-radius: 50%;
 		margin-right: 2rem;
 	}
+    h1 {
+        font-size: 1.4rem;
+    }
 </style>
