@@ -12,7 +12,7 @@ categorie:
   - Blog
 ---
 
-# Ancora un altro blog
+## Ancora un altro blog
 
 Ma veramente c'è bisogno di un altro blog?
 
