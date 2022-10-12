@@ -42,9 +42,19 @@ In Visual Studio Code, nella directory `src/routes/blog` creau un file .md con n
 
 ![pos_05](/img/posts/come-pubblicare-un-post-sul-blog/pos_05.webp)
 
+In alternativa potete invocare lo script `article_new` nel seguente modo:
+
+```bash
+npm run article_new "Il mio articolo di prova"
+```
+
+dove "Il mio articolo di prova" è il titolo del vostro articolo.
+
+Lo script genererà automaticamente tutte le risorse necessarie per scrivere l'articolo.
+
 ## 3 Editiamo l'articolo
 
-Ora scrivi il tuo articolo nel file appena creato, facendo attenzione a compilare correttamente il frontmmatter
+Ora scrivi il tuo articolo nel file appena creato, facendo attenzione a compilare correttamente il frontmatter
 
 ```md
 ---
@@ -55,6 +65,7 @@ autore: JohnDoe
 data: 2022-08-21
 cover: cover.webp
 introduzione: Questo è il primo posti di JohnDoe e parla di Linux
+pubblicato: false
 sezione: IT
 categorie:
   - Linux

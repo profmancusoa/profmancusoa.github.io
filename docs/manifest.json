@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-f11cbb85.js",
+    "file": "_app/immutable/start-3162520c.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -11,6 +11,7 @@
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
+      "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
       "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
       "src/routes/blog/come-generare-e-gestire-le-password.md",
       "src/routes/blog/come-installare-projectlibre-su-linux.md",
@@ -56,6 +57,18 @@
     ],
     "css": [
       "_app/immutable/assets/index-f64b60f3.css"
+    ]
+  },
+  "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md": {
+    "file": "_app/immutable/pages/blog/come-creare-un-applicazione-front-end-con-svelte.md-74b6849d.js",
+    "src": "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
   "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md": {
@@ -107,7 +120,7 @@
     ]
   },
   "src/routes/blog/come-pubblicare-un-post-sul-blog.md": {
-    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-ac976105.js",
+    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-20d31940.js",
     "src": "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -195,17 +208,17 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
   },
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",

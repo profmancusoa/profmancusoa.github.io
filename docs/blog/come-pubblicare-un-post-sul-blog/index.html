@@ -45,14 +45,14 @@ hr.svelte-1rgaz2e{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 	<link href="/_app/immutable/assets/__layout-0f27121f.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/Categoria-d423eea6.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/_post-dc5f4020.css" rel="stylesheet" disabled media="(max-width: 0)">
-	<link rel="modulepreload" href="/_app/immutable/start-f11cbb85.js">
+	<link rel="modulepreload" href="/_app/immutable/start-3162520c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-02a6647b.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-efb87244.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-33a80d7d.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/helpers-e147ed77.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Categoria.svelte_svelte_type_style_lang-56b3738a.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/store-a1d7f94c.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-ac976105.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-20d31940.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-421b6498.js">
 	</head>
 	<body>
@@ -95,8 +95,12 @@ hr.svelte-1rgaz2e{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 <h2>2 Creiamo il file del post</h2>
 <p>In Visual Studio Code, nella directory <code>src/routes/blog</code> creau un file .md con nome uguale allo slug del titolo ( es: <strong><em>il-mio-post.md</em></strong> )</p>
 <p><img src="/img/posts/come-pubblicare-un-post-sul-blog/pos_05.webp" alt="pos_05"></p>
+<p>In alternativa potete invocare lo script <code>article_new</code> nel seguente modo:</p>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token function">npm</span> run article_new <span class="token string">"Il mio articolo di prova"</span></code><!-- HTML_TAG_END --></pre>
+<p>dove “Il mio articolo di prova” è il titolo del vostro articolo.</p>
+<p>Lo script genererà automaticamente tutte le risorse necessarie per scrivere l’articolo.</p>
 <h2>3 Editiamo l’articolo</h2>
-<p>Ora scrivi il tuo articolo nel file appena creato, facendo attenzione a compilare correttamente il frontmmatter</p>
+<p>Ora scrivi il tuo articolo nel file appena creato, facendo attenzione a compilare correttamente il frontmatter</p>
 <pre class="language-md"><!-- HTML_TAG_START --><code class="language-md"><span class="token front-matter-block"><span class="token punctuation">---</span>
 <span class="token front-matter yaml language-yaml">id: 2022-08-21-1
 titolo: Il mio post
@@ -105,6 +109,7 @@ autore: JohnDoe
 data: 2022-08-21
 cover: cover.webp
 introduzione: Questo è il primo posti di JohnDoe e parla di Linux
+pubblicato: false
 sezione: IT
 categorie:
   - Linux</span>
@@ -155,30 +160,30 @@ qualsiasi circostanza ma anche la modifica, la copia e l'analisi.</code><!-- HTM
 			<div class="col-lg-3 d-none d-lg-block">
 				
 <div class="card mb-4 shadow"><div class="card-header">Categorie</div>
-	<div class="card-body"><div class="row"><div class="col-sm-6 d-flex justify-content-center"><ul class="list-unstyled mb-0"><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">Web Development</span>
-</li><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">HTML</span>
-</li><li class="svelte-1dfn51t"><span class="categoria badge bg-warning text-truncate mb-1 svelte-1dfn51t">Java Script</span>
-</li><li class="svelte-1dfn51t"><span class="categoria badge bg-primary text-truncate mb-1 svelte-1dfn51t">Front End</span>
+	<div class="card-body"><div class="row"><div class="col-sm-6 d-flex justify-content-center"><ul class="list-unstyled mb-0"><li class="svelte-1dfn51t"><span class="categoria badge bg-primary text-truncate mb-1 svelte-1dfn51t">Web Development</span>
+</li><li class="svelte-1dfn51t"><span class="categoria badge bg-success text-truncate mb-1 svelte-1dfn51t">HTML</span>
+</li><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">Java Script</span>
+</li><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">Front End</span>
 </li><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">CSS</span>
-</li><li class="svelte-1dfn51t"><span class="categoria badge bg-success text-truncate mb-1 svelte-1dfn51t">Password</span>
+</li><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">Password</span>
 </li></ul></div>
-			<div class="col-sm-6 d-flex justify-content-center"><ul class="list-unstyled mb-0"><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">Linux</span>
-</li><li class="svelte-1dfn51t"><span class="categoria badge bg-success text-truncate mb-1 svelte-1dfn51t">Sicurezza</span>
-</li><li class="svelte-1dfn51t"><span class="categoria badge bg-info text-truncate mb-1 svelte-1dfn51t">Blog</span>
+			<div class="col-sm-6 d-flex justify-content-center"><ul class="list-unstyled mb-0"><li class="svelte-1dfn51t"><span class="categoria badge bg-primary text-truncate mb-1 svelte-1dfn51t">Linux</span>
+</li><li class="svelte-1dfn51t"><span class="categoria badge bg-danger text-truncate mb-1 svelte-1dfn51t">Sicurezza</span>
+</li><li class="svelte-1dfn51t"><span class="categoria badge bg-danger text-truncate mb-1 svelte-1dfn51t">Blog</span>
 </li><li class="svelte-1dfn51t"><span class="categoria badge bg-warning text-truncate mb-1 svelte-1dfn51t">git</span>
-</li><li class="svelte-1dfn51t"><span class="categoria badge bg-danger text-truncate mb-1 svelte-1dfn51t">GitHub</span>
+</li><li class="svelte-1dfn51t"><span class="categoria badge bg-warning text-truncate mb-1 svelte-1dfn51t">GitHub</span>
 </li></ul></div></div></div></div></div></div></div>
 
 <footer class="py-1 bg-dark fixed-bottom"><div class="container"><p class="m-0 text-center text-white">Copyright © profmancusoa 2022 - v1.2.5</p></div></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="1mlt2qs">
-		import { set_public_env, start } from "/_app/immutable/start-f11cbb85.js";
+		<script type="module" data-sveltekit-hydrate="1xd5c6m">
+		import { set_public_env, start } from "/_app/immutable/start-3162520c.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1mlt2qs"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1xd5c6m"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -187,12 +192,12 @@ qualsiasi circostanza ma anche la modifica, la copia e l'analisi.</code><!-- HTM
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 7],
+				nodes: [0, 8],
 				params: {},
 				routeId: "blog/come-pubblicare-un-post-sul-blog"
 			}
 		});
-	</script><script type="application/json" sveltekit:data-type="data" sveltekit:data-url="/blog/post.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"metadata\":{\"id\":\"2022-08-26-0\",\"titolo\":\"Come creare un semplice effetto di parallasse per la tua pagina web\",\"featured\":false,\"autore\":\"Alexandru Ioan Chindris\",\"data\":\"2022-08-26T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post spiega come creare un effetto di parallasse per il proprio sito web con CSS e Java Script\",\"pubblicato\":true,\"sezione\":\"IT\",\"categorie\":[\"Web Development\",\"HTML\",\"Java Script\",\"Front End\",\"CSS\"],\"path\":\"/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web\"}},{\"metadata\":{\"id\":\"2022-08-25-0\",\"titolo\":\"Come generare e gestire le password\",\"featured\":false,\"autore\":\"Dario Ruggieri\",\"data\":\"2022-08-25T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Post dedicato alla generazione e gestione delle password\",\"pubblicato\":true,\"sezione\":\"IT\",\"categorie\":[\"Password\",\"Linux\",\"Sicurezza\"],\"path\":\"/blog/come-generare-e-gestire-le-password\"}},{\"metadata\":{\"id\":\"2022-08-24-1\",\"titolo\":\"Come installare ProjectLibre su Linux\",\"featured\":false,\"autore\":\"ProfMancuso\",\"data\":\"2022-08-24T00:00:00.000Z\",\"cover\":\"projectlibre.webp\",\"introduzione\":\"Come installare ProjectLibre su Linux in modo facile e veloce\",\"pubblicato\":false,\"sezione\":\"Installazioni\",\"categorie\":[\"ProjectLibre\",\"Linux\"],\"path\":\"/blog/come-installare-projectlibre-su-linux\"}},{\"metadata\":{\"id\":\"2022-08-22-1\",\"titolo\":\"Come navigare tra le finestre di PopOS\",\"featured\":false,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-22T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post descrive come alterare il funzionamento standard della combinazione di tasti ALT+TAB\",\"pubblicato\":false,\"sezione\":\"Linux\",\"categorie\":[\"PopOS\",\"Linux\",\"Configurazione\"],\"path\":\"/blog/come-navigare-tra-le-finestre-di-popos\"}},{\"metadata\":{\"id\":\"2022-08-21-1\",\"titolo\":\"Come pubblicare un post sul blog\",\"featured\":false,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-21T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post descrive dettagliatamente come creare e pubblicare un post sul blog ProfMancusoa\",\"pubblicato\":true,\"sezione\":\"Blog\",\"categorie\":[\"Blog\",\"git\",\"GitHub\"],\"path\":\"/blog/come-pubblicare-un-post-sul-blog\"}},{\"metadata\":{\"id\":\"2022-08-20-1\",\"titolo\":\"Il blog ProfMancusoa\",\"featured\":true,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-20T00:00:00.000Z\",\"cover\":\"profmancusoa.webp\",\"introduzione\":\"Un blog diverso, inteso come spazio di condivisione, cooperazione ed apprendimento.\",\"pubblicato\":true,\"sezione\":\"Blog\",\"categorie\":[\"Blog\"],\"path\":\"/blog/il-blog-profmancusoa\"}},{\"metadata\":{\"id\":\"2022-08-19-0\",\"titolo\":\"Come scrivere un post in Markdown\",\"featured\":false,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-19T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post descrive brevemente come creare nuovi post\",\"pubblicato\":true,\"sezione\":\"Blog\",\"categorie\":[\"Blog\"],\"path\":\"/blog/come-scrivere-un-post-in-markdown\"}}]"}</script></div>
+	</script><script type="application/json" sveltekit:data-type="data" sveltekit:data-url="/blog/post.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"metadata\":{\"id\":\"2022-10-04-1\",\"titolo\":\"Come creare un applicazione front-end con Svelte\",\"featured\":false,\"autore\":\"\u003Cautore>\",\"data\":\"2022-10-04T00:00:00.000Z\",\"cover\":null,\"introduzione\":\"\u003Cintroduzione>\",\"pubblicato\":false,\"sezione\":\"\u003Csezione>\",\"categorie\":[\"\u003Ccategoria1>\",\"\u003Ccategoria2>\"],\"path\":\"/blog/come-creare-un-applicazione-front-end-con-svelte\"}},{\"metadata\":{\"id\":\"2022-08-26-0\",\"titolo\":\"Come creare un semplice effetto di parallasse per la tua pagina web\",\"featured\":false,\"autore\":\"Alexandru Ioan Chindris\",\"data\":\"2022-08-26T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post spiega come creare un effetto di parallasse per il proprio sito web con CSS e Java Script\",\"pubblicato\":true,\"sezione\":\"IT\",\"categorie\":[\"Web Development\",\"HTML\",\"Java Script\",\"Front End\",\"CSS\"],\"path\":\"/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web\"}},{\"metadata\":{\"id\":\"2022-08-25-0\",\"titolo\":\"Come generare e gestire le password\",\"featured\":false,\"autore\":\"Dario Ruggieri\",\"data\":\"2022-08-25T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Post dedicato alla generazione e gestione delle password\",\"pubblicato\":true,\"sezione\":\"IT\",\"categorie\":[\"Password\",\"Linux\",\"Sicurezza\"],\"path\":\"/blog/come-generare-e-gestire-le-password\"}},{\"metadata\":{\"id\":\"2022-08-24-1\",\"titolo\":\"Come installare ProjectLibre su Linux\",\"featured\":false,\"autore\":\"ProfMancuso\",\"data\":\"2022-08-24T00:00:00.000Z\",\"cover\":\"projectlibre.webp\",\"introduzione\":\"Come installare ProjectLibre su Linux in modo facile e veloce\",\"pubblicato\":false,\"sezione\":\"Installazioni\",\"categorie\":[\"ProjectLibre\",\"Linux\"],\"path\":\"/blog/come-installare-projectlibre-su-linux\"}},{\"metadata\":{\"id\":\"2022-08-22-1\",\"titolo\":\"Come navigare tra le finestre di PopOS\",\"featured\":false,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-22T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post descrive come alterare il funzionamento standard della combinazione di tasti ALT+TAB\",\"pubblicato\":false,\"sezione\":\"Linux\",\"categorie\":[\"PopOS\",\"Linux\",\"Configurazione\"],\"path\":\"/blog/come-navigare-tra-le-finestre-di-popos\"}},{\"metadata\":{\"id\":\"2022-08-21-1\",\"titolo\":\"Come pubblicare un post sul blog\",\"featured\":false,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-21T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post descrive dettagliatamente come creare e pubblicare un post sul blog ProfMancusoa\",\"pubblicato\":true,\"sezione\":\"Blog\",\"categorie\":[\"Blog\",\"git\",\"GitHub\"],\"path\":\"/blog/come-pubblicare-un-post-sul-blog\"}},{\"metadata\":{\"id\":\"2022-08-20-1\",\"titolo\":\"Il blog ProfMancusoa\",\"featured\":true,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-20T00:00:00.000Z\",\"cover\":\"profmancusoa.webp\",\"introduzione\":\"Un blog diverso, inteso come spazio di condivisione, cooperazione ed apprendimento.\",\"pubblicato\":true,\"sezione\":\"Blog\",\"categorie\":[\"Blog\"],\"path\":\"/blog/il-blog-profmancusoa\"}},{\"metadata\":{\"id\":\"2022-08-19-0\",\"titolo\":\"Come scrivere un post in Markdown\",\"featured\":false,\"autore\":\"ProfMancusoa\",\"data\":\"2022-08-19T00:00:00.000Z\",\"cover\":\"cover.webp\",\"introduzione\":\"Questo post descrive brevemente come creare nuovi post\",\"pubblicato\":true,\"sezione\":\"Blog\",\"categorie\":[\"Blog\"],\"path\":\"/blog/come-scrivere-un-post-in-markdown\"}}]"}</script></div>
 	</body>
 	<script
 		defer
