@@ -3,15 +3,15 @@
 id: 2022-10-13-1
 titolo: Tipologie di DataBase
 featured: false
-autore: <autore>
+autore: Rizzolo Lorenzo
 data: 2022-10-13
 cover: 
-introduzione: <introduzione>
+introduzione: Ciao a tutti, questo è un articolo sui tipi di DataBase.
 pubblicato: false
-sezione: <sezione>
+sezione: DataBase
 categorie:
-  - <categoria1>
-  - <categoria2>
+  - DataBase MySql
+  - Database NoSql
 ---
 
 # Tipologie di DataBase
