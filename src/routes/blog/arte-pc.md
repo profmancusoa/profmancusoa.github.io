@@ -20,7 +20,7 @@ Innanzitutto la mia visione di “arte del PC” si suddivide in due parti ben d
 - <a href="#configurazione">La maestria nel creare una configurazione ottimale.</a>
 - <a href="#modding">La bellezza che un insieme di componenti elettronici può assumere.</a>
 
-## La maestria nel creare una configurazione ottimale
+## La maestria nel creare una configurazione ottimale<a href="#configurazioni"></a>
 
 Questo argomento riguarda principalmente i PC desktop (fissi) ma lo stesso ragionamento è applicabile anche sui portatili.
 
@@ -45,7 +45,7 @@ Un altro ottimo periodo per comprare, soprattutto componenti del PC, sono i mesi
 
 Per quanto riguarda i PC portatili un aspetto, a mio avviso fondamentale, di cui tener conto è la modularità, ovvero la possibilità di cambiare (upgradare) determinate componenti che sono principalmente RAM e memoria di massa. In questo modo è possibile ridurre la spesa iniziale per acquistare il portatile ed eventualmente aumentare le memorie in un secondo momento.
 
-## La bellezza che un insieme di componenti elettronici può assumere
+## La bellezza che un insieme di componenti elettronici può assumere<a href="#modding"></a>
 
 La massima espressione della bellezza di un PC fisso si raggiunge grazie al modding ovvero la pratica di modificare il case di un computer, e non solo, allo scopo di migliorarne l’aspetto estetico e personalizzarlo.
 
