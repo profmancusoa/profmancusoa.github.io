@@ -32,15 +32,23 @@ Con un semplice click verranno eseguiti decine di comandi in automatico che semp
 
 ### Se vuoi compilare Wineget da zero esegui questi passi:
 
-  -   Installare Rust: <br>
-      Per installare rust eseguiamo il seguente comando: “curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh”. <br>
-      Dopo aver eseguito il comando apparirà a console questo:<br>
+  -   Installare Rust:
+      Per installare rust eseguiamo il seguente comando: 
+      
+      ```console
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+      ```
+
+
+      Dopo aver eseguito il comando apparirà a console questo: <br>
   ![alt text](/img/posts/il-package-manager-per-wine/rustup.png "Rustup")
   Ora premere 1 e aspettare che l'installazione finisca.
   Quando l'installazione sarà finita eseguire questo comando:
+
   ```console
   source "$HOME/.cargo/env"
   ```
+  
   Ora abbiamo Rust e i suoi tools installati e possiamo procedere con la compilazione.
   - Cloniamo la repository di Wineget
     Eseguiamo il seguente comando:
