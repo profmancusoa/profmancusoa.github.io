@@ -3,7 +3,7 @@
 id: 2022-10-21-1
 titolo: Cloud Gaming
 featured: false
-autore: <Gioele Mari>
+autore: Gioele Mari
 data: 2022-10-21
 cover: cover.webp
 introduzione: Si può giocare senza scaricare niente?
