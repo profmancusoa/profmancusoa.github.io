@@ -32,7 +32,7 @@ All'interno del metaverso, la privacy delle informazioni, la dipendenza e la sic
 
 
 
-Il termine “metaverso” è nato dal romanzo di fantascienza di [Neal Stephenson Snow Crash](https://it.wikipedia.org/wiki/Snow_Crash) come combinazione dei termini “meta” e “universo”.
+Il termine “metaverso” è nato dal romanzo di fantascienza di [Neal Stephenson Snow Crash](https://it.wikipedia.org/wiki/Neal_Stephenson) come combinazione dei termini “meta” e “universo”.
 Stephenson caratterizza il Metaverso come un'immensa sfera nera di 65536 km (2<sup>16</sup>) di circonferenza, tagliata in due all'altezza dell'equatore da una strada percorribile anche su di una monorotaia con 256 (2<sup>8</sup>) stazioni, ognuna a 256 km di distanza. Su questa sfera ogni persona può realizzare in 3D ciò che desidera: negozi, uffici, nightclub e altro, il tutto potenzialmente visitabile dagli utenti. 
 
 ![img_1](/img/posts/il-metaverso/download.webp) 
@@ -55,6 +55,15 @@ Quella di Stephenson è una visione futuristica dell'internet moderna, frequenta
 
 Il 28 ottobre del 2021, [Mark Zuckerberg](https://it.wikipedia.org/wiki/Mark_Zuckerberg), cambiò il nome della propria piattaforma, chiamandola Meta e iniziò a parlare intensamente al mondo del Metavers dicendo che:
 "Il metaverso sarà un grande obiettivo, e penso che questa sarà una parte importante del prossimo capitolo dell'evoluzione di internet si evolverà dopo internet mobile e penso che sarà anche il prossimo grande capitolo per la nostra azienda, che raddoppia davvero in quest'area".
-
 ![img_1](/img/posts/il-metaverso/meta.webp)
+
+
+
+ecco un breve presentazione del metaverso.
+
+BUONA VISIONE!!!
+
+    <video width="480" height="320" controls>
+      <source src="/img/posts/il-metaverso/Social-in-the-metaverse.mp4" type=video/mp4>
+    </video>
 
