@@ -1,10 +1,10 @@
 ---
 id: 2022-10-21-0
-titolo: spazi_virtuali
+titolo: Spazi Virtuali
 featured: true
 autore: Luca_Porta
 data: 2022-10-21
-cover: cover.webp
+cover: cover1.webp
 introduzione: Si può scaricare dall'Internet senza limitare nessuna funizone?
 sezione: Blog
 categorie:
