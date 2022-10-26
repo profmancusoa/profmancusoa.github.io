@@ -17,7 +17,7 @@ introduzione: Questo post descrive brevemente cosa parlo in questi blog
 categorie:
   - Blog
 sezione: Blog
-cover: status-code.png
+cover: status-code2.png
 ---
 
 # Blog di Matteo Licciardino
@@ -258,5 +258,3 @@ questo blog:
 7- https://it.siteground.com/kb/errore-504/
 
 8- https://www.zoom24.it/2021/10/08/web-marketing-e-link-equity-di-cosa-stiamo-parlando/
-
----
