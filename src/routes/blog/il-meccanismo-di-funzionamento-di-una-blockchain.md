@@ -4,9 +4,9 @@ titolo: Il meccanismo di funzionamento di una blockchain
 featured: false
 autore: Matteo Putignano
 data: 2022-10-25
-cover: cover.webp
+cover: blockchain.jpg
 introduzione: Questo post descrive le principali caratteristiche di una blockchain
-pubblicato: true
+pubblicato: false
 sezione: Blog
 categorie:
   - Blockchain
