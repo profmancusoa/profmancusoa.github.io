@@ -1,7 +1,7 @@
 
 ---
 id: 2022-10-25-1
-titolo: Accesso Abusivo ad un sistema informatico
+titolo: Accesso abusivo ad un sistema informatico
 featured: false
 autore: Sebastiano Peluso
 data: 2022-10-25
