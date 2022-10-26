@@ -1,14 +1,20 @@
+---
 id: 2022-10-16-0
 titolo: Il programma Unity
 featured: false
 autore: Alberto Amort
 data: 2022-10-16
-cover: vover.webp
+cover: /static/img/posts/Alberto-Amort-Spigazione-Unity/vover.webp
 introduzione: "Questo post descrive varie funzionalità del programma Unity"
 pubblicato: true
 sezione: IT
 categorie:
-  - Blog
+  - Come scaricare Unity
+  - Aprire un nuovo programma
+  - Le interfacce principali
+  - Programmazione
+
+---
 
 # Il programma Unity
 
@@ -68,7 +74,7 @@ Per creare un nuovo GameObject nella finestra Gerarchia bisogna cliccare il puls
  Per rendere un GameObject un figlio, ci basterà spostarlo all’interno di un’altro oggetto trascinandolo o usando il copia-incolla. 
 
 E’ inoltre possibile impostare un GameObject come “Genitore Predefinito”, il che vuol dire che oggetto successivamente creato sarà automaticamente un suo "figlio”. Per rendere un GameObject un “Genitore Predefinito” bisogna fare click con il pulsante destro su di esse e selezionare Set as Default Parent. Se invece volessimo rimuovere l'impostazione di “Genitore predefinito”, dobbiamo cliccare su Clear Default Parent. E’ possibile impostare un solo Genitore predefinito per Scena.
-![img1](static\img\posts\Alberto-Amort-Spigazione-Unity\game-object.webp)
+![img1](/static/img/posts/Alberto-Amort-Spigazione-Unity/game-object.webp)
  
  
 ## La Scene
