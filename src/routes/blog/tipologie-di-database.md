@@ -15,7 +15,7 @@ categorie:
 ---
 
 # Tipologie di DataBase
-Ciao a tutti, mi chiamo Lorenzo Rizzolo e oggi parleremo dei database e dei vari tipi che esistono.
+In questo articolo si parla di database e dei vari tipi che esistono.
 
 ## Cosa è un DataBase?
 Un database è una raccolta di dati strutturata in modo tale da organizzarli in modo semplice compatto, facile da gestire e da organizzare. In questo blog ci concentreremo principalmente sui tipi di database che esistono per darvi un’idea della vastità delle possibilità che esistono.
