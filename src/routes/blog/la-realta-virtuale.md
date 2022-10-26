@@ -18,35 +18,35 @@ categorie:
 #### Tempo di lettura: 5'
 
 
-## Introduzione
+# Introduzione
 
 
-Sono uno studente del 4 anno dell’ITIS Informatica dell’Istituto Agnelli di Torino. Ho creato un blog per condividere con Voi le mie conoscenze nell’area della realtà virtuale.
-Divertitevi e condividete con i Vostri amici.
+Sono uno studente del 4 anno dell’ITIS Informatica dell’Istituto Agnelli di Torino. Ho creato un blog per condividere con voi le mie conoscenze nell’area della realtà virtuale.
+Divertitevi e condividete con i vostri amici.
 
-Oggi Vi parlo della Realtà Virtuale.
-Dall’inglese Virtual Reality, la Realtà Virtuale o VR, è una realtà simulata, un mondo digitale dove si viene immersi indossando un apposito visore. Una realtà che avvolge totalmente l’Utente, andando a mascherare del tutto la percezione (quantomeno visiva) del mondo fisico intorno a lui.
+Oggi vi parlo della ***Realtà Virtuale***.
+Dall’inglese *Virtual Reality*, la Realtà Virtuale o VR, è una realtà simulata, un mondo digitale dove si viene immersi indossando un apposito visore. Una realtà che avvolge totalmente l’Utente, andando a mascherare del tutto la percezione (quantomeno visiva) del mondo fisico intorno a lui.
 Quindi, la Realtà Virtuale è una tecnologia immersiva che proietta l’utente in un qualsiasi luogo 3D.
 
 In questa realtà, l’Utente può trovarsi in qualsiasi luogo e vivere avventure ed esperienze in prima persona, abbattendo le barriere geografiche e simulando qualsiasi ambientazione.
 Se dovessi riassumere, le esperienze VR sono in grado di immergere completamente l’Utente in un nuovo mondo, in un nuovo spazio e in un nuovo tempo.
-La Realtà Virtuale nasce dalla “interazione” tra dispositivi hardware e software che creano uno spazio virtuale all’interno del quale l’Utente può muoversi liberamente.
+La Realtà Virtuale nasce dalla *“interazione”* tra dispositivi hardware e software che creano uno spazio virtuale all’interno del quale l’Utente può muoversi liberamente.
 Io lo trovo spettacolare.
 
 
 ## Realtà Virtuale e Realtà Aumentata
 
 Ricordiamoci di non confondere la Realtà Virtuale con la Realtà Aumentata.
-Quando si parla di Augmented Reality (AR), come dice la parola stessa, ci si riferisce ad una versione “aumentata” della realtà, creata grazie all’ausilio della tecnologia che aggiunge informazioni digitali sovrapponendole all’ambiente reale.
+Quando si parla di **Augmented Reality** (AR), come dice la parola stessa, ci si riferisce ad una versione “aumentata” della realtà, creata grazie all’ausilio della tecnologia che aggiunge informazioni digitali sovrapponendole all’ambiente reale.
 Invece, come abbiamo visto, quando si parla di Virtual Reality (VR) s’intende una tecnologia capace di trasportarti in una realtà diversa da quella che stiamo vivendo, attraverso un visore che, indossato, sia capace di isolarsi dal mondo e teletrasportarci altrove.
 
 
 ## Strumenti per la Realtà Virtuale
 
 Per una perfetta immersione nella realtà virtuale abbiamo bisogno di tre strumenti:
-1. 	un visore integrato con un display che avvolge la vista;
-2. 	un sistema audio surround;
-3. 	un computer (una console o uno smartphone) e un controller, o altro dispositivo di input.
+1. 	un **visore integrato** con un display che avvolge la vista;
+2. 	un **sistema audio** surround;
+3. 	un **computer** (una console o uno smartphone) e un controller, o altro dispositivo di input.
  
 L’obiettivo dei visori VR è quello di creare una sorta di nuova dimensione, qualcosa di ben diverso dal 3D offerto da TV o occhialini più o meno speciali. È vero che si tratta, anche in questo caso, di un ambiente virtuale in tre dimensioni ma che non ha limiti né “punti ciechi" perché lo schermo del visore copre ogni possibile movimento degli occhi e della testa. Il video, o il gioco, viene inviato dal computer al visore tramite un cavo HDMI (alta definizione). 
 
@@ -68,7 +68,7 @@ L’ultima frontiera della realtà virtuale è il motion tracking: il sensore di
 
 Queste novità, quindi, aprono il campo a nuove modalità di approcciare le varie attività umane. Anche se i visori per la realtà virtuale sono ancora principalmente associati al mondo dei videogiochi, ultimamente, gli investimenti di molte aziende si stanno concentrando sulle applicazioni per il mondo del lavoro; dalla simulazione di interventi chirurgici alla  progettazione immersiva.
 
-![Virtual Reality](\img\posts\la-realta-virtuale\vr-blog.jpg "VR nella proggettazione immersiva")
+![Virtual Reality](\img\posts\la-realta-virtuale\vr-blog.jpg)
 
 Il concetto di progettazione immersiva si basa proprio sulla sovrapposizione di immagini digitali nel campo visivo dell’utilizzatore: seguendo i movimenti della testa, il dispositivo aggiorna in tempo reale il campo visivo nell’ambiente virtuale, dando all’utilizzatore l’impressione di trovarsi effettivamente all’interno dell’ambiente simulato.
 
