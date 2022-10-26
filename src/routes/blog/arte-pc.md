@@ -17,10 +17,10 @@ categorie:
 Molti di voi in questo momento saranno dubbiosi e si staranno chiedendo: “In che senso l’arte del PC???” o “Cos’è questa cosa???”; beh in questo breve articolo vi introdurrò la mia idea dell’arte che sta dietro ai nostri amati PC. 
 
 Innanzitutto la mia visione di “arte del PC” si suddivide in due parti ben distinte:
-- La maestria nel creare una configurazione ottimale.
-- La bellezza che un insieme di componenti elettronici può assumere.
-
-## La maestria nel creare una configurazione ottimale
+- <a href="#configurazione">La maestria nel creare una configurazione ottimale.</a>
+- <a href="#modding">La bellezza che un insieme di componenti elettronici può assumere.</a>
+<a name="configurazione"></a>
+## La maestria nel creare una configurazione ottimale 
 
 Questo argomento riguarda principalmente i PC desktop (fissi) ma lo stesso ragionamento è applicabile anche sui portatili.
 
@@ -43,8 +43,7 @@ Molto spesso il mio consiglio è di comprare il computer o le sue parti quando c
 
 Un altro ottimo periodo per comprare, soprattutto componenti del PC, sono i mesi a seguito del lancio delle nuove generazioni di processori o schede video; infatti in quel periodo molti negozi, online e non, cercano di vendere più velocemente i prodotti ormai considerati “vecchi” abbassando i prezzi delle componenti della generazione precedente. 
 
-Per quanto riguarda i PC portatili un aspetto, a mio avviso fondamentale, di cui tener conto è la modularità, ovvero la possibilità di cambiare (**upgradare**) determinate componenti che sono principalmente RAM e memoria di massa. In questo modo è possibile ridurre la spesa iniziale per acquistare il portatile ed eventualmente aumentare le memorie in un secondo momento.
-
+Per quanto riguarda i PC portatili un aspetto, a mio avviso fondamentale, di cui tener conto è la modularità, ovvero la possibilità di cambiare (**upgradare**) determinate componenti che sono principalmente RAM e memoria di massa. In questo modo è possibile ridurre la spesa iniziale per acquistare il portatile ed eventualmente aumentare le memorie in un secondo momento.<a name="modding"></a>
 ## La bellezza che un insieme di componenti elettronici può assumere
 
 La massima espressione della bellezza di un PC fisso si raggiunge grazie al **modding** ovvero la pratica di modificare il case di un computer, e non solo, allo scopo di migliorarne l’aspetto estetico e personalizzarlo.
