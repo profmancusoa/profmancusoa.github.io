@@ -22,18 +22,18 @@ categorie:
 
 Il mio progetto consiste nel creare un servizio adatto ai giovani che, al giorno d'oggi, utilizzano molto la tecnologia moderna e, alcuni, grazie ad essa ci vivono.
 Il mio sogno da sempre è creare un metodo innovativo per coinvolgerli e, successivamente, far si che un giorno siano loro che lo faranno al posto mio con le nuove tecnologie che io non vedrò mai.
-![percorso](/img/posts/spazi_virtuali/percorso1.webp)
+![percorso](/img/posts/spazi-virtuali/percorso1.webp)
 
 ---
 ### Perché Cloud Driver?
-![sapziov](/img/posts/spazi_virtuali/spaziov1.webp)
+![sapziov](/img/posts/spazi-virtuali/spaziov1.webp)
 
 Cloud Driver è il nome che ho deciso di assegnare al mio spazio virtuale e per farlo ho deciso di unire i nomi degli sapzi virtuali più famosi che conosco, ovvero `Google Drive` e `Cloud`.
 
 
 ---
 ### Funzionalità base
-![base](/img/posts/spazi_virtuali/base1.webp)
+![base](/img/posts/spazi-virtuali/base1.webp)
 
 Vorrei introdurre, innanzitutto delle `funzionalità base` per darvi una veloce idea di cosa voglio trattare.
 Cloud Driver è uno spazio virtuale, ovvero un luogo dove un utente, tramite inserimento di dati personali, può caricare e scaricare dati in tutta sicurezza.
@@ -41,7 +41,7 @@ Esattamente come google drive e, successivamente, di inviarle ad altri **utenti*
 
 
 ### Funzionalità aggiuntive
-![avanzato](/img/posts/spazi_virtuali/avanzato1.webp)
+![avanzato](/img/posts/spazi-virtuali/avanzato1.webp)
 
 Passando oltre, ecco le `funzionalità aggiuntive` in cui vi spiegherò perché il mio spazio virtuale si differenzia dagli altri esplicitando le parti più simboliche del software, ovvero quelle che davvero faranno, spero, la **differenza**.
 
@@ -66,13 +66,13 @@ Logicamente non ha molto senso scaricare dei dati per tenersali tutti all'intern
 Ovviamente questo progetto necessita un logo per poter essere identificato.
 Ecco qua il logo che ho scelto:
 
-![logo](/img/posts/spazi_virtuali/logo.webp)
+![logo](/img/posts/spazi-virtuali/logo.webp)
 
 ---
 # Prima interfaccia
 
 Per un'interfaccia, invece, la mia idea era più o meno questa:
-![interfaccia](/img/posts/spazi_virtuali/interfaccia.webp)
+![interfaccia](/img/posts/spazi-virtuali/interfaccia.webp)
 
 Qua possiamo vedere la pagina degli accessi, dove l'utente inserisce i suoi dati personali, per poi poter consentire al software di svolgere le varie applicazioni elencate.
 
@@ -80,7 +80,7 @@ Qua possiamo vedere la pagina degli accessi, dove l'utente inserisce i suoi dati
 
 Come pagina home, invece, la mia idea era più o meno questa:
 
-![home](/img/posts/spazi_virtuali/home.webp)
+![home](/img/posts/spazi-virtuali/home.webp)
 
 **Ovviamente il logo rimane per questioni di copyright**.
 
@@ -94,4 +94,4 @@ Adesso però non mi resta altro che augurarvi una buona giornata e, mi raccomand
 
 `CONTINUATE A SMANETTARE!!!`
 
-![grazie](/img/posts/spazi_virtuali/grazie1.webp)
+![grazie](/img/posts/spazi-virtuali/grazie1.webp)
