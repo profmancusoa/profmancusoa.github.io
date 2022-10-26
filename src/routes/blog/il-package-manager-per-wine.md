@@ -35,43 +35,43 @@ Con un semplice click verranno eseguiti decine di comandi in automatico che semp
   -   Installare Rust:
       Per installare rust eseguiamo il seguente comando: 
       
-      ```console
+      ```bash
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
       ```
 
 
-      Dopo aver eseguito il comando apparirà a console questo: <br>
+      Dopo aver eseguito il comando apparirà a bash questo: <br>
   ![alt text](/img/posts/il-package-manager-per-wine/rustup.png "Rustup")
   Ora premere 1 e aspettare che l'installazione finisca.
   Quando l'installazione sarà finita eseguire questo comando:
 
-  ```console
+  ```bash
   source "$HOME/.cargo/env"
   ```
   
   Ora abbiamo Rust e i suoi tools installati e possiamo procedere con la compilazione.
   - Cloniamo la repository di Wineget
     Eseguiamo il seguente comando:
-    ```console
+    ```bash
       git clone https://github.com/Windows-On-Linux/Wineget.git
       cd Wineget
     ```
   - Compiliamo Wineget
     Per compilare Wineget usiamo questo comando:
-    ```console
+    ```bash
       cargo build
     ```
   - Creazione del pacchetto
   Se sei su una distro derivata da debian esegui il seguente comando: 
-    ```console
+    ```bash
       cargo install cargo-deb
     ```
   Se sei su una distro derivata da Red Hat esegui il seguente comando: 
-    ```console
+    ```bash
       cargo install cargo-rpm
     ```
   Se sei su una distro derivata da Arch Linux esegui il seguente comando: 
-    ```console
+    ```bash
       cargo install cargo-aur
     ```
   Ora per procedere alla creazione del pacchetto fai: cargo deb/rpm/aur, infine, prendere l’ultima linea che il comando ha prodotto che sarà il percorso del pacchetto ed installatelo.<br>
@@ -82,18 +82,18 @@ Con un semplice click verranno eseguiti decine di comandi in automatico che semp
 
 -	Installare Wineget, scaricandola dalla [pagina release di Github](https://github.com/Windows-On-Linux/Wineget/releases).
 -	Ora per eseguire la ricerca dell’applicazione fare:
-    ```console
+    ```bash
       wineget -s [PROGRAMMA]
     ```
     
 Noi andremo ad installare Flowgorithm per provare.
 
 - Per installare Flowgorithm fare:
-    ```console
+    ```bash
       wineget -i flowgorithm 
     ```
 
-e seguire il processo di installazione, una volta finito lo script scriverà su console: “The installer have finished the work”. Ora flowgorithm risulta installato nella cartella di wineget e si può trovare anche come applicazione di sistema installata.
+e seguire il processo di installazione, una volta finito lo script scriverà su bash: “The installer have finished the work”. Ora flowgorithm risulta installato nella cartella di wineget e si può trovare anche come applicazione di sistema installata.
 
 ![alt text](https://github.com/Windows-On-Linux/Flowgorithm/raw/main/wallpaper.png "Flowgorithm")
 
