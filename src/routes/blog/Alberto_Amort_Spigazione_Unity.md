@@ -1,20 +1,20 @@
-id: 2022-08-19-0
+id: 2022-10-16-0
 titolo: Il programma Unity
 featured: false
 autore: Alberto Amort
-data: 2022-08-19
-cover: cover.webp
-introduzione: Questo post descrive varie funzionalità del programma Unity
+data: 2022-10-16
+cover: vover.webp
+introduzione: "Questo post descrive varie funzionalità del programma Unity"
 pubblicato: true
-sezione: Blog
+sezione: IT
 categorie:
   - Blog
 
- Unity Hub
+# Il programma Unity
 
 # Parte 1: Come scaricare Unity
 
-1. Per prima cosa, colleghiamoci al sito web ufficiale di Unity (cliccando qui) e clicchiamo sul pulsante "Get started", posizionato nella parte alta.
+1. Per prima cosa, colleghiamoci al sito web ufficiale di Unity [(cliccando qui)](https://unity.com/) e clicchiamo sul pulsante "Get started", posizionato nella parte alta.
 
 
 2. Selezionate il piano che preferiamo e procediamo all’acquisto. Questi sono:
@@ -67,7 +67,8 @@ Un'altra caratteristica importante dei GameObjest è il concetto di genitorialit
 Per creare un nuovo GameObject nella finestra Gerarchia bisogna cliccare il pulsante destro del mouse sullo spazio vuoto della finestra hierarchy e poi selezionare il tipo GameObject che desideri creare, oppure premendo Ctrl+Shift+N (Windows) or Command+Shift+N (macOS). Se si vuole creare nello specifico un  “Genitore”, bisogna fare clic su un GameObject oppure su più GameObject dello stesso livello e selezionare “Create Empty Parent”. In alternativa puoi anche premere Ctrl+Shift+G (Windows) o Command+Shift+G (macOS).
  Per rendere un GameObject un figlio, ci basterà spostarlo all’interno di un’altro oggetto trascinandolo o usando il copia-incolla. 
 
-E’ inoltre possibile impostare un GameObject come “Genitore Predefinito”, il che vuol dire che oggetto successivamente creato sarà automaticamente un suo "figlio”. Per rendere un GameObject un “Genitore Predefinito” bisogna fare click con il pulsante destro su di esse e selezionare Set as Default Parent. Se invece volessimo rimuovere l'impostazione di “Genitore predefinito”, dobbiamo cliccare su Clear Default Parent. E’ possibile impostare un solo Genitore predefinito per Scena 
+E’ inoltre possibile impostare un GameObject come “Genitore Predefinito”, il che vuol dire che oggetto successivamente creato sarà automaticamente un suo "figlio”. Per rendere un GameObject un “Genitore Predefinito” bisogna fare click con il pulsante destro su di esse e selezionare Set as Default Parent. Se invece volessimo rimuovere l'impostazione di “Genitore predefinito”, dobbiamo cliccare su Clear Default Parent. E’ possibile impostare un solo Genitore predefinito per Scena.
+![img1](static\img\posts\Alberto-Amort-Spigazione-Unity\game-object.webp)
  
  
 ## La Scene
