@@ -57,11 +57,11 @@ Invece un ORM permette di interagire in maniera più efficiente e meno rischiosa
 Lo schema logico è il seguente:
 
 <center>
-  <img src="/img/posts/gli-orm-cosa-sono-e-come-funzionano/ormschema.webp" alt="Schema AJAX"/>
+  <img src="/img/posts/gli-orm-cosa-sono-e-come-funzionano/ormschema.webp" alt="Schema ORM"/>
 </center>
 <br><br>
 <center>
-  <img src="/img/posts/gli-orm-cosa-sono-e-come-funzionano/ormimgtwo.webp" alt="Schema AJAX"/>
+  <img src="/img/posts/gli-orm-cosa-sono-e-come-funzionano/ormimgtwo.webp" alt="Schema ORM"/>
 </center>
 <br>
 
