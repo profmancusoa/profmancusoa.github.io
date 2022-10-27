@@ -87,7 +87,7 @@ $ npx prisma init
 ```
 Dentro la cartella prisma sarà presente lo schema:
 
-```prisma
+```js
 generator client {
   provider = "prisma-client-js" //tipo di client
 }
@@ -100,7 +100,7 @@ datasource db {
 All’interno di questo file dovremo definire le tabelle del nostro database, con annesse le relazioni
 fra di esse. Per fare ciò si usa la parola chiave model, ecco un esempio:
 
-```prisma
+```js
 model User {
     id Int @id @default(autoincrement())
     name String
