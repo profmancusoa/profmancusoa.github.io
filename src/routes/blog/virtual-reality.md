@@ -44,7 +44,7 @@ Per una perfetta immersione nella realtà virtuale abbiamo bisogno di tre strume
 2. 	un **sistema audio** surround;
 3. 	un **computer** (una console o uno smartphone) e un controller, o altro dispositivo di input.
 
-![Display](/img/posts/la-realta-virtuale/VR-3.webp "Display e due controller")
+![Display](/img/posts/virtual-reality/VR-3.webp "Display e due controller")
  
 L’obiettivo dei visori VR è quello di creare una sorta di **nuova dimensione**, qualcosa di ben diverso dal 3D offerto da TV o occhialini più o meno speciali. È vero che si tratta, anche in questo caso, di un ambiente virtuale in tre dimensioni ma che non ha limiti né *“punti ciechi"* perché lo schermo del visore copre ogni possibile movimento degli occhi e della testa. Il video, o il gioco, viene inviato dal computer al visore tramite un cavo HDMI (alta definizione). 
 
@@ -71,7 +71,7 @@ L’ultima frontiera della realtà virtuale è il **motion tracking**: il sensor
 
 Queste novità, quindi, aprono il campo a nuove modalità di approcciare le varie **attività umane**. Anche se i visori per la realtà virtuale sono ancora principalmente associati al mondo dei videogiochi, ultimamente, gli investimenti di molte aziende si stanno concentrando sulle applicazioni per il mondo del lavoro; dalla simulazione di interventi chirurgici alla  progettazione immersiva.
 
-![Virtual Reality](/img/posts/la-realta-virtuale/immageblog.webp "VR nella proggettazione immersiva")
+![Virtual Reality](/img/posts/virtual-reality/immageblog.webp "VR nella proggettazione immersiva")
 
 Il concetto di **progettazione immersiva** si basa proprio sulla sovrapposizione di immagini digitali nel campo visivo dell’utilizzatore: seguendo i movimenti della testa, il dispositivo aggiorna in tempo reale il campo visivo nell’ambiente virtuale, dando all’utilizzatore l’impressione di trovarsi effettivamente all’interno dell’ambiente simulato.
 
