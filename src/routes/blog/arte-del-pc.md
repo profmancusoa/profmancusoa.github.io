@@ -1,6 +1,6 @@
 ---
 id: 2022-10-26-1
-titolo: L'arte del PC
+titolo: Arte del PC
 featured: false
 autore: Marco Cellini
 data: 2022-10-26
