@@ -1,12 +1,12 @@
 ---
 id: 2022-10-26-11
-titolo: La Realta Virtuale
+titolo: Virtual Reality
 featured: false
 autore: Marco Minetti
 data: 2022-10-26
 cover: cover.webp
-introduzione: "Questo blog descrive che cosa è la realtà virtuale, a cosa serve e per cosa viene usata." 
-pubblicato: false
+introduzione: "Questo post descrive che cosa è la realtà virtuale, a cosa serve e per cosa viene usata." 
+pubblicato: true
 sezione: IT
 categorie:
   - VR e AR
@@ -22,12 +22,12 @@ categorie:
 
 
 Oggi vi parlo della ***Realtà Virtuale***.
-Dall’inglese *Virtual Reality*, la Realtà Virtuale o VR, è una realtà simulata, un mondo digitale dove si viene immersi indossando un apposito visore. Una realtà che avvolge totalmente l’Utente, andando a mascherare del tutto la percezione (quantomeno visiva) del mondo fisico intorno a lui.
+Dall’inglese *Virtual Reality*, la Realtà Virtuale o VR, è una realtà simulata, un mondo digitale dove si viene immersi indossando un apposito visore. Una realtà che avvolge totalmente l’utente, andando a mascherare del tutto la percezione (quantomeno visiva) del mondo fisico intorno a lui.
 Quindi, la Realtà Virtuale è una tecnologia immersiva che proietta l’utente in un qualsiasi luogo 3D.
 
-In questa realtà, l’Utente può trovarsi in qualsiasi luogo e vivere avventure ed esperienze in prima persona, abbattendo le barriere geografiche e simulando qualsiasi ambientazione.
-Se dovessi riassumere, le esperienze VR sono in grado di immergere completamente l’Utente in un nuovo mondo, in un nuovo spazio e in un nuovo tempo.
-La Realtà Virtuale nasce dalla *“interazione”* tra dispositivi hardware e software che creano uno spazio virtuale all’interno del quale l’Utente può muoversi liberamente.
+In questa realtà, l’utente può trovarsi in qualsiasi luogo e vivere avventure ed esperienze in prima persona, abbattendo le barriere geografiche e simulando qualsiasi ambientazione.
+Se dovessi riassumere, le esperienze VR sono in grado di immergere completamente l’utente in un nuovo mondo, in un nuovo spazio e in un nuovo tempo.
+La Realtà Virtuale nasce dalla *“interazione”* tra dispositivi hardware e software che creano uno spazio virtuale all’interno del quale l’utente può muoversi liberamente.
 Io lo trovo spettacolare.
 
 
@@ -35,7 +35,6 @@ Io lo trovo spettacolare.
 
 Ricordiamoci di non confondere la Realtà Virtuale con la Realtà Aumentata.
 Quando si parla di **Augmented Reality** (AR), come dice la parola stessa, ci si riferisce ad una versione “aumentata” della realtà, creata grazie all’ausilio della tecnologia che aggiunge informazioni digitali sovrapponendole all’ambiente reale.
-Invece, come abbiamo visto, quando si parla di Virtual Reality (VR) s’intende una tecnologia capace di trasportarti in una realtà diversa da quella che stiamo vivendo, attraverso un visore che, indossato, sia capace di isolarsi dal mondo e teletrasportarci altrove.
 
 
 ## Strumenti per la Realtà Virtuale
@@ -55,12 +54,17 @@ Alcuni visori usano uno stratagemma per offrire un’immersione nella realtà vi
 
 Inoltre, per rendere le immagini ancora più realistiche, è necessario un *“frame rate"* – ossia una frequenza di fotogrammi – dell’ordine di circa 60 fps per evitare una visione a scatti o che dia fastidio agli occhi. L’attuale generazione di visori, come l’**Oculus Rift** o la PlayStation VR, offrono rispettivamente una frequenza di 90 fps e 120 fps.
 
-Anche altre tecnologie entrano in gioco quando si parla di realtà virtuale, come l’**head tracking**, ossia quel sistema che monitora il movimento della testa: l’immagine, in pratica, si sposta seguendo esattamente i movimenti del capo: in alto in basso, di lato, avanti e indietro. È quello che in gergo viene chiamato *“six degrees of freedom“*, ovvero *“sei gradi di libertà"*. L’head tracking, per funzionare, richiede la presenza all’interno del visore di strumenti come un giroscopio, un accelerometro e un magnetometro.
-Il Sony utilizza, per esempio, nove luci led posizionate sul suo visore che, comunicando con una videocamera esterna, offrono un tracking di 360 gradi. Oculus propone un sistema simile, ma non paragonabile a quello della PlayStation VR. Si parla, inoltre, di **latenze** (tempi di reazione) davvero minime dell’ordine di 50 millisecondi, se non addirittura 30 ms per la Oculus. Non può ovviamente mancare, in un visore che si rispetti, un sistema audio professionale che offra, soprattutto nei giochi, la sensazione di suoni che provengono da tutte le direzioni, in avvicinamento o in allontanamento.
+Anche altre tecnologie entrano in gioco quando si parla di realtà virtuale, come l’**head tracking**, ossia quel sistema che monitora il movimento della testa: l’immagine, in pratica, si sposta seguendo esattamente i movimenti del capo: in alto in basso, di lato, avanti e indietro. 
+È quello che in gergo viene chiamato *“six degrees of freedom“*, ovvero *“sei gradi di libertà"*. 
+
+L’head tracking, per funzionare, richiede la presenza all’interno del visore di strumenti come un giroscopio, un accelerometro e un magnetometro.
+Il Sony utilizza, per esempio, nove luci led posizionate sul suo visore che, comunicando con una videocamera esterna, offrono un tracking di 360 gradi. 
+
+Oculus propone un sistema simile, ma non paragonabile a quello della PlayStation VR. Si parla, inoltre, di **latenze** (tempi di reazione) davvero minime dell’ordine di 50 millisecondi, se non addirittura 30 ms per la Oculus. Non può ovviamente mancare, in un visore che si rispetti, un sistema audio professionale che offra, soprattutto nei giochi, la sensazione di suoni che provengono da tutte le direzioni, in avvicinamento o in allontanamento.
 
 L 'head tracking, infine, va in coppia con l’**eye tracking**. La tecnologia, in questo caso, per monitorare il movimento degli occhi sfrutta un sensore a infrarossi che offre, l’ulteriore vantaggio, di rendere ancora più realistica la profondità di campo. Nei visori standard, però, le immagini sono tutte a fuoco, ben diverso dal modo in cui si vede la realtà. Non a caso, i modelli di fascia alta sono in grado di giocare con il “fuoco", per così dire, sfocando, per esempio, le immagini in lontananza e lasciando nitide quelle in primo piano.
 
-L’ultima frontiera della realtà virtuale è il **motion tracking**: il sensore di movimento per conoscere sempre dove si trova l’Utente nello spazio, caratteristica di Microsoft Kinect. Qui, però, entriamo nel campo degli accessori opzionali. Tra i pochi modelli che offrono questa tecnologia, ci sono le solite Oculus e Sony. Ma esistono anche altri dispositivi che molti produttori stanno abbinando ai visori di realtà virtuale come controller o joystick, comandi vocali, guanti intelligenti e persino tapis roulant.
+L’ultima frontiera della realtà virtuale è il **motion tracking**: il sensore di movimento per conoscere sempre dove si trova l’utente nello spazio, caratteristica di Microsoft Kinect. Qui, però, entriamo nel campo degli accessori opzionali. Tra i pochi modelli che offrono questa tecnologia, ci sono le solite Oculus e Sony. Ma esistono anche altri dispositivi che molti produttori stanno abbinando ai visori di realtà virtuale come controller o joystick, comandi vocali, guanti intelligenti e persino tapis roulant.
 
 
 ## Utilizzo nel lavoro

@@ -7,17 +7,16 @@ autore: Gioele Mari
 data: 2022-10-21
 cover: cover.webp
 introduzione: Si può giocare senza scaricare niente?
-pubblicato: false
-sezione: <sezione>
+pubblicato: true
+sezione: Cloud
 categorie:
-  - <Gaming>
-  - <Cloud>
+  - Gaming
+  - Cloud
 ---
+
 # Che cos'è il Cluod Gaming
 Il Cloud Gaming, talvolta chiamato” gaming on demand”, è una particolare tipologia di fruizione del videogioco. Questo servizio permette di eseguire videogiochi su server remoti e li trasmette in streaming direttamente sul dispositivo dell'utente come un cellulare, un tablet, un computer o una console.
 
-
-<img src="/img/posts/cloud-gaming/fattore-dimensionale.webp" width="850" height="400">
 
 # Come funziona il Cloud Gaming?
 Il Cloud Gaming rappresenta un’alternativa ai tradizionali metodi di gioco che prevedono l’acquisto di una qualsiasi piattaforma come  tra Playstation, Xbox , Nintendo e Personal computer (oltre ai singoli giochi).
@@ -41,10 +40,6 @@ Troverete qualcosa di simile
 
 ### Cliccate su Gioca Ora
 
-
-<img src="/img/posts/cloud-gaming/Immagine 2022-10-25 210812.webp" width="855" height=455>
-
-
 <br>
 
  ### Una volta cliccato Gioca Ora ti spunta questa facciata e cliccate su   Partecipa nella collonna free 
@@ -56,10 +51,6 @@ Troverete qualcosa di simile
 <br>
 
 
-   ### **zoom**
-
- <img src="/img/posts/cloud-gaming/Immagine 2022-10-25 221107.webp"  width = "500" height=700>  
- 
  Cliccate => Partecipa
 
 
