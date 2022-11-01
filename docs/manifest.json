@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-ce906ba0.js",
+    "file": "_app/immutable/start-2fbcaa5b.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -12,6 +12,7 @@
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
       "src/routes/blog/cloud-gaming.md",
+      "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
       "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
       "src/routes/blog/come-generare-e-gestire-le-password.md",
       "src/routes/blog/come-installare-projectlibre-su-linux.md",
@@ -37,7 +38,7 @@
       "_index-efb87244.js"
     ],
     "css": [
-      "_app/immutable/assets/__layout-0f27121f.css"
+      "_app/immutable/assets/__layout-a78a892a.css"
     ]
   },
   "src/routes/__error.svelte": {
@@ -62,8 +63,20 @@
     ]
   },
   "src/routes/blog/cloud-gaming.md": {
-    "file": "_app/immutable/pages/blog/cloud-gaming.md-cd7b3433.js",
+    "file": "_app/immutable/pages/blog/cloud-gaming.md-40c856ad.js",
     "src": "src/routes/blog/cloud-gaming.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md": {
+    "file": "_app/immutable/pages/blog/come-creare-un-applicazione-front-end-con-svelte.md-f6896ba2.js",
+    "src": "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -234,6 +247,10 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-dc5f4020.css",
+    "src": "_post.css"
+  },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
@@ -242,16 +259,12 @@
     "file": "_app/immutable/assets/index-f64b60f3.css",
     "src": "src/routes/about/index.css"
   },
-  "_post.css": {
-    "file": "_app/immutable/assets/_post-dc5f4020.css",
-    "src": "_post.css"
-  },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
   },
   "src/routes/__layout.css": {
-    "file": "_app/immutable/assets/__layout-0f27121f.css",
+    "file": "_app/immutable/assets/__layout-a78a892a.css",
     "src": "src/routes/__layout.css"
   }
 }
