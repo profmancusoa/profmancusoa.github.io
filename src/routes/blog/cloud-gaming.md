@@ -24,7 +24,7 @@ Uno dei maggiori esempi  è “Nvidia GeForce Now” la piattaforma di cloud gam
 
 # Come accedere Nvidia GeForce Now?
 
-<img src="/img/posts/cloud-gaming/NVIDIA_GeForce_NOW.webp" width="800" height=400>
+![geoforce](/img/posts/cloud-gaming/NVIDIA_GeForce_NOW.webp)
 
 # 1 passaggio
 
@@ -32,7 +32,7 @@ Recati sul sito <a href="https://www.nvidia.com/it-it/geforce-now/" target="_bla
 
 Troverete qualcosa di simile
 
-<img src="/img/posts/cloud-gaming/Immagine 2022-10-25 202522.webp" width="855" height=455>
+![futuro](/img/posts/cloud-gaming/img1.webp)
 
 # 2 passaggio
 
@@ -43,62 +43,33 @@ Troverete qualcosa di simile
 <br>
 
  ### Una volta cliccato Gioca Ora ti spunta questa facciata e cliccate su   Partecipa nella collonna free 
- 
- <br>
- 
- <img src="/img/posts/cloud-gaming/Immagine 2022-10-25 220800.webp"  width = "855" height=455>
+  
 
-<br>
+![geoforce](/img/posts/cloud-gaming/img2.webp)
 
 
  Cliccate => Partecipa
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
  <br>
 
  # Adesso accede da dove volete
 
- <img src="/img/posts/cloud-gaming/i.webp"  width = "700" height=800>
 
+![account](/img/posts/cloud-gaming/i.webp)
 
  ### Adesso vi compare il Test di Sicurezza
 
-  <img src="/img/posts/cloud-gaming/l.webp"  width = "800">
+![sicurezza](/img/posts/cloud-gaming/l.webp)
 
 ## Andate sulla gmail cliccate verifica E-mail
 
-<img src="/img/posts/cloud-gaming/k.webp"  width = "800">
+![welcome](/img/posts/cloud-gaming/k.webp)
 
 # Una volta fatto siete antrati su Nvidia GeForce Now
 
 cliccate su Accetta e Continua
 
-<img src="/img/posts/cloud-gaming/m.webp"  width = "800">
+![nvidia](/img/posts/cloud-gaming/m.webp)
 
 ### Adesso potete giocare in Cloud Gaming
 
