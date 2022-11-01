@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-784e1c81.js",
+    "file": "_app/immutable/start-a23fa787.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -11,6 +11,7 @@
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
+      "src/routes/blog/arte-del-pc.md",
       "src/routes/blog/cloud-gaming.md",
       "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
       "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
@@ -21,12 +22,13 @@
       "src/routes/blog/come-scrivere-un-post-in-markdown.md",
       "src/routes/blog/il-blog-profmancusoa.md",
       "src/routes/blog/il-package-manager-per-wine.md",
+      "src/routes/blog/tipologie-di-database.md",
       "src/routes/blog/virtual-reality.md",
       "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-916c83dd.js",
+    "file": "_app/immutable/pages/__layout.svelte-8e0d608c.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -60,6 +62,18 @@
     ],
     "css": [
       "_app/immutable/assets/index-f64b60f3.css"
+    ]
+  },
+  "src/routes/blog/arte-del-pc.md": {
+    "file": "_app/immutable/pages/blog/arte-del-pc.md-c14ceb7b.js",
+    "src": "src/routes/blog/arte-del-pc.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
   "src/routes/blog/cloud-gaming.md": {
@@ -173,6 +187,18 @@
   "src/routes/blog/il-package-manager-per-wine.md": {
     "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-72595515.js",
     "src": "src/routes/blog/il-package-manager-per-wine.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/tipologie-di-database.md": {
+    "file": "_app/immutable/pages/blog/tipologie-di-database.md-3b2e1ac2.js",
+    "src": "src/routes/blog/tipologie-di-database.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
