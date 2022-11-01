@@ -50,9 +50,14 @@ La massima espressione della bellezza di un PC fisso si raggiunge grazie al **mo
 
 Ci sono due tipologie di mod: le **skretch** dove buona parte dei componenti, come il case, sono creati da zero e i **mod**  che sono creati partendo da dei case già esistenti in commercio.
 
-![case-shark](/img/posts/arte-del-pc/case-shark.webp)<small>case skretch</small>
+<small>case skretch</small>
 
-![corsair-case](/img/posts/arte-del-pc/corsair-case.webp)<small>case mod</small>
+![case-shark](/img/posts/arte-del-pc/case-shark.webp)
+
+<small>case mod</small>
+
+![corsair-case](/img/posts/arte-del-pc/corsair-case.webp)
+
 
 A mio avviso coloro che creano questi PC sono paragonabili ad artigiani del design visto che molti pezzi sono, come detto in precedenza, creati da zero e quindi progettati e ideati solo per quel determinato PC.
 
@@ -62,6 +67,8 @@ Due componenti che danno un tocco di personalità alla mod, dopo il case, sono i
 
 ![case-no-rgb1](/img/posts/arte-del-pc/case-no-rgb1.webp)
 
-![case-no-rgb2](/img/posts/arte-del-pc/case-no-rgb2.webp)<small>case privi di illuminazione rgb</small>
+<small>case privi di illuminazione rgb</small>
+
+![case-no-rgb2](/img/posts/arte-del-pc/case-no-rgb2.webp)
 
 I case che possiamo vedere qui sopra sono dei mini-ITX ovvero il formato più piccolo possibile e quindi diminuendo la grandezza del case aumentano le difficoltà nel far stare tutti i componenti al loro interno riuscendo comunque a creare un piccola “opera d’arte”.
