@@ -1,6 +1,6 @@
 ---
 id: 13-10-2022-1
-titolo: Post HTTP e response code
+titolo: HTTP e response code
 feature: false
 autore: Matteo Licciardino
 data: 2022-10-13
