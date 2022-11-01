@@ -11696,7 +11696,7 @@ fieldset:disabled .btn {
 	}
 
 	.post > p {
-		text-align: justify;
+		/* text-align: justify; */
 		font-size: var(--post-base-font-size);
 		line-height: var(--post-p-line-height);
 		margin-top: 0px;
@@ -11850,7 +11850,7 @@ fieldset:disabled .btn {
 	}
 
 	.post > p {
-		text-align: justify;
+		/* text-align: justify; */
 		font-size: calc(var(--post-base-font-size) / 1.1);
 		line-height: calc(var(--post-p-line-height) / 1.2);
 		margin-top: 0px;
