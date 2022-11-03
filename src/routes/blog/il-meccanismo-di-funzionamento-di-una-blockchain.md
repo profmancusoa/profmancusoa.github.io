@@ -31,11 +31,11 @@ Infatti le `valute fiat` (nome con cui vengono definite le valute centralizzate 
 
 
 Le valute gestite da una blockchain hanno diversi vantaggi che le valute fiat non avranno mai:
--una completa decentralizzazione
--una totale trasparenza
--una maggiore sicurezza
--una completa immutabilità
--una forte resistenza alle censure
+- una completa decentralizzazione
+- una totale trasparenza
+- una maggiore sicurezza
+- una completa immutabilità
+- una forte resistenza alle censure
 
 
 ## La decentralizzazione 
@@ -48,21 +48,21 @@ Questi utenti vengono anche chiamati `miner` (cioè minatori) in quanto attraver
 
 Senza questo meccanismo di emissione di nuove criptovalute il valore della criptovaluta avrebbe un’impennata e successivamente diminuirebbe molto con il tempo.
 
-## una totale trasparenza
+## Totale trasparenza
 
 La trasparenza della blockchain è dettata dal fatto che la blockchain è `totalmente pubblica`, quindi chiunque voglia accedere ad essa ha la possibilità di farlo.
 
-## una maggiore sicurezza
+## Maggiore sicurezza
 
 La trasparenza garantisce anche una maggiore sicurezza in quanto se un acker provasse a trasferire del denaro non suo sul suo conto la transazione verrebbe registrata e resa pubblica e ciò rende molto più complicato rubare queste valute senza essere rintracciato.
 
 Inoltre ogni nodo della blockchain `possiede una copia sempre aggiornata` della blockchain completa in modo da evitare perdite o variazioni di codice.
 
-## una completa immutabilità
+## Completa immutabilità
 
 La blockchain è caratterizzata da una completa immutabilità, in quanto ogni transazione validata viene registrata sulla blockchain `senza modificare nulla` di tutto ciò che è stato scritto su di essa precedentemente, ma viene semplicemente aggiunta alle altre transazioni registrate con `la certezza che non verrà mai cancellata`.
 
-## una forte resistenza alle censure
+## Forte resistenza alle censure
 
 L’ultima delle caratteristiche più importanti della blockchain è una forte resistenza alle censure dato che come visto precedentemente non è condizionabile da un'unica persona o da un unico ente a differenza delle valute gestite dalle banche dato che le banche si avvalgono della facoltà bloccare un conto se ritenuto da loro necessario.
 

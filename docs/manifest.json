@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-82371950.js",
+    "file": "_app/immutable/start-598afe15.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -22,6 +22,7 @@
       "src/routes/blog/come-scrivere-un-post-in-markdown.md",
       "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
       "src/routes/blog/il-blog-profmancusoa.md",
+      "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
       "src/routes/blog/il-package-manager-per-wine.md",
       "src/routes/blog/tipologie-di-database.md",
       "src/routes/blog/virtual-reality.md",
@@ -29,7 +30,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-a08f77d7.js",
+    "file": "_app/immutable/pages/__layout.svelte-7062cea0.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -197,6 +198,18 @@
       "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
+  "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md": {
+    "file": "_app/immutable/pages/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md-4fcfb296.js",
+    "src": "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
   "src/routes/blog/il-package-manager-per-wine.md": {
     "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-72595515.js",
     "src": "src/routes/blog/il-package-manager-per-wine.md",
@@ -286,14 +299,6 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
-  },
-  "src/routes/index.css": {
-    "file": "_app/immutable/assets/index-1527f175.css",
-    "src": "src/routes/index.css"
-  },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
@@ -301,6 +306,14 @@
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
+  },
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
+  },
+  "src/routes/index.css": {
+    "file": "_app/immutable/assets/index-1527f175.css",
+    "src": "src/routes/index.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",
