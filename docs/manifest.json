@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-3162520c.js",
+    "file": "_app/immutable/start-a772c778.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -11,6 +11,9 @@
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
+      "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md",
+      "src/routes/blog/arte-del-pc.md",
+      "src/routes/blog/cloud-gaming.md",
       "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
       "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
       "src/routes/blog/come-generare-e-gestire-le-password.md",
@@ -18,12 +21,18 @@
       "src/routes/blog/come-navigare-tra-le-finestre-di-popos.md",
       "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
       "src/routes/blog/come-scrivere-un-post-in-markdown.md",
+      "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
       "src/routes/blog/il-blog-profmancusoa.md",
+      "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
+      "src/routes/blog/il-metaverso.md",
+      "src/routes/blog/il-package-manager-per-wine.md",
+      "src/routes/blog/tipologie-di-database.md",
+      "src/routes/blog/virtual-reality.md",
       "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-33a80d7d.js",
+    "file": "_app/immutable/pages/__layout.svelte-69b4e0ce.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -35,7 +44,7 @@
       "_index-efb87244.js"
     ],
     "css": [
-      "_app/immutable/assets/__layout-0f27121f.css"
+      "_app/immutable/assets/__layout-a78a892a.css"
     ]
   },
   "src/routes/__error.svelte": {
@@ -59,8 +68,44 @@
       "_app/immutable/assets/index-f64b60f3.css"
     ]
   },
+  "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md": {
+    "file": "_app/immutable/pages/blog/accesso-abusivo-ad-un-sistema-informatico.md-736cbf23.js",
+    "src": "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/arte-del-pc.md": {
+    "file": "_app/immutable/pages/blog/arte-del-pc.md-aa85c3ac.js",
+    "src": "src/routes/blog/arte-del-pc.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/cloud-gaming.md": {
+    "file": "_app/immutable/pages/blog/cloud-gaming.md-40c856ad.js",
+    "src": "src/routes/blog/cloud-gaming.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
   "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md": {
-    "file": "_app/immutable/pages/blog/come-creare-un-applicazione-front-end-con-svelte.md-74b6849d.js",
+    "file": "_app/immutable/pages/blog/come-creare-un-applicazione-front-end-con-svelte.md-f6896ba2.js",
     "src": "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -143,9 +188,81 @@
       "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
+  "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md": {
+    "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-6d23effa.js",
+    "src": "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
   "src/routes/blog/il-blog-profmancusoa.md": {
     "file": "_app/immutable/pages/blog/il-blog-profmancusoa.md-29eb198d.js",
     "src": "src/routes/blog/il-blog-profmancusoa.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md": {
+    "file": "_app/immutable/pages/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md-7fa18209.js",
+    "src": "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/il-metaverso.md": {
+    "file": "_app/immutable/pages/blog/il-metaverso.md-5f115695.js",
+    "src": "src/routes/blog/il-metaverso.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/il-package-manager-per-wine.md": {
+    "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-72595515.js",
+    "src": "src/routes/blog/il-package-manager-per-wine.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/tipologie-di-database.md": {
+    "file": "_app/immutable/pages/blog/tipologie-di-database.md-7ade87fd.js",
+    "src": "src/routes/blog/tipologie-di-database.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/virtual-reality.md": {
+    "file": "_app/immutable/pages/blog/virtual-reality.md-d12adcb4.js",
+    "src": "src/routes/blog/virtual-reality.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -208,24 +325,24 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
   },
   "src/routes/__layout.css": {
-    "file": "_app/immutable/assets/__layout-0f27121f.css",
+    "file": "_app/immutable/assets/__layout-a78a892a.css",
     "src": "src/routes/__layout.css"
   }
 }
