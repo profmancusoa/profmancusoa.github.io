@@ -3,28 +3,32 @@ id: 2022-08-22-1
 titolo: Cosa sono gli NFC e come usarli
 featured: false
 autore: Alberto Mastroianni
-data: 2022-08-22
+data: 2022-10-22
 cover: cover.webp
 introduzione: In questo articolo parleremo di cosa sono gli NFC.
 pubblicato: true
 sezione: Blog
 categorie:
   - NFC
-  - Blog
-  - Github
+
 ---
 
 
 # A cosa serve la tecnologia NFC?
-La tecnologia NFC, (Near Field Connection) serve a connettere due dispositivi ed è utile per trasferire dati da un dispositivo ad un altro. Al loro interno si può trovate un chip (il più usato è l'NXP NTAG 216) senza utilizzare cavi o senza inserire delle credenziali d'accesso rispetto al Bluetooth, la tecnologia NFC permette di identificare, autenticare ed associare i due dispositivi in modo del tutto automatico.
+La tecnologia NFC, (Near Field Connection) serve a connettere due dispositivi ed è utile per trasferire dati da un dispositivo ad un altro. Al loro interno si può trovate un chip (il più usato è l'NXP NTAG 216) senza utilizzare cavi o senza inserire delle credenziali d'accesso. 
+
+Rispetto al Bluetooth, la tecnologia NFC permette di identificare, autenticare ed associare i due dispositivi in modo del tutto automatico.
 Sono molto collegati alla famiglia RFID e sfruttano la radiofrequenza in modalità wireless e contactless per il trasferimento di dati digitali. 
 Quindi possiamo dire che in questi ultimi anni, le aziende hanno bisogno di rinnovarsi di anno in anno per restare al passo del mondo digitale e dell'IoT.
  
  ## Utilità in vari ambiti
- molto utile quando gli utenti hanno necessità di inviare dei dati da un dispositivo ad un altro. I dispositivi comunicano tra loro in modo bidirezionale attraverso la rete wireless.
+ Molto utile quando gli utenti hanno necessità di inviare dei dati da un dispositivo ad un altro. I dispositivi comunicano tra loro in modo bidirezionale attraverso la rete wireless.
  Ai giorni d’oggi è maggiormente utilizzata dai dispositivi Android, mentre c’è un po’ di carenza nei telefoni con sistema operativo IOS.
- Quello che mi incuriosisce in questa tecnologia, è che ha molte funzioni una diversa dall’altra, questo permette di avere una vasta scelta di operazioni che essa può svolgere. 
- A Torino, la tecnologia NFC, viene usata per esempio nei biglietti della gtt (gruppo torinese trasporti), infatti quando si passa il biglietto sul lettore carte, è più che sufficiente farlo aderire al massimo ad un centimetro di distanza sulla superficie ed ecco che compare sulla schermata “Biglietto valido”. Questo messaggio però, prima di essere inviato al destinatario, deve verificare attraverso un’ampia selezione di codici se effettivamente il biglietto era valido oppure no. (Questi sono tutti dati che vengono elaborati dai due dispositivi NFC interessati, ma che non si possono effettivamente vedere ad occhio nudo).
+ 
+ Quello che mi incuriosisce di questa tecnologia, è che ha molte funzioni una diversa dall’altra, questo permette di avere una vasta scelta di operazioni che essa può svolgere. 
+ A Torino, la tecnologia NFC, viene usata per esempio nei biglietti della gtt (gruppo torinese trasporti), infatti quando si passa il biglietto sul lettore carte, è più che sufficiente farlo aderire al massimo ad un centimetro di distanza sulla superficie ed ecco che compare sulla schermata “Biglietto valido”. 
+ 
+ Questo messaggio però, prima di essere inviato al destinatario, deve verificare attraverso un’ampia selezione di codici se effettivamente il biglietto era valido oppure no. (Questi sono tutti dati che vengono elaborati dai due dispositivi NFC interessati, ma che non si possono effettivamente vedere ad occhio nudo).
 
  # Sicurezza dei dispositivi NFC
  Il vantaggio del chip NFC è che in fase di transazione questo trasmette un token e non i dati bancari, perciò la sicurezza è piuttosto elevata rispetto ad altri sistemi.
@@ -39,9 +43,11 @@ Quindi possiamo dire che in questi ultimi anni, le aziende hanno bisogno di rinn
 **Internet of Things**
 Con IoT ci riferiamo al processo di connessione a Internet di oggetti fisici di uso attuale e quotidiano. 
 Per esempio oggetti che abbiamo tutti in casa: 
--lampadine, prese, condizionatori e anche oggetti collegati all'ambito sanitario, come strumenti medici. 
+- lampadine, prese
+- condizionatori
+- oggetti collegati all'ambito sanitario, come strumenti medici. 
 
-## Esempio della tecnologia RFID:
+## Esempio della tecnologia RFID
  L'esempio della tecnologia RFID anch'esso viene usato nei mezzi di trasporto GTT;
  la comunicazione tra l'RFID e il lettore si svolge sempre in un'unica direzione. Il dispositivo RFID non può ricevere aggiornamenti così come una rete IT centralizzata non può trasferire dati all'RFID. Non si tratta di un sistema di monitoraggio continuo e quindi la tracciatura logistica è disponibile in determinati intervalli.
 
@@ -57,16 +63,18 @@ La tecnologia NFC è più recente. È una buona versione di RFID. Può funzionar
 
 
 ## Esempio pratico NFC:
+
+Vediamo come utilizzare un NFC tramite uno smartphone
+
 <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/d8/08/50/d8085090-a200-e7ce-83da-13673e70e0e4/AppIcon-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png" width=50% alt="NFC">
 
-### Passo numero 1) 
-Scaricare dal play store o app store l'applicazione "NFC Tools". 
-### Passo numero 2)
-Procurarsi una card NFC che possa svolgere l'azione.
-### Passo numero 3) 
-I dispositivi NFC sono disponibili sia in lettura, sia in scrittura. 
-### Passo numero 4) 
-Quando cliccheremo su "scrittura", noi possiamo scegliere determinate azioni/compiti da fargli svolgere: Per esempio invia SMS al numero 333...
+<br>
+<br>
+
+1. Scaricare dal play store o app store l'applicazione "NFC Tools". 
+2. Procurarsi una card NFC che possa svolgere l'azione.
+3. I dispositivi NFC sono disponibili sia in lettura, sia in scrittura. 
+4. Quando cliccheremo su "scrittura", noi possiamo scegliere determinate azioni/compiti da fargli svolgere: Per esempio invia SMS al numero 333...
 
 
 ### Passo 1
@@ -108,7 +116,7 @@ Quindi in base a diverse comodità esistono vari modelli di tag NFC.
 NDEF è un formato dati standardizzato che consente a uno smartphone di scrivere o leggere su una scheda NFC o un tag NFC. Il formato NDEF viene utilizzato per memorizzare URL, documenti di testo o biglietti da visita elettronici.
 Con il Covid 19, c'è stato un picco nel contactless nell'uso NFC, come si è visto con il recente andamento delle app di pagamento come Google Pay e Apple Pay.
 
-## Conclusione:
+## Conclusione
 E’ un argomento che porterei avanti con me per tutto il resto della mia vita, perché ritengo sia una tecnologia comoda al giorno d’oggi e soprattutto interessante in vari scopi; sia scopi personali, sia scopi lavorativi. 
 
 

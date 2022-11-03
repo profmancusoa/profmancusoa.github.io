@@ -6,7 +6,7 @@ autore: Marco Cellini
 data: 2022-10-26
 cover: cover.webp
 introduzione: "Una nuova forma d'arte: il PC"
-pubblicato: false
+pubblicato: true
 sezione: IT
 categorie:
   - PC
