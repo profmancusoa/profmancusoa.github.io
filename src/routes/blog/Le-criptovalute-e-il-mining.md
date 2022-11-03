@@ -35,11 +35,11 @@ di bitcoin consiste nel far eseguire ai processori e schede video di un pc un’
 Con l’aumento dei minatori e il passare del tempo si sono verificati 4 fenomeni:
 - per minare un bitcoin ci vuole sempre più tempo.
 - viene richiesta sempre più potenza di calcolo dei pc.
-- più ci si avvicina al numero massimo di bitcoin che si possono minare(19 milioni), più il mining diventa difficile.
+- più ci si avvicina al numero massimo di bitcoin che si possono minare(19 milioni), più il mining delle diventa difficile.
 - servono dispositivi con sempre più potenza di calcolo.
 
 
-![img_1](/img/posts/bitcoinmining.jpg)
+![img_1](/img/posts/bitcoinmining.jpg)\1
 
 
 
