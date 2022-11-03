@@ -7,9 +7,12 @@ data: 2022-10-22
 cover: cover.webp
 introduzione: In questo articolo parleremo di cosa sono gli NFC.
 pubblicato: true
-sezione: Blog
+sezione: Tecnologia
 categorie:
   - NFC
+  - RFID
+  - Wireless
+  - IoT
 
 ---
 
