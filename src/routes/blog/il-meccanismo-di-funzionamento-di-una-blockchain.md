@@ -6,7 +6,7 @@ autore: Matteo Putignano
 data: 2022-10-25
 cover: blockchain.jpg
 introduzione: Questo post descrive le principali caratteristiche di una blockchain
-pubblicato: false
+pubblicato: true
 sezione: Blog
 categorie:
   - Blockchain
