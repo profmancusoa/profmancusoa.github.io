@@ -7,7 +7,7 @@ autore: Sebastiano Peluso
 data: 2022-10-25
 cover: acceso-a-abusivo.webp
 introduzione: Le tecniche di accesso abusivo ad un sistema informatico, strumenti usati e loro funzionamento 
-pubblicato: false
+pubblicato: true
 sezione: IT
 categorie:
   - Sicurezza
