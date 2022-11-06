@@ -1,10 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-<<<<<<< HEAD
-    "file": "_app/immutable/start-661a6f36.js",
-=======
     "file": "_app/immutable/start-556d3e01.js",
->>>>>>> main
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -30,18 +26,13 @@
       "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
       "src/routes/blog/il-metaverso.md",
       "src/routes/blog/il-package-manager-per-wine.md",
-      "src/routes/blog/le-criptovalute-e-il-mining.md",
       "src/routes/blog/tipologie-di-database.md",
       "src/routes/blog/virtual-reality.md",
       "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-<<<<<<< HEAD
-    "file": "_app/immutable/pages/__layout.svelte-976897a3.js",
-=======
     "file": "_app/immutable/pages/__layout.svelte-69b4e0ce.js",
->>>>>>> main
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -257,18 +248,6 @@
       "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
-  "src/routes/blog/le-criptovalute-e-il-mining.md": {
-    "file": "_app/immutable/pages/blog/le-criptovalute-e-il-mining.md-d7eb266e.js",
-    "src": "src/routes/blog/le-criptovalute-e-il-mining.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-02a6647b.js",
-      "__post-421b6498.js",
-      "_helpers-e147ed77.js",
-      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
-    ]
-  },
   "src/routes/blog/tipologie-di-database.md": {
     "file": "_app/immutable/pages/blog/tipologie-di-database.md-7ade87fd.js",
     "src": "src/routes/blog/tipologie-di-database.md",
@@ -346,20 +325,13 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-<<<<<<< HEAD
-=======
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
   },
->>>>>>> main
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
-  },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
   },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-f64b60f3.css",
