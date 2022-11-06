@@ -1,6 +1,6 @@
 ---
 id: 2022-10-27-1
-titolo: VPN
+titolo: Reti VPN
 featured: false
 autore: Pierpaolo Quijada Gomez
 data: 2022-10-27
@@ -9,38 +9,38 @@ introduzione: Breve introduzione sulle VPN
 pubblicato: false
 sezione: Blog
 categorie:
-  - Cosa sono le VPN
-  - Tipi di VPN
-  - Come funziona
-  - Protocolli VPN
-  - Pro e Contro
-  - Configurazione Point-to-Point
+  - VPN
+  - Network Security
+  - Wireguard
+  - PPTP
+  - OpenVPN
 ---
 
 # Cosa sono le VPN
 
 Con la sigla VPN si intende Virtual Private Network, ossia una rete privata che garantisce privacy e sicurezza dei dati.
 La comunicazioni tra i dispositivi, non per forza connessi alla stessa LAN, avviene attraverso un canale di comunicazione riservato utilizzando la rete pubblica.
+
 Il loro utilizzo è molto usato nel mondo aziendale dato che va a tagliare dei costi considerevoli per la creazione di una propria rete privata.
-Nonostante ciò anche i privati si ritrovano ad utilizzarlo se vogliono nascondere e proteggere i loro dati mentre navigano su internet.
+Nonostante ciò anche i privati si ritrovano ad utilizzarle se vogliono nascondere e proteggere i loro dati mentre navigano su Internet.
 
 # Tipi di VPN
 
 Le VPN si possono classificare in due tipologie:
 
-**- VPN ad accesso remoto**
+### **VPN ad accesso remoto**
 
 Con questa configurazione si ha un collegamento di tipo client-server.
-Il server gestirà il traffico tra il client e l’accesso ad internet, mentre il client invierà le richieste al server.
+Il server gestirà il traffico tra il client e l’accesso ad Internet, mentre il client invierà le richieste al server.
 
-**- VPN site-to-site**
+### **VPN site-to-site**
 
 In questo caso il canale di comunicazione si basa su dei router che raggruppati formano una rete privata permettendo il passaggio di informazioni.
 Anche questo modello usa il concetto client-server, infatti quando arriva l’informazione al router ad esso possono arrivare richieste d’accesso ai dati dai client della stessa rete del router.
 
 # Come funziona
 
-Il processo dietro le VPN si divide in tre fasi
+Il processo di creazione di una VPN si divide in tre fasi
 
 **1. Tunneling**
 
@@ -66,25 +66,26 @@ Questa fase della comunicazione è la parte principale.
 Da essa la comunicazione tra i due host è resa sicura e riservata.
 Il mittente cripta il messaggio e il destinatario attraverso una private key lo decripta .
 Gli algoritmi alla base della criptazione sono simmetrici o asimmetrici e utilizzano il principio dell’hashing.
-Algoritmo simmetrico: utilizzo della stessa chiave per criptare e decriptare
-Algoritmo asimmetrico: utilizzo di chiavi diverse per criptare e decriptare
-Hashing: utilizzato per rendere un dato riservato, questo procedimento non è reversibile.
+
+- Algoritmo simmetrico: utilizzo della stessa chiave per criptare e decriptare
+- Algoritmo asimmetrico: utilizzo di chiavi diverse per criptare e decriptare
+Hashing (utilizzato per rendere un dato riservato, questo procedimento non è reversibile).
 
 # Protocolli VPN
 
-La comunicazione tra due host avviene secondo dei precisi protocolli, qui di seguito troverai quattro esempi.
+La comunicazione tra due host avviene secondo dei precisi protocolli, quali per esempio.
 
 **1. OpenVPN**
 
 Tra i quattro è quello più diffuso per via della sua crittografia ad alto livello e della sua natura open source.
 Questo protocollo lo possiamo dividere in due tipologie:
 
-**- OpenVpn-TCP**
+### **OpenVpn-TCP**
 
 Sfrutta la connessione TCP che si accerta dell’invio del messaggio instaurando una connessione tra il mittente e il destinatario, in caso di mancata consegna si procede con il rinvio del pacchetto.
 Il difetto maggiore è la lentezza di tutto il processo.
 
-**- OpenVpn-UDP**
+### **OpenVpn-UDP**
 
 Sfrutta la connessione UDP che non instaura una connessione tra il mittente e il destinatario, ma procede direttamente con l’invio, ciò rende il procedimento molto veloce.
 Il difetto maggiore è la non sicurezza dell’invio corretto del messaggio.
@@ -92,7 +93,7 @@ Il difetto maggiore è la non sicurezza dell’invio corretto del messaggio.
 **2. Wireguard**
 
 Questo protocollo punta ad essere più semplice e veloce rispetto agli altri, data la sua comunicazione basata sullo scambio di chiavi pubbliche.
-Data la sua implementazione al kernel di Linux il suo utilizzo si è sparso su molti dispositivi, anche quelli con caratteristiche hardware semplici.
+Data la sua implementazione nel kernel di Linux il suo utilizzo si è sparso su molti dispositivi, anche quelli con caratteristiche hardware semplici.
 La caratteristica principale è il Criptokey Routing che permette il passaggio dei pacchetti agli host con indirizzi IP appartenenti alla chiave pubblica per la decriptazione.
 Il suo vantaggio maggiore è la leggerezza del software.
 
@@ -107,7 +108,7 @@ Il protocollo Point-to-Point Tunneling Protocol è uno dei più vecchi e la sua 
 La sua installazione è semplice e ha una buona velocità computazionale.
 Il difetto maggiore sono i suoi protocolli di sicurezza soggetti a preoccupanti vulnerabilità a livello di sicurezza.
 
-# Pro e Contro
+# Pro e Contro nell'uso di una VPN
 
 **Pro**
 
