@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-4de5da66.js",
+    "file": "_app/immutable/start-967def11.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -31,12 +31,13 @@
       "src/routes/blog/le-criptovalute-e-il-mining.md",
       "src/routes/blog/reti-vpn.md",
       "src/routes/blog/tipologie-di-database.md",
+      "src/routes/blog/truffe-informatiche.md",
       "src/routes/blog/virtual-reality.md",
       "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-8d0448af.js",
+    "file": "_app/immutable/pages/__layout.svelte-61e866b4.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -312,6 +313,18 @@
       "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
+  "src/routes/blog/truffe-informatiche.md": {
+    "file": "_app/immutable/pages/blog/truffe-informatiche.md-f9183bfb.js",
+    "src": "src/routes/blog/truffe-informatiche.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
   "src/routes/blog/virtual-reality.md": {
     "file": "_app/immutable/pages/blog/virtual-reality.md-d12adcb4.js",
     "src": "src/routes/blog/virtual-reality.md",
@@ -381,13 +394,13 @@
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
-  },
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
+  },
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
