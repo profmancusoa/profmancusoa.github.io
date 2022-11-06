@@ -3,7 +3,7 @@ id: 2022-10-27-1
 titolo: Reti VPN
 featured: false
 autore: Pierpaolo Quijada Gomez
-data: 2022-10-27
+data: 2022-11-06
 cover: cover.jpg
 introduzione: Breve introduzione sulle VPN
 pubblicato: false

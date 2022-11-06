@@ -1,12 +1,12 @@
 ---
 id: 2022-10-27-000x1
-titolo: Todo List React
+titolo: Come creare una To-Do List in React
 featured: false
 autore: Dario Ruggieri
-data: 2022-10-26
+data: 2022-11-06
 cover: cover.webp
-introduzione: Post dedicato ad una Todo List realizzata in React
-pubblicato: false
+introduzione: Vediamo come usare il framework React per creare una semplice ToDo List app
+pubblicato: true
 sezione: IT
 categorie:
   - framework
@@ -18,13 +18,20 @@ categorie:
 
 ## Introduzione
 
-[React](https://reactjs.org/), Svelte, Angular… Questi sono solo alcuni dei più famosi framework Javascript che il WEB ci mette a disposizione. Ma cos’è un framework? Con la crescita e la diffusione delle nuove tecnologie è sempre più richiesto lo sviluppo di applicazioni grandi e complesse, sarebbe, quindi, inimmaginabile sviluppare in JS _vanilla_ (puro). Per questo motivo sono stati creati dei tool (chiamati framework) che offrono una struttura (skeleton) sulla quale i programmatori possono costruire la loro applicazione. L’utilizzo di questi strumenti permette innanzitutto lo snellimento del codice, ma soprattutto la possibilità di evitare quell’enorme quantità di problemi che si incontrerebbero nello sviluppo in puro JS. Dopo questa premessa è importante però sottolineare che l’utilizzo di questi strumenti richiede la conoscenza di Javascript e per questo motivo l’articolo è rivolto a coloro che ne conoscono almeno le basi.
+[React](https://reactjs.org/), Svelte, Angular… sono solo alcuni dei più famosi framework Javascript che il WEB ci mette a disposizione. Ma cos’è un framework? Con la crescita e la diffusione delle nuove tecnologie è sempre più richiesto lo sviluppo di applicazioni grandi e complesse, sarebbe, quindi, inimmaginabile sviluppare in JS _vanilla_ (puro). 
+
+Per questo motivo sono stati creati dei tool (chiamati framework) che offrono una struttura (skeleton) sulla quale i programmatori possono costruire la loro applicazione. L’utilizzo di questi strumenti permette innanzitutto lo snellimento del codice, ma soprattutto la possibilità di evitare quell’enorme quantità di problemi che si incontrerebbero nello sviluppo in puro JS. 
+
+Dopo questa premessa è importante però sottolineare che l’utilizzo di questi strumenti richiede la conoscenza di Javascript e per questo motivo l’articolo è rivolto a coloro che ne conoscono almeno le basi.
 Il modo migliore per conoscere uno strumento è **utilizzarlo**. L’articolo che segue ha un approccio pratico: vuole, infatti, descrivere gli elementi fondamentali di React attraverso una piccola applicazione JS da me sviluppata [(disponibile su Github)](https://github.com/Dario-Ruggieri/ToDo_React.git) che implementa una ToDo List.
 
 ## Come React gestisce il DOM
 
 React gestisce il DOM (albero degli oggetti che caratterizzano la pagina) attraverso un DOM virtuale (_VirtualDOM_). Quando modifichiamo qualcosa nella pagina, infatti, viene modificato il DOM Virtuale e se React ritiene la modifica necessaria, allora viene modificato il DOM reale della pagina. Questo concetto è ben descritto dalla seguente immagine:
-![This is an image](/img/posts/todo-list-react/virtualDOM.png)
+
+<br>
+
+![This is an image](/img/posts/come-creare-una-to-do-list-in-react/virtualDOM.png)
 
 ## Creare l’ambiente corretto per lo sviluppo in React
 
@@ -39,8 +46,16 @@ $npm start
 
 ## Componenti
 
-Uno dei principali paradigmi di programmazione è la tecnica del _top down_, che prevede la suddivisione di un macro problema in piccoli sottoproblemi che a loro volta saranno suddivisi con la stessa tecnica. React si basa su questo pensiero. Permette, infatti, di creare i **componenti**: elementi che svolgono una funzione specifica e che messi insieme (è possibile usare un componente all’interno di un altro componente) permettono di creare applicazioni complesse a piacere. Una volta creati possono essere poi “appesi” a uno o più tag del file HTML.
-Per la realizzazione della ToDo List ho creato tre componenti: _App.js_, _Todo.js_ e _Form.js_. Ognuno di questi componenti ha un compito differente: _Todo.js_ ha lo scopo di gestire tutte le todo (task) che l’utente ha aggiunto; _Form.js_ si occupa di gestire la parte di form che permette all’utente di inserire una nuova task; _App.js_ è il componente che utilizza _Todo.js_ e _Form.js_ e che viene appeso dal file _index.js_ nel DOM Virtuale. Nel file _index.js_, infatti, viene restituito il componente _App_ attraverso il seguente codice:
+Uno dei principali paradigmi di programmazione è la tecnica del _top down_, che prevede la suddivisione di un macro problema in piccoli sottoproblemi che a loro volta saranno suddivisi con la stessa tecnica. 
+
+React si basa su questo pensiero. Permette, infatti, di creare i **componenti**: elementi che svolgono una funzione specifica e che messi insieme (è possibile usare un componente all’interno di un altro componente) permettono di creare applicazioni complesse a piacere. Una volta creati possono essere poi “appesi” a uno o più tag del file HTML.
+
+Per la realizzazione della ToDo List ho creato tre componenti: _App.js_, _Todo.js_ e _Form.js_. Ognuno di questi componenti ha un compito differente: 
+- _Todo.js_ ha lo scopo di gestire tutte le todo (task) che l’utente ha aggiunto 
+- _Form.js_ si occupa di gestire la parte di form che permette all’utente di inserire una nuova task 
+- _App.js_ è il componente che utilizza _Todo.js_ e _Form.js_ e che viene appeso dal file _index.js_ nel DOM Virtuale. 
+
+Nel file _index.js_, infatti, viene restituito il componente _App_ attraverso il seguente codice:
 
 ```JS
 const root = ReactDOM.createRoot(document.getElementById('root'));

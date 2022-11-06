@@ -3,8 +3,9 @@ id: 2022-10-27-1
 titolo: Come creare una To-Do List in Svelte
 featured: false
 autore: Simone Laudani
-data: 2022-10-27
+data: 2022-11-06
 cover:  cover.webp
+introduzione: Vediamo come usare il framework Svelte per creare una semplice ToDo List app
 pubblicato: true
 sezione: Web Development
 categorie:
@@ -18,6 +19,7 @@ Sapresti realizzare una pagina che comprenda una to do list in una pagina web? N
 Se ti è mai capitato di tornare a casa dopo aver fatto la spesa e tirarti maledizioni addosso perchè per l’ennesima volta ti sei scordato di comprare il latte, questo semplice programma farà al caso tuo. Stiamo parlando, infatti, di un software che ci permette di aggiungere elementi ad una lista puntata, permettendoci di sbarrarli o di eliminarli a nostro piacimento.
 
 I suoi utilizzi possono essere svariati e spaziano da una banalissima lista della spesa agli esercizi da fare in palestra, piuttosto che i compiti da fare per la settimana.
+
 Anche Microsoft e Google non si sono smentite e hanno creato la loro versione di questo programma. La prima ha creato addirittura una applicazione apposita ed un sito web dedicato (https://to-do.live.com/tasks/) , che permette a più utenti di collaborare; ha un menù che facilita di molto l’utilizzo e vanta anche l’integrazione negli altri prodotti marchiati Microsoft, come il “calendario”  ed Outlook. Big G, invece, ha un’ attitudine un po’ più semplicistica e propone solamente un’app per iOS ed Android puntando molto sull’integrazione di “Tasks” nei loro software di punta, come Google Calendar o Gmail.
 
 Se i prodotti offerti da due delle software house più importanti del XXI secolo non ti ispirano e  hai tanto tempo libero per sviluppare una To-Do List tutta tua, scopriamo subito assieme come fare!
@@ -33,14 +35,10 @@ Svelte è un framework front-end e open-source di JavaScript che permette di svi
 Innanzitutto è necessario installare Svelte (https://svelte.dev/), un framework JavaScript rivoluzionario nel suo genere. Per farlo basta aprire il terminale ed eseguire i seguenti comandi: 
  ```bash
 npm create vite@latest myapp -- --template svelte
-```
- ```bash
+
 cd myapp
-```
-```bash
+
 npm install
-```
-```bash
 npm run dev
 ```
 
@@ -55,8 +53,10 @@ So che la varietà di file nella cartella potrebbe far paura, ma non vi spaventa
 
 ## Creiamo la lista To-Do
 
-Perfetto! Siamo pronti per scrivere qualche linea di codice. Partiamo dalla parte logica, usando il tag `<script>` per aprirla. Dichiariamo una variabile con una stringa vuota ed un nuovo oggetto contenente le opzioni default che appariranno ogni volta che apriremo il sito.
-Creiamo quindi una funzione Add che si occuperà di aggiungere i valori alla lista. Per farlo, assegnamo all'oggetto di prima un un nuovo valore contenente come testo la precedente variabile vuota  ed uno status di false: questo farà apparire un nuova riga alla nostra  lista, riga che non sarà barrata.
+Perfetto! Siamo pronti per scrivere qualche linea di codice. Partiamo dalla parte logica, usando il tag `<script>` per aprirla. 
+
+Dichiariamo una variabile con una stringa vuota ed un nuovo oggetto contenente le opzioni default che appariranno ogni volta che apriremo il sito.
+Creiamo quindi una funzione Add che si occuperà di aggiungere i valori alla lista. Per farlo, assegnamo all'oggetto di prima un nuovo valore contenente come testo la precedente variabile vuota  ed uno status di false: questo farà apparire un nuova riga alla nostra  lista, riga che non sarà barrata.
 
 Ovviamente, dobbiamo anche permettere di rimuovere le linee. Per farlo aggiungiamo una funzione passandole un valore di index. Usiamo il metodo “splice” sull’oggetto che contiene tutti i “To-Do” dell’utente e assegnamola a sè stessa per aggiornarne il valore.
 
