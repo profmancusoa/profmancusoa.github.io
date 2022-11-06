@@ -4,7 +4,7 @@ id: 2022-10-27-1
 titolo: La quantum security
 featured: false
 autore: Luca Bortoluzzi
-data: 2022-10-27
+data: 2022-11-06
 cover: cover.webp
 introduzione: Introduzione al mondo della quantum security
 pubblicato: true
