@@ -3,10 +3,10 @@ id: 2022-08-26-0
 titolo: Truffe informatiche
 featured: false
 autore: Alexandru Ioan Chindris
-data: 2022-10-22
+data: 2022-11-06
 cover: cover.webp
-introduzione: Questo post introduce alle truffe informatiche più comuni.
-pubblicato: false
+introduzione: Panoramica delle più comuni truffe informatiche.
+pubblicato: true
 sezione: IT
 categorie:
   - Sicurezza informatica
@@ -34,13 +34,19 @@ In particolare in questo post andremo ad analizzare due truffe molto diffuse e m
 
 ## Phishing & Identity spoofing
 
-Phishing deriva dalla parola inglese "pescare", i malintenzionati che utilizzano questa tecnica cercano di appropriarsi di alcuni dati sensibili che sarai tu stesso a fornire! Vengono infatti inviate migliaia di email provenienti da domini differenti che sono molto simili a quelli di servizi  comuni e utilizzati da tutti. Un esempio può essere Amazon: chi non ha mai acquistato qualcosa online utilizzando Amazon? Di conseguenza potremmo ricevere email o sms dove ci viene chiesto di ripristinare il metodo di pagamento oppure di modificare la password dell'account dove abbiamo la carta collegata. Infatti questi messaggi ci indirizzano a siti web clone di quelli originali. L'unica differenza è l'appartenenza del sito. Infatti, il sito dove veniamo portati appartiene a malintenzionati e quindi tutti i dati che noi inviamo tramite le loro piattaforme arriveranno a loro. Questo tipo di truffa è molto soffisticata perché fa leva sull'ingegneria sociale.
+Phishing deriva dalla parola inglese "pescare", i malintenzionati che utilizzano questa tecnica cercano di appropriarsi di alcuni dati sensibili che sarai tu stesso a fornire! Vengono infatti inviate migliaia di email provenienti da domini differenti che sono molto simili a quelli di servizi  comuni e utilizzati da tutti. Un esempio può essere Amazon: chi non ha mai acquistato qualcosa online utilizzando Amazon? 
+
+Di conseguenza potremmo ricevere email o sms dove ci viene chiesto di ripristinare il metodo di pagamento oppure di modificare la password dell'account dove abbiamo la carta collegata. Infatti questi messaggi ci indirizzano a siti web clone di quelli originali. L'unica differenza è l'appartenenza del sito. 
+
+Infatti, il sito dove veniamo portati appartiene a malintenzionati e quindi tutti i dati che noi inviamo tramite le loro piattaforme arriveranno a loro. Questo tipo di truffa è molto soffisticata perché fa leva sull'ingegneria sociale.
 
  
 
 ## Cos'è l'ingegneria sociale?
 
-Ma prima tentiamo di descrivere un concetto importante, quello dell'ingegneria sociale. Si tratta dello studio del comportamento di una persona al fine di capire informazioni utili come ad esempio password, email, dati anagrafici, residenza e non solo. Anche gli algoritmi dei nostri social network preferiti come instagram, facebook, tiktok utilizzano l'ingegneria sociale. Essa  si avvale dei dati che produciamo per trarne vantaggio economico e competitivo sul mercato. L'algoritmo di tiktok, infatti, studia le nostre abitudini, i video e le canzoni che preferiamo per poterceli proporre nel feed e farci passare più tempo su di essi.
+Proviamo a descrivere un concetto importante, quello dell'**ingegneria sociale**. Si tratta dello studio del comportamento di una persona al fine di carpire informazioni utili come ad esempio password, email, dati anagrafici, residenza e non solo. 
+
+Anche gli algoritmi dei nostri social network preferiti come instagram, facebook, tiktok utilizzano l'ingegneria sociale. Essa  si avvale dei dati che produciamo per trarne vantaggio economico e competitivo sul mercato. L'algoritmo di tiktok, infatti, studia le nostre abitudini, i video e le canzoni che preferiamo per poterceli proporre nel feed e farci passare più tempo su di essi.
 
  
 
@@ -52,7 +58,7 @@ Tornando a noi, chi architetta queste truffe fa leva sulla debolezza delle perso
 
  
 
-"Cosa mai potrà mai nascondere un link innocente?"
+"Cosa mai potrà nascondere un link innocente?"
 
 "Che noia, ogni giorno c'è un problema diverso!".
 
@@ -78,4 +84,4 @@ Se siete arrivati tardi l'unico modo per rientrare in possesso degli account è 
 
 Se avete dubbi o domande utilizzate la sezione dei commenti, sarò felice di aiutarvi!
 
-Buon internet surfing!
+Buon Internet surfing!
