@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-e4f2c9a7.js",
+    "file": "_app/immutable/start-2b28e46b.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -16,6 +16,8 @@
       "src/routes/blog/cloud-gaming.md",
       "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
       "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
+      "src/routes/blog/come-creare-una-to-do-list-in-react.md",
+      "src/routes/blog/come-creare-una-to-do-list-in-svelte.md",
       "src/routes/blog/come-generare-e-gestire-le-password.md",
       "src/routes/blog/come-installare-projectlibre-su-linux.md",
       "src/routes/blog/come-navigare-tra-le-finestre-di-popos.md",
@@ -25,7 +27,9 @@
       "src/routes/blog/il-blog-profmancusoa.md",
       "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
       "src/routes/blog/il-package-manager-per-wine.md",
+      "src/routes/blog/la-quantum-security.md",
       "src/routes/blog/le-criptovalute-e-il-mining.md",
+      "src/routes/blog/reti-vpn.md",
       "src/routes/blog/tipologie-di-database.md",
       "src/routes/blog/virtual-reality.md",
       "src/routes/index.svelte"
@@ -119,6 +123,30 @@
   "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md": {
     "file": "_app/immutable/pages/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md-1089679d.js",
     "src": "src/routes/blog/come-creare-un-semplice-effetto-di-parallasse-per-la-tua-pagina-web.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/come-creare-una-to-do-list-in-react.md": {
+    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-react.md-6e41cd53.js",
+    "src": "src/routes/blog/come-creare-una-to-do-list-in-react.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/come-creare-una-to-do-list-in-svelte.md": {
+    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-svelte.md-75525e9b.js",
+    "src": "src/routes/blog/come-creare-una-to-do-list-in-svelte.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -236,9 +264,33 @@
       "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
+  "src/routes/blog/la-quantum-security.md": {
+    "file": "_app/immutable/pages/blog/la-quantum-security.md-0827f156.js",
+    "src": "src/routes/blog/la-quantum-security.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
   "src/routes/blog/le-criptovalute-e-il-mining.md": {
     "file": "_app/immutable/pages/blog/le-criptovalute-e-il-mining.md-d7eb266e.js",
     "src": "src/routes/blog/le-criptovalute-e-il-mining.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/reti-vpn.md": {
+    "file": "_app/immutable/pages/blog/reti-vpn.md-141a68a7.js",
+    "src": "src/routes/blog/reti-vpn.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
