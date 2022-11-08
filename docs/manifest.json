@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-51a7bd03.js",
+    "file": "_app/immutable/start-8af7e941.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -26,6 +26,7 @@
       "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
       "src/routes/blog/come-scrivere-un-post-in-markdown.md",
       "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
+      "src/routes/blog/gli-orm-cosa-sono-e-come-funzionano.md",
       "src/routes/blog/il-blog-profmancusoa.md",
       "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
       "src/routes/blog/il-package-manager-per-wine.md",
@@ -39,7 +40,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-8cb74c78.js",
+    "file": "_app/immutable/pages/__layout.svelte-2d29a27c.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -100,7 +101,7 @@
     ]
   },
   "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md": {
-    "file": "_app/immutable/pages/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md-625990b3.js",
+    "file": "_app/immutable/pages/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md-3a28229f.js",
     "src": "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -246,6 +247,18 @@
   "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md": {
     "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-6d23effa.js",
     "src": "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/gli-orm-cosa-sono-e-come-funzionano.md": {
+    "file": "_app/immutable/pages/blog/gli-orm-cosa-sono-e-come-funzionano.md-16656611.js",
+    "src": "src/routes/blog/gli-orm-cosa-sono-e-come-funzionano.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -416,21 +429,21 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
-  },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
   },
-  "_post.css": {
-    "file": "_app/immutable/assets/_post-dc5f4020.css",
-    "src": "_post.css"
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
+  },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-dc5f4020.css",
+    "src": "_post.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",

@@ -1,5 +1,5 @@
 ---
-id: 2022-10-27-1
+id: 2022-10-27-3
 titolo: Analisi e guida realizzazione applicazione con Angular
 featured: false
 autore: Matteo Sola e Francesco Zaina
@@ -10,10 +10,11 @@ pubblicato: true
 sezione: IT
 categorie:
   - Programmazione
-  - Front-en
+  - Frontend
   - Angular
   - Framework
 ---
+
 
 
 # **Analisi dei tool esistenti e guida alla realizzazione di un’applicazione To Do List in Angular**
