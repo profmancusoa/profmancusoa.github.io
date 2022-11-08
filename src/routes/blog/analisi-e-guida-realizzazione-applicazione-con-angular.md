@@ -1,4 +1,3 @@
-
 ---
 id: 2022-10-27-1
 titolo: Analisi e guida realizzazione applicazione con Angular
@@ -6,14 +5,16 @@ featured: false
 autore: Matteo Sola e Francesco Zaina
 data: 2022-11-07
 cover: cover.webp
-introduzione: Realizziamo una semplice ToDo list in Angular.js
+introduzione: "Realizziamo una semplice ToDo list in Angular.js"
 pubblicato: true
-sezione: Blog
+sezione: IT
 categorie:
   - Programmazione
-  - Front end
-  - Blog
+  - Front-en
+  - Angular
+  - Framework
 ---
+
 
 # **Analisi dei tool esistenti e guida alla realizzazione di un’applicazione To Do List in Angular**
 
