@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-967def11.js",
+    "file": "_app/immutable/start-b2f36bb8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -12,6 +12,7 @@
       "src/routes/__error.svelte",
       "src/routes/about/index.svelte",
       "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md",
+      "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md",
       "src/routes/blog/arte-del-pc.md",
       "src/routes/blog/cloud-gaming.md",
       "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
@@ -37,7 +38,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-61e866b4.js",
+    "file": "_app/immutable/pages/__layout.svelte-56a7d721.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -76,6 +77,18 @@
   "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md": {
     "file": "_app/immutable/pages/blog/accesso-abusivo-ad-un-sistema-informatico.md-736cbf23.js",
     "src": "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
+  "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md": {
+    "file": "_app/immutable/pages/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md-b5aa2549.js",
+    "src": "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -390,21 +403,21 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
   },
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
-  },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
+  },
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",
