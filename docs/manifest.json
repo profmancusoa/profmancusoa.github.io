@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-ae15a07a.js",
+    "file": "_app/immutable/start-17ccb431.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -270,7 +270,7 @@
     ]
   },
   "src/routes/blog/hacker-e-cracker.md": {
-    "file": "_app/immutable/pages/blog/hacker-e-cracker.md-b097ca52.js",
+    "file": "_app/immutable/pages/blog/hacker-e-cracker.md-5a89ec58.js",
     "src": "src/routes/blog/hacker-e-cracker.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -442,6 +442,10 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
+  },
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
@@ -453,10 +457,6 @@
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
-  },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",

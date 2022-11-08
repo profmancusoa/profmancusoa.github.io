@@ -6,7 +6,7 @@ autore: William Viteritti
 data: 2022-11-08
 cover: cover.webp
 introduzione: Questo post descrive le differenze tra Hacker e Cracker e...
-pubblicato: false
+pubblicato: true
 sezione: Id
 categorie:
   - Blog
