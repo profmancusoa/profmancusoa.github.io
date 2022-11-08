@@ -1,3 +1,4 @@
+
 ---
 id: 2022-10-27-1
 titolo: Analisi e guida realizzazione applicazione con Angular

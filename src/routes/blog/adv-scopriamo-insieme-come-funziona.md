@@ -3,7 +3,7 @@ id: 2022-10-27-0
 titolo: Adv scopriamo insieme come funziona
 featured: false
 autore: Federico Pomba
-data: 2022-10-27
+data: 2022-11-08
 cover: cover.webp
 introduzione: Cosa sono gli adv
 pubblicato: true
@@ -31,12 +31,15 @@ Vediamo come funziona…
 ![impossibile caricare](/img/posts/adv-scopriamo-insieme-come-funziona/imgads.webp)
 ## Come funziona e cos’è ?
 Il termine cookie, o Magic Cookie, è una tecnica, utilizzata in ambiente UNIX già dagli anni 80’, volta ad implementare meccanismi di identificazione del client presso il server.
-Nel momento in cui accettiamo un cookie, stiamo acconsentendo a che un algoritmo ben specifico di memorizzi le nostre ricerche.
+Nel momento in cui accettiamo un cookie, stiamo acconsentendo a che un algoritmo ben specifico si memorizzi le nostre ricerche.
+
 Il cookie è composto da una stringa di testo arbitraria e da una data di scadenza, non è altro che un header aggiuntivo in una richiesta o risposta HTTP.
 Per assegnare, poi, un cookie ad un utente, il server lo aggiungerà tra gli header di risposta e il client dovrà memorizzarlo a sua volta in una directory.
+
 La memorizzazione delle ricerche di un utente viene salvata all'interno di un processo che il cookie assimilerà attraverso un algoritmo.
 Sapendo che la porta di Google è la numero 80, i cookie registrano i segmenti in uscita e li salvano in automatico.
 Questo permetterà ad un algoritmo, per esempio Google ads, di personalizzare le pubblicità in base all’utente ricordandosi della sua cronologia passata.
+
 Quindi possiamo dedurre che il cookie non è presente nelle pagine solo a scopo pubblicitario. Senza di esso non sarebbe possibile registrarsi ad una pagina o possedere un carrello nei negozi online.
 Inoltre, i cookies vengono utilizzati anche con lo scopo di creare statistiche.
 
