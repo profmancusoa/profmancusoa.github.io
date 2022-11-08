@@ -3,9 +3,9 @@ id: 2022-10-26-1
 titolo: Gli ORM cosa sono e come funzionano
 featured: false
 autore: Marco Garabello
-data: 2022-10-26
+data: 2022-11-08
 cover: cover.webp
-introduzione: Questo articolo spiega cosa sono gli ORM, come funzionano e fà una brebe introduzione a Prisma
+introduzione: Cosa sono gli ORM, come funzionano e breve introduzione a Prisma
 pubblicato: true
 sezione: IT
 categorie:
@@ -33,8 +33,6 @@ ORM (_Object Relational Mapping_) a livello astratto è una tecnica che permette
   <img src="/img/posts/gli-orm-cosa-sono-e-come-funzionano/orm.webp" alt="Schema ORM"/>
 </center>
 
-Un ORM può assumere vari aspetti da una semplice libreria (come SQLite) fino ad un pacchetto assestante.
-
 
 ## Perché usare un ORM e come funziona
 
@@ -59,7 +57,9 @@ Lo schema logico è il seguente:
 <center>
   <img src="/img/posts/gli-orm-cosa-sono-e-come-funzionano/ormschema.webp" alt="Schema ORM"/>
 </center>
+
 <br><br>
+
 <center>
   <img src="/img/posts/gli-orm-cosa-sono-e-come-funzionano/ormimgtwo.webp" alt="Schema ORM"/>
 </center>
