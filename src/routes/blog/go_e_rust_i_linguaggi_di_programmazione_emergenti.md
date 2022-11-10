@@ -3,11 +3,11 @@ id: 20-10-2022-1
 titolo: GO e Rust i linguaggi di programmazione emergenti
 featured: false
 autore: Samuel Salvatore
-data: 2022-10-26
+data: 2022-11-10
 cover: cover.png
-introduzione: "Questo post descrive brevemente di cosa parlo in questo blog"
+introduzione: "Introduzione ai nuovi linguaggi Go e Rust"
 sezione: IT
-pubblicato: false
+pubblicato: true
 categorie:
     - GO
     - Rust
@@ -28,14 +28,22 @@ Questa piccola introduzione calza a pennello con gli argomenti che andremo ad af
 ### Partiamo da go
 
 
-Partiamo da go (o golang), progettato nel 2007 da google ha una sintassi simile al C ma offre molti vantaggi: una maggior velocità nella dichiarazione delle variabili, compilazione rapida e una gestione remota dei pacchetti.
+Partiamo da go (o golang), progettato nel 2007 da google ha una sintassi simile al C ma offre molti vantaggi: 
+- una maggior velocità nella dichiarazione delle variabili
+- compilazione rapida 
+- una gestione remota dei pacchetti.
+
 La versione attuale di Go è stata rilasciata a metà 2022 ma è già prevista una nuova versione in uscita nel 2023, infatti la grande novità portata da go è quella di essere open-source e quindi viene mantenuto e rinnovato molto spesso grazie anche alle modifiche proposte dagli utenti. Questo offre una grande versatilità nell’utilizzo: è stato pensato appositamente per non essere in grado di svolgere una sola attività ma di sapersi adattare ad ogni tecnologia.
 
-![Questa è l'immagine per go](https://899029.smushcdn.com/2131410/wp-content/uploads/2021/10/alphagolang_11.png?lossy=0&strip=1&webp=0 "Questa è una immagine") 
+```go
+package main
+import "fmt"
+func main() {
+    fmt.Println("hello world")
+}
+```
 
 Come possiamo vedere ecco l’hello world
-
-
 
 ### Cos’è Rust?
 
@@ -50,10 +58,13 @@ Come possiamo vedere ecco l’hello world
 
 
 ### Eseguire un programma
-Se si vuole programmare si ha senza dubbio bisogno di un buon editor che supporti il linguaggio che vogliamo utilizzare, per questo per chi fosse in dubbio mi espongo a favore di Visual Studio Code, sviluppato da microsoft e disponibile sia su windows sia su linux, supporta una grandissima quantità di linguaggi differenti e mette a disposizione un numero elevatissimo di funzioni che facilitano la scrittura e il corretto riuscimento del programma.
+Se si vuole programmare si ha senza dubbio bisogno di un buon editor che supporti il linguaggio che vogliamo utilizzare, per questo per chi fosse in dubbio mi espongo a favore di Visual Studio Code, sviluppato da microsoft e disponibile sia su windows sia su linux. 
+
+Supporta una grandissima quantità di linguaggi differenti e mette a disposizione un numero elevatissimo di funzioni che facilitano la scrittura e il corretto riuscimento del programma.
 Sia per go che per rust visual studio code ci offre delle estensioni che ci facilitano e 
 ci permettono la compilazione.
 ![Questa è l'immagine per l'installazione delle estensioni](https://madewithgolang.com/assets/images/posts/go-for-visual-studio-code.png "Questa è una immagine") 
 
 Come possiamo notare tramite una ricerca e un semplice clic su “installa” possiamo aggiungere ciò che vogliamo.
-Infine crea un file, salvalo “.go” se stai utilizzando questo linguaggio oppure “.rs” per rust, a questo punto dopo aver compilato potrai vedere l’esecuzione del programma attraverso il terminale del computer o quello di visual studio code.
+
+Infine crea un file, salvalo “.go” se stai utilizzando questo linguaggio oppure “.rs” per rust. A questo punto dopo aver compilato potrai vedere l’esecuzione del programma attraverso il terminale del computer o quello di visual studio code.
