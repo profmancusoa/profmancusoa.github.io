@@ -69,6 +69,7 @@ let post_pubblicato = async (post) => {
 	//console.log(posts_files);
 	for (const post of posts_files) {
 		let post_file = await post_to_fname(post);
+        console.log(`###########${post_file}####################`)
 		let cover = await post_to_cover(post);
         let pubblicato = await post_pubblicato(post);
 
