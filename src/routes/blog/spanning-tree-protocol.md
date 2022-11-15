@@ -1,10 +1,10 @@
 ---
-id: 2022-11-15-1
+id: 2022-11-15-12
 titolo: Spanning-tree Protocol
 featured: false
 autore: Luca Bortoluzzi
 data: 2022-10-27
-cover: cover_stp.webp
+cover: cover_stpa.webp
 introduzione: Questo post spiega lo Spanning-tree Protocol
 pubblicato: false
 sezione: Blog
@@ -62,11 +62,11 @@ porta dello switch che è connessa al percorso col minor costo, l’altra, invec
 
 
 <center>
-  <img src="/img/posts/spanning-tree-protocol/schermata1.webp" alt="Schemata1-STP"/>
+  <img src="/img/posts/spanning-tree-protocol/schermata1a.webp" alt="Schemata1-STP"/>
 
 
-  <img src="/img/posts/spanning-tree-protocol/schermata2.webp" alt="Schemata2-STP"/>
+  <img src="/img/posts/spanning-tree-protocol/schermata2a.webp" alt="Schemata2-STP"/>
 
 
-  <img src="/img/posts/spanning-tree-protocol/schermata3.webp" alt="Schemata3-STP"/>
+  <img src="/img/posts/spanning-tree-protocol/schermata3a.webp" alt="Schemata3-STP"/>
 </center>
