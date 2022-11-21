@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-1d9e309d.js",
+    "file": "_app/immutable/start-b61e3e34.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -35,6 +35,7 @@
       "src/routes/blog/il-package-manager-per-wine.md",
       "src/routes/blog/la-quantum-security.md",
       "src/routes/blog/le-criptovalute-e-il-mining.md",
+      "src/routes/blog/offerte-del-black-friday.md",
       "src/routes/blog/reti-vpn.md",
       "src/routes/blog/spanning-tree-protocol.md",
       "src/routes/blog/tipologie-di-database.md",
@@ -45,7 +46,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-e76fb4f2.js",
+    "file": "_app/immutable/pages/__layout.svelte-51942ff3.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -369,6 +370,18 @@
       "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
     ]
   },
+  "src/routes/blog/offerte-del-black-friday.md": {
+    "file": "_app/immutable/pages/blog/offerte-del-black-friday.md-8ea2c990.js",
+    "src": "src/routes/blog/offerte-del-black-friday.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-02a6647b.js",
+      "__post-421b6498.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-56b3738a.js"
+    ]
+  },
   "src/routes/blog/reti-vpn.md": {
     "file": "_app/immutable/pages/blog/reti-vpn.md-2e7eb750.js",
     "src": "src/routes/blog/reti-vpn.md",
@@ -502,13 +515,13 @@
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
-  },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
+  },
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",

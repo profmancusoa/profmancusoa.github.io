@@ -6,7 +6,7 @@ autore: Marco Cellini - Apetroaie Antonio
 data: 2022-11-21
 cover: cover.webp
 introduzione: "Gli sconti dell'anno"
-pubblicato: false
+pubblicato: true
 sezione: IT
 categorie:
   - Offerte
