@@ -6,6 +6,8 @@
 		home_active = pagina == '' ? 'active' : '';
 		about_active = pagina == 'about' ? 'active' : '';
 	}
+
+    const VERSION = "1.0"
 </script>
 
 {#if pagina != null}
@@ -35,6 +37,9 @@
 					<li class="nav-item"><a class="nav-link {home_active}" href="/"><b>Home</b></a></li>
 					<li class="nav-item">
 						<a class="nav-link {about_active}" href="/about"><b>About</b></a>
+					</li>
+                    <li class="nav-item">
+						<span class="nav-link" href="#"><b>v{VERSION}</b></span>
 					</li>
 				</ul>
 			</div>
