@@ -34,6 +34,8 @@
 	$all_posts = allPosts;
 </script>
 
+{@html '<script data-goatcounter="https://profmancusoa.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'}
+
 <Navbar pagina={$page.routeId} />
 
 {#if $page.routeId == null}
@@ -47,7 +49,7 @@
 			<!-- Contenuto Principali-->
 			<div class="col-lg-8">
 				<!-- Qui ci va il contenuto principale -->
-				<slot />
+                <slot />
 			</div>
 			<!-- Spaziatore -->
 			<div class="col-lg-1" />
