@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-34d5ac05.js",
+    "file": "_app/immutable/start-e5385dc7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -507,21 +507,21 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "_post.css": {
     "file": "_app/immutable/assets/_post-dc5f4020.css",
     "src": "_post.css"
   },
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
+  },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
-  },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",

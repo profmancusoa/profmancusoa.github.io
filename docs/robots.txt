@@ -1,9 +1,6 @@
 # Based on:
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
-User-agent: *
-Disallow:
-Sitemap: https://profmancusoa.github.io/sitemap.xml
 
 User-agent: 01h4x.com
 Disallow:/
@@ -1385,3 +1382,7 @@ User-agent: ZumBot
 Disallow:/
 User-agent: ZyBorg
 Disallow:/
+
+User-agent: *
+Allow: /
+Sitemap: https://profmancusoa.github.io/sitemap.xml
