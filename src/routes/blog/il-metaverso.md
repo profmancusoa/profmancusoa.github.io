@@ -4,7 +4,7 @@ titolo: Il Metaverso
 featured: false
 autore: Davide Emanuel
 data: 2023-01-13
-cover: cover.jpg
+cover: cover.webp
 introduzione: "Questo blog descrive che cosa è il metaverso,a cosa serve e come verrà usato in futuro." 
 pubblicato: false
 sezione: IT
@@ -40,7 +40,7 @@ Tutto ciò può avvenire in due modi:
 1. possedendo un **wallet**(una specie di portafoglio virtuale).
 2. una collezione digitale di **NFT**che non sono altro che oggetti virtuali che sono unici al 100% e che solo la persona che li acquista li può possedere.
 
-![NFT](/img/nft.webp)
+![NFT](/img/posts/il-metaverso(emanuel)/nft.webp)
 esempi di alcuni degli nft più famosi
 
 ## Le aziende e il Metaverso
@@ -54,7 +54,7 @@ Ora Facebook sta cercando di creare un universo dedicato e,per Zuckemberg,sembre
 
 
 
-![Virtual Reality](/img/facebook.jpeg)
+![Virtual Reality](/img/posts/il-metaverso(emanuel)/facebook.jpeg)
 
 ##  Anche Netflix è nel Metaverso!
 
@@ -63,7 +63,7 @@ Anche il gigante indiscusso dello streaming online è entrato a far parte del me
 Sarà possibile per gli utenti di Decentraland vivere così una scena del nuovo film d’azione di Netflix “The Grey Man” dall’interno del metaverso.
 Il film, con Ryan Gosling e Chris Evans, ha come scopo quello di scoprire nuovi modi interattivi di interagire con i clienti online.
 
-![Netflix Metaverso](/img/metaverse-.jpeg.webp)
+![Netflix Metaverso](/img/posts/il-metaverso(emanuel)/metaverse-.jpeg.webp)
 
 Questo thriller di spionaggio è stato cosi ridefinito “Missione Metaverse“. In Decentraland è stata ricreata l’ambientazione del film, creando un labirinto in cui gli utenti devono navigare dimostrando la loro comprensione della trama e degli indizi forniti dagli attori tramite brevi video.
 
