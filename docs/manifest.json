@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-e5385dc7.js",
+    "file": "_app/immutable/start-1bf81624.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -32,6 +32,7 @@
       "src/routes/blog/hacker-e-cracker.md",
       "src/routes/blog/il-blog-profmancusoa.md",
       "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
+      "src/routes/blog/il-metaverso.md",
       "src/routes/blog/il-package-manager-per-wine.md",
       "src/routes/blog/la-quantum-security.md",
       "src/routes/blog/le-criptovalute-e-il-mining.md",
@@ -46,7 +47,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-a833d534.js",
+    "file": "_app/immutable/pages/__layout.svelte-53b9c2c6.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -334,6 +335,18 @@
       "_Categoria.svelte_svelte_type_style_lang-2328b6e4.js"
     ]
   },
+  "src/routes/blog/il-metaverso.md": {
+    "file": "_app/immutable/pages/blog/il-metaverso.md-88a6928b.js",
+    "src": "src/routes/blog/il-metaverso.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5b87a3dc.js",
+      "__post-f65a391f.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-2328b6e4.js"
+    ]
+  },
   "src/routes/blog/il-package-manager-per-wine.md": {
     "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-b1dc8c5e.js",
     "src": "src/routes/blog/il-package-manager-per-wine.md",
@@ -511,13 +524,13 @@
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
   },
-  "_post.css": {
-    "file": "_app/immutable/assets/_post-dc5f4020.css",
-    "src": "_post.css"
-  },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-f64b60f3.css",
     "src": "src/routes/about/index.css"
+  },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-dc5f4020.css",
+    "src": "_post.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
