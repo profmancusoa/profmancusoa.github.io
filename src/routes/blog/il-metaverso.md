@@ -5,15 +5,12 @@ featured: false
 autore: Davide Emanuel
 data: 2023-01-13
 cover: cover.webp
-introduzione: "Questo blog descrive che cosa è il metaverso,a cosa serve e come verrà usato in futuro." 
-pubblicato: false
+introduzione: "Questo post descrive che cosa è il metaverso,a cosa serve e come verrà usato in futuro." 
+pubblicato: true
 sezione: IT
 categorie:
-  - Come si entra nel metaverso?
-  - Crypto nel mondo del Metaverso
-  - Aziende e metaverso
-  - Facebook e Netflix nel metaverso
-  - Esempi di mondi virtuali
+  - Metaverso
+  - Social
 ---
 
 #### Tempo di lettura: 6'
@@ -81,6 +78,3 @@ Al giorno d'oggi ci sono già delle prime piattaforme che permettono di entrare 
 2. *Sandbox*: è un multiverso virtuale che è diventato molto famoso dopo aver annunciato la sua collaborazione con *Meta* e per monetizzare si usano i famosissimi **NFT**.
 
 3. *Strageverse*: è una nuova piattaforma virtuale per esperienze immersive. Ha debuttato al concerto dei Muse(famossissimo gruppo rock/metal) e consente agli utenti di assistere a concerti attraverso *filmati 3D a 360° ed effetti speciali*. È possibile accedere a Stageverse attraverso l’app Oculus Quest per dispositivi iOS e Android. 
-
-
-
