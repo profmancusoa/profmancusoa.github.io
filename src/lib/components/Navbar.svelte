@@ -7,7 +7,7 @@
 		about_active = pagina == 'about' ? 'active' : '';
 	}
 
-    const VERSION = "1.0.2"
+    const VERSION = "1.0.3"
 </script>
 
 {#if pagina != null}

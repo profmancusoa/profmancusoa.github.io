@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-1bf81624.js",
+    "file": "_app/immutable/start-c8d74010.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -30,6 +30,7 @@
       "src/routes/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md",
       "src/routes/blog/guida-acquisto-di-uno-smartphone.md",
       "src/routes/blog/hacker-e-cracker.md",
+      "src/routes/blog/i-social.md",
       "src/routes/blog/il-blog-profmancusoa.md",
       "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
       "src/routes/blog/il-metaverso.md",
@@ -47,7 +48,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-53b9c2c6.js",
+    "file": "_app/immutable/pages/__layout.svelte-347a5283.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -311,6 +312,18 @@
       "_Categoria.svelte_svelte_type_style_lang-2328b6e4.js"
     ]
   },
+  "src/routes/blog/i-social.md": {
+    "file": "_app/immutable/pages/blog/i-social.md-d9dc02cd.js",
+    "src": "src/routes/blog/i-social.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5b87a3dc.js",
+      "__post-f65a391f.js",
+      "_helpers-e147ed77.js",
+      "_Categoria.svelte_svelte_type_style_lang-2328b6e4.js"
+    ]
+  },
   "src/routes/blog/il-blog-profmancusoa.md": {
     "file": "_app/immutable/pages/blog/il-blog-profmancusoa.md-c899f21f.js",
     "src": "src/routes/blog/il-blog-profmancusoa.md",
@@ -520,21 +533,21 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
-  },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-f64b60f3.css",
     "src": "src/routes/about/index.css"
   },
-  "_post.css": {
-    "file": "_app/immutable/assets/_post-dc5f4020.css",
-    "src": "_post.css"
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
+  },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-dc5f4020.css",
+    "src": "_post.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",
