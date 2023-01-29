@@ -3,7 +3,7 @@ id: 2023-14-01-1
 titolo: I social
 featured: false
 autore: Emanuele Filippo Farfariello
-data: 2023-14-01
+data: 2023-01-14
 cover: cover.webp
 introduzione: In questo articolo parleremo e introdurremo i social media.
 pubblicato: true
