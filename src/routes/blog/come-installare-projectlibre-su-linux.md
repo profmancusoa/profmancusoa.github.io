@@ -1,13 +1,13 @@
 
 ---
-id: 2022-08-24-1
+id: 2023-02-09-1
 titolo: Come installare ProjectLibre su Linux
 featured: false
 autore: ProfMancuso
-data: 2022-08-24
+data: 2023-02-09
 cover: projectlibre.webp
 introduzione: Come installare ProjectLibre su Linux in modo facile e veloce
-pubblicato: false
+pubblicato: true
 sezione: Installazioni
 categorie:
   - ProjectLibre
