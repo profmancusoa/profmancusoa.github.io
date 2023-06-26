@@ -168,6 +168,6 @@ NOTA BENE: in questo ultimo spezzone sono presenti delle classi in CSS che si oc
 
 Allego la mia versione finale ed ultimata del codice. Per accedervi, clicca sul link che trovi qui sotto.
 
-- <a href="https://github.com/Bauda/Svelte-To-Do" target="_blank">La mia versione finale</a>
+- <a href="https://github.com/Bauda/Svelte-To-Do" target="_blank" title="svelte to-do list">La mia versione finale</a>
 
 Grazie per la lettura!

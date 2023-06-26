@@ -120,4 +120,4 @@ $ npm install @prisma/client
 Fatto ciò basterà importare il prisma client in Javascript e il gioco sarà fatto. Spero di esservi stato
 utile.
 
-Per informazioni più specifiche e complete, guardare sempre la documentazione ufficiale: <a href="https://www.prisma.io/docs/" target="_blank">https://www.prisma.io/docs/</a>
+Per informazioni più specifiche e complete, guardare sempre la documentazione ufficiale: <a href="https://www.prisma.io/docs/" target="_blank" title="prisma.io">https://www.prisma.io/docs/</a>

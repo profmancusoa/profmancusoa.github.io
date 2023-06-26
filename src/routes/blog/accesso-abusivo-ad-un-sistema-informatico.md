@@ -88,7 +88,7 @@ Un consiglio sulle password da scegliere, per le App, e-mail, etc.
 Non scegliamo mai password banali come 12345678, o nomi di persone, o date di nascita, questo perché ci sono software che molto facilmente individuano le varie combinazioni di numeri e lettere, quindi quando scegliamo una password vediamo di mettere numeri, lettere, caratteri speciali. 
 Qui sotto un semplice schema per le combinazioni di password.
 
-![tabella](/img/posts/accesso-abusivo-ad-un-sistema-informatico/tabella_pass.webp)
+![tabella bruteforce password](/img/posts/accesso-abusivo-ad-un-sistema-informatico/tabella_pass.webp)
 
 
 
