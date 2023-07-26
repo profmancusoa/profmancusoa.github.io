@@ -42,23 +42,45 @@
 	<slot />
 {:else if $page.routeId == 'about'}
 	<slot />
+{:else if $page.routeId.startsWith('blog')}
+    <div class="container py-5 mt-5">
+        <div class="row">
+            <!-- Spaziatore -->
+            <div class="col-lg-2" />
+
+            <!-- Contenuto Principali-->
+            <div class="col-lg-8">
+                <!-- Qui ci va il contenuto principale -->
+                <slot />
+            </div>
+            <!-- Spaziatore -->
+            <div class="col-lg-2" />
+
+            <!-- Sidebar-->
+            <!-- <div class="col-lg-3 d-none d-lg-block">
+                <Categories />
+            </div> -->
+        </div>
+    </div>
 {:else}
 	<!-- Page content-->
 	<div class="container py-5 mt-5">
 		<div class="row">
-			<!-- Contenuto Principali-->
-			<div class="col-lg-8">
+        	<!-- Spaziatore -->
+			<!-- <div class="col-lg-1" /> -->
+
+            <!-- Contenuto Principali-->
+			<div class="col-lg-12">
 				<!-- Qui ci va il contenuto principale -->
                 <slot />
 			</div>
 			<!-- Spaziatore -->
-			<div class="col-lg-1" />
+			<!-- <div class="col-lg-1" /> -->
 
 			<!-- Sidebar-->
-			<div class="col-lg-3 d-none d-lg-block">
-				<!-- <Search /> -->
+			<!-- <div class="col-lg-3 d-none d-lg-block">
 				<Categories />
-			</div>
+			</div> -->
 		</div>
 	</div>
 {/if}

@@ -4,7 +4,7 @@
 	import { all_posts } from '$lib/stores/store';
     import { dev } from '$app/env';
 
-	const PAGE_SIZE = 4; // numero di post sulla home
+	const PAGE_SIZE = 6; // numero di post sulla home
 	//necessario per le visualizzazioni successive della home
 	let posts = [...$all_posts];
 
@@ -68,10 +68,14 @@
 	{#if featured[0]}
 		<!-- visualizza solo se c'e' un featured -->
 		<div class="row">
-			<div class="col-lg-12">
+            <!-- Spaziatore -->
+			<div class="col-lg-2" />
+			<div class="col-lg-8">
 				<!-- Featured blog post-->
 				<PostPreview metadata={featured[0].metadata} />
 			</div>
+            <!-- Spaziatore -->
+			<div class="col-lg-2" />
 		</div>
 	{/if}
 
@@ -85,32 +89,42 @@
     {/each}
     Quindi non si rieace a generare le righe in modo dinamico -->
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			{#if posts[post_page_start]}
 				<PostPreview metadata={posts[post_page_start].metadata} />
 			{/if}
 		</div>
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			{#if posts[post_page_start + 1]}
 				<PostPreview metadata={posts[post_page_start + 1].metadata} />
 			{/if}
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-6">
+        <div class="col-lg-4">
 			{#if posts[post_page_start + 2]}
 				<PostPreview metadata={posts[post_page_start + 2].metadata} />
 			{/if}
 		</div>
-		<div class="col-lg-6">
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
 			{#if posts[post_page_start + 3]}
 				<PostPreview metadata={posts[post_page_start + 3].metadata} />
+			{/if}
+		</div>
+		<div class="col-lg-4">
+			{#if posts[post_page_start + 4]}
+				<PostPreview metadata={posts[post_page_start + 4].metadata} />
+			{/if}
+		</div>
+        <div class="col-lg-4">
+			{#if posts[post_page_start + 5]}
+				<PostPreview metadata={posts[post_page_start + 5].metadata} />
 			{/if}
 		</div>
 	</div>
 
 	<!-- Pagination-->
-	{#if posts.length > 4}
+	{#if posts.length > 6}
 		<Paginatore page_size={PAGE_SIZE} {posts} on:cambioPagina={cambio_pagina} />
 	{/if}
 </div>
