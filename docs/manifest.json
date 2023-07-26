@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-d2b2a2b6.js",
+    "file": "_app/immutable/start-d7eaefea.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -84,391 +84,391 @@
     ]
   },
   "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md": {
-    "file": "_app/immutable/pages/blog/accesso-abusivo-ad-un-sistema-informatico.md-f0966f1e.js",
+    "file": "_app/immutable/pages/blog/accesso-abusivo-ad-un-sistema-informatico.md-fdbf5654.js",
     "src": "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/adv-scopriamo-insieme-come-funziona.md": {
-    "file": "_app/immutable/pages/blog/adv-scopriamo-insieme-come-funziona.md-9a59b47f.js",
+    "file": "_app/immutable/pages/blog/adv-scopriamo-insieme-come-funziona.md-9cc4de46.js",
     "src": "src/routes/blog/adv-scopriamo-insieme-come-funziona.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md": {
-    "file": "_app/immutable/pages/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md-c8ac636e.js",
+    "file": "_app/immutable/pages/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md-71bc71e3.js",
     "src": "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/arte-del-pc-e-tecniche-di-modding.md": {
-    "file": "_app/immutable/pages/blog/arte-del-pc-e-tecniche-di-modding.md-8b65c0f9.js",
+    "file": "_app/immutable/pages/blog/arte-del-pc-e-tecniche-di-modding.md-7c50fdbb.js",
     "src": "src/routes/blog/arte-del-pc-e-tecniche-di-modding.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/cloud-gaming-e-gaming-on-demand.md": {
-    "file": "_app/immutable/pages/blog/cloud-gaming-e-gaming-on-demand.md-5977d3dc.js",
+    "file": "_app/immutable/pages/blog/cloud-gaming-e-gaming-on-demand.md-4ff89cf5.js",
     "src": "src/routes/blog/cloud-gaming-e-gaming-on-demand.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md": {
-    "file": "_app/immutable/pages/blog/come-creare-un-applicazione-front-end-con-svelte.md-a8af1d36.js",
+    "file": "_app/immutable/pages/blog/come-creare-un-applicazione-front-end-con-svelte.md-5433eafd.js",
     "src": "src/routes/blog/come-creare-un-applicazione-front-end-con-svelte.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-creare-una-to-do-list-in-react.md": {
-    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-react.md-13df2623.js",
+    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-react.md-00694008.js",
     "src": "src/routes/blog/come-creare-una-to-do-list-in-react.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-creare-una-to-do-list-in-svelte.md": {
-    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-svelte.md-81dbbf2a.js",
+    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-svelte.md-9a754632.js",
     "src": "src/routes/blog/come-creare-una-to-do-list-in-svelte.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-generare-e-gestire-le-password.md": {
-    "file": "_app/immutable/pages/blog/come-generare-e-gestire-le-password.md-26f6518b.js",
+    "file": "_app/immutable/pages/blog/come-generare-e-gestire-le-password.md-c6b4851d.js",
     "src": "src/routes/blog/come-generare-e-gestire-le-password.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-installare-projectlibre-su-linux.md": {
-    "file": "_app/immutable/pages/blog/come-installare-projectlibre-su-linux.md-d5adb66e.js",
+    "file": "_app/immutable/pages/blog/come-installare-projectlibre-su-linux.md-bed073cf.js",
     "src": "src/routes/blog/come-installare-projectlibre-su-linux.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-navigare-tra-le-finestre-di-popos.md": {
-    "file": "_app/immutable/pages/blog/come-navigare-tra-le-finestre-di-popos.md-66142398.js",
+    "file": "_app/immutable/pages/blog/come-navigare-tra-le-finestre-di-popos.md-fca01571.js",
     "src": "src/routes/blog/come-navigare-tra-le-finestre-di-popos.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-pubblicare-un-post-sul-blog.md": {
-    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-4fbfc95c.js",
+    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-8ac6ed75.js",
     "src": "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/come-scrivere-un-post-in-markdown.md": {
-    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-24229ef6.js",
+    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-58f1efd7.js",
     "src": "src/routes/blog/come-scrivere-un-post-in-markdown.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md": {
-    "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-18cc5b2f.js",
+    "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-41cadf7f.js",
     "src": "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/effetto-di-parallasse-per-la-tua-pagina-web.md": {
-    "file": "_app/immutable/pages/blog/effetto-di-parallasse-per-la-tua-pagina-web.md-40344099.js",
+    "file": "_app/immutable/pages/blog/effetto-di-parallasse-per-la-tua-pagina-web.md-a8b9292b.js",
     "src": "src/routes/blog/effetto-di-parallasse-per-la-tua-pagina-web.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/gli-orm-cosa-sono-e-come-funzionano.md": {
-    "file": "_app/immutable/pages/blog/gli-orm-cosa-sono-e-come-funzionano.md-e977d58f.js",
+    "file": "_app/immutable/pages/blog/gli-orm-cosa-sono-e-come-funzionano.md-a718eff4.js",
     "src": "src/routes/blog/gli-orm-cosa-sono-e-come-funzionano.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md": {
-    "file": "_app/immutable/pages/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md-a4bbd0a1.js",
+    "file": "_app/immutable/pages/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md-0b1215ab.js",
     "src": "src/routes/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/guida-acquisto-di-uno-smartphone.md": {
-    "file": "_app/immutable/pages/blog/guida-acquisto-di-uno-smartphone.md-f307ba32.js",
+    "file": "_app/immutable/pages/blog/guida-acquisto-di-uno-smartphone.md-7031ee54.js",
     "src": "src/routes/blog/guida-acquisto-di-uno-smartphone.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/hacker-e-cracker-il-confine-tra-bene-e-male.md": {
-    "file": "_app/immutable/pages/blog/hacker-e-cracker-il-confine-tra-bene-e-male.md-e648528c.js",
+    "file": "_app/immutable/pages/blog/hacker-e-cracker-il-confine-tra-bene-e-male.md-6e7f7e96.js",
     "src": "src/routes/blog/hacker-e-cracker-il-confine-tra-bene-e-male.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/i-social.md": {
-    "file": "_app/immutable/pages/blog/i-social.md-9eadd2a2.js",
+    "file": "_app/immutable/pages/blog/i-social.md-f23e19a2.js",
     "src": "src/routes/blog/i-social.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/il-blog-profmancusoa.md": {
-    "file": "_app/immutable/pages/blog/il-blog-profmancusoa.md-523fba6b.js",
+    "file": "_app/immutable/pages/blog/il-blog-profmancusoa.md-b721572e.js",
     "src": "src/routes/blog/il-blog-profmancusoa.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md": {
-    "file": "_app/immutable/pages/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md-fa84635f.js",
+    "file": "_app/immutable/pages/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md-831dfce0.js",
     "src": "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/il-metaverso.md": {
-    "file": "_app/immutable/pages/blog/il-metaverso.md-6de48ffb.js",
+    "file": "_app/immutable/pages/blog/il-metaverso.md-0b4f912f.js",
     "src": "src/routes/blog/il-metaverso.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/il-package-manager-per-wine.md": {
-    "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-59fd9872.js",
+    "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-4d26c460.js",
     "src": "src/routes/blog/il-package-manager-per-wine.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/la-quantum-security.md": {
-    "file": "_app/immutable/pages/blog/la-quantum-security.md-3f89c7a6.js",
+    "file": "_app/immutable/pages/blog/la-quantum-security.md-572f699b.js",
     "src": "src/routes/blog/la-quantum-security.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/le-criptovalute-e-il-mining.md": {
-    "file": "_app/immutable/pages/blog/le-criptovalute-e-il-mining.md-c6567fc2.js",
+    "file": "_app/immutable/pages/blog/le-criptovalute-e-il-mining.md-50b19d84.js",
     "src": "src/routes/blog/le-criptovalute-e-il-mining.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/reti-vpn.md": {
-    "file": "_app/immutable/pages/blog/reti-vpn.md-d6fcdec4.js",
+    "file": "_app/immutable/pages/blog/reti-vpn.md-89a16739.js",
     "src": "src/routes/blog/reti-vpn.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/spanning-tree-protocol.md": {
-    "file": "_app/immutable/pages/blog/spanning-tree-protocol.md-35656ba5.js",
+    "file": "_app/immutable/pages/blog/spanning-tree-protocol.md-98cccda6.js",
     "src": "src/routes/blog/spanning-tree-protocol.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/tipologie-di-database.md": {
-    "file": "_app/immutable/pages/blog/tipologie-di-database.md-e09ce609.js",
+    "file": "_app/immutable/pages/blog/tipologie-di-database.md-de85c47a.js",
     "src": "src/routes/blog/tipologie-di-database.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/truffe-informatiche.md": {
-    "file": "_app/immutable/pages/blog/truffe-informatiche.md-f1538995.js",
+    "file": "_app/immutable/pages/blog/truffe-informatiche.md-e777a1c2.js",
     "src": "src/routes/blog/truffe-informatiche.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/virtual-reality.md": {
-    "file": "_app/immutable/pages/blog/virtual-reality.md-c4b64b41.js",
+    "file": "_app/immutable/pages/blog/virtual-reality.md-64616a58.js",
     "src": "src/routes/blog/virtual-reality.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/blog/web-socket.md": {
-    "file": "_app/immutable/pages/blog/web-socket.md-e2d70e75.js",
+    "file": "_app/immutable/pages/blog/web-socket.md-967627e2.js",
     "src": "src/routes/blog/web-socket.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-82bed2ab.js",
-      "__post-ca75e959.js",
+      "__post-e024356a.js",
       "_helpers-e147ed77.js",
       "_Categoria.svelte_svelte_type_style_lang-aec75384.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-e679d4e2.js",
+    "file": "_app/immutable/pages/index.svelte-4fb5c0be.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -509,8 +509,8 @@
       "_index-8fd3633e.js"
     ]
   },
-  "__post-ca75e959.js": {
-    "file": "_app/immutable/chunks/_post-ca75e959.js",
+  "__post-e024356a.js": {
+    "file": "_app/immutable/chunks/_post-e024356a.js",
     "imports": [
       "_index-82bed2ab.js",
       "_helpers-e147ed77.js",
@@ -520,14 +520,6 @@
       "_app/immutable/assets/_post-dc5f4020.css"
     ]
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
-  },
-  "_post.css": {
-    "file": "_app/immutable/assets/_post-dc5f4020.css",
-    "src": "_post.css"
-  },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-f64b60f3.css",
     "src": "src/routes/about/index.css"
@@ -535,6 +527,14 @@
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",
     "src": "src/routes/index.css"
+  },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-dc5f4020.css",
+    "src": "_post.css"
+  },
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   },
   "src/routes/__layout.css": {
     "file": "_app/immutable/assets/__layout-a78a892a.css",

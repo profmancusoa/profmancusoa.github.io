@@ -54,7 +54,7 @@
 	<!-- Facebook Meta Tags -->
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={titolo} />
-	<meta property="article:publisher" content="https://profmancusoa.github.io/" />
+	<meta property="article:publisher" content="https://prof.mancusoa.it/" />
 	<meta property="article:published_time" content={data} />
 	<meta property="article:author" content={autore} />
 	<meta property="article:section" content={sezione} />
@@ -73,7 +73,7 @@
 	<meta name="twitter:card" content={titolo} />
 	<meta name="twitter:title" content={titolo} />
 	<meta name="twitter:description" content={introduzione} />
-	<meta property="twitter:domain" content="profmancusoa.github.io" />
+	<meta property="twitter:domain" content="prof.mancusoa.it" />
 	<meta property="twitter:url" content="post_url" />
 	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" />
 </svelte:head>

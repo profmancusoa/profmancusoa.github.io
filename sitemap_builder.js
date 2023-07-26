@@ -1,25 +1,25 @@
 import * as fs from 'node:fs/promises';
 
-const BASE_URL = 'https://profmancusoa.github.io/';
+const BASE_URL = 'https://prof.mancusoa.it/';
 const POST_DIR = './src/routes/blog/';
 
 const SITEMAP_HEADER = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://profmancusoa.github.io/</loc>
+        <loc>https://prof.mancusoa.it/</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://profmancusoa.github.io/about/</loc>
+        <loc>https://prof.mancusoa.it/about/</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
 `;
 const SITEMAP_ENTRY = `    <url>
-        <loc>https://profmancusoa.github.io/blog/{post_fname}/</loc>
+        <loc>https://prof.mancusoa.it/blog/{post_fname}/</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
