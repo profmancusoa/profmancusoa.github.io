@@ -34,8 +34,6 @@
 	$all_posts = allPosts;
 </script>
 
-{@html '<script data-goatcounter="https://profmancusoa.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'}
-
 <Navbar pagina={$page.routeId} />
 
 {#if $page.routeId == null}
