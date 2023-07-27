@@ -34,6 +34,18 @@
 	$all_posts = allPosts;
 </script>
 
+<svelte:head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBQX0F4LS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CZBQX0F4LS');
+    </script>
+</svelte:head>
+
 <Navbar pagina={$page.routeId} />
 
 {#if $page.routeId == null}
