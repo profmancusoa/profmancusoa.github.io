@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run post_build",
-		"post_build": "npm run sitemap && touch docs/.nojekyll && cp google30f827e09b16a4e0.html docs && cp BingSiteAuth.xml docs && cp robots.txt docs && cp sitemap.xml docs",
+		"post_build": "npm run sitemap && touch docs/.nojekyll && cp google30f827e09b16a4e0.html docs && cp BingSiteAuth.xml docs && cp robots.txt docs && cp sitemap.xml docs && cp CNAME docs",
 		"sitemap": "node sitemap_builder.js",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
