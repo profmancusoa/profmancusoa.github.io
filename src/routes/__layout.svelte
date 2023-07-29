@@ -26,6 +26,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Categories from '$lib/components/Categories.svelte';
 	import Search from '$lib/components/Search.svelte';
+    import { dev } from '$app/env';
 	import { all_posts } from '$lib/stores/store';
 
 	export let allPosts;
@@ -34,7 +35,9 @@
 	$all_posts = allPosts;
 </script>
 
+
 <svelte:head>
+{#if !dev}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBQX0F4LS"></script>
     <script>
@@ -44,6 +47,7 @@
 
     gtag('config', 'G-CZBQX0F4LS');
     </script>
+{/if}
 </svelte:head>
 
 <Navbar pagina={$page.routeId} />

@@ -1,7 +1,7 @@
 ---
 id: 2022-08-20-1
 titolo: Il blog ProfMancusoa
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2022-08-20
 cover: profmancusoa.webp
