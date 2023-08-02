@@ -78,7 +78,7 @@
 	<meta name="twitter:title" content={titolo} />
 	<meta name="twitter:description" content={introduzione} />
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
-	<meta property="twitter:url" content="post_url" />
+	<meta property="twitter:url" content="{post_url}" />
 	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" />
 </svelte:head>
 
@@ -91,7 +91,7 @@
 		<div class="text-muted fst-italic mb-3 fs-5">
 			{autore} - {date_convert(data)}
 			{#if !dev}
-				- <a class="text-muted" href="{post_url.slice(0, -1)}#disqus_thread">0 commenti</a>
+				- <a class="text-muted" href="{post_url}#disqus_thread">0 commenti</a>
 			{/if}
 		</div>
 		<!-- categorie-->
