@@ -20,7 +20,7 @@
 	export let post_url = $page.url.href;
 	export let base_post_url = $page.url.origin;
 	export let post_uid = $page.routeId;
-
+    
 	//per qualche motivo qui cover è esportato senza l'aggiunta della slug directory
 	cover = title_to_slug(titolo) + '/' + cover;
 
@@ -49,8 +49,12 @@
 
 <svelte:head>
 	<title>{titolo}</title>
-	<meta name="description" content={introduzione} />
-
+	<meta name="robots" content="max-image-preview:large" />
+    <meta property="og:locale" content="it_IT" />
+    <meta name="description" content={introduzione} />
+    <meta property="og:site_name" content="Prof Mancusoa" />
+    <link rel="canonical" href="{post_url}"/>
+    
 	<!-- Facebook Meta Tags -->
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={titolo} />

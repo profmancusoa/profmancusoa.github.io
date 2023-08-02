@@ -31,7 +31,7 @@ React gestisce il DOM (albero degli oggetti che caratterizzano la pagina) attrav
 
 <br>
 
-![This is an image](/img/posts/come-creare-una-to-do-list-in-react/virtualDOM.png)
+![virtual-DOM](/img/posts/come-creare-una-to-do-list-in-react/virtualDOM.png)
 
 ## Creare l’ambiente corretto per lo sviluppo in React
 
