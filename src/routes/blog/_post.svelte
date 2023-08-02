@@ -17,10 +17,10 @@
 	export let categorie;
 	export let sezione;
 
-	export let post_url = $page.url.href;
-	export let base_post_url = $page.url.origin;
-	export let post_uid = $page.routeId;
-    
+	export let base_post_url = 'https://prof.mancusoa.it/'
+    export let post_uid = $page.routeId;
+    export let post_url = base_post_url + post_uid;
+
 	//per qualche motivo qui cover è esportato senza l'aggiunta della slug directory
 	cover = title_to_slug(titolo) + '/' + cover;
 
@@ -53,7 +53,7 @@
     <meta property="og:locale" content="it_IT" />
     <meta name="description" content={introduzione} />
     <meta property="og:site_name" content="Prof Mancusoa" />
-    <link rel="canonical" href="{post_url}"/>
+    <link rel="canonical" href="{post_url}"/>x
     
 	<!-- Facebook Meta Tags -->
 	<meta property="og:type" content="article" />
@@ -66,7 +66,7 @@
 		<meta property="article:tag" content={categoria} />
 	{/each}
 	<meta property="og:description" content={introduzione} />
-	<meta property="og:url" content={post_url} />
+	<meta property="og:url" content={post_url} />x
 	<meta property="og:image" content="{base_post_url}{cover_assign(cover)}" />
 	<meta property="og:image:secure_url" content="{base_post_url}{cover_assign(cover)}" />
 	<meta property="og:image:width" content="850" />
@@ -91,7 +91,7 @@
 		<div class="text-muted fst-italic mb-3 fs-5">
 			{autore} - {date_convert(data)}
 			{#if !dev}
-				- <a class="text-muted" href="{post_url.slice(0, -1)}#disqus_thread">0 commenti</a>
+				- <a class="text-muted" href="{post_url.slice(0, -1)}#disqus_thread">0 commenti</a>xxx
 			{/if}
 		</div>
 		<!-- categorie-->
