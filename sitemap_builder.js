@@ -3,26 +3,26 @@ import * as fs from 'node:fs/promises';
 const BASE_URL = 'https://prof.mancusoa.it/';
 const POST_DIR = './src/routes/blog/';
 
-const SITEMAP_HEADER = `<?xml version="1.0" encoding="UTF-8"?>
+const SITEMAP_HEADER = `<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://prof.mancusoa.it/</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://prof.mancusoa.it/about/</loc>
+        <loc>https://prof.mancusoa.it/about</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.9</priority>
     </url>
 `;
 const SITEMAP_ENTRY = `    <url>
-        <loc>https://prof.mancusoa.it/blog/{post_fname}/</loc>
+        <loc>https://prof.mancusoa.it/blog/{post_fname}</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.9</priority>
     </url>
 `;
 const SITEMAP_TAIL = '</urlset>';
@@ -82,7 +82,7 @@ let post_pubblicato = async (post) => {
 	}
 
 	let xml = SITEMAP_HEADER + SITEMAP_ENTRIES + SITEMAP_TAIL;
-	let now = new Date().toISOString();
+	let now = new Date().toISOString().slice(0,10);
 	fs.writeFile('sitemap.xml', xml.replaceAll('{timestamp}', now));
     console.log(`sitemap.xml [${SITEMAP_ENTRIES.split('<url>').length + 1} entry] creato con successo!!!`);
 })();
