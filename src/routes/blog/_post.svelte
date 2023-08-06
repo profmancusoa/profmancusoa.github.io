@@ -19,7 +19,7 @@
 
 	export let base_post_url = 'https://prof.mancusoa.it'
     export let post_uid = $page.routeId;
-    export let post_url = base_post_url + '/' + post_uid;
+    export let post_url = base_post_url + '/' + post_uid + '/';
 
 	//per qualche motivo qui cover è esportato senza l'aggiunta della slug directory
 	cover = title_to_slug(titolo) + '/' + cover;
@@ -32,7 +32,6 @@
 				this.page.identifier = post_uid;
 			};
 
-			console.log(post_url);
 			(function () {
 				// DON'T EDIT BELOW THIS LINE
 				var d = document,
@@ -58,7 +57,7 @@
 	<!-- Facebook Meta Tags -->
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={titolo} />
-	<meta property="article:publisher" content="{base_post_url}" />
+	<meta property="article:publisher" content="{base_post_url}/" />
 	<meta property="article:published_time" content={data} />
 	<meta property="article:author" content={autore} />
 	<meta property="article:section" content={sezione} />
