@@ -29,7 +29,6 @@ Quindi vogliamo che il numero di colonne sia automaticamente calcolato. Vediamo 
 let l = "100%";
 
 function onrange(e) {
-    console.log(e.target.value)
     l = e.target.value + "%";
 }
 </script>

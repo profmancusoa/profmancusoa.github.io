@@ -277,7 +277,7 @@ Ora usaiamo una foto diversa per ogni elemento del flexbox ed otteniamo la nostr
 
 ### Conclusione
 Bene abbiamo visto come creare una foto gallery con un piacevole effetto zoom.
-Ti invito a sperimentare con il tempo della transizione per trovare il valore adattao al tuo sito o applicazione.
+Ti invito a sperimentare con il tempo della transizione per trovare il valore adatto al tuo sito o applicazione.
 
 Vogli anche sottolineare l'approccio `Top-Down` che abbiamo seguito per sviluppare la gallery. 
 
