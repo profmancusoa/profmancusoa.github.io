@@ -41,14 +41,14 @@ Uno molto carino è quello di zoom al passaggio del mouse sopra l'immagine (*hov
 
 
 Quindi visivamente possiamo comprendere il funzionamento dell'effetto grafico. All'inizio l'immagine viene visualizzata con uno zoom del 100% (visualizzazione normale) e al passaggio del mouse sull'immagine, questa viene ingrandita ad uno zoom superiore al 100% (nell'esempio al 150%).
-L'effetot dello zoom non avviene istantaneamente ma ci mette un certo tempo (nell'esempio 1 secondo).
+L'effetto dello zoom non avviene istantaneamente ma ci mette un certo tempo (nell'esempio 1 secondo).
 
 ## Realizziamo l'effetto passo dopo passo
 
 ### Contenitore o Wrapper della gallery
 
 Creiamo il wireframe della nostra gallery in modo da avere subito un'idea del risultato finale.
-Successiavemente aggiungeremo tutti i dettagli.
+Successivamente aggiungeremo tutti i dettagli.
 
 Iniziamo a definire il *contenitore* della gallery che conterrà tutte le foto. Utilizziamo *flexbox* in modo da disporre gli elementi in modo automatico
 <div class="gallery-step1">
@@ -104,7 +104,7 @@ Ogni foto (img) è inserita in un div *contenitore* in modo da poterne controlla
 <br>
 
 
-Un *contenitore* contiene una sola foto, mentre per l'immagine andiamo ad occupare tutto lo spazio disponibile nel contenitpre fissando al 100% le proprietà *width* e *height*.
+Un *contenitore* contiene una sola foto, mentre per l'immagine andiamo ad occupare tutto lo spazio disponibile nel contenitore fissando al 100% le proprietà *width* e *height*.
 
 Quindi, mettendo insieme gallery e foto otteniamo il seguente risultato
 
@@ -175,7 +175,7 @@ Ora aggiungiamo l'effetto zoom, facendo in modo che quando passiamo sopra l'imma
 <br>
 
 
-Passando il mouse su ogni imamgine vediamo che effettivamente l'immagine viene "zoommata". Tuttavia l'immagine ingrandita esce, straborda, dal suo dive. In altre parole l'immagine va in *overflow*. Quindi risolviamo questo problema impostando la proprietà *overflow* del *contenitore* in modo che non venga visualizzato (*hidden*)
+Passando il mouse su ogni immagine vediamo che effettivamente l'immagine viene "zoommata". Tuttavia l'immagine ingrandita esce, straborda, dal suo dive. In altre parole l'immagine va in *overflow*. Quindi risolviamo questo problema impostando la proprietà *overflow* del *contenitore* in modo che non venga visualizzato (*hidden*)
 
 ```css
 .contenitore {
@@ -203,11 +203,11 @@ Passando il mouse su ogni imamgine vediamo che effettivamente l'immagine viene "
 <br>
 
 
-Molto bene, ora l'immagine viene ingrandita, al apssaggio del mouse, senza fuoriuscire dal suo contenitore.
+Molto bene, ora l'immagine viene ingrandita, al passaggio del mouse, senza fuoriuscire dal suo contenitore.
 
 ### Rallentiamo l'effetto zoom
-Siamo quasi in conclusione, e come visto all'inizio l'effetto zoom non avveiene istantaneamente ma impiega 1 secondo o 1000 ms.
-Per aggiungere questa funzionalità dobbiamo aggiungere una trasizione sull'immagine di 1 secondo. Facciamolo in questo modo
+Siamo quasi in conclusione, e come visto all'inizio l'effetto zoom non avviene istantaneamente ma impiega 1 secondo o 1000 ms.
+Per aggiungere questa funzionalità dobbiamo aggiungere una transizione sull'immagine di 1 secondo. Facciamolo in questo modo
 
 ```css
 .contenitore img {
@@ -258,7 +258,7 @@ Ora ripuliamo il tutto rimuovendo il wireframe e il CSS non necessario ed otteni
 }
 ```
 
-Ora usaiamo una foto diversa per ogni elemento del flexbox ed otteniamo la nostra foto gallery con effetto zoom al passaggio del mouse
+Ora usiamo una foto diversa per ogni elemento del flexbox ed otteniamo la nostra foto gallery con effetto zoom al passaggio del mouse
 
 <div class="gallery">
     <div class="contenitore">
@@ -279,16 +279,16 @@ Ora usaiamo una foto diversa per ogni elemento del flexbox ed otteniamo la nostr
 Bene abbiamo visto come creare una foto gallery con un piacevole effetto zoom.
 Ti invito a sperimentare con il tempo della transizione per trovare il valore adatto al tuo sito o applicazione.
 
-Vogli anche sottolineare l'approccio `Top-Down` che abbiamo seguito per sviluppare la gallery. 
+Voglio anche sottolineare l'approccio `Top-Down` che abbiamo seguito per sviluppare la gallery. 
 
 Come visto abbiamo sviluppato la nostra gallery partendo dall'alto (`Top`) cioè da una versione molto base (solo il wireframe), per aggiungere progressivamente dettagli e funzionalità fino a raggiungere il risultato finale (`Down`).
-In questo modo abbiamo segutio e compreso a fondo tutti i passi e quindi abbiamo imparato come con poche proprietà CSS sia possibile realizzare effetti che fino a qualche anno fà richiedevano molto codice JavaScript.
+In questo modo abbiamo seguito e compreso a fondo tutti i passi e quindi abbiamo imparato come con poche proprietà CSS sia possibile realizzare effetti che fino a qualche anno fà richiedevano molto codice JavaScript.
 
 
-Vi invito a speriementare con questa pillola di CSS, a mettere un like e fatemi sapere nei commenti se la trovate utile e siete riusciti ad usarla nei vostri siti e web app.
+Vi invito a sperimentare con questa pillola di CSS, a mettere un like e fatemi sapere nei commenti se la trovate utile e siete riusciti ad usarla nei vostri siti e web app.
 
 Non dimenticate di condividere questo articolo con la vostra rete, potrebbe essere utile anche ai vostri amici o altre persone.
-
+Se l'articolo ti è piaciuto metti un like e lascia un commento qui sotto.
 
 <style>
     .gallery-step1 {

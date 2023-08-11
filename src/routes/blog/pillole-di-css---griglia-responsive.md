@@ -22,7 +22,7 @@ categorie:
 Spesso quando realizziamo una griglia con `CSS Grid` vorremmo che gli elementi fossero disposti automaticamente per colonne.
 In altre parole non vogliamo predeterminare il numero di colonne che la griglia deve avere.
 
-Al contrario vogliamo che la griglia sia responsive e si adatti automaticmente alle dimensioni del contenitore.
+Al contrario vogliamo che la griglia sia responsive e si adatti automaticamente alle dimensioni del contenitore.
 Quindi vogliamo che il numero di colonne sia automaticamente calcolato. Vediamo come fare
 
 <script>
@@ -122,13 +122,15 @@ Disponiamo 10 elementi all'interno di un contenitore
  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
  ```
 
- In pratica stiamo dicendo a CSS di creare un griglia con un template per le colonne in modo che gli elementi occupino tutto lo spazio disponibile `auto-fill` e che ogni colonna della griglia abbia una dimensione (`minmax`) di almeno 100px e al massido di 1fr
+ In pratica stiamo dicendo a CSS di creare un griglia con un template per le colonne in modo che gli elementi occupino tutto lo spazio disponibile `auto-fill` e che ogni colonna della griglia abbia una dimensione (`minmax`) di almeno 100px e al massimo di 1fr
 
- Come possiamo vedere nell'esempio interattivo all'inizio dell'articolo,  al variare della dimensione del contenitore gli elementi vengono automaticamente dispospi all'interno della griglia e il numero di colonne viene calcolato automaticamente.
+ Come possiamo vedere nell'esempio interattivo all'inizio dell'articolo,  al variare della dimensione del contenitore gli elementi vengono automaticamente disposti all'interno della griglia e il numero di colonne viene calcolato automaticamente.
 
 ## Conclusione
 
 CSS è ormai uno strumento molto potente e permette di realizzare pagine e componenti HTML che un tempo avrebbero richiesto molto codice JS.
 
-Vi invito a speriementare con questa pillola di CSS e fatemi sapere nei commenti se la trovate utile e siete riusciti ad usarla nei vostri siti e web app.
+Vi invito a sperimentare con questa pillola di CSS e fatemi sapere nei commenti se la trovate utile e siete riusciti ad usarla nei vostri siti e web app.
 
+Non dimenticate di condividere questo articolo con la vostra rete, potrebbe essere utile anche ai vostri amici o altre persone.
+Se l'articolo ti è piaciuto metti un like e lascia un commento qui sotto.

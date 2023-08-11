@@ -118,20 +118,21 @@ Ora vediamo come è realizzarlo:
 <br>
 
 Il contenitore è una griglia  a due colonne in modo da disporre gli elementi in modo automatico.
-Come si vede le imamgino sono tutte di dimensioni diverse e con aspect ratio pario ad 1, cioè quadrate.
+Come si vede le immagino sono tutte di dimensioni diverse e con aspect ratio pario ad 1, cioè quadrate.
 Tuttavia noi vogliamo che nella nostra griglia le immagini appaiano con un aspect-ratio di 16:9
 
-Quindi dopo aver reso l'immagine reposnisve impostando *width* e *height* al 100%, impostiamo `aspect-ratio` a 1.7777 ovvero 16/9.
+Quindi dopo aver reso l'immagine resposisve impostando *width* e *height* al 100%, impostiamo `aspect-ratio` a 1.7777 ovvero 16/9.
 
 Infine per adattare bene l'immagine al suo contenitore e non tagliare parti dell'immagine stessa, impostiamo la proprietà *object-fit* a *cover*
-In questo modo otteniamo l'effetto desideratop che ci siamo prefissati all'inizio di questa pillola.
+In questo modo otteniamo l'effetto desiderato che ci siamo prefissati all'inizio di questa pillola.
 
 
 ## Conclusione
 
 Bene abbiamo nuovamente visto come una semplice proprietà CSS possa fare magie e renderci la vita più semplice durante lo sviluppo del nostro sito o app web.
 
-Vi invito a speriementare con questa pillola di CSS, provando altri valore di *aspect-ratio* per trovare il valore adatto al tuo sito o applicazione, a mettere un like e fatemi sapere nei commenti se la trovate utile e siete riusciti ad usarla nei vostri siti e web app.
+Vi invito a sperimentare con questa pillola di CSS, provando altri valore di *aspect-ratio* per trovare il valore adatto al tuo sito o applicazione, a mettere un like e fatemi sapere nei commenti se la trovate utile e siete riusciti ad usarla nei vostri siti e web app.
 
 Non dimenticate di condividere questo articolo con la vostra rete, potrebbe essere utile anche ai vostri amici o altre persone.
+Se l'articolo ti è piaciuto metti un like e lascia un commento qui sotto.
 
