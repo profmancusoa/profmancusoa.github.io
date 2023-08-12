@@ -2,7 +2,7 @@
 ---
 id: 2023-08-04-1
 titolo: Pillole di CSS - zoom immagine
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2023-08-04
 cover: pillole-css-zoom-immagine.png
