@@ -46,16 +46,16 @@ function onrange(e) {
 
 <div class="contenitore" style="--size:{l};">
     <div class="foto">
-        <img src="https://picsum.photos/300/300" >
+        <img src="https://picsum.photos/300/300" alt="trattore">
     </div>
     <div class="foto">
-        <img src="https://picsum.photos/400/400" >
+        <img src="https://picsum.photos/400/400" alt="bandiera">
     </div>
     <div class="foto">
-        <img src="https://picsum.photos/500/500" >
+        <img src="https://picsum.photos/500/500" alt="desk">
     </div>
     <div class="foto">
-        <img src="https://picsum.photos/600/600" >
+        <img src="https://picsum.photos/600/600" alt="table">
     </div>
 </div>
 
@@ -84,16 +84,16 @@ Ora vediamo come è realizzarlo:
 ```html
 <div class="contenitore">
     <div class="foto">
-        <img src="https://picsum.photos/300/300" >
+        <img src="https://picsum.photos/300/300" alt="trattore">
     </div>
     <div class="foto">
-        <img src="https://picsum.photos/400/400" >
+        <img src="https://picsum.photos/400/400" alt="bandiera">
     </div>
     <div class="foto">
-        <img src="https://picsum.photos/500/500" >
+        <img src="https://picsum.photos/500/500" alt="desk">
     </div>
     <div class="foto">
-        <img src="https://picsum.photos/600/600" >
+        <img src="https://picsum.photos/600/600" alt="table">
     </div>
 </div>
 ```
@@ -121,7 +121,7 @@ Il contenitore è una griglia  a due colonne in modo da disporre gli elementi in
 Come si vede le immagino sono tutte di dimensioni diverse e con aspect ratio pario ad 1, cioè quadrate.
 Tuttavia noi vogliamo che nella nostra griglia le immagini appaiano con un aspect-ratio di 16:9
 
-Quindi dopo aver reso l'immagine resposisve impostando *width* e *height* al 100%, impostiamo `aspect-ratio` a 1.7777 ovvero 16/9.
+Quindi dopo aver reso l'immagine responsive impostando *width* e *height* al 100%, impostiamo `aspect-ratio` a 1.7777 ovvero 16/9.
 
 Infine per adattare bene l'immagine al suo contenitore e non tagliare parti dell'immagine stessa, impostiamo la proprietà *object-fit* a *cover*
 In questo modo otteniamo l'effetto desiderato che ci siamo prefissati all'inizio di questa pillola.

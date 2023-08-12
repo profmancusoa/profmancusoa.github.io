@@ -41,7 +41,7 @@ function onrange2(e) {
 <br><br>
 
 <div class="contenitore" style="--size:{l};">
-        <img src="https://picsum.photos/id/237/533/300" >
+        <img src="https://picsum.photos/id/237/533/300" alt="cagnolino">
 </div>
 
 <style>
@@ -67,7 +67,7 @@ Quindi vediamo come rendere l'immagine dell'esempio precedente responsive con po
 
 ```html
 <div class="contenitore">
-    <img src="https://picsum.photos/id/237/533/300" >
+    <img src="https://picsum.photos/id/237/533/300" alt="cagnolino">
 </div>
 ```
 
@@ -86,7 +86,7 @@ Quindi vediamo come rendere l'immagine dell'esempio precedente responsive con po
 <br><br>
 
 <div class="contenitore2" style="--size:{l2};">
-    <img src="https://picsum.photos/id/237/533/300" >
+    <img src="https://picsum.photos/id/237/533/300" alt="cagnolino">
 </div>
 
 <br>
