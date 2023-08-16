@@ -1,10 +1,10 @@
 
 ---
-id: 2023-08-06-1
-titolo: Pillole di CSS - aspect ratio
+id: 2023-08-16-1
+titolo: Pillole di CSS - controlliamo aspect ratio di un elemento
 featured: false
 autore: ProfMancusoa
-data: 2023-08-06
+data: 2023-08-16
 cover: pillole-css-aspect-ratio.png
 introduzione: Analizziamo in dettaglio la proprietà aspect-ratio per controllare il rapporto tra le dimensioni di un elemento HTML
 pubblicato: false
@@ -127,7 +127,7 @@ Infine per adattare bene l'immagine al suo contenitore e non tagliare parti dell
 In questo modo otteniamo l'effetto desiderato che ci siamo prefissati all'inizio di questa pillola.
 
 
-## Conclusione
+## Conclusioni
 
 Bene abbiamo nuovamente visto come una semplice proprietà CSS possa fare magie e renderci la vita più semplice durante lo sviluppo del nostro sito o app web.
 

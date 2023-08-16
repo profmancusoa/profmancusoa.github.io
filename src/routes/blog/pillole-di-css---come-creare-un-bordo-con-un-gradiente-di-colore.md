@@ -1,7 +1,7 @@
 
 ---
 id: 2023-08-12-1
-titolo: Pillole di css - come creare un bordo con un gradiente di colore
+titolo: Pillole di CSS - come creare un bordo con un gradiente di colore
 featured: false
 autore: ProfMancusoa
 data: 2023-08-12
@@ -97,7 +97,7 @@ Infine impostiamo il colore di sfondo del div contenitore a gradiente e impostia
 </div>
 
 
-## Conclusione
+## Conclusioni
 
 Anche in questa pillola abbiamo visto come con poche proprietà CSS possiamo creare degli effetti molto utili per la realizzazioni dei nostri siti e web app.
 Avere un bordo con un gradiente di colore può essere utile in molte occasioni e fornisce un dettaglio in più ai nostri progetti.

@@ -1,7 +1,7 @@
 
 ---
 id: 2023-08-11-1
-titolo: Pillole di css - come rendere un immagine responsive
+titolo: Pillole di CSS - come rendere un immagine responsive
 featured: false
 autore: ProfMancusoa
 data: 2023-08-11
@@ -96,7 +96,7 @@ In questo modo l'immagine diventa responsive e assume sempre le dimensioni del s
 La proprietà `object-fit: cover` garantisce che il contenuto sostituito viene dimensionato per mantenere le proporzioni mentre riempie l'intera area del contenuto dell'elemento. Se le proporzioni dell'oggetto non corrispondono alle proporzioni della suo contenitore, l'oggetto verrà ritagliato automaticamente in modo da adattarsi.
 
 
-## Conclusione
+## Conclusioni
 
 Questa pillola è tanto breve quanto importante. Avere immagini responsive che hanno sempre un bell'aspetto nel proprio sito è importantissimo per migliorare l'esperienza utente.
 

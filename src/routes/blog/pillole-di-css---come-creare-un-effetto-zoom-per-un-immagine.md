@@ -1,15 +1,14 @@
 
 ---
-id: 2023-08-04-1
-titolo: Pillole di CSS - zoom immagine
+id: 2023-08-16-1
+titolo: Pillole di CSS - come creare un effetto zoom per un immagine
 featured: false
 autore: ProfMancusoa
-data: 2023-08-04
+data: 2023-08-16
 cover: pillole-css-zoom-immagine.png
 introduzione: Realizziamo un effetto zoom su un'immagine al passaggio del mouse. L'effetto può essere utile nei tuoi siti web.
 pubblicato: false
 sezione: Blog
-# pillole di css - zoom immagine
 categorie:
   - CSS
   - Trucchi
@@ -275,7 +274,7 @@ Ora usiamo una foto diversa per ogni elemento del flexbox ed otteniamo la nostra
 <br>
 
 
-### Conclusione
+### Conclusioni
 Bene abbiamo visto come creare una foto gallery con un piacevole effetto zoom.
 Ti invito a sperimentare con il tempo della transizione per trovare il valore adatto al tuo sito o applicazione.
 

@@ -1,10 +1,10 @@
 
 ---
-id: 2023-08-02-1
-titolo: Pillole di CSS - griglia responsive
+id: 2023-08-16-1
+titolo: Pillole di CSS - come creare una griglia responsive
 featured: false
 autore: ProfMancusoa
-data: 2023-08-02
+data: 2023-08-16
 cover: pillole-css-griglia-responsive.png
 introduzione: Realizziamo una griglia responsive con poche istruzione CSS. Vediamo come utilizzare la proprietà auto-fill e la funzione CSS minmax
 pubblicato: false
@@ -126,7 +126,7 @@ Disponiamo 10 elementi all'interno di un contenitore
 
  Come possiamo vedere nell'esempio interattivo all'inizio dell'articolo,  al variare della dimensione del contenitore gli elementi vengono automaticamente disposti all'interno della griglia e il numero di colonne viene calcolato automaticamente.
 
-## Conclusione
+## Conclusioni
 
 CSS è ormai uno strumento molto potente e permette di realizzare pagine e componenti HTML che un tempo avrebbero richiesto molto codice JS.
 
