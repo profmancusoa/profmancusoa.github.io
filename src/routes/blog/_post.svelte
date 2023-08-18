@@ -82,7 +82,6 @@
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
 	<meta property="twitter:url" content="{post_url}" />
 	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" /> 
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64df98e5d8173e00123bb30f&product=sticky-share-buttons&source=platform" async="async"></script>
 </svelte:head>
 
 <article>
