@@ -82,6 +82,7 @@
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
 	<meta property="twitter:url" content="{post_url}" />
 	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" /> 
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64df98e5d8173e00123bb30f&product=sticky-share-buttons&source=platform" async="async"></script>
 </svelte:head>
 
 <article>
@@ -120,20 +121,22 @@
 		<slot />
 	</section>
 
-    <section class="social-box">
+    <!-- <section class="social-box">
         <p>Condividi quest'articolo sui tuoi social</p>
         <div class="social-links">
             <a rel="nofollow" href="https://twitter.com/share?url={post_url}&text={titolo.replaceAll(' ', '%20')}&via=profmancusoa" target="_blank"><img src="/img/twitter.png" width="48" alt="twitter icon"></a>
             <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u={post_url}" target="_blank"><img src="/img/facebook.png" width="48" alt="facebook icon"></a>
             <a rel="nofollow" href="https://pinterest.com/pin/create/button/?url={post_url}&media={base_post_url}{cover_assign(cover)}&description={titolo.replaceAll(' ', '+')}" target="_blank"><img src="/img/pininterest.png" width="48" alt="pininterest icon"></a>
         </div>
-	</section>
+	</section> -->
 
 	<hr />
 
     <!-- disqus comments -->
 	<div id="disqus_thread" />
 </article>
+
+<!-- <div class="sharethis-sticky-share-buttons"></div> -->
 
 <style>
 	hr {
@@ -143,7 +146,7 @@
 		margin-bottom: 3rem;
 	}
 
-    .social-box {
+    /* .social-box {
         text-align: center;
         font-size: 1.2rem;
         font-weight: bold;
@@ -153,5 +156,5 @@
         display: flex;
         justify-content: center;
         gap: 2rem;
-    }
+    } */
 </style>
