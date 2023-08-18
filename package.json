@@ -1,6 +1,6 @@
 {
 	"name": "prof.mancusoa.it",
-	"version": "1.7.2",
+	"version": "1.7.3",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run post_build",
