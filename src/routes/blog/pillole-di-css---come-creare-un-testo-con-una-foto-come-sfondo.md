@@ -68,7 +68,7 @@ Per realizzare l'effetto abbiamo bisogno di tre elementi essenziali:
 
 ### Un'immagine di sfondo
 
-<img src="https://picsum.photos/id/110/600/200">
+<img src="https://picsum.photos/id/110/600/200" alt="picsum foto">
 
 ```html
 <img src="https://picsum.photos/id/110/600/200">

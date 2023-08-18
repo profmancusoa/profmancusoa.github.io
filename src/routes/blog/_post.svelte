@@ -48,10 +48,11 @@
 
 <svelte:head>
 	<title>{titolo}</title>
-	<meta name="robots" content="max-image-preview:large" />
+    <meta name="title" content="{titolo}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta property="og:locale" content="it_IT" />
     <meta name="description" content={introduzione} />
-    <meta property="og:site_name" content="Prof Mancusoa" />
+    <meta property="og:site_name" content="ProfMancusoa" />
     <link rel="canonical" href="{post_url}"/>
     
 	<!-- Facebook Meta Tags -->
@@ -73,12 +74,14 @@
 	<meta property="og:image:alt" content={introduzione} />
 
 	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content={titolo} />
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@profmancusoa" />
+    <meta name="twitter:site" content="@profmancusoa">
 	<meta name="twitter:title" content={titolo} />
 	<meta name="twitter:description" content={introduzione} />
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
 	<meta property="twitter:url" content="{post_url}" />
-	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" />
+	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" /> 
 </svelte:head>
 
 <article>
@@ -117,8 +120,18 @@
 		<slot />
 	</section>
 
+    <section class="social-box">
+        <p>Condividi quest'articolo sui tuoi social</p>
+        <div class="social-links">
+            <a rel="nofollow" href="https://twitter.com/share?url={post_url}&text={titolo.replaceAll(' ', '%20')}&via=profmancusoa" target="_blank"><img src="/img/twitter.png" width="48" alt="twitter icon"></a>
+            <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u={post_url}" target="_blank"><img src="/img/facebook.png" width="48" alt="facebook icon"></a>
+            <a rel="nofollow" href="https://pinterest.com/pin/create/button/?url={post_url}&media={base_post_url}{cover_assign(cover)}&description={titolo.replaceAll(' ', '+')}" target="_blank"><img src="/img/pininterest.png" width="48" alt="pininterest icon"></a>
+        </div>
+	</section>
+
 	<hr />
-	<!-- disqus comments -->
+
+    <!-- disqus comments -->
 	<div id="disqus_thread" />
 </article>
 
@@ -129,4 +142,16 @@
 		margin-top: 5rem;
 		margin-bottom: 3rem;
 	}
+
+    .social-box {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
 </style>

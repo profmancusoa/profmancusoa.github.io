@@ -356,8 +356,6 @@ User-agent: EyeNetIE
 Disallow:/
 User-agent: Ezooms
 Disallow:/
-User-agent: facebookscraper
-Disallow:/
 User-agent: FDM
 Disallow:/
 User-agent: FemtosearchBot
@@ -1382,6 +1380,15 @@ User-agent: ZumBot
 Disallow:/
 User-agent: ZyBorg
 Disallow:/
+
+User-agent: facebookexternalhit
+Disallow:
+User-agent: Twitterbot
+Disallow:
+User-agent: Twitterbot
+Allow: /
+User-agent: facebookexternalhit
+Allow: /
 
 User-agent: *
 Allow: /
