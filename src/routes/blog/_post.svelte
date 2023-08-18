@@ -84,6 +84,8 @@
 	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" /> 
 </svelte:head>
 
+<div class="sharethis-sticky-share-buttons"></div>
+
 <article>
 	<!-- Post header-->
 	<header class="mb-4">
@@ -134,8 +136,6 @@
     <!-- disqus comments -->
 	<div id="disqus_thread" />
 </article>
-
-<!-- <div class="sharethis-sticky-share-buttons"></div> -->
 
 <style>
 	hr {
