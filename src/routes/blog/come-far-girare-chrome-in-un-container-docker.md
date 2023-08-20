@@ -33,7 +33,7 @@ In questo modo avremo a disposizione un browser completamente isolato dal resto 
 
 Una volta terminata la sessione di navigazione il container Docker verrà completamente distrutto e non rimarrà nessuna traccia della nostra navigazione precedente.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iErxUBUZzHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t3-Rr5UzRgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Dockerizziamo Google Chrome
 
