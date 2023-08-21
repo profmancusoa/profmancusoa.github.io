@@ -44,7 +44,7 @@ npm run dev
 
 Fatto! Dovrebbe essere comparsa una schermata simile a questa:
 
-![todolist](/img/posts/come-creare-una-to-do-list-in-svelte/svelte1.png)
+![todolist](/img/posts/come-creare-una-to-do-list-in-svelte/svelte1.png.webp)
 
 Segui l’indirizzo indicato, nel mio caso è http://localhost:5173/. Se tutto è andato come previsto, dovresti essere in un sito web funzionante e dovrebbe essere stata creata una cartella chiamata “myapp” nella posizione in cui hai eseguito i comandi dal terminale.
 
@@ -162,7 +162,7 @@ Usa il CSS per decorare il sito a tuo piacimento. Ecco a cosa quest'ultima parte
 
 NOTA BENE: in questo ultimo spezzone sono presenti delle classi in CSS che si occupano di creare dei rettangoli attorno ad ogni elemento della lista, per far saltare all’occhio la divisione di ogni oggetto e permetterti di allineare senza alcun problema gli elementi a tuo piacimento. Dovrebbe apparire proprio come questa schermata:
 
-![todolist](/img/posts/come-creare-una-to-do-list-in-svelte/todolist2.png)
+![todolist](/img/posts/come-creare-una-to-do-list-in-svelte/todolist2.png.webp)
 
 ## Risultato
 

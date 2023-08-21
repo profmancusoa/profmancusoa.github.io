@@ -4,7 +4,7 @@ titolo: Il meccanismo di funzionamento di una blockchain
 featured: false
 autore: Matteo Putignano
 data: 2022-10-25
-cover: blockchain.jpg
+cover: blockchain.webp
 introduzione: Questo post descrive le principali caratteristiche di una blockchain
 pubblicato: true
 sezione: Blog
@@ -12,10 +12,6 @@ categorie:
   - Blockchain
   - Crypto
 ---
-
-<script>
-    import Asciinema from '$lib/components/Asciinema.svelte';
-</script>
 
 La blockchain è un database `decentralizzato`, formato da un concatenamento di blocchi contenenti dati e informazioni (da qua il nome blockchain), cioè un tipo di database che viene gestito da un algoritmo e non da una persona.
 

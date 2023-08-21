@@ -4,7 +4,7 @@ titolo: Web Socket
 featured: false
 autore: Matteo Solavagione
 data: 2022-11-08
-cover: socket.png
+cover: socket.png.webp
 introduzione: Analisi tecnica, utilizzi e esempio di realizzazione di applicazione
 pubblicato: true
 sezione: Blog

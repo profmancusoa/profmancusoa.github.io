@@ -4,7 +4,7 @@ titolo: GO e Rust i linguaggi di programmazione emergenti
 featured: false
 autore: Samuel Salvatore
 data: 2022-11-10
-cover: cover.png
+cover: cover.webp
 introduzione: "Introduzione ai nuovi linguaggi Go e Rust"
 sezione: IT
 pubblicato: true
@@ -52,7 +52,7 @@ Rust dal canto suo sta spopolando in ancora meno tempo: sviluppato nel 2012 da M
 Rust è completamente innovativo per la sua semplicità sintattica, l’affidabilità e la sua versatilità: è molto usato per web e sistemi operativi.
 Tra le maggiori aziende che lo utilizzano troviamo Google, Facebook oltre ovviamente a Modzilla. 
 
-![Questa è l'immagine per rust](https://assets.hongkiat.com/uploads/hello-world-different-programming-languages/rust.jpg "Questa è una immagine")
+![Questa è l'immagine per rust](/img/posts/go-e-rust-i-linguaggi-di-programmazione-emergenti/rust.webp "Questa è una immagine")
 
 Come possiamo vedere ecco l’hello world
 
@@ -63,7 +63,7 @@ Se si vuole programmare si ha senza dubbio bisogno di un buon editor che support
 Supporta una grandissima quantità di linguaggi differenti e mette a disposizione un numero elevatissimo di funzioni che facilitano la scrittura e il corretto riuscimento del programma.
 Sia per go che per rust visual studio code ci offre delle estensioni che ci facilitano e 
 ci permettono la compilazione.
-![Questa è l'immagine per l'installazione delle estensioni](https://madewithgolang.com/assets/images/posts/go-for-visual-studio-code.png "Questa è una immagine") 
+![Questa è l'immagine per l'installazione delle estensioni](/img/posts/go-e-rust-i-linguaggi-di-programmazione-emergenti/go-for-visual-studio-code.webp "Questa è una immagine") 
 
 Come possiamo notare tramite una ricerca e un semplice clic su “installa” possiamo aggiungere ciò che vogliamo.
 

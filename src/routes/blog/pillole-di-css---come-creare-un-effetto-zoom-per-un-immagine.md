@@ -5,7 +5,7 @@ titolo: Pillole di CSS - come creare un effetto zoom per un immagine
 featured: false
 autore: ProfMancusoa
 data: 2023-08-16
-cover: pillole-css-zoom-immagine.png
+cover: pillole-css-zoom-immagine.webp
 introduzione: Realizziamo un effetto zoom su un'immagine al passaggio del mouse. L'effetto può essere utile nei tuoi siti web.
 pubblicato: false
 sezione: Blog

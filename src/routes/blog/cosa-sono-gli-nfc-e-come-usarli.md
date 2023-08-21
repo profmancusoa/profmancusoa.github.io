@@ -35,7 +35,7 @@ Quindi possiamo dire che in questi ultimi anni, le aziende hanno bisogno di rinn
 
  # Sicurezza dei dispositivi NFC
  Il vantaggio del chip NFC è che in fase di transazione questo trasmette un token e non i dati bancari, perciò la sicurezza è piuttosto elevata rispetto ad altri sistemi.
- Un esempio possono essere i pagamneti contactless, quando si avvicina la carta di credito, il chip invia un token e non i dati bancari, sennò a livello di sicurezza sarebbe un vero problema.
+ Un esempio possono essere i pagamenti contactless, quando si avvicina la carta di credito, il chip invia un token e non i dati bancari, sennò a livello di sicurezza sarebbe un vero problema.
 
  Esistono dei malware che servono apposta per disattivare i meccanismi di sicurezza di qualsiasi app e ottenere i diritti di accesso al nostro device; purtroppo non sono ancora del tutto note le vulnerabilità della tecnologia NFC, per questo è opportuno installare un antivirus per smartphone.
 
@@ -68,11 +68,6 @@ La tecnologia NFC è più recente. È una buona versione di RFID. Può funzionar
 ## Esempio pratico NFC:
 
 Vediamo come utilizzare un NFC tramite uno smartphone
-
-<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/d8/08/50/d8085090-a200-e7ce-83da-13673e70e0e4/AppIcon-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png" width=50% alt="NFC">
-
-<br>
-<br>
 
 1. Scaricare dal play store o app store l'applicazione "NFC Tools". 
 2. Procurarsi una card NFC che possa svolgere l'azione.

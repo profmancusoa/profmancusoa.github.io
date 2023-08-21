@@ -5,7 +5,7 @@ titolo: Screenshot da linea di comando con linux
 featured: false
 autore: ProfMancusoa
 data: 2023-07-29
-cover: cover.png
+cover: cover.png.webp
 introduzione: Flameshot è un potente strumento di cattura dello schermo che può essere utilizzato dalla linea di comando (CLI) di linux
 pubblicato: false
 sezione: Blog

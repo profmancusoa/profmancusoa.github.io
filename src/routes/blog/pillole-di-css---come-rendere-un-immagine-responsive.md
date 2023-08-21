@@ -5,7 +5,7 @@ titolo: Pillole di CSS - come rendere un immagine responsive
 featured: false
 autore: ProfMancusoa
 data: 2023-08-11
-cover: pillole-css-come-rendere-un-immagine-responsive.png
+cover: pillole-css-come-rendere-un-immagine-responsive.webp
 introduzione: In questa pillola di CSS vediamo come rendere un'immagine responsive in modo che si adatti dinamicamente alle dimensioni del suo contenitore mantenendo un'aspetto corretto
 pubblicato: false
 sezione: Blog

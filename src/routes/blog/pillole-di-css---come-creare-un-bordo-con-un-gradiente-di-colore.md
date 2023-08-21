@@ -5,7 +5,7 @@ titolo: Pillole di CSS - come creare un bordo con un gradiente di colore
 featured: false
 autore: ProfMancusoa
 data: 2023-08-12
-cover: pillole-css-bordo-gradiente.png
+cover: pillole-css-bordo-gradiente.webp
 introduzione: Questa pillola di CSS mostra come creare un bordo con un gradiente di colore in modo da ottenere un'effetto grafico interessante ed utile.
 pubblicato: false
 sezione: Blog

@@ -4,7 +4,7 @@ titolo: Il package manager per Wine
 featured: false
 autore: Andrea Canale
 data: 2022-10-25
-cover: cover.jpeg
+cover: cover.webp
 introduzione: Questo post descsrive come installare Wineget, il package manager per Wine.
 pubblicato: true
 sezione: Blog
@@ -46,7 +46,7 @@ Con un semplice click verranno eseguiti decine di comandi in automatico che semp
 
 
 Dopo aver eseguito il comando apparirà sulla bash questo: <br>
-  ![alt text](/img/posts/il-package-manager-per-wine/rustup.png "Rustup")
+  ![alt text](/img/posts/il-package-manager-per-wine/rustup.webp "Rustup")
   Ora premere 1 e aspettare che l'installazione finisca.
   Quando l'installazione sarà finita eseguire questo comando:
 
@@ -81,7 +81,7 @@ Dopo aver eseguito il comando apparirà sulla bash questo: <br>
     ```
   Ora per procedere alla creazione del pacchetto fai: cargo deb/rpm/aur, infine, prendere l’ultima linea che il comando ha prodotto che sarà il percorso del pacchetto ed installatelo.<br>
   Ad esempio questo è il finale con cargo-deb:
-  ![alt text](/img/posts/il-package-manager-per-wine/cargodeb.png "cargodeb")
+  ![alt text](/img/posts/il-package-manager-per-wine/cargodeb.webp "cargodeb")
 
 ### Se vuoi installare il pacchetto già compilato esegui questi passi:
 -	Installare Wineget, scaricandola dalla [pagina release di Github](https://github.com/Windows-On-Linux/Wineget/releases).

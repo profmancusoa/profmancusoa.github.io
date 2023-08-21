@@ -5,7 +5,7 @@ titolo: Come scambiare facilmente file tra linux e lo smartphone
 featured: false
 autore: ProfMancusoa
 data: 2023-08-10
-cover: warpinator.png
+cover: warpinator.png.webp
 introduzione: Vediamo come installare ed utilizzare warpinator su Linux per scambiare comodamente file tra gli smartphone Android e iOS e Linux Desktop
 pubblicato: false
 sezione: blog
@@ -94,7 +94,7 @@ Ora che abbiamo installato warpinator sul nostro sistema Linux, lanciamolo e con
 
 Dal menù in alto a sinistra, seleziona *Preferenze*
 
-![warpinator-preferences](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-preferenze.png)
+![warpinator-preferences](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-preferenze.png.webp)
 
 <br>
 
@@ -102,7 +102,7 @@ Dalla tab *Generale*, nella sezione *Trasferimenti File*, imposta la directory d
 
 Io l'ho impostato a */home/antonio/Downloads/warpinator*, voi impostate la directory di dove verranno scaricati i file in modo adeguato al vostro ambiente di lavoro
 
-![warpinator-preferenze](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-download-dir.png)
+![warpinator-preferenze](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-download-dir.png.webp)
 
 <br>
 
@@ -110,7 +110,7 @@ Dalla tab *Conenssion* ora imposta un codice di gruppo, per evitare accessi non 
 
 Scegli anche quale interfaccia di rete utilizzare per lo scambio. Io ho impostato l'unica interfaccia WiFi disponibile sul mio computer.
 
-![warpinator-codice-gruppo](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-codice-gruppo.png)
+![warpinator-codice-gruppo](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-codice-gruppo.png.webp)
 
 <br>
 
@@ -120,20 +120,20 @@ Fatto ciò abbiamo terminato con la configurazione di warpinator, e possiamo chi
 
 Warpinator è disponibile anche per gli smartphone Android e iOS. Per installare l'app per il tuo telefono vai sullo store di riferimento e scegli l'applicazione *Warpinator*
 
-![warpinator-android](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android.png)
+![warpinator-android](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android.png.webp)
 
 ### Configuriamo warpinator sullo smartphone
 
 Apri l'applicazione appena installata dallo store e fai tap sui 3 puntini in alto a destra per accedere alla configurazione dell'applicazione
 
-![warpinator-android-config](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-config.png)
+![warpinator-android-config](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-config.png.webp)
 
 Ora seleziona *Impostazioni* ed configura lo stesso *condice di gruppo* che hai impostato su Linux
 
-![warpinator-android-impostazioni](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-impostazioni.png)
+![warpinator-android-impostazioni](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-impostazioni.png.webp)
 
 
-![warpinator-android-codice](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-codice.png)
+![warpinator-android-codice](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-codice.png.webp)
 
 
 ### Scambiamo file tra Linux e lo smartphone
@@ -152,30 +152,30 @@ Se con questo comando la connession di warpinator funziona, dovrete configurare 
 A questo punto sia sul PC che sullo smartphone è possibile vedere i device trovati nella rete e appartenenti allo stesso gruppo
 
 
-![warpinator-android-connecting](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-connecting.png)
+![warpinator-android-connecting](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-connecting.png.webp)
 
 <br>
 
-![warpinator-lista-smartphone](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-lista-smartphone.png)
+![warpinator-lista-smartphone](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-lista-smartphone.png.webp)
 
 <br>
 
 Ora scegliamo se condividere un'intera directory o un singolo file
 
-![warpinator-android-select-file](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-select-file.png)
+![warpinator-android-select-file](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-android-select-file.png.webp)
 
 <br>
 
 Una volta selezionato il file, il trasferimento inizia immediatamente e sul PC viene richiesto la conferma di accettazione del file
 
 
-![warpinator-accetta](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-accetta.png)
+![warpinator-accetta](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-accetta.png.webp)
 
 <br>
 
 Se accettiamo la richiesta di invio del file, dopo pochi istanti (dipende dalle dimensioni del file), troveremo il file nella directory che avevamo impostato durante la configurazione di warpinator su Linux
 
-![warpinator-file-download](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-file-download.png)
+![warpinator-file-download](/img/posts/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone/warpinator-file-download.png.webp)
 
 <br>
 

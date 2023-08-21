@@ -31,7 +31,7 @@ React gestisce il DOM (albero degli oggetti che caratterizzano la pagina) attrav
 
 <br>
 
-![virtual-DOM](/img/posts/come-creare-una-to-do-list-in-react/virtualDOM.png)
+![virtual-DOM](/img/posts/come-creare-una-to-do-list-in-react/virtualDOM.webp)
 
 ## Creare l’ambiente corretto per lo sviluppo in React
 
@@ -46,7 +46,7 @@ $npm start
 
 ## Componenti
 
-Uno dei principali paradigmi di programmazione è la tecnica del _top down_, che prevede la suddivisione di un macro problema in piccoli sottoproblemi che a loro volta saranno suddivisi con la stessa tecnica. 
+Uno dei principali paradigmi di programmazione è la tecnica del _top down_, che prevede la suddivisione di un macro problema in piccoli sotto problemi che a loro volta saranno suddivisi con la stessa tecnica. 
 
 React si basa su questo pensiero. Permette, infatti, di creare i **componenti**: elementi che svolgono una funzione specifica e che messi insieme (è possibile usare un componente all’interno di un altro componente) permettono di creare applicazioni complesse a piacere. Una volta creati possono essere poi “appesi” a uno o più tag del file HTML.
 
@@ -68,7 +68,7 @@ root.render(
 
 ```
 
-Come si può vedere creiamo una variabile _root_ alla quale assegnamo l’espressione che dal ReactDOM (DOM Virtuale di React) prende l’elemento con id _root_. Nella variabile _root_ renderizziamo (ovvero, mettiamo al suo interno) il componente _App_ a cui in questo caso passiamo un’array di dati (_DATA_) che assegnamo alla variabile _tasks_. I componenti, infatti, permettono il passaggio da padre a figlio dei cosidetti _props_ (properties/parametri) che potranno poi essere utilizzati dal componente figlio.
+Come si può vedere creiamo una variabile _root_ alla quale assegnamo l’espressione che dal ReactDOM (DOM Virtuale di React) prende l’elemento con id _root_. Nella variabile _root_ renderizziamo (ovvero, mettiamo al suo interno) il componente _App_ a cui in questo caso passiamo un’array di dati (_DATA_) che assegnamo alla variabile _tasks_. I componenti, infatti, permettono il passaggio da padre a figlio dei cosiddetti _props_ (properties/parametri) che potranno poi essere utilizzati dal componente figlio.
 
 ### Creare un componente
 
@@ -86,7 +86,7 @@ export default Component_Name;
 
 ```
 
-L’istruzione _export_ permette di esportare il componente che poi può essere importato all’interno di un altro componente nel sequente modo:
+L’istruzione _export_ permette di esportare il componente che poi può essere importato all’interno di un altro componente nel seguente modo:
 
 ```JS
 import Component_Name from <component_path>;
@@ -118,7 +118,7 @@ export default function Todo(props){
 
 ```
 
-Il componente _Todo_ restituisce un _div_ che al suo interno contiene gli elementi _li_ e _button_. All’interno di _li_ è presente _props.name_ che contiene il testo della todo inserita dall’utente. Testo che viene passato come parametro (props) nella chiamata di _Todo_ da parte del componente _App_. Stesso meccanismo con il button che ha come valore assegnato all’attributo _onClick_ la funzione _props.deleteTask(props.id)_, funzione che come il “name" viene passata per parametro.
+Il componente _Todo_ restituisce un _div_ che al suo interno contiene gli elementi _li_ e _button_. All’interno di _li_ è presente _props.name_ che contiene il testo della todo inserita dall'utente. Testo che viene passato come parametro (props) nella chiamata di _Todo_ da parte del componente _App_. Stesso meccanismo con il button che ha come valore assegnato all’attributo _onClick_ la funzione _props.deleteTask(props.id)_, funzione che come il “name" viene passata per parametro.
 
 ## Props
 
@@ -131,7 +131,7 @@ Nel paragrafo precedente abbiamo accennato ai props che ora andremo ad analizzar
 
 ## Gli Eventi - useState
 
-Durante lo sviluppo della ToDo List uno dei problemi principali che ho riscontrato è stato quello di renderizzare nuovamente la pagina in seguito alla modifica dell’array contenente le todos. Sostanzialmente, all’aggiunta o alla rimozione di un todo l’array viene aggiornato, al contrario della pagina per la quale non viene renderizzato il cambiamento. In questo modo l’utente non può visualizzare la modifica. Per gesitre questi tipi di problemi React mette a disposizione _useState_ che permette di modificare l’array e rendere questa modifica un evento che rirenderizzi la pagina. Ovviamente _useState_ va importato e lo si fa tramite la seguente linea di codice:
+Durante lo sviluppo della ToDo List uno dei problemi principali che ho riscontrato è stato quello di renderizzare nuovamente la pagina in seguito alla modifica dell’array contenente le todos. Sostanzialmente, all’aggiunta o alla rimozione di un todo l’array viene aggiornato, al contrario della pagina per la quale non viene renderizzato il cambiamento. In questo modo l’utente non può visualizzare la modifica. Per gestire questi tipi di problemi React mette a disposizione _useState_ che permette di modificare l’array e rendere questa modifica un evento che rirenderizzi la pagina. Ovviamente _useState_ va importato e lo si fa tramite la seguente linea di codice:
 
 ```JS
 import React, { useState } from "react";
@@ -161,7 +161,7 @@ function App(props) {
    setTasks(remainingTasks);
  }
  // In tasklist scandiamo ogni elemento dell'array tasks (passato dall'index.js) e su ogni elemento
- // task chiamiamo il compopnente todo a cui passiamo per ogni task nome, id e assegnamo una chiave
+ // task chiamiamo il componente todo a cui passiamo per ogni task nome, id e assegnamo una chiave
  //(richiesta da React) ad ogni task. Il map è un po' come fosse l'each che abbiamo visto in Svelte
  const taskList = tasks.map((task) => <Todo id={task.id} name={task.name} deleteTask={deleteTask} key={task.id}/>);
  return (
@@ -181,8 +181,8 @@ function App(props) {
 
 ```
 
-Come dall’esempio, creo una variabile _taskList_ che contiene tutte le todos. Per farlo scandisco l’array _tasks_ attraverso il metodo _map_ e per ogni todo/task chiamo il componente _Todo_ che restituisce la task nel formato da me voluto. Una volta creato l’array di task questo viene stampato e renderizzato nella pagina: _taskList_.
-Per capire al meglio il codice sopra riportato è necessario analizzare una funzione presente nel componentne _Form_. Essa viene invocata alla pressione del _button_ e a sua volta chiama un’altra funziona passata come props dal componente _App_: _props.addTask(name)_ :
+Come dall'esempio, creo una variabile _taskList_ che contiene tutte le todos. Per farlo scandisco l’array _tasks_ attraverso il metodo _map_ e per ogni todo/task chiamo il componente _Todo_ che restituisce la task nel formato da me voluto. Una volta creato l’array di task questo viene stampato e renderizzato nella pagina: _taskList_.
+Per capire al meglio il codice sopra riportato è necessario analizzare una funzione presente nel componente _Form_. Essa viene invocata alla pressione del _button_ e a sua volta chiama un’altra funziona passata come props dal componente _App_: _props.addTask(name)_ :
 
 ```JS
    function handleSubmit(e) {
@@ -195,13 +195,13 @@ Per capire al meglio il codice sopra riportato è necessario analizzare una funz
 
 ```
 
-La funzione _addTask_ è definita all’interno del compomente _App_ e aggiorna l’array tasks attraverso il metodo _setTasks_. L’array “tasks” e il metodo _setTasks_ vengono creati dalla seguente linea di codice:
+La funzione _addTask_ è definita all’interno del componente _App_ e aggiorna l’array tasks attraverso il metodo _setTasks_. L’array “tasks” e il metodo _setTasks_ vengono creati dalla seguente linea di codice:
 
 ```JS
  const [tasks, setTasks] = useState(props.tasks);
 ```
 
-Creo quindi un array “tasks” (che contiente i tasks ricevuti dall’_index.js_ come parametro (_props.tasks_). Array che ha un metodo che mi permette di modificarlo: _setTasks_:
+Creo quindi un array “tasks” (che contiene i tasks ricevuti dall'_index.js_ come parametro (_props.tasks_). Array che ha un metodo che mi permette di modificarlo: _setTasks_:
 
 ```JS
 
@@ -212,5 +212,5 @@ Nella funzione _addTask_ chiamo, infatti, il metodo _setTasks_ per modificare l�
 
 ## Conclusione
 
-Gli elementi che abbiamo analizzato in questo articolo sono solo alcuni degli infiti che _React_ mette a disposizione. Sono però un perfetto punto di partenza per sviluppare le tue prime applicazioni in _React_ (per approfondire consultare i [Docs](https://reactjs.org/docs/getting-started.html)).
+Gli elementi che abbiamo analizzato in questo articolo sono solo alcuni degli infiniti che _React_ mette a disposizione. Sono però un perfetto punto di partenza per sviluppare le tue prime applicazioni in _React_ (per approfondire consultare i [Docs](https://reactjs.org/docs/getting-started.html)).
 Non mi rimane che augurarvi buon smanettamento e alla prossima!!

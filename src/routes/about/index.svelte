@@ -11,7 +11,7 @@
 					<div class="col-sm-8">
 						<div class="avatar mx-auto">
 							<img
-								src="/img/avatars/profmancuso.jpg"
+								src="/img/avatars/profmancuso.webp"
 								class="rounded-circle img-fluid"
 								alt="ProfMancusoa"
 								width="250"

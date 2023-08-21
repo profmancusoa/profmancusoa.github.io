@@ -5,7 +5,7 @@ titolo: Pillole di CSS - come creare una griglia responsive
 featured: false
 autore: ProfMancusoa
 data: 2023-08-16
-cover: pillole-css-griglia-responsive.png
+cover: pillole-css-griglia-responsive.png.webp
 introduzione: Realizziamo una griglia responsive con poche istruzione CSS. Vediamo come utilizzare la proprietà auto-fill e la funzione CSS minmax
 pubblicato: false
 sezione: Blog
