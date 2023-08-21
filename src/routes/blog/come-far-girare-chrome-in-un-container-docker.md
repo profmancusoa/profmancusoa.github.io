@@ -15,6 +15,10 @@ categorie:
   - Security
 ---
 
+<script>
+    import Video from '../../lib/components/Video.svelte'
+</script>
+
 ##  Navighiamo in sicurezza
 
 Google Chrome è uno dei più diffusi browser al momento ed offre una navigazione online veloce e confortevole.
@@ -33,7 +37,8 @@ In questo modo avremo a disposizione un browser completamente isolato dal resto 
 
 Una volta terminata la sessione di navigazione il container Docker verrà completamente distrutto e non rimarrà nessuna traccia della nostra navigazione precedente.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t3-Rr5UzRgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<Video video_url="https://www.youtube.com/embed/t3-Rr5UzRgU"/>
+
 
 ## Dockerizziamo Google Chrome
 
