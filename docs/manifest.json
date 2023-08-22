@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-a1456e84.js",
+    "file": "_app/immutable/start-3ef96c3e.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -54,7 +54,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-e33855c3.js",
+    "file": "_app/immutable/pages/__layout.svelte-4dc0d334.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -175,7 +175,7 @@
     ]
   },
   "src/routes/blog/come-far-girare-chrome-in-un-container-docker.md": {
-    "file": "_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-f29d7c9a.js",
+    "file": "_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-eb46a0e9.js",
     "src": "src/routes/blog/come-far-girare-chrome-in-un-container-docker.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -632,17 +632,17 @@
       "_app/immutable/assets/_post-0e6908a7.css"
     ]
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-f64b60f3.css",
-    "src": "src/routes/about/index.css"
-  },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
   },
-  "_post.css": {
-    "file": "_app/immutable/assets/_post-0e6908a7.css",
-    "src": "_post.css"
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-f64b60f3.css",
+    "src": "src/routes/about/index.css"
+  },
+  "src/routes/blog/come-far-girare-chrome-in-un-container-docker.css": {
+    "file": "_app/immutable/assets/come-far-girare-chrome-in-un-container-docker-129b5920.css",
+    "src": "src/routes/blog/come-far-girare-chrome-in-un-container-docker.css"
   },
   "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
     "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
@@ -656,6 +656,10 @@
     "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
     "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
   },
+  "_post.css": {
+    "file": "_app/immutable/assets/_post-0e6908a7.css",
+    "src": "_post.css"
+  },
   "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css": {
     "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
@@ -663,10 +667,6 @@
   "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css": {
     "file": "_app/immutable/assets/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento-2f82b8a6.css",
     "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css"
-  },
-  "src/routes/blog/come-far-girare-chrome-in-un-container-docker.css": {
-    "file": "_app/immutable/assets/come-far-girare-chrome-in-un-container-docker-129b5920.css",
-    "src": "src/routes/blog/come-far-girare-chrome-in-un-container-docker.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-1527f175.css",

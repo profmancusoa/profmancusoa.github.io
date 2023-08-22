@@ -89,14 +89,14 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 	<link href="/_app/immutable/assets/Categoria-d423eea6.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/come-far-girare-chrome-in-un-container-docker-129b5920.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/_post-0e6908a7.css" rel="stylesheet" disabled media="(max-width: 0)">
-	<link rel="modulepreload" href="/_app/immutable/start-a1456e84.js">
+	<link rel="modulepreload" href="/_app/immutable/start-3ef96c3e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-c6be98ca.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-921bc2ca.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-e33855c3.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-4dc0d334.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/helpers-e147ed77.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Categoria.svelte_svelte_type_style_lang-d76a398c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/store-f582fd05.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-f29d7c9a.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-eb46a0e9.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-225ef9a4.js">
 	</head>
 	<body>
@@ -169,11 +169,11 @@ google-chrome                   latest             2dd030b2446b   <span class="t
 <p>Per far ciò dobbiamo anche essere sicuri di concedere i permessi di connessione al container docker, con il seguente comaando</p>
 <pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash">$ xhost +local:docker</code><!-- HTML_TAG_END --></pre>
 <p>A questo punto potremo lanciare il docker che eseguirà correttamente Chrome in un ambiente isolato</p>
-<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash">$ <span class="token function">docker</span> run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -e <span class="token assign-left variable"><span class="token environment constant">DISPLAY</span></span><span class="token operator">=</span><span class="token environment constant">$DISPLAY</span> google-chrome</code><!-- HTML_TAG_END --></pre>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash">$ <span class="token function">docker</span> run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/shm:/dev/shm  --device /dev/dri -e <span class="token assign-left variable"><span class="token environment constant">DISPLAY</span></span><span class="token operator">=</span><span class="token environment constant">$DISPLAY</span> google-chrome</code><!-- HTML_TAG_END --></pre>
 <p><img src="/img/posts/come-far-girare-chrome-in-un-container-docker/chrome-windows.webp" alt="Chrome Remote Windows"></p>
 <h3>Rendiamoci la vita semplice</h3>
 <p>Per evitare di dover ricordarmi questi comandi ogni volta che voglio far partire una sessione di navigazione sicura, creo un <code>alias</code> nel mio .zshrc, o se usi la bash nel file .bashrc</p>
-<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token builtin class-name">alias</span> <span class="token assign-left variable">dgoogle</span><span class="token operator">=</span><span class="token string">'xhost +local:docker &amp;&amp; docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY google-chrome'</span></code><!-- HTML_TAG_END --></pre>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token builtin class-name">alias</span> <span class="token assign-left variable">dgoogle</span><span class="token operator">=</span><span class="token string">'xhost +local:docker &amp;&amp; docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/shm:/dev/shm  --device /dev/dri -e DISPLAY=$DISPLAY google-chrome'</span></code><!-- HTML_TAG_END --></pre>
 <p>In questo modo potrò iniziare la sessione di navigazione sicura soltanto digitando <code>dgoogle</code></p>
 <h3>Conclusioni</h3>
 <p>Utilizzando sapientemente gli strumenti messi a disposizione da Linux e sfruttando la <em>“magia”</em> di Docker abbiamo la possibilità di aumentare la sicurezza delle nostre sessioni di navigazione Web.</p>
@@ -197,16 +197,16 @@ Non dimenticate di condividere questo articolo con la vostra rete, potrebbe esse
             
             </div></div>
 
-<footer class="py-1 bg-dark fixed-bottom"><div class="container"><p class="m-0 text-center text-white">Copyright © profmancusoa 2022-2023   v1.7.14</p></div></footer>
+<footer class="py-1 bg-dark fixed-bottom"><div class="container"><p class="m-0 text-center text-white">Copyright © profmancusoa 2022-2023   v1.7.15</p></div></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="11t6d18">
-		import { set_public_env, start } from "/_app/immutable/start-a1456e84.js";
+		<script type="module" data-sveltekit-hydrate="sbanh9">
+		import { set_public_env, start } from "/_app/immutable/start-3ef96c3e.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="11t6d18"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="sbanh9"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

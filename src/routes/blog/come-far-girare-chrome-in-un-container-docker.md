@@ -92,7 +92,7 @@ $ xhost +local:docker
 A questo punto potremo lanciare il docker che eseguirà correttamente Chrome in un ambiente isolato
 
 ```bash
-$ docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY google-chrome
+$ docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/shm:/dev/shm  --device /dev/dri -e DISPLAY=$DISPLAY google-chrome
 ```
 
 ![Chrome Remote Windows](/img/posts/come-far-girare-chrome-in-un-container-docker/chrome-windows.webp)
@@ -103,7 +103,7 @@ $ docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY googl
 Per evitare di dover ricordarmi questi comandi ogni volta che voglio far partire una sessione di navigazione sicura, creo un `alias` nel mio .zshrc, o se usi la bash nel file .bashrc
 
 ```bash
-alias dgoogle='xhost +local:docker && docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY google-chrome'
+alias dgoogle='xhost +local:docker && docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/shm:/dev/shm  --device /dev/dri -e DISPLAY=$DISPLAY google-chrome'
 ```
 
 In questo modo potrò iniziare la sessione di navigazione sicura soltanto digitando `dgoogle`
