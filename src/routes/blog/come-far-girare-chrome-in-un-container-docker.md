@@ -2,7 +2,7 @@
 ---
 id: 2023-08-20-1
 titolo: Come far girare Chrome in un container Docker
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2023-08-20
 cover: come-far-girare-chrome-in-un-container-docker.webp
