@@ -2,12 +2,12 @@
 ---
 id: 2023-08-10-1
 titolo: Come scambiare facilmente file tra linux e lo smartphone
-featured: false
+featured: true
 autore: ProfMancusoa
-data: 2023-08-10
+data: 2023-09-23
 cover: warpinator.png.webp
 introduzione: Vediamo come installare ed utilizzare warpinator su Linux per scambiare comodamente file tra gli smartphone Android e iOS e Linux Desktop
-pubblicato: false
+pubblicato: true
 sezione: blog
 categorie:
   - Linux

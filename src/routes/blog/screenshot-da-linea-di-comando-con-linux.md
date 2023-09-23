@@ -2,7 +2,7 @@
 ---
 id: 2023-07-29-1
 titolo: Screenshot da linea di comando con linux
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2023-09-16
 cover: cover.png.webp
