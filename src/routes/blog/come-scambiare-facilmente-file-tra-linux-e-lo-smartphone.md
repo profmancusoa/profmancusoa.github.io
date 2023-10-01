@@ -2,7 +2,7 @@
 ---
 id: 2023-08-10-1
 titolo: Come scambiare facilmente file tra linux e lo smartphone
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2023-09-23
 cover: warpinator.png.webp
