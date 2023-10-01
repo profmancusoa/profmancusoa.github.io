@@ -7,7 +7,7 @@ autore: ProfMancusoa
 data: 2023-10-01
 cover: pillole-css-aspect-ratio.png.webp
 introduzione: Analizziamo in dettaglio la proprietà aspect-ratio per controllare il rapporto tra le dimensioni di un elemento HTML
-pubblicato: false
+pubblicato: true
 sezione: Blog
 categorie:
   - CSS
