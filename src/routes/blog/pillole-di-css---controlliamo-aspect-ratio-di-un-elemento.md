@@ -2,7 +2,7 @@
 ---
 id: 2023-08-16-1
 titolo: Pillole di CSS - controlliamo aspect ratio di un elemento
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2023-10-01
 cover: pillole-css-aspect-ratio.png.webp
