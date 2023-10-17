@@ -2,7 +2,7 @@
 ---
 id: 2023-08-11-1
 titolo: Pillole di CSS - come rendere un immagine responsive
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2023-10-09
 cover: pillole-css-come-rendere-un-immagine-responsive.webp
