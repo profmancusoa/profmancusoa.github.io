@@ -2,12 +2,12 @@
 ---
 id: 2023-08-16-1
 titolo: Pillole di CSS - come creare un testo con una foto come sfondo
-featured: false
+featured: true
 autore: ProfMancusoa
-data: 2023-08-16
+data: 2023-10-22
 cover: pillole-css-come-creare-un-testo-con-una-foto-come-sfondo.png.webp
 introduzione: Questa pillola di CSS mostra come realizzare un piacevole effetto che permette di colorare un testo con un immagine.
-pubblicato: false
+pubblicato: true
 sezione: Blog
 categorie:
   - CSS

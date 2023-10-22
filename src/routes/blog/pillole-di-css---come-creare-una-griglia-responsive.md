@@ -2,7 +2,7 @@
 ---
 id: 2023-08-16-1
 titolo: Pillole di CSS - come creare una griglia responsive
-featured: true
+featured: false
 autore: ProfMancusoa
 data: 2023-10-17
 cover: pillole-css-griglia-responsive.png.webp
