@@ -1,7 +1,6 @@
-
 ---
 id: 2022-10-27-1
-titolo: La quantum security
+titolo: Introduzione alla quantum security
 featured: false
 autore: Luca Bortoluzzi
 data: 2022-11-06
@@ -59,9 +58,9 @@ Il principio alla base è quello dell’entanglement.
 Facciamo un esempio: 
 ci sono due persone: Bob e Alice, che vogliono comunicare. Bob è il mittente, mentre  Alice è la destinataria. Tra di loro ci sarà un canale di comunicazione dove potranno comunicare le varie informazioni attraverso particelle quantistiche in una possibile crittografia (es. RSA). 
 
-Bob invia le particelle in uno stato di superposizione a Alice , che riuscirà a leggere come bit (0 o 1) nel momento in cui Bob misura le particelle legate a quelle che ha inviato, grazie al principio dell’entanglement. 
+Bob invia le particelle in uno stato di super-posizione a Alice , che riuscirà a leggere come bit (0 o 1) nel momento in cui Bob misura le particelle legate a quelle che ha inviato, grazie al principio dell’entanglement. 
 
-Ora immaginiamo un possibile  cracker che riesce ad entrare all’interno del canale di Bob e Alice. Dato che è entrata nel canale questa terza persona non autorizzata, gli è possibile visualizzare le particelle nel canale di connessione. Mettiamo caso che riesca a prendere una particella e visualizzare il suo valore misurandola. Quando tale particella arriva al destinatario allora Alice vede una particella non in superposizione, ma già con un valore, allora il canale viene immediatamente spezzato, per poi crearne un altro sicuro.
+Ora immaginiamo un possibile  cracker che riesce ad entrare all’interno del canale di Bob e Alice. Dato che è entrata nel canale questa terza persona non autorizzata, gli è possibile visualizzare le particelle nel canale di connessione. Mettiamo caso che riesca a prendere una particella e visualizzare il suo valore misurandola. Quando tale particella arriva al destinatario allora Alice vede una particella non in super-posizione, ma già con un valore, allora il canale viene immediatamente spezzato, per poi crearne un altro sicuro.
 
 L’argomento della sicurezza quantistica è ancora teoria, perché i computer quantistici sono ancora in fase di sviluppo, ma nel momento in cui saranno operativi ci servirà una protezione adeguata alla loro potenza di calcolo  stupefacente, che (come detto all’inizio) renderà obsoleti i sistemi di sicurezza su cui ci basiamo. 
 
