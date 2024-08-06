@@ -93,7 +93,7 @@
 		<div class="text-muted fst-italic mb-3 fs-5">
 			{autore} - {date_convert(data)}
 			{#if !dev}
-				- <a class="text-muted" href="{post_url}#disqus_thread">0 commenti</a>
+				- <a class="text-muted" href="{post_url}#disqus_thread" rel=”nofollow”>0 commenti</a>
 			{/if}
 		</div>
 		<!-- categorie-->
@@ -123,7 +123,7 @@
     <section class="social-box">
         <p>Condividi quest'articolo sui tuoi social</p>
         <div class="social-links">
-            <a rel="nofollow" href="https://twitter.com/share?url={post_url}&text={encodeURIComponent(titolo)}&via=profmancusoa" target="_blank"><img src="/img/twitter.png" width="48" alt="twitter icon"></a>
+			<a rel="nofollow" href="https://twitter.com/share?url={post_url}&text={encodeURIComponent(titolo)}&via=profmancusoa" target="_blank"><img src="/img/twitter.png" width="48" alt="twitter icon"></a>
             <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u={post_url}" target="_blank"><img src="/img/facebook.png" width="48" alt="facebook icon"></a>
             <!-- <a rel="nofollow" href="https://pinterest.com/pin/create/button/?url={encodeURIComponent(post_url)}&amp;media={base_post_url}{cover_assign(cover)}&amp;description={encodeURIComponent(introduzione)}" target="_blank"><img src="/img/pininterest.png" width="48" alt="pininterest icon"></a> -->
         </div>

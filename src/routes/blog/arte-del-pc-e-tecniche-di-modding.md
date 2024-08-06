@@ -17,8 +17,8 @@ categorie:
 Molti di voi in questo momento saranno dubbiosi e si staranno chiedendo: “In che senso l’arte del PC???” o “Cos’è questa cosa???”; beh in questo breve articolo vi introdurrò la mia idea dell’arte che sta dietro ai nostri amati PC. 
 
 Innanzitutto la mia visione di “arte del PC” si suddivide in due parti ben distinte:
-- <a href="#configurazione" title="configurazione del PC">La maestria nel creare una configurazione ottimale.</a>
-- <a href="#modding" title="il modding">La bellezza che un insieme di componenti elettronici può assumere.</a>
+- <a rel=”nofollow” href="#configurazione" title="configurazione del PC">La maestria nel creare una configurazione ottimale.</a>
+- <a rel=”nofollow” href="#modding" title="il modding">La bellezza che un insieme di componenti elettronici può assumere.</a>
 
 ## La maestria nel creare una configurazione ottimale 
 
@@ -36,10 +36,10 @@ Un fattore importantissimo, che si parli PC fissi o portatili, è il “quando�
 
 Molto spesso il mio consiglio è di comprare il computer o le sue parti quando ci sono dei periodi di grande sconto per esempio:
 
-- <a href="https://www.google.com/search?q=black+friday&rlz=1C1CHBF_itIT974IT974&oq=blac&aqs=chrome.0.69i59j69i57j35i19i39j0i20i131i263i433i512j0i67l3j46i20i131i263i433i512j0i67l2.1593j1j7&sourceid=chrome&ie=UTF-8" target="blank" title="black friday">Black Friday</a> (venerdì successivo al giorno del Ringraziamento)
+- <a rel=”nofollow” href="https://www.google.com/search?q=black+friday&rlz=1C1CHBF_itIT974IT974&oq=blac&aqs=chrome.0.69i59j69i57j35i19i39j0i20i131i263i433i512j0i67l3j46i20i131i263i433i512j0i67l2.1593j1j7&sourceid=chrome&ie=UTF-8" target="blank" title="black friday">Black Friday</a> (venerdì successivo al giorno del Ringraziamento)
 - <a href="https://www.google.com/search?q=cyber+monday&rlz=1C1CHBF_itIT974IT974&sxsrf=ALiCzsZ1CnkOYLzvfcUSs1VqwUHMXWdIug%3A1666627709549&ei=fbhWY-KLIcW8xc8PiNSOmAQ&ved=0ahUKEwiivuaEoPn6AhVFXvEDHQiqA0MQ4dUDCA8&uact=5&oq=cyber+monday&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyEAgAEIAEEIcCELEDEIMBEBQyCwgAEIAEELEDEIMBMgUIABCABDIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6DQgAEOQCENYEELADGAFKBAhNGAFKBAhBGABKBAhGGAFQqgNYoARghgZoAXABeACAAVmIAacBkgEBMpgBAKABAcgBDcABAdoBBggBEAEYCQ&sclient=gws-wiz" target="blank" title="cyber monday">Cyber Monday</a> (il lunedì dopo il black Friday)
-- <a href="https://www.amazon.it/primeday" target="blank" title="amazon prime day">Amazon Prime Day</a> (metà luglio)
-- <a href="https://www.amazon.it/b?ie=UTF8&node=17727355031" target="blank" title="amazon gaming week">Amazon Gaming Week</a> (fine agosto inizio settembre)
+- <a rel=”nofollow” href="https://www.amazon.it/primeday" target="blank" title="amazon prime day">Amazon Prime Day</a> (metà luglio)
+- <a rel=”nofollow” href="https://www.amazon.it/b?ie=UTF8&node=17727355031" target="blank" title="amazon gaming week">Amazon Gaming Week</a> (fine agosto inizio settembre)
 
 Un altro ottimo periodo per comprare, soprattutto componenti del PC, sono i mesi a seguito del lancio delle nuove generazioni di processori o schede video; infatti in quel periodo molti negozi, online e non, cercano di vendere più velocemente i prodotti ormai considerati “vecchi” abbassando i prezzi delle componenti della generazione precedente. 
 

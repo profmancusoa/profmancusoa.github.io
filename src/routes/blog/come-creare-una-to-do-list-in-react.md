@@ -18,12 +18,12 @@ categorie:
 
 ## Introduzione
 
-[React](https://reactjs.org/), Svelte, Angular… sono solo alcuni dei più famosi framework Javascript che il WEB ci mette a disposizione. Ma cos’è un framework? Con la crescita e la diffusione delle nuove tecnologie è sempre più richiesto lo sviluppo di applicazioni grandi e complesse, sarebbe, quindi, inimmaginabile sviluppare in JS _vanilla_ (puro). 
+<a rel=”nofollow” href="https://reactjs.org/">React</a>, Svelte, Angular… sono solo alcuni dei più famosi framework Javascript che il WEB ci mette a disposizione. Ma cos’è un framework? Con la crescita e la diffusione delle nuove tecnologie è sempre più richiesto lo sviluppo di applicazioni grandi e complesse, sarebbe, quindi, inimmaginabile sviluppare in JS _vanilla_ (puro). 
 
 Per questo motivo sono stati creati dei tool (chiamati framework) che offrono una struttura (skeleton) sulla quale i programmatori possono costruire la loro applicazione. L’utilizzo di questi strumenti permette innanzitutto lo snellimento del codice, ma soprattutto la possibilità di evitare quell’enorme quantità di problemi che si incontrerebbero nello sviluppo in puro JS. 
 
 Dopo questa premessa è importante però sottolineare che l’utilizzo di questi strumenti richiede la conoscenza di Javascript e per questo motivo l’articolo è rivolto a coloro che ne conoscono almeno le basi.
-Il modo migliore per conoscere uno strumento è **utilizzarlo**. L’articolo che segue ha un approccio pratico: vuole, infatti, descrivere gli elementi fondamentali di React attraverso una piccola applicazione JS da me sviluppata [(disponibile su Github)](https://github.com/Dario-Ruggieri/ToDo_React.git) che implementa una ToDo List.
+Il modo migliore per conoscere uno strumento è **utilizzarlo**. L’articolo che segue ha un approccio pratico: vuole, infatti, descrivere gli elementi fondamentali di React attraverso una piccola applicazione JS da me sviluppata <a rel=”nofollow” href="https://github.com/Dario-Ruggieri/ToDo_React.git">(disponibile su Github)</a> che implementa una ToDo List.
 
 ## Come React gestisce il DOM
 
@@ -36,7 +36,7 @@ React gestisce il DOM (albero degli oggetti che caratterizzano la pagina) attrav
 ## Creare l’ambiente corretto per lo sviluppo in React
 
 Esitono diverse modalità per utilizzare React. È possibile integrarlo direttamente nella pagina HTML oppure tramite semplici comandi da terminale (sotto riportati) React permette di creare un ambiente di sviluppo già organizzato sul quale costruire la propria applicazione.
-Di seguito i comandi del terminale per [creare un nuova applicazione](https://reactjs.org/docs/create-a-new-react-app.html) in React:
+Di seguito i comandi del terminale per <a rel=”nofollow” href="https://reactjs.org/docs/create-a-new-react-app.html">creare un nuova applicazione</a> in React:
 
 ```bash
 $npx create-react-app nome_applicazione
@@ -212,5 +212,5 @@ Nella funzione _addTask_ chiamo, infatti, il metodo _setTasks_ per modificare l�
 
 ## Conclusione
 
-Gli elementi che abbiamo analizzato in questo articolo sono solo alcuni degli infiniti che _React_ mette a disposizione. Sono però un perfetto punto di partenza per sviluppare le tue prime applicazioni in _React_ (per approfondire consultare i [Docs](https://reactjs.org/docs/getting-started.html)).
+Gli elementi che abbiamo analizzato in questo articolo sono solo alcuni degli infiniti che _React_ mette a disposizione. Sono però un perfetto punto di partenza per sviluppare le tue prime applicazioni in _React_ (per approfondire consultare i <a rel=”nofollow” href="https://reactjs.org/docs/getting-started.html">Docs</a>).
 Non mi rimane che augurarvi buon smanettamento e alla prossima!!

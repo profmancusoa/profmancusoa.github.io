@@ -20,7 +20,7 @@ Se ti è mai capitato di tornare a casa dopo aver fatto la spesa e tirarti maled
 
 I suoi utilizzi possono essere svariati e spaziano da una banalissima lista della spesa agli esercizi da fare in palestra, piuttosto che i compiti da fare per la settimana.
 
-Anche Microsoft e Google non si sono smentite e hanno creato la loro versione di questo programma. La prima ha creato addirittura una applicazione apposita ed un sito web dedicato (https://to-do.live.com/tasks/) , che permette a più utenti di collaborare; ha un menù che facilita di molto l’utilizzo e vanta anche l’integrazione negli altri prodotti marchiati Microsoft, come il “calendario”  ed Outlook. Big G, invece, ha un’ attitudine un po’ più semplicistica e propone solamente un’app per iOS ed Android puntando molto sull’integrazione di “Tasks” nei loro software di punta, come Google Calendar o Gmail.
+Anche Microsoft e Google non si sono smentite e hanno creato la loro versione di questo programma. La prima ha creato addirittura una applicazione apposita ed un sito web dedicato  <a rel=”nofollow” href="https://to-do.live.com/tasks/">to-do.live.com</a> , che permette a più utenti di collaborare; ha un menù che facilita di molto l’utilizzo e vanta anche l’integrazione negli altri prodotti marchiati Microsoft, come il “calendario”  ed Outlook. Big G, invece, ha un’ attitudine un po’ più semplicistica e propone solamente un’app per iOS ed Android puntando molto sull’integrazione di “Tasks” nei loro software di punta, come Google Calendar o Gmail.
 
 Se i prodotti offerti da due delle software house più importanti del XXI secolo non ti ispirano e  hai tanto tempo libero per sviluppare una To-Do List tutta tua, scopriamo subito assieme come fare!
 
@@ -32,7 +32,7 @@ Svelte è un framework front-end e open-source di JavaScript che permette di svi
 
 ## Installiamo Svelte
 
-Innanzitutto è necessario installare Svelte (https://svelte.dev/), un framework JavaScript rivoluzionario nel suo genere. Per farlo basta aprire il terminale ed eseguire i seguenti comandi: 
+Innanzitutto è necessario installare Svelte <a rel=”nofollow” href="https://svelte.dev/">https://svelte.dev/</a>, un framework JavaScript rivoluzionario nel suo genere. Per farlo basta aprire il terminale ed eseguire i seguenti comandi: 
  ```bash
 npm create vite@latest myapp -- --template svelte
 
@@ -168,6 +168,6 @@ NOTA BENE: in questo ultimo spezzone sono presenti delle classi in CSS che si oc
 
 Allego la mia versione finale ed ultimata del codice. Per accedervi, clicca sul link che trovi qui sotto.
 
-- <a href="https://github.com/Bauda/Svelte-To-Do" target="_blank" title="svelte to-do list">La mia versione finale</a>
+- <a rel=”nofollow” href="https://github.com/Bauda/Svelte-To-Do" target="_blank" title="svelte to-do list">La mia versione finale</a>
 
 Grazie per la lettura!

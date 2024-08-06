@@ -86,15 +86,15 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 	<link href="/_app/immutable/assets/__layout-a78a892a.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/Categoria-d423eea6.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/_post-0e6908a7.css" rel="stylesheet" disabled media="(max-width: 0)">
-	<link rel="modulepreload" href="/_app/immutable/start-e3c8f522.js">
+	<link rel="modulepreload" href="/_app/immutable/start-6ec84f81.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-c6be98ca.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-921bc2ca.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-f200fb6e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/helpers-e147ed77.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Categoria.svelte_svelte_type_style_lang-d76a398c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/store-f582fd05.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/effetto-di-parallasse-per-la-tua-pagina-web.md-e17751c2.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/_post-225ef9a4.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/effetto-di-parallasse-per-la-tua-pagina-web.md-cac4ef7d.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/_post-c462c736.js">
 	</head>
 	<body>
 		<div>
@@ -120,7 +120,7 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 		<h1 class="fw-bolder mb-2">Effetto di parallasse per la tua pagina web</h1>
 		
 		<div class="text-muted fst-italic mb-3 fs-5">Alexandru Ioan Chindris - 26 Agosto 2022
-			- <a class="text-muted" href="https://prof.mancusoa.it/blog/effetto-di-parallasse-per-la-tua-pagina-web/#disqus_thread">0 commenti</a></div>
+			- <a class="text-muted" href="https://prof.mancusoa.it/blog/effetto-di-parallasse-per-la-tua-pagina-web/#disqus_thread" rel="”nofollow”">0 commenti</a></div>
 		
 		<span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">Web Development</span><span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">HTML</span><span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">Java Script</span><span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">Front End</span><span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">CSS</span></header>
 
@@ -135,12 +135,12 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 Un effetto che ultimamente sta andando di moda è il <em>parallax effect</em>, effetto di parallase. Questi tipi di effetto creano l’illusione della profondità quando la pagina si sposta.
 L’utilizzo di questo effetto è molto gradito dai visitatori della pagina web, le pagine web con effetti di paralasse integrati infatti si differenziano dalle classiche pagine web statiche.
 Se non ti fosse mai capitato di imbatterti in una pagina web con effetti di paralasse ti lascio qua sotto alcuni esempi:</p>
-<ul><li><a href="http://cyclemon.com/" target="_blank" title="cyclemon">1: Cyclemon</a></li>
-<li><a href="http://portfolio.theflock.com/puma_mobium/" target="_blank" title="puma">2: PUMA</a></li>
-<li><a href="http://www.espn.com/espn/eticket/story?page=Dock-Ellis" target="_blank" title="espn">3: ESPN</a></li></ul>
+<ul><li><a rel="”nofollow”" href="http://cyclemon.com/" target="_blank" title="cyclemon">1: Cyclemon</a></li>
+<li><a rel="”nofollow”" href="http://portfolio.theflock.com/puma_mobium/" target="_blank" title="puma">2: PUMA</a></li>
+<li><a rel="”nofollow”" href="http://www.espn.com/espn/eticket/story?page=Dock-Ellis" target="_blank" title="espn">3: ESPN</a></li></ul>
 <p>In questo post andremo a scoprire come realizzare un semplice effetto di parallasse per la tua pagina web. Premetto che per comprendere il tutorial sono necessarie delle discrete conoscenze in HTML, CSS e Javascript. In questo tutorial non veranno utilizzati framework, tutti gli effetti sono frutto di CSS e Javascript vanilla. Se dovessi trovare difficoltà e/o problemi durante la realizzazione del tuo effetto di paralasse non esitare ad utilizzare la sezione commenti, la trovi al fondo di questa pagina. Inoltre puoi trovare il codice della pagina realizzata da me nel corso del tutorial qua sotto:</p>
-<ul><li><a href="https://bit.ly/parallax_effect_tutorial" target="_blank" title="pagina web">Pagina web</a></li>
-<li><a href="https://github.com/Alexandru-Chindris/parallax_effect_tutorial" target="_blank" title="codice della pagina web">Codice intero della pagina web</a></li></ul>
+<ul><li><a rel="”nofollow”" href="https://bit.ly/parallax_effect_tutorial" target="_blank" title="pagina web">Pagina web</a></li>
+<li><a rel="”nofollow”" href="https://github.com/Alexandru-Chindris/parallax_effect_tutorial" target="_blank" title="codice della pagina web">Codice intero della pagina web</a></li></ul>
 <h2>Fase preliminare</h2>
 <p>Per cominciare creiamo una pagina HTML, CSS e Javascript generica. Ricordiamoci di collegare la pagina CSS e Javascript nel file HTML.</p>
 <pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
@@ -217,7 +217,7 @@ window<span class="token punctuation">.</span><span class="token function">addEv
 </code><!-- HTML_TAG_END --></pre>
 <h2>Risultato</h2>
 <p>Puoi trovare il mio risultato qua sotto, spero che questo tutorial ti sia stato utile. Ti invito a creare una tua versione della pagina modificata da te, sbizzarisciti e dopo manda il link nella sezione commenti! A presto, buon smanettamento!</p>
-<ul><li><a href="https://alexandru-chindris.github.io/parallax_effect_tutorial/" target="_blank" title="parallax effect tutorial github repo">Il mio risultato</a></li></ul></section>
+<ul><li><a rel="”nofollow”" href="https://alexandru-chindris.github.io/parallax_effect_tutorial/" target="_blank" title="parallax effect tutorial github repo">Il mio risultato</a></li></ul></section>
 
     <section class="social-box svelte-1x2gq4t"><p>Condividi quest&#39;articolo sui tuoi social</p>
         <div class="social-links svelte-1x2gq4t"><a rel="nofollow" href="https://twitter.com/share?url=https://prof.mancusoa.it/blog/effetto-di-parallasse-per-la-tua-pagina-web/&text=Effetto%20di%20parallasse%20per%20la%20tua%20pagina%20web&via=profmancusoa" target="_blank"><img src="/img/twitter.png" width="48" alt="twitter icon"></a>
@@ -238,13 +238,13 @@ window<span class="token punctuation">.</span><span class="token function">addEv
 <footer class="py-1 bg-dark fixed-bottom"><div class="container"><p class="m-0 text-center text-white">Copyright © profmancusoa 2022-2023   v1.7.25</p></div></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="1j44mjn">
-		import { set_public_env, start } from "/_app/immutable/start-e3c8f522.js";
+		<script type="module" data-sveltekit-hydrate="1ha4sl1">
+		import { set_public_env, start } from "/_app/immutable/start-6ec84f81.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1j44mjn"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1ha4sl1"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

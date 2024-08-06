@@ -86,15 +86,15 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 	<link href="/_app/immutable/assets/__layout-a78a892a.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/Categoria-d423eea6.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/_post-0e6908a7.css" rel="stylesheet" disabled media="(max-width: 0)">
-	<link rel="modulepreload" href="/_app/immutable/start-e3c8f522.js">
+	<link rel="modulepreload" href="/_app/immutable/start-6ec84f81.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-c6be98ca.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-921bc2ca.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-f200fb6e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/helpers-e147ed77.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Categoria.svelte_svelte_type_style_lang-d76a398c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/store-f582fd05.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-creare-una-to-do-list-in-react.md-5e9fbe5c.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/_post-225ef9a4.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-creare-una-to-do-list-in-react.md-3762a1b5.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/_post-c462c736.js">
 	</head>
 	<body>
 		<div>
@@ -120,7 +120,7 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 		<h1 class="fw-bolder mb-2">Come creare una To-Do List in React</h1>
 		
 		<div class="text-muted fst-italic mb-3 fs-5">Dario Ruggieri - 6 Novembre 2022
-			- <a class="text-muted" href="https://prof.mancusoa.it/blog/come-creare-una-to-do-list-in-react/#disqus_thread">0 commenti</a></div>
+			- <a class="text-muted" href="https://prof.mancusoa.it/blog/come-creare-una-to-do-list-in-react/#disqus_thread" rel="”nofollow”">0 commenti</a></div>
 		
 		<span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">framework</span><span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">JS</span><span class="badge bg-primary btn-outline-primary text-decoration-none link-light me-1">applicazioni</span></header>
 
@@ -130,17 +130,17 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 	
 	<section class="post"><h1>Todo List React</h1>
 <h2>Introduzione</h2>
-<p><a href="https://reactjs.org/" rel="nofollow">React</a>, Svelte, Angular… sono solo alcuni dei più famosi framework Javascript che il WEB ci mette a disposizione. Ma cos’è un framework? Con la crescita e la diffusione delle nuove tecnologie è sempre più richiesto lo sviluppo di applicazioni grandi e complesse, sarebbe, quindi, inimmaginabile sviluppare in JS <em>vanilla</em> (puro). </p>
+<a rel="”nofollow”" href="https://reactjs.org/">React</a>, Svelte, Angular… sono solo alcuni dei più famosi framework Javascript che il WEB ci mette a disposizione. Ma cos’è un framework? Con la crescita e la diffusione delle nuove tecnologie è sempre più richiesto lo sviluppo di applicazioni grandi e complesse, sarebbe, quindi, inimmaginabile sviluppare in JS _vanilla_ (puro).
 <p>Per questo motivo sono stati creati dei tool (chiamati framework) che offrono una struttura (skeleton) sulla quale i programmatori possono costruire la loro applicazione. L’utilizzo di questi strumenti permette innanzitutto lo snellimento del codice, ma soprattutto la possibilità di evitare quell’enorme quantità di problemi che si incontrerebbero nello sviluppo in puro JS. </p>
 <p>Dopo questa premessa è importante però sottolineare che l’utilizzo di questi strumenti richiede la conoscenza di Javascript e per questo motivo l’articolo è rivolto a coloro che ne conoscono almeno le basi.
-Il modo migliore per conoscere uno strumento è <strong>utilizzarlo</strong>. L’articolo che segue ha un approccio pratico: vuole, infatti, descrivere gli elementi fondamentali di React attraverso una piccola applicazione JS da me sviluppata <a href="https://github.com/Dario-Ruggieri/ToDo_React.git" rel="nofollow">(disponibile su Github)</a> che implementa una ToDo List.</p>
+Il modo migliore per conoscere uno strumento è <strong>utilizzarlo</strong>. L’articolo che segue ha un approccio pratico: vuole, infatti, descrivere gli elementi fondamentali di React attraverso una piccola applicazione JS da me sviluppata <a rel="”nofollow”" href="https://github.com/Dario-Ruggieri/ToDo_React.git">(disponibile su Github)</a> che implementa una ToDo List.</p>
 <h2>Come React gestisce il DOM</h2>
 <p>React gestisce il DOM (albero degli oggetti che caratterizzano la pagina) attraverso un DOM virtuale (<em>VirtualDOM</em>). Quando modifichiamo qualcosa nella pagina, infatti, viene modificato il DOM Virtuale e se React ritiene la modifica necessaria, allora viene modificato il DOM reale della pagina. Questo concetto è ben descritto dalla seguente immagine:</p>
 <br>
 <p><img src="/img/posts/come-creare-una-to-do-list-in-react/virtualDOM.webp" alt="virtual-DOM"></p>
 <h2>Creare l’ambiente corretto per lo sviluppo in React</h2>
 <p>Esitono diverse modalità per utilizzare React. È possibile integrarlo direttamente nella pagina HTML oppure tramite semplici comandi da terminale (sotto riportati) React permette di creare un ambiente di sviluppo già organizzato sul quale costruire la propria applicazione.
-Di seguito i comandi del terminale per <a href="https://reactjs.org/docs/create-a-new-react-app.html" rel="nofollow">creare un nuova applicazione</a> in React:</p>
+Di seguito i comandi del terminale per <a rel="”nofollow”" href="https://reactjs.org/docs/create-a-new-react-app.html">creare un nuova applicazione</a> in React:</p>
 <pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token variable">$npx</span> create-react-app nome_applicazione
 <span class="token variable">$cd</span> nome_applicazione
 <span class="token variable">$npm</span> start</code><!-- HTML_TAG_END --></pre>
@@ -260,7 +260,7 @@ Per capire al meglio il codice sopra riportato è necessario analizzare una funz
      <span class="token function">setTasks</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">...</span>tasks<span class="token punctuation">,</span> newTask<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
 <p>Nella funzione <em>addTask</em> chiamo, infatti, il metodo <em>setTasks</em> per modificare l’<em>array</em> (il codice sopra riportato aggiunge una linea all’array <em>tasks</em>). Una volta modificato <em>React</em> riconosce il cambiamento e adatta la pagina in relazione alla modifica.</p>
 <h2>Conclusione</h2>
-<p>Gli elementi che abbiamo analizzato in questo articolo sono solo alcuni degli infiniti che <em>React</em> mette a disposizione. Sono però un perfetto punto di partenza per sviluppare le tue prime applicazioni in <em>React</em> (per approfondire consultare i <a href="https://reactjs.org/docs/getting-started.html" rel="nofollow">Docs</a>).
+<p>Gli elementi che abbiamo analizzato in questo articolo sono solo alcuni degli infiniti che <em>React</em> mette a disposizione. Sono però un perfetto punto di partenza per sviluppare le tue prime applicazioni in <em>React</em> (per approfondire consultare i <a rel="”nofollow”" href="https://reactjs.org/docs/getting-started.html">Docs</a>).
 Non mi rimane che augurarvi buon smanettamento e alla prossima!!</p></section>
 
     <section class="social-box svelte-1x2gq4t"><p>Condividi quest&#39;articolo sui tuoi social</p>
@@ -282,13 +282,13 @@ Non mi rimane che augurarvi buon smanettamento e alla prossima!!</p></section>
 <footer class="py-1 bg-dark fixed-bottom"><div class="container"><p class="m-0 text-center text-white">Copyright © profmancusoa 2022-2023   v1.7.25</p></div></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="v8bac8">
-		import { set_public_env, start } from "/_app/immutable/start-e3c8f522.js";
+		<script type="module" data-sveltekit-hydrate="63h9xq">
+		import { set_public_env, start } from "/_app/immutable/start-6ec84f81.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="v8bac8"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="63h9xq"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

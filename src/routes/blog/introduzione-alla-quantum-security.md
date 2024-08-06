@@ -70,6 +70,6 @@ L’argomento della sicurezza quantistica è ancora teoria, perché i computer q
 
 
 Per saperne di più sul funzionamento della quantum security ecco a voi un video di introduzione di Eye on Tech.
-<a href="https://youtu.be/_5NQf8k3Jo0" title="What is Quantum Cryptography?">What is Quantum Cryptography? An Introduction</a>
+<a rel=”nofollow” href="https://youtu.be/_5NQf8k3Jo0" title="What is Quantum Cryptography?">What is Quantum Cryptography? An Introduction</a>
 
 

@@ -25,10 +25,10 @@ Con questo articolo scoprirete come _generare_ le vostre password e come _conser
 
 Esistono migliaia se non milioni di programmi per generare password. Tra i più indicati e famosi troviamo i seguenti:
 
-- <a href="https://nordpass.com/?utm_source=google&utm_medium=cpc&utm_campaign=10508415118&utm_content=103935798197&utm_term=nordpass&gclid=EAIaIQobChMIqpKMzdfi-QIVRpnVCh0_jA5WEAAYASAAEgK88fD_BwE" target="_blank" title="NordPass">NordPass (Windows/macOS/Linux)</a>
-- <a href="https://bitwarden.com/" target="_blank" title="Bitwarden">Bitwarden (Windows/macOS/Linux)</a>
-- <a href="https://1password.com/it/sign-up/?utm_source=google&utm_medium=cpc&utm_campaign=11596051800&utm_content=479150720150&utm_term=1password&gclid=EAIaIQobChMI0f7op9ji-QIVxI1oCR2zUgy3EAAYASAAEgIb2PD_BwE&gclsrc=aw.ds" target="_blank" title="1Password">1Password (Windows/macOS)</a>
-- <a href="https://www.keepassx.org/" target="_blank" title="KeePass">KeePass (Windows/macOS/Linux)</a> che approfondiremo più avanti
+- <a rel=”nofollow” href="https://nordpass.com/?utm_source=google&utm_medium=cpc&utm_campaign=10508415118&utm_content=103935798197&utm_term=nordpass&gclid=EAIaIQobChMIqpKMzdfi-QIVRpnVCh0_jA5WEAAYASAAEgK88fD_BwE" target="_blank" title="NordPass">NordPass (Windows/macOS/Linux)</a>
+- <a rel=”nofollow” href="https://bitwarden.com/" target="_blank" title="Bitwarden">Bitwarden (Windows/macOS/Linux)</a>
+- <a rel=”nofollow” href="https://1password.com/it/sign-up/?utm_source=google&utm_medium=cpc&utm_campaign=11596051800&utm_content=479150720150&utm_term=1password&gclid=EAIaIQobChMI0f7op9ji-QIVxI1oCR2zUgy3EAAYASAAEgIb2PD_BwE&gclsrc=aw.ds" target="_blank" title="1Password">1Password (Windows/macOS)</a>
+- <a rel=”nofollow” href="https://www.keepassx.org/" target="_blank" title="KeePass">KeePass (Windows/macOS/Linux)</a> che approfondiremo più avanti
 
 Queste sono sicuramente valide scelte, ma per coloro che usano _Linux_ tutto ciò non servirà. Come sempre, _Linux_ ha un tool al nostro servizio. Questo tool è _pwgen_, comando da terminale che ci permette di generare qualsiasi tipo di password. Usarlo è semplicissimo, basta digitare il comando ed eseguire:
 

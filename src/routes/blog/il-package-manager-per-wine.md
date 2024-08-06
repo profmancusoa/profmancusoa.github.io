@@ -107,13 +107,13 @@ Ora flowgorithm risulta installato nella cartella di wineget e si può trovare a
 
 Una volta che hai preso la mano con Wine puoi anche creare script compatibili con Wineget e aggiungerli alla repo ufficiale aprendo una issue su Github, mandandomi la tua repo oppure puoi creare direttamente una pull request attraverso il sistema Repo che ho scritto per aggiungere programmi velocemente. <br>
 
-Guida qui: [https://wineget.pages.dev/howtoscript](https://wineget.pages.dev/howtoscript)
+Guida qui: <a rel=”nofollow” href="https://wineget.pages.dev/howtoscript">https://wineget.pages.dev/howtoscript</a>
 
 Per tutti i dettagli ecco qui il sito: https://wineget.pages.dev/<br>
 
 Per una lista completa dei programmi nella repoo di Winget
 
-[https://wineget.pages.dev/packages](https://wineget.pages.dev/packages) <br>
+<a rel=”nofollow” href="https://wineget.pages.dev/packages">https://wineget.pages.dev/packages</a> <br>
 
 Ricorda di aggiungere una star al progetto su Github per far crescere il progetto e condividilo con i tuoi amici!<br>
 

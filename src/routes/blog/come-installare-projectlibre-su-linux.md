@@ -36,7 +36,7 @@ Le principali caratteristiche di ProjectLibre sono:
 
 ### 1. Scarica ProjectLibre
 
-- Vai su <a href="https://www.projectlibre.com/" target="_blank" title="Project Libre">ProjectLibre</a> e premil il pulsante `DOWNLOAD`
+- Vai su <a rel=”nofollow” href="https://www.projectlibre.com/" target="_blank" title="Project Libre">ProjectLibre</a> e premil il pulsante `DOWNLOAD`
   
 ![Projectlibre](/img/posts/come-installare-projectlibre-su-linux/projectlibre_01.webp)
 

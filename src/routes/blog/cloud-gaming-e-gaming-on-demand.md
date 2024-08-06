@@ -28,7 +28,7 @@ Uno dei maggiori esempi  è “Nvidia GeForce Now” la piattaforma di cloud gam
 
 # 1 passaggio
 
-Recati sul sito <a href="https://www.nvidia.com/it-it/geforce-now/" target="_blank" title="Nvidia GeForce Now">Nvidia GeForce Now</a>
+Recati sul sito <a rel=”nofollow” href="https://www.nvidia.com/it-it/geforce-now/" target="_blank" title="Nvidia GeForce Now">Nvidia GeForce Now</a>
 
 Troverete qualcosa di simile
 

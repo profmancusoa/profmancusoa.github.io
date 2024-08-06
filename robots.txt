@@ -1391,5 +1391,8 @@ User-agent: facebookexternalhit
 Allow: /
 
 User-agent: *
-Allow: /
+Disallow:
+
 Sitemap: https://prof.mancusoa.it/sitemap.xml
+
+

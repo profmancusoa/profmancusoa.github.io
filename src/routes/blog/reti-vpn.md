@@ -122,7 +122,7 @@ Il difetto maggiore sono i suoi protocolli di sicurezza soggetti a preoccupanti 
 
 # Configurazione
 
-Per configurare una vpn point to point clicca [qui](https://www.digitalocean.com/community/tutorials/how-to-create-a-point-to-point-vpn-with-wireguard-on-ubuntu-16-04) per saperne di più.
+Per configurare una vpn point to point clicca <a rel=”nofollow” href="https://www.digitalocean.com/community/tutorials/how-to-create-a-point-to-point-vpn-with-wireguard-on-ubuntu-16-04">qui</a> per saperne di più.
 
 Spero di esserti stato di aiuto e alla prossima, da Pierpaolo è tutto.
 
