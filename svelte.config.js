@@ -13,7 +13,7 @@ const config = {
 		prerender: {
 			default: true
 		},
-		trailingSlash: 'always',
+		trailingSlash: 'never',
 		inlineStyleThreshold: 350000
 	},
 	extensions: ['.svelte', '.md'],

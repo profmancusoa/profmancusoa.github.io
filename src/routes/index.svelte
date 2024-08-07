@@ -38,7 +38,7 @@
 		property="og:description"
 		content="Smanettando si impara. Blog di tecnologie informatiche per studenti e giovani informatici"
 	/>
-	<meta property="og:url" content="https://prof.mancusoa.it/" />
+	<meta property="og:url" content="https://prof.mancusoa.it" />
 	<meta property="og:image" content="https://prof.mancusoa.it/img/blog_banner.png" />
 	<meta
 		property="og:image:secure_url"
@@ -59,7 +59,7 @@
 		content="Smanettando si impara. Blog di tecnologie informatiche per studenti e giovani informatici"
 	/>
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
-	<meta property="twitter:url" content="https://prof.mancusoa.it/" />
+	<meta property="twitter:url" content="https://prof.mancusoa.it" />
 	<meta name="twitter:image" content="https://prof.mancusoa.it/img/blog_banner.png" />
 </svelte:head>
 

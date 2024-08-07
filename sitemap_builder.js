@@ -6,20 +6,20 @@ const POST_DIR = './src/routes/blog/';
 const SITEMAP_HEADER = `<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://prof.mancusoa.it/</loc>
+        <loc>https://prof.mancusoa.it</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://prof.mancusoa.it/about/</loc>
+        <loc>https://prof.mancusoa.it/about</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 `;
 const SITEMAP_ENTRY = `    <url>
-        <loc>https://prof.mancusoa.it/blog/{post_fname}/</loc>
+        <loc>https://prof.mancusoa.it/blog/{post_fname}</loc>
         <lastmod>{timestamp}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
