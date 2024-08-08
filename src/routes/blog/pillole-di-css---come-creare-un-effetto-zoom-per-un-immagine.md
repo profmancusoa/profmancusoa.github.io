@@ -24,13 +24,13 @@ Uno molto carino è quello di zoom al passaggio del mouse sopra l'immagine (*hov
 
 <div class="gallery">
     <div class="contenitore">
-        <img src="https://picsum.photos/id/34/530/354" alt="" />
+        <img src="https://picsum.photos/id/34/530/354" alt="bidone" />
     </div>
     <div class="contenitore">
-        <img src="https://picsum.photos/id/237/530/354" alt="" />
+        <img src="https://picsum.photos/id/237/530/354" alt="cagnolino" />
     </div>
     <div class="contenitore">
-        <img src="https://picsum.photos/id/76/530/354" alt="" />
+        <img src="https://picsum.photos/id/76/530/354" alt="baracca" />
     </div>
 </div>
 
@@ -261,13 +261,13 @@ Ora usiamo una foto diversa per ogni elemento del flexbox ed otteniamo la nostra
 
 <div class="gallery">
     <div class="contenitore">
-        <img src="https://picsum.photos/id/34/530/354" alt="" />
+        <img src="https://picsum.photos/id/34/530/354" alt="bidone" />
     </div>
     <div class="contenitore">
-        <img src="https://picsum.photos/id/237/530/354" alt="" />
+        <img src="https://picsum.photos/id/237/530/354" alt="cagnolino" />
     </div>
     <div class="contenitore">
-        <img src="https://picsum.photos/id/76/530/354" alt="" />
+        <img src="https://picsum.photos/id/76/530/354" alt="baracca" />
     </div>
 </div>
 
