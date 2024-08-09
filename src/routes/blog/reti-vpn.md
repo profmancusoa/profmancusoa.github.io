@@ -38,7 +38,7 @@ Il server gestirà il traffico tra il client e l’accesso ad Internet, mentre i
 In questo caso il canale di comunicazione si basa su dei router che raggruppati formano una rete privata permettendo il passaggio di informazioni.
 Anche questo modello usa il concetto client-server, infatti quando arriva l’informazione al router ad esso possono arrivare richieste d’accesso ai dati dai client della stessa rete del router.
 
-# Come funziona
+## Come funziona
 
 Il processo di creazione di una VPN si divide in tre fasi
 
