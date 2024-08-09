@@ -15,7 +15,6 @@ categorie:
   - Rust
 ---
 
-# Wineget: Il package manager per Wine
 
 ### Come installare un package manager per gestire facilmente le applicazioni installate con Wine su Linux.
 

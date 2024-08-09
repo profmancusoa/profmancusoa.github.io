@@ -14,7 +14,6 @@ categorie:
   - Configurazione
 ---
 
-# Navigare tra le finestre e tra le applicazioni
 
 Normalmente, almeno io sono abituato così, quando premo la combinazione sulla tastiera ALT+TAB mi aspetto di muovermi/navigare tra le finestre delle varie applicazioni.
 

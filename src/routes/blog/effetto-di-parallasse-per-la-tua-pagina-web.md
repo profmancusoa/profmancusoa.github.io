@@ -16,9 +16,6 @@ categorie:
   - CSS
 ---
 
-#### Tempo di lettura: 5'
-#### Tempo di realizzazione: 25'
-
 ## Introduzione
 
 Negli ultimi anni le tecniche di sviluppo web sono migliorate e hanno permesso di integrare nuovi effetti interessanti alle nostre pagine web.

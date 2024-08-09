@@ -17,8 +17,6 @@ categorie:
   - Linux CLI
 ---
 
-#### Tempo di lettura: 20'
-#### Tempo di realizzazione: 240'
 
 ## Introduzione
 

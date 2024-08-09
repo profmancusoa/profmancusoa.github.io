@@ -14,19 +14,19 @@ categorie:
   - Development
 ---
 
-# Che cos'è WebSocket
+## Che cos'è WebSocket
 WebSocket non è altro che un protocollo di rete basato su TCP per scambiare i dati con una **connessione bidirezionale in modo simultaneo** (c.d. full duplex) tra due punti finali di comunicazione, che sono chiamati socket. 
 
 E’ un protocollo molto affidabile ed efficace per cui viene utilizzato dalla quasi totalità dei client. Presenta il vantaggio che **i dati vengono visualizzati rapidamente**. In particolare consente una comunicazione diretta tra un’applicazione web e un server WebSocket in modo da richiamare una pagina web e visualizzarla in “tempo reale”.
 
-# Come funziona
+## Come funziona
 Per capire come funziona basta pensare a come vengono trasferiti i dati senza il suo utilizzo. Di solito, per caricare le pagine web nel browser su Internet si utilizza una **connessione HTTP**: il nostro client fa una richiesta al server ad esempio con un click e solo allora (dopo un certo lasso di tempo) il server può fornire le risposte.
 
 Con WebSocket si accorciano i tempi notevolmente: è sufficiente che il client apra la connessione a un server web, che viene stabilita con **l’handshake del protocollo WebSocket, dopodiché il canale di comunicazione rimane aperto**. Il server può diventare attivo da solo e fornire al client tutte le informazioni senza attendere le richieste. Basti pensare ai messaggi push sui siti web che funzionano così: se ci sono nuove informazioni dal punto di vista del server, questo le comunica al client senza alcuna richiesta extra da parte del client.
 
 WebSocket può essere inteso come un canale di comunicazione aperto, in cui una connessione attiva è tale dopo un iniziale handshake tra client e server, senza più fare affidamento sull'apertura di più connessioni HTTP.
 
-# A cosa serve
+## A cosa serve
 WebSocket viene utilizzato ogni volta che è necessaria una **connessione rapida con una bassa latenza** come nel caso di una live chat di assistenza, operazioni sulla Borsa valori e *virtual games*.
 Anche i social media ne traggono beneficio, consentendo collegamenti in diretta con altre persone e lo scambio di messaggi immediati. 
 Esempi di utilizzo:
@@ -37,7 +37,7 @@ Esempi di utilizzo:
 * Notiziari sportivi in tempo reale
 * Sistemi di trading
 
-# Dove è già implementato
+## Dove è già implementato
 Per utilizzare WebSocket, è necessario un web browser aggiornato:
 
 1. Internet Explorer dalla versione 10
@@ -62,7 +62,7 @@ Lato server, WebSocket può essere implementato con i seguenti linguaggi di prog
   - .NET
   - SuperWebSocket
 
-# Esempio di applicazione
+## Esempio di applicazione
 
 Per aprire una connessione WebSocket dobbiamo creare un oggetto WebSocket tramite il comando  
 

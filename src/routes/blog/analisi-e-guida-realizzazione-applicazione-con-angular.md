@@ -17,7 +17,6 @@ categorie:
 
 
 
-# **Analisi dei tool esistenti e guida alla realizzazione di un’applicazione To Do List in Angular**
 
 ## **Tool che cos’è? To Do List cos’è?**
 *Cos’è un tool?*

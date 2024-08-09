@@ -16,7 +16,6 @@ categorie:
   - 
 ---
 
-# Warpinator
 
 Warpinator è uno strumento open source gratuito per l'invio e la ricezione di file tra computer che si trovano sulla stessa rete locale. 
 Tutto quello che devi fare è installare Warpinator sul tuo computer, scegliere un codice di gruppo ed iniziare a condividere file con semplicità e sicurezza, senza spreco di banda e senza dover usare servizi di terze parti di dubbia provenienza.

@@ -17,7 +17,8 @@ categorie:
 ---
 
 
-# A cosa serve la tecnologia NFC?
+## A cosa serve la tecnologia NFC?
+
 La tecnologia NFC, (Near Field Connection) serve a connettere due dispositivi ed è utile per trasferire dati da un dispositivo ad un altro. Al loro interno si può trovate un chip (il più usato è l'NXP NTAG 216) senza utilizzare cavi o senza inserire delle credenziali d'accesso. 
 
 Rispetto al Bluetooth, la tecnologia NFC permette di identificare, autenticare ed associare i due dispositivi in modo del tutto automatico.
@@ -33,7 +34,7 @@ Quindi possiamo dire che in questi ultimi anni, le aziende hanno bisogno di rinn
  
  Questo messaggio però, prima di essere inviato al destinatario, deve verificare attraverso un’ampia selezione di codici se effettivamente il biglietto era valido oppure no. (Questi sono tutti dati che vengono elaborati dai due dispositivi NFC interessati, ma che non si possono effettivamente vedere ad occhio nudo).
 
- # Sicurezza dei dispositivi NFC
+ ## Sicurezza dei dispositivi NFC
  Il vantaggio del chip NFC è che in fase di transazione questo trasmette un token e non i dati bancari, perciò la sicurezza è piuttosto elevata rispetto ad altri sistemi.
  Un esempio possono essere i pagamenti contactless, quando si avvicina la carta di credito, il chip invia un token e non i dati bancari, sennò a livello di sicurezza sarebbe un vero problema.
 
@@ -42,7 +43,7 @@ Quindi possiamo dire che in questi ultimi anni, le aziende hanno bisogno di rinn
  ![Pagamento contactless](/img/posts/cosa-sono-gli-nfc-e-come-usarli/contactless.webp)
 
 
-# Cosa vuol dire IoT?
+## Cosa vuol dire IoT?
 **Internet of Things**
 Con IoT ci riferiamo al processo di connessione a Internet di oggetti fisici di uso attuale e quotidiano. 
 Per esempio oggetti che abbiamo tutti in casa: 

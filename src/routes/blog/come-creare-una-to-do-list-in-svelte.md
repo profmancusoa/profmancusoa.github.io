@@ -14,6 +14,7 @@ categorie:
   - Front End
   - Web Development
 ---
+
 Sapresti realizzare una pagina che comprenda una to do list in una pagina web? No? Ti do una mano io!
 
 Se ti è mai capitato di tornare a casa dopo aver fatto la spesa e tirarti maledizioni addosso perchè per l’ennesima volta ti sei scordato di comprare il latte, questo semplice programma farà al caso tuo. Stiamo parlando, infatti, di un software che ci permette di aggiungere elementi ad una lista puntata, permettendoci di sbarrarli o di eliminarli a nostro piacimento.

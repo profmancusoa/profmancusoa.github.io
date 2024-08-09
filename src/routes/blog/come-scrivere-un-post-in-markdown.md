@@ -12,7 +12,7 @@ categorie:
   - Blog
 ---
 
-# Come scrivere un post
+
 
 Il formato **Markdown** è oggi giorno molto popolare ed offre innumerevoli vantaggi nella scrittura di documenti e articoli.
 Per tale motivo i post di questo blog si scrivono in questo formato. In questo modo per poter scrivere su questo blog non sarà necessario conoscere l'HTML e la realizzazione di articoli sarà veloce e di immediata comprensione.

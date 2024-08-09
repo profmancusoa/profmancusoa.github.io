@@ -13,10 +13,8 @@ categorie:
   - Social
 ---
 
-#### Tempo di lettura: 6'
 
-
-# Introduzione
+## Introduzione
 Oggi vi parlerò del ***Metaverso***.
 *Il metaverse* è il concetto di un universo 3D  online che combina vari spazi virtuali differenti. Puoi vederlo come una futura evoluzione di Internet. Questo ambiente permetterà agli utenti di *lavorare, incontrarsi, giocare e socializzare insieme in questi spazi 3D.*
 

@@ -5,7 +5,7 @@ featured: false
 autore: Pierpaolo Quijada Gomez
 data: 2022-11-06
 cover: cover.webp
-introduzione: Breve introduzione sulle VPN
+introduzione: Breve introduzione sulle reti private virtuali o VPN
 pubblicato: true
 sezione: Blog
 categorie:
@@ -16,7 +16,7 @@ categorie:
   - OpenVPN
 ---
 
-# Cosa sono le VPN
+## Cosa sono le VPN
 
 Con la sigla VPN si intende Virtual Private Network, ossia una rete privata che garantisce privacy e sicurezza dei dati.
 La comunicazioni tra i dispositivi, non per forza connessi alla stessa LAN, avviene attraverso un canale di comunicazione riservato utilizzando la rete pubblica.
@@ -24,7 +24,7 @@ La comunicazioni tra i dispositivi, non per forza connessi alla stessa LAN, avvi
 Il loro utilizzo è molto usato nel mondo aziendale dato che va a tagliare dei costi considerevoli per la creazione di una propria rete privata.
 Nonostante ciò anche i privati si ritrovano ad utilizzarle se vogliono nascondere e proteggere i loro dati mentre navigano su Internet.
 
-# Tipi di VPN
+## Tipi di VPN
 
 Le VPN si possono classificare in due tipologie:
 
@@ -71,7 +71,7 @@ Gli algoritmi alla base della criptazione sono simmetrici o asimmetrici e utiliz
 - Algoritmo asimmetrico: utilizzo di chiavi diverse per criptare e decriptare
 Hashing (utilizzato per rendere un dato riservato, questo procedimento non è reversibile).
 
-# Protocolli VPN
+## Protocolli VPN
 
 La comunicazione tra due host avviene secondo dei precisi protocolli, quali per esempio.
 
@@ -108,7 +108,7 @@ Il protocollo Point-to-Point Tunneling Protocol è uno dei più vecchi e la sua 
 La sua installazione è semplice e ha una buona velocità computazionale.
 Il difetto maggiore sono i suoi protocolli di sicurezza soggetti a preoccupanti vulnerabilità a livello di sicurezza.
 
-# Pro e Contro nell'uso di una VPN
+## Pro e Contro nell'uso di una VPN
 
 **Pro**
 
@@ -120,7 +120,7 @@ Il difetto maggiore sono i suoi protocolli di sicurezza soggetti a preoccupanti 
 
 - Se non si ha una buona conoscenza della tecnologia VPN può essere difficile utilizzarle a pieno.
 
-# Configurazione
+## Configurazione
 
 Per configurare una vpn point to point clicca <a rel=”nofollow” href="https://www.digitalocean.com/community/tutorials/how-to-create-a-point-to-point-vpn-with-wireguard-on-ubuntu-16-04">qui</a> per saperne di più.
 

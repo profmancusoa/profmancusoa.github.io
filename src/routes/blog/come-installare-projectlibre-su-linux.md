@@ -14,7 +14,6 @@ categorie:
   - Linux
 ---
 
-# ProjectLibre
 
 ProjectLibre è l'alternativa *Open Source* n. 1 a Microsoft Project per la gestione dei progetti. 
 È stato scaricato milioni di volte edha vinto il premio "Best of Open Source" di InfoWorld. 

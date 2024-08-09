@@ -5,7 +5,7 @@ featured: false
 autore: Federico Pomba
 data: 2022-11-08
 cover: cover.webp
-introduzione: Cosa sono gli adv
+introduzione: Cosa sono i sistemi adv e le loro caratteristiche
 pubblicato: true
 sezione: IT
 categorie:
@@ -15,7 +15,7 @@ categorie:
   - Front End
   - CSS
 ---
-#### Tempo di lettura: 10'
+
 
 ## Introduzione
 

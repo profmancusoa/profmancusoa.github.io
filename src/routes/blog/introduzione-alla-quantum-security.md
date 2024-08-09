@@ -15,9 +15,6 @@ categorie:
   - Quantum
 ---
 
-  
-# La quantum security
-
 
 ### Avete mai sentito parlare della cybersecurity realizzata con i computer quantistici?
 

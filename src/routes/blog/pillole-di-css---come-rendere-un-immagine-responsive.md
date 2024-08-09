@@ -6,7 +6,7 @@ featured: false
 autore: ProfMancusoa
 data: 2023-10-09
 cover: pillole-css-come-rendere-un-immagine-responsive.webp
-introduzione: In questa pillola di CSS vediamo come rendere un'immagine responsive in modo che si adatti dinamicamente alle dimensioni del suo contenitore mantenendo un'aspetto corretto
+introduzione: Vediamo come rendere un'immagine responsive in modo che si adatti dinamicamente alle dimensioni del suo contenitore mantenendo un'aspetto corretto
 pubblicato: true
 sezione: Blog
 categorie:
@@ -16,7 +16,7 @@ categorie:
   - responsive
 ---
 
-# Immagini Responsive
+## Immagini Responsive
 
 Durante lo sviluppo di un sito o app web di tipo responsive, è importante che tutti gli elementi della pagina si comportino in modo corretto adattandosi alla dimensione della view port del browser (desktop o mobile).
 

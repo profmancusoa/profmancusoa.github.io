@@ -17,7 +17,7 @@ categorie:
   - Testo
 ---
 
-# Background Clip
+## Background Clip
 
 <div class="contenitore">
     <h1 class="banner">HELLO!</h1>
@@ -29,7 +29,7 @@ Spesso vediamo in giro su vari siti, un'effetto molto bello che consiste nel col
 
 Con questa pillola di CSS vediamo come realizzare tale effetto che potrete utilizzare nei vostri siti e nelle vostre web app.
 
-## Elementi base
+### Elementi base
 
 Per realizzare l'effetto abbiamo bisogno di tre elementi essenziali:
 
@@ -127,7 +127,7 @@ In questo modo otteniamo l'effetto finale desiderato pronto per essere utilizzat
     <h1 class="banner">HELLO!</h1>
 </div>
 
-## Conclusioni
+### Conclusioni
 
 Anche in questa pillola abbiamo visto come con poche proprietà CSS possiamo creare degli effetti molto utili per la realizzazioni dei nostri siti e web app.
 Poter riempire un testo non con un colore di sfondo solido, ma con un'immagine ci permette di ottenere un effetto molto interessante ed utile.

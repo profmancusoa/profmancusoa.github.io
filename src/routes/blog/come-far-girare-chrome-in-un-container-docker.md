@@ -6,7 +6,7 @@ featured: false
 autore: ProfMancusoa
 data: 2023-08-20
 cover: come-far-girare-chrome-in-un-container-docker.webp
-introduzione: Vediamo come è possibile far girare il browser Chrome in un container Docker in modo da aumentare la sicurezza e navigare in tutta tranquillità anche se visitiamo dei siti possibilmente poco attendibili
+introduzione: Eseguire Chrome e navigare in sicurezza tramite Docker
 pubblicato: true
 sezione: Blog
 categorie:

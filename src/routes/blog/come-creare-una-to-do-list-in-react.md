@@ -14,8 +14,6 @@ categorie:
   - applicazioni
 ---
 
-# Todo List React
-
 ## Introduzione
 
 <a rel=”nofollow” href="https://reactjs.org/">React</a>, Svelte, Angular… sono solo alcuni dei più famosi framework Javascript che il WEB ci mette a disposizione. Ma cos’è un framework? Con la crescita e la diffusione delle nuove tecnologie è sempre più richiesto lo sviluppo di applicazioni grandi e complesse, sarebbe, quindi, inimmaginabile sviluppare in JS _vanilla_ (puro). 

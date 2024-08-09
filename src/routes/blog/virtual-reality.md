@@ -14,10 +14,8 @@ categorie:
   - Applicazione nel lavoro
 ---
 
-#### Tempo di lettura: 5'
 
-
-# Introduzione
+## Introduzione
 
 
 

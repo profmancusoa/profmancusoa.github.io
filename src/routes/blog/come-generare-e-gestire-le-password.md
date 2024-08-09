@@ -5,7 +5,7 @@ featured: false
 autore: Dario Ruggieri
 data: 2022-08-25
 cover: cover.webp
-introduzione: Post dedicato alla generazione e gestione delle password
+introduzione: Post dedicato alla generazione e gestione delle password tramite password manager
 pubblicato: true
 sezione: IT
 categorie: 
@@ -14,7 +14,7 @@ categorie:
   - Sicurezza
 ---
 
-# Password
+
 
 ## Introduzione
 

@@ -17,9 +17,6 @@ categorie:
 
 
 
-# SPANNING-TREE PROTOCOL
-
-
 ### A cosa serve?
 
 Il protocollo Spanning Tree è un protocollo di rete che consente di creare una topologia di rete fisica loop-free. Lo spanning tree viene utilizzato per 

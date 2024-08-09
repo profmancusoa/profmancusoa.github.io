@@ -1,5 +1,5 @@
 <svelte:head>
-    <meta name="description" content="Ciao, sono il prof. Mancuso Antonio e insegno le materie d'indirizzo agli studenti del triennio informatico presso l'Istitituto Internazionale E.Agnelli a Torino.Questo blog è un semplice strumento per condividere informazioni con gli studenti e tutti i lettori interessati. E' anche uno spazio in cui gli studenti possono pubblicare i loro articoli.">
+    <meta name="description" content="Questo blog server a condividere informazioni con gli studenti e tutti i lettori interessati, permette agli studenti di pubblicare i loro articoli.">
     <title>About profmancusoa</title>
 </svelte:head>
 <div class="outer">

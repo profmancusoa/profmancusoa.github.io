@@ -15,9 +15,6 @@ categorie:
 ---
 
 
-## Go e Rust, i linguaggi di programmazione emergenti
-
-
 ### Introduzione
 
 
