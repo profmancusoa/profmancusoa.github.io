@@ -24,6 +24,7 @@
 	//per qualche motivo qui cover è esportato senza l'aggiunta della slug directory
 	cover = title_to_slug(titolo) + '/' + cover;
 
+/*
 	onMount(() => {
 		if (!dev) {
 			//commenti solo in produzione
@@ -44,6 +45,7 @@
 			DISQUSWIDGETS.getCount({ reset: true });
 		}
 	});
+*/
 </script>
 
 <svelte:head>
@@ -94,7 +96,7 @@
 		<div class="text-muted fst-italic mb-3 fs-5">
 			{autore} - {date_convert(data)}
 			{#if !dev}
-				- <a class="text-muted" href="{post_url}#disqus_thread" rel=”nofollow”>0 commenti</a>
+				<!-- - <a class="text-muted" href="{post_url}#disqus_thread" rel=”nofollow”>0 commenti</a> -->
 			{/if}
 		</div>
 		<!-- categorie-->
@@ -133,7 +135,7 @@
 	<hr />
 
     <!-- disqus comments -->
-	<div id="disqus_thread" />
+	<!-- <div id="disqus_thread" /> -->
 </article>
 
 <style>
