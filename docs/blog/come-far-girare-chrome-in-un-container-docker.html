@@ -79,14 +79,14 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 	<link href="/_app/immutable/assets/Categoria-d423eea6.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/come-far-girare-chrome-in-un-container-docker-129b5920.css" rel="stylesheet" disabled media="(max-width: 0)">
 	<link href="/_app/immutable/assets/_post-0e6908a7.css" rel="stylesheet" disabled media="(max-width: 0)">
-	<link rel="modulepreload" href="/_app/immutable/start-dedea7a0.js">
+	<link rel="modulepreload" href="/_app/immutable/start-27a5958a.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-ba2b2825.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-7571d01b.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-eafe8248.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-472625bf.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/helpers-e147ed77.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Categoria.svelte_svelte_type_style_lang-d5b62848.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/store-e8db1099.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-8e60ca9f.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-ffa924d8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-97e05344.js">
 	</head>
 	<body>
@@ -121,9 +121,7 @@ hr.svelte-1x2gq4t{border:2px solid blue;border-radius:5px;margin-top:5rem;margin
 	<figure class="mb-5"><img class="img-fluid rounded card-img-top" src="/img/posts/come-far-girare-chrome-in-un-container-docker/come-far-girare-chrome-in-un-container-docker.webp" width="830" height="350" alt="Eseguire Chrome e navigare in sicurezza tramite Docker"></figure>
 
 	
-	<section class="post"><div class="video svelte-16laon1"><iframe src="https://www.youtube.com/embed/t3-Rr5UzRgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="svelte-16laon1"></iframe>
-</div>
-<h2>Navighiamo in sicurezza</h2>
+	<section class="post"><h2>Navighiamo in sicurezza</h2>
 <p>Google Chrome è uno dei più diffusi browser al momento ed offre una navigazione online veloce e confortevole.
 Tuttavia quando navighiamo il Web le insidie sono dietro l’angolo e a volte molto ben nascoste.
 Infatti tutti noi possiamo essere vittime di phishing o raggiri simili.</p>
@@ -165,6 +163,8 @@ google-chrome                   latest             2dd030b2446b   <span class="t
 <p>Per evitare di dover ricordarmi questi comandi ogni volta che voglio far partire una sessione di navigazione sicura, creo un <code>alias</code> nel mio .zshrc, o se usi la bash nel file .bashrc</p>
 <pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token builtin class-name">alias</span> <span class="token assign-left variable">dgoogle</span><span class="token operator">=</span><span class="token string">'xhost +local:docker &amp;&amp; docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/shm:/dev/shm  --device /dev/dri -e DISPLAY=$DISPLAY google-chrome'</span></code><!-- HTML_TAG_END --></pre>
 <p>In questo modo potrò iniziare la sessione di navigazione sicura soltanto digitando <code>dgoogle</code></p>
+<div class="video svelte-16laon1"><iframe src="https://www.youtube.com/embed/t3-Rr5UzRgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="svelte-16laon1"></iframe>
+</div>
 <h3>Conclusioni</h3>
 <p>Utilizzando sapientemente gli strumenti messi a disposizione da Linux e sfruttando la <em>“magia”</em> di Docker abbiamo la possibilità di aumentare la sicurezza delle nostre sessioni di navigazione Web.</p>
 <p>Vi invito a sperimentare questa tecnica, e a farmi sapere se vi è utile e se avete idee di miglioramento.
@@ -187,16 +187,16 @@ Non dimenticate di condividere questo articolo con la vostra rete, potrebbe esse
             
             </div></div>
 
-<footer class="py-1 bg-dark fixed-bottom"><div class="container"><p class="m-0 text-center text-white">Copyright © profmancusoa 2022-2023   v1.7.35</p></div></footer>
+<footer class="py-1 bg-dark fixed-bottom"><div class="container"><p class="m-0 text-center text-white">Copyright © profmancusoa 2022-2023   v1.7.36</p></div></footer>
 
 
-		<script type="module" data-sveltekit-hydrate="w908pb">
-		import { set_public_env, start } from "/_app/immutable/start-dedea7a0.js";
+		<script type="module" data-sveltekit-hydrate="1e8gg6k">
+		import { set_public_env, start } from "/_app/immutable/start-27a5958a.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="w908pb"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1e8gg6k"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

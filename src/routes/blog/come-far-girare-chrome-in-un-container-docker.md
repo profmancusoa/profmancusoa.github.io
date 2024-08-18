@@ -19,7 +19,6 @@ categorie:
     import Video from '../../lib/components/Video.svelte'
 </script>
 
-<Video video_url="https://www.youtube.com/embed/t3-Rr5UzRgU"/>
 
 ##  Navighiamo in sicurezza
 
@@ -107,6 +106,8 @@ alias dgoogle='xhost +local:docker && docker run --rm -ti -v /tmp/.X11-unix:/tmp
 ```
 
 In questo modo potrò iniziare la sessione di navigazione sicura soltanto digitando `dgoogle`
+
+<Video video_url="https://www.youtube.com/embed/t3-Rr5UzRgU"/>
 
 ### Conclusioni
 
