@@ -37,9 +37,11 @@
 
 
 <svelte:head>
+
 {#if !dev}
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBQX0F4LS"></script>
+    <!-- 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBQX0F4LS"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -47,6 +49,7 @@
 
     gtag('config', 'G-CZBQX0F4LS');
     </script>
+	-->
 {/if}
 </svelte:head>
 
