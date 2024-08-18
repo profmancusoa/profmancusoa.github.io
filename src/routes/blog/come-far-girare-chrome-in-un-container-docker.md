@@ -15,10 +15,6 @@ categorie:
   - Security
 ---
 
-<script>
-    import Video from '../../lib/components/Video.svelte'
-</script>
-
 
 ##  Navighiamo in sicurezza
 
@@ -107,8 +103,6 @@ alias dgoogle='xhost +local:docker && docker run --rm -ti -v /tmp/.X11-unix:/tmp
 
 In questo modo potrò iniziare la sessione di navigazione sicura soltanto digitando `dgoogle`
 
-<Video video_url="https://www.youtube.com/embed/t3-Rr5UzRgU"/>
-
 ### Conclusioni
 
 Utilizzando sapientemente gli strumenti messi a disposizione da Linux e sfruttando la *"magia"* di Docker abbiamo la possibilità di aumentare la sicurezza delle nostre sessioni di navigazione Web.
@@ -117,5 +111,9 @@ Vi invito a sperimentare questa tecnica, e a farmi sapere se vi è utile e se av
 Non dimenticate di condividere questo articolo con la vostra rete, potrebbe essere utile anche ai vostri amici o altre persone.
 
 Se l'articolo ti è piaciuto metti un like e lascia un commento qui sotto.
+
+<br>
+
+PS: puoi vedere il video associato a questo post <a href="https://www.youtube.com/embed/t3-Rr5UzRgU">qui</a>
 
 
