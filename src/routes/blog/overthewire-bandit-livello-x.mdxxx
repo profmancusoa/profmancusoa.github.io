@@ -1,0 +1,27 @@
+
+---
+id: 2024-08-26-x
+titolo: OverTheWire Bandit Livello xx
+featured: false
+autore: ProfMancusoa
+data: 2024-08-26
+cover: cover.webp
+introduzione: xxxxx
+pubblicato: true
+sezione: Blog
+categorie:
+  - Linux
+  - Security
+  - Hacking
+  - Fun
+  - Game
+---
+
+<script>
+  import  Video from '../../lib/components/Video.svelte'
+</script>
+
+xxxxx
+
+
+<Video video_url="xxxx" />

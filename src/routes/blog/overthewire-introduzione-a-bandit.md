@@ -1,6 +1,6 @@
 
 ---
-id: 2024-08-26-1
+id: 2024-08-26-intro
 titolo: OverTheWire Introduzione a Bandit
 featured: true
 autore: ProfMancusoa
