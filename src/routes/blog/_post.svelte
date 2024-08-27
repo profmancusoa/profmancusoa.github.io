@@ -2,8 +2,8 @@
 	import { date_convert, cover_assign } from '$lib/helpers/helpers';
 	import Categoria from '$lib/components/Categoria.svelte';
 	import { page } from '$app/stores';
-    import { onMount } from 'svelte';
-	import { title_to_slug } from '$lib/helpers/helpers';
+	import { onMount } from 'svelte';
+	import { title_to_slug, truncate_descritpiotn } from '$lib/helpers/helpers';
 	import { dev } from '$app/env';
 
 	export let id;
@@ -13,18 +13,18 @@
 	export let data;
 	export let cover;
 	export let introduzione;
-    export let pubblicato;
+	export let pubblicato;
 	export let categorie;
 	export let sezione;
 
-	export let base_post_url = 'https://prof.mancusoa.it'
-    export let post_uid = $page.routeId;
-    export let post_url = base_post_url + '/' + post_uid; // + '/';
+	export let base_post_url = 'https://prof.mancusoa.it';
+	export let post_uid = $page.routeId;
+	export let post_url = base_post_url + '/' + post_uid; // + '/';
 
 	//per qualche motivo qui cover è esportato senza l'aggiunta della slug directory
 	cover = title_to_slug(titolo) + '/' + cover;
 
-/*
+	/*
 	onMount(() => {
 		if (!dev) {
 			//commenti solo in produzione
@@ -51,13 +51,16 @@
 <svelte:head>
 	<link rel="stylesheet" type="text/css" href="/css/prism.css" />
 	<title>{titolo}</title>
-    <meta name="title" content="{titolo}">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta property="og:locale" content="it_IT" />
-    <meta name="description" content={introduzione} />
-    <meta property="og:site_name" content="ProfMancusoa" />
-    <link rel="canonical" href="{post_url}"/>
-    
+	<meta name="title" content={titolo} />
+	<meta
+		name="robots"
+		content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+	/>
+	<meta property="og:locale" content="it_IT" />
+	<meta name="description" content={truncate_descritpiotn(introduzione)} />
+	<meta property="og:site_name" content="ProfMancusoa" />
+	<link rel="canonical" href={post_url} />
+
 	<!-- Facebook Meta Tags -->
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={titolo} />
@@ -68,7 +71,7 @@
 	{#each categorie as categoria}
 		<meta property="article:tag" content={categoria} />
 	{/each}
-	<meta property="og:description" content={introduzione} />
+	<meta property="og:description" content={truncate_descritpiotn(introduzione)} />
 	<meta property="og:url" content={post_url} />
 	<meta property="og:image" content="{base_post_url}{cover_assign(cover)}" />
 	<meta property="og:image:secure_url" content="{base_post_url}{cover_assign(cover)}" />
@@ -78,13 +81,13 @@
 
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@profmancusoa" />
-    <meta name="twitter:site" content="@profmancusoa">
+	<meta name="twitter:creator" content="@profmancusoa" />
+	<meta name="twitter:site" content="@profmancusoa" />
 	<meta name="twitter:title" content={titolo} />
-	<meta name="twitter:description" content={introduzione} />
+	<meta name="twitter:description" content={truncate_descritpiotn(introduzione)} />
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
-	<meta property="twitter:url" content="{post_url}" />
-	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" />    
+	<meta property="twitter:url" content={post_url} />
+	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" />
 </svelte:head>
 
 <article>
@@ -123,18 +126,28 @@
 		<slot />
 	</section>
 
-    <section class="social-box">
-        <p>Condividi quest'articolo sui tuoi social</p>
-        <div class="social-links">
-			<a rel="nofollow" href="https://twitter.com/share?url={post_url}&text={encodeURIComponent(titolo)}&via=profmancusoa" target="_blank"><img src="/img/twitter.png" width="48" alt="twitter icon"></a>
-            <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u={post_url}" target="_blank"><img src="/img/facebook.png" width="48" alt="facebook icon"></a>
-            <!-- <a rel="nofollow" href="https://pinterest.com/pin/create/button/?url={encodeURIComponent(post_url)}&amp;media={base_post_url}{cover_assign(cover)}&amp;description={encodeURIComponent(introduzione)}" target="_blank"><img src="/img/pininterest.png" width="48" alt="pininterest icon"></a> -->
-        </div>
+	<section class="social-box">
+		<p>Condividi quest'articolo sui tuoi social</p>
+		<div class="social-links">
+			<a
+				rel="nofollow"
+				href="https://twitter.com/share?url={post_url}&text={encodeURIComponent(
+					titolo
+				)}&via=profmancusoa"
+				target="_blank"><img src="/img/twitter.png" width="48" alt="twitter icon" /></a
+			>
+			<a
+				rel="nofollow"
+				href="https://www.facebook.com/sharer/sharer.php?u={post_url}"
+				target="_blank"><img src="/img/facebook.png" width="48" alt="facebook icon" /></a
+			>
+			<!-- <a rel="nofollow" href="https://pinterest.com/pin/create/button/?url={encodeURIComponent(post_url)}&amp;media={base_post_url}{cover_assign(cover)}&amp;description={encodeURIComponent(introduzione)}" target="_blank"><img src="/img/pininterest.png" width="48" alt="pininterest icon"></a> -->
+		</div>
 	</section>
 
 	<hr />
 
-    <!-- disqus comments -->
+	<!-- disqus comments -->
 	<!-- <div id="disqus_thread" /> -->
 </article>
 
@@ -146,15 +159,15 @@
 		margin-bottom: 3rem;
 	}
 
-    .social-box {
-        text-align: center;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
+	.social-box {
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
 
-    .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-    }
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+	}
 </style>

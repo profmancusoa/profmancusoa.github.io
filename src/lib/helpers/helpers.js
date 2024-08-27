@@ -1,5 +1,6 @@
 const _COVER_DIR = '/img/posts/';
 const _COVER_PLACEHOLDER = '/img/posts/missing_post.png';
+const _DESCRIPTION_LEN = 120;
 
 // converte la data da 2022-07-11T00:00:00.000 a 11 LUGLIO 2022
 export function date_convert(data) {
@@ -26,4 +27,11 @@ export function cover_assign(cover) {
 //convert a human readable title into sluf
 export function title_to_slug(title) {
 	return title.toLowerCase().split(' ').join('-');
+}
+
+//truncate a description to _DESCRIPTION_LEN characters
+export function truncate_descritpiotn(str) {
+	if (str.length > _DESCRIPTION_LEN)
+		return str.substring(0, _DESCRIPTION_LEN).concat('...');
+	return str;
 }

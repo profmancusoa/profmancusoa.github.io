@@ -2,7 +2,7 @@
 	import PostPreview from '$lib/components/PostPreview.svelte';
 	import Paginatore from '$lib/components/Paginatore.svelte';
 	import { all_posts } from '$lib/stores/store';
-    import { dev } from '$app/env';
+	import { dev } from '$app/env';
 
 	const PAGE_SIZE = 6; // numero di post sulla home
 	//necessario per le visualizzazioni successive della home
@@ -12,12 +12,14 @@
 	let post_page_start = 0;
 
 	// find featured posts and remove it from posts
-	let featured = posts.filter((item) => item.metadata.featured == true && item.metadata.pubblicato ==  true);
+	let featured = posts.filter(
+		(item) => item.metadata.featured == true && item.metadata.pubblicato == true
+	);
 	if (featured.length > 0) {
 		let featured_idx = posts.indexOf(featured[0]);
 		posts.splice(featured_idx, 1);
 	}
-    posts = posts.filter((item) => item.metadata.pubblicato ==  true || dev);
+	posts = posts.filter((item) => item.metadata.pubblicato == true || dev);
 
 	function cambio_pagina(event) {
 		post_page_start = event.detail.idx_start;
@@ -40,10 +42,7 @@
 	/>
 	<meta property="og:url" content="https://prof.mancusoa.it" />
 	<meta property="og:image" content="https://prof.mancusoa.it/img/blog_banner.png" />
-	<meta
-		property="og:image:secure_url"
-		content="https://prof.mancusoa.it/img/blog_banner.png"
-	/>
+	<meta property="og:image:secure_url" content="https://prof.mancusoa.it/img/blog_banner.png" />
 	<meta property="og:image:width" content="1280" />
 	<meta property="og:image:height" content="640" />
 	<meta property="og:image:alt" content="Smanettando si impara. profmancusoa Blog" />
@@ -63,18 +62,20 @@
 	<meta name="twitter:image" content="https://prof.mancusoa.it/img/blog_banner.png" />
 </svelte:head>
 
+<h1 id="title">Il blog del profmancusoa</h1>
+
 <!-- Blog entries-->
 <div class="col-lg-12">
 	{#if featured[0]}
 		<!-- visualizza solo se c'e' un featured -->
 		<div class="row">
-            <!-- Spaziatore -->
+			<!-- Spaziatore -->
 			<div class="col-lg-2" />
 			<div class="col-lg-8">
 				<!-- Featured blog post-->
 				<PostPreview metadata={featured[0].metadata} />
 			</div>
-            <!-- Spaziatore -->
+			<!-- Spaziatore -->
 			<div class="col-lg-2" />
 		</div>
 	{/if}
@@ -99,7 +100,7 @@
 				<PostPreview metadata={posts[post_page_start + 1].metadata} />
 			{/if}
 		</div>
-        <div class="col-lg-4">
+		<div class="col-lg-4">
 			{#if posts[post_page_start + 2]}
 				<PostPreview metadata={posts[post_page_start + 2].metadata} />
 			{/if}
@@ -116,7 +117,7 @@
 				<PostPreview metadata={posts[post_page_start + 4].metadata} />
 			{/if}
 		</div>
-        <div class="col-lg-4">
+		<div class="col-lg-4">
 			{#if posts[post_page_start + 5]}
 				<PostPreview metadata={posts[post_page_start + 5].metadata} />
 			{/if}
@@ -128,3 +129,9 @@
 		<Paginatore page_size={PAGE_SIZE} {posts} on:cambioPagina={cambio_pagina} />
 	{/if}
 </div>
+
+<style>
+	#title {
+		display: none;
+	}
+</style>

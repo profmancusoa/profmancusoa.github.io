@@ -1,7 +1,13 @@
 <svelte:head>
-    <meta name="description" content="Questo blog server a condividere informazioni con gli studenti e tutti i lettori interessati, permette agli studenti di pubblicare i loro articoli.">
-    <title>About profmancusoa</title>
+	<meta
+		name="description"
+		content="Questo blog server a condividere informazioni con gli studenti e tutti i lettori interessati, permette agli studenti di pubblicare i loro articoli."
+	/>
+	<title>About profmancusoa</title>
 </svelte:head>
+
+<h1 id="title">Il blog del profmancusoa</h1>
+
 <div class="outer">
 	<div class="middle">
 		<div class="inner">
@@ -42,6 +48,10 @@
 </div>
 
 <style>
+	#title {
+		display: none;
+	}
+
 	.outer {
 		background-image: url('/img/about_bg.jpg');
 		display: table;
