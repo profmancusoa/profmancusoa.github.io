@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-f0cd3106.js",
+    "file": "_app/immutable/start-4fe18b83.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -19,6 +19,7 @@
       "src/routes/blog/cloud-gaming-e-gaming-on-demand.md",
       "src/routes/blog/come-creare-una-to-do-list-in-react.md",
       "src/routes/blog/come-creare-una-to-do-list-in-svelte.md",
+      "src/routes/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md",
       "src/routes/blog/come-far-girare-chrome-in-un-container-docker.md",
       "src/routes/blog/come-generare-e-gestire-le-password.md",
       "src/routes/blog/come-installare-projectlibre-su-linux.md",
@@ -60,7 +61,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-570e318f.js",
+    "file": "_app/immutable/pages/__layout.svelte-48e782c7.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -192,6 +193,18 @@
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
+  "src/routes/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md": {
+    "file": "_app/immutable/pages/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md-d8fede7c.js",
+    "src": "src/routes/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-ba2b2825.js",
+      "__post-79929fc2.js",
+      "_helpers-e59642c8.js",
+      "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
+    ]
+  },
   "src/routes/blog/come-far-girare-chrome-in-un-container-docker.md": {
     "file": "_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-26669580.js",
     "src": "src/routes/blog/come-far-girare-chrome-in-un-container-docker.md",
@@ -241,7 +254,7 @@
     ]
   },
   "src/routes/blog/come-pubblicare-un-post-sul-blog.md": {
-    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-6fb52cf0.js",
+    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-8e347ab2.js",
     "src": "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -730,10 +743,6 @@
     "file": "_app/immutable/assets/pillole-di-css---come-rendere-un-immagine-responsive-d1a0f0c6.css",
     "src": "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css"
   },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-b63ea6e0.css",
-    "src": "src/routes/about/index.css"
-  },
   "_post.css": {
     "file": "_app/immutable/assets/_post-b014c6b7.css",
     "src": "_post.css"
@@ -742,32 +751,36 @@
     "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
   },
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-b63ea6e0.css",
+    "src": "src/routes/about/index.css"
+  },
   "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
     "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css"
-  },
-  "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
-  },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
-  },
-  "Video.css": {
-    "file": "_app/immutable/assets/Video-0e9e0d1f.css",
-    "src": "Video.css"
   },
   "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css": {
     "file": "_app/immutable/assets/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento-2f82b8a6.css",
     "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css"
   },
-  "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo-30159f58.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css"
+  "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-c13f6480.css",
     "src": "src/routes/index.css"
+  },
+  "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo-30159f58.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css"
+  },
+  "Video.css": {
+    "file": "_app/immutable/assets/Video-0e9e0d1f.css",
+    "src": "Video.css"
+  },
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
   }
 }
