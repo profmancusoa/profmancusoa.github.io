@@ -235,6 +235,24 @@
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://prof.mancusoa.it/blog/overthewire-bandit-livello-5</loc>
+        <lastmod>2024-08-28</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://prof.mancusoa.it/blog/overthewire-bandit-livello-6</loc>
+        <lastmod>2024-08-28</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://prof.mancusoa.it/blog/overthewire-bandit-livello-7</loc>
+        <lastmod>2024-08-28</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
         <loc>https://prof.mancusoa.it/blog/overthewire-introduzione-a-bandit</loc>
         <lastmod>2024-08-28</lastmod>
         <changefreq>daily</changefreq>

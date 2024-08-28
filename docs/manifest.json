@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-4fe18b83.js",
+    "file": "_app/immutable/start-29dea57a.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -49,6 +49,9 @@
       "src/routes/blog/overthewire-bandit-livello-2.md",
       "src/routes/blog/overthewire-bandit-livello-3.md",
       "src/routes/blog/overthewire-bandit-livello-4.md",
+      "src/routes/blog/overthewire-bandit-livello-5.md",
+      "src/routes/blog/overthewire-bandit-livello-6.md",
+      "src/routes/blog/overthewire-bandit-livello-7.md",
       "src/routes/blog/overthewire-introduzione-a-bandit.md",
       "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.md",
       "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.md",
@@ -61,7 +64,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-48e782c7.js",
+    "file": "_app/immutable/pages/__layout.svelte-624c763e.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -558,6 +561,45 @@
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
+  "src/routes/blog/overthewire-bandit-livello-5.md": {
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-5.md-6e6e79f7.js",
+    "src": "src/routes/blog/overthewire-bandit-livello-5.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-ba2b2825.js",
+      "__post-79929fc2.js",
+      "_Video-f66759aa.js",
+      "_helpers-e59642c8.js",
+      "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
+    ]
+  },
+  "src/routes/blog/overthewire-bandit-livello-6.md": {
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-6.md-e333f178.js",
+    "src": "src/routes/blog/overthewire-bandit-livello-6.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-ba2b2825.js",
+      "__post-79929fc2.js",
+      "_Video-f66759aa.js",
+      "_helpers-e59642c8.js",
+      "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
+    ]
+  },
+  "src/routes/blog/overthewire-bandit-livello-7.md": {
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-7.md-de86d980.js",
+    "src": "src/routes/blog/overthewire-bandit-livello-7.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-ba2b2825.js",
+      "__post-79929fc2.js",
+      "_Video-f66759aa.js",
+      "_helpers-e59642c8.js",
+      "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
+    ]
+  },
   "src/routes/blog/overthewire-introduzione-a-bandit.md": {
     "file": "_app/immutable/pages/blog/overthewire-introduzione-a-bandit.md-5c7c8283.js",
     "src": "src/routes/blog/overthewire-introduzione-a-bandit.md",
@@ -735,37 +777,33 @@
       "_app/immutable/assets/Video-0e9e0d1f.css"
     ]
   },
-  "src/routes/__layout.css": {
-    "file": "_app/immutable/assets/__layout-a8e249a4.css",
-    "src": "src/routes/__layout.css"
-  },
-  "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-rendere-un-immagine-responsive-d1a0f0c6.css",
-    "src": "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css"
+  "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css"
   },
   "_post.css": {
     "file": "_app/immutable/assets/_post-b014c6b7.css",
     "src": "_post.css"
   },
-  "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
+  "Categoria.css": {
+    "file": "_app/immutable/assets/Categoria-d423eea6.css",
+    "src": "Categoria.css"
+  },
+  "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
   },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-b63ea6e0.css",
     "src": "src/routes/about/index.css"
   },
-  "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css"
+  "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-rendere-un-immagine-responsive-d1a0f0c6.css",
+    "src": "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css"
   },
-  "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css": {
-    "file": "_app/immutable/assets/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento-2f82b8a6.css",
-    "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css"
-  },
-  "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
+  "src/routes/__layout.css": {
+    "file": "_app/immutable/assets/__layout-a8e249a4.css",
+    "src": "src/routes/__layout.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-c13f6480.css",
@@ -775,12 +813,16 @@
     "file": "_app/immutable/assets/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo-30159f58.css",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css"
   },
+  "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css": {
+    "file": "_app/immutable/assets/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento-2f82b8a6.css",
+    "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css"
+  },
   "Video.css": {
     "file": "_app/immutable/assets/Video-0e9e0d1f.css",
     "src": "Video.css"
   },
-  "Categoria.css": {
-    "file": "_app/immutable/assets/Categoria-d423eea6.css",
-    "src": "Categoria.css"
+  "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
   }
 }
