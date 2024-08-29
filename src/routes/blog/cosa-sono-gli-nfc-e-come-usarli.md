@@ -89,7 +89,7 @@ Vediamo come utilizzare un NFC tramite uno smartphone
 ![passo3](/img/posts/cosa-sono-gli-nfc-e-come-usarli/passo3.webp)
 
 
-# Programmare Tag NFC con dispositivi desktop
+## Programmare Tag NFC con dispositivi desktop
 ###      (Windows / Mac OS / Linux)
 
 I software più usati, che sono scaricabili gratuitamente, e sono compatibili sia con Windows che con Mac e Linux sono: 

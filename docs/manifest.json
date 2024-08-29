@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-29dea57a.js",
+    "file": "_app/immutable/start-29fbd354.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -64,7 +64,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-624c763e.js",
+    "file": "_app/immutable/pages/__layout.svelte-5ce4497a.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -305,7 +305,7 @@
     ]
   },
   "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md": {
-    "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-c60dfea1.js",
+    "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-5fa2c9c1.js",
     "src": "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -644,7 +644,7 @@
     ]
   },
   "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md": {
-    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md-ec627367.js",
+    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md-250da11c.js",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -777,52 +777,52 @@
       "_app/immutable/assets/Video-0e9e0d1f.css"
     ]
   },
-  "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css"
+  "src/routes/__layout.css": {
+    "file": "_app/immutable/assets/__layout-a8e249a4.css",
+    "src": "src/routes/__layout.css"
   },
   "_post.css": {
     "file": "_app/immutable/assets/_post-b014c6b7.css",
     "src": "_post.css"
   },
+  "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
+  },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
-  },
-  "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
   },
   "src/routes/about/index.css": {
     "file": "_app/immutable/assets/index-b63ea6e0.css",
     "src": "src/routes/about/index.css"
   },
-  "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-rendere-un-immagine-responsive-d1a0f0c6.css",
-    "src": "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css"
-  },
-  "src/routes/__layout.css": {
-    "file": "_app/immutable/assets/__layout-a8e249a4.css",
-    "src": "src/routes/__layout.css"
-  },
-  "src/routes/index.css": {
-    "file": "_app/immutable/assets/index-c13f6480.css",
-    "src": "src/routes/index.css"
-  },
-  "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo-30159f58.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css"
+  "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css"
   },
   "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css": {
     "file": "_app/immutable/assets/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento-2f82b8a6.css",
     "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css"
   },
+  "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo-30159f58.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css"
+  },
+  "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-rendere-un-immagine-responsive-d1a0f0c6.css",
+    "src": "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css"
+  },
+  "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
+  },
+  "src/routes/index.css": {
+    "file": "_app/immutable/assets/index-c13f6480.css",
+    "src": "src/routes/index.css"
+  },
   "Video.css": {
     "file": "_app/immutable/assets/Video-0e9e0d1f.css",
     "src": "Video.css"
-  },
-  "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
   }
 }

@@ -20,7 +20,7 @@ categorie:
 ## Background Clip
 
 <div class="contenitore">
-    <h1 class="banner">HELLO!</h1>
+    <h2 class="banner">HELLO!</h2>
 </div>
 
 <br>
@@ -51,10 +51,10 @@ Per realizzare l'effetto abbiamo bisogno di tre elementi essenziali:
 ### Un testo
 
 <br><br><br>
-<h1 class="text-init">HELLO!</h1>
+<h2 class="text-init">HELLO!</h2>
 
 ```html
-<h1 class="banner">HELLO!</h1>
+<h2 class="banner">HELLO!</h2>
 
 .banner  {
     display: inline;
@@ -85,7 +85,7 @@ Quindi vediamo come modificare il CSS del testo in modo da creare l'effetto  vol
 
 ```html
 <div class="contenitore">
-    <h1 class="banner">HELLO!</h1>
+    <h2 class="banner">HELLO!</h2>
 </div>
 ```
 
@@ -113,7 +113,7 @@ Quindi vediamo come modificare il CSS del testo in modo da creare l'effetto  vol
 
 <br>
 
-Quindi impostiamo come immagine di sfondo del testo (h1), un'immagine a nostro piacimento, magari delle vacanze estive.
+Quindi impostiamo come immagine di sfondo del testo (h2), un'immagine a nostro piacimento, magari delle vacanze estive.
 Per far si che l'immagine si adatti in modo corretto al contenitore impostiamo *background-size* al valore *cover*.
 Impostiamo il colore del testo a *transparent*, questo è fondamentale altrimenti il testo avrà un colore pieno.
 
@@ -124,7 +124,7 @@ In questo modo otteniamo l'effetto finale desiderato pronto per essere utilizzat
 <br>
 
 <div class="contenitore">
-    <h1 class="banner">HELLO!</h1>
+    <h2 class="banner">HELLO!</h2>
 </div>
 
 ### Conclusioni
@@ -136,9 +136,6 @@ Vi invito a sperimentare con questa pillola di CSS e ad adottare questa tecnica 
 Non dimenticate di condividere questo articolo con la vostra rete, potrebbe essere utile anche ai vostri amici o altre persone.
 
 Se l'articolo ti è piaciuto metti un like e lascia un commento qui sotto.
-
-
-
 
 
 <style>
