@@ -4,6 +4,10 @@
 		content="Questo blog server a condividere informazioni con gli studenti e tutti i lettori interessati, permette agli studenti di pubblicare i loro articoli."
 	/>
 	<title>About profmancusoa</title>
+	<script
+		data-goatcounter="https://profmancusoa.goatcounter.com/count"
+		async
+		src="https://gc.zgo.at/count.js"></script>
 </svelte:head>
 
 <h1 id="title">Il blog del profmancusoa</h1>

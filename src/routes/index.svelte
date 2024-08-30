@@ -60,6 +60,10 @@
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
 	<meta property="twitter:url" content="https://prof.mancusoa.it" />
 	<meta name="twitter:image" content="https://prof.mancusoa.it/img/blog_banner.png" />
+	<script
+		data-goatcounter="https://profmancusoa.goatcounter.com/count"
+		async
+		src="https://gc.zgo.at/count.js"></script>
 </svelte:head>
 
 <h1 id="title">Il blog del profmancusoa</h1>

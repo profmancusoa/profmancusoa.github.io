@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-f3275890.js",
+    "file": "_app/immutable/start-b83bd73c.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -64,7 +64,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-ff170f7b.js",
+    "file": "_app/immutable/pages/__layout.svelte-a8cf68ee.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -89,7 +89,7 @@
     ]
   },
   "src/routes/about/index.svelte": {
-    "file": "_app/immutable/pages/about/index.svelte-40a032b2.js",
+    "file": "_app/immutable/pages/about/index.svelte-5bb022b4.js",
     "src": "src/routes/about/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -101,526 +101,526 @@
     ]
   },
   "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md": {
-    "file": "_app/immutable/pages/blog/accesso-abusivo-ad-un-sistema-informatico.md-3ffcd136.js",
+    "file": "_app/immutable/pages/blog/accesso-abusivo-ad-un-sistema-informatico.md-578f3ce3.js",
     "src": "src/routes/blog/accesso-abusivo-ad-un-sistema-informatico.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/adv-scopriamo-insieme-come-funziona.md": {
-    "file": "_app/immutable/pages/blog/adv-scopriamo-insieme-come-funziona.md-7010286c.js",
+    "file": "_app/immutable/pages/blog/adv-scopriamo-insieme-come-funziona.md-723e85bb.js",
     "src": "src/routes/blog/adv-scopriamo-insieme-come-funziona.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/analisi-delle-principali-truffe-informatiche.md": {
-    "file": "_app/immutable/pages/blog/analisi-delle-principali-truffe-informatiche.md-3542ac7d.js",
+    "file": "_app/immutable/pages/blog/analisi-delle-principali-truffe-informatiche.md-95972c18.js",
     "src": "src/routes/blog/analisi-delle-principali-truffe-informatiche.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md": {
-    "file": "_app/immutable/pages/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md-7ca32938.js",
+    "file": "_app/immutable/pages/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md-300ca300.js",
     "src": "src/routes/blog/analisi-e-guida-realizzazione-applicazione-con-angular.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/arte-del-pc-e-tecniche-di-modding.md": {
-    "file": "_app/immutable/pages/blog/arte-del-pc-e-tecniche-di-modding.md-268f2222.js",
+    "file": "_app/immutable/pages/blog/arte-del-pc-e-tecniche-di-modding.md-c27090c5.js",
     "src": "src/routes/blog/arte-del-pc-e-tecniche-di-modding.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/cloud-gaming-e-gaming-on-demand.md": {
-    "file": "_app/immutable/pages/blog/cloud-gaming-e-gaming-on-demand.md-29769bba.js",
+    "file": "_app/immutable/pages/blog/cloud-gaming-e-gaming-on-demand.md-4ba773df.js",
     "src": "src/routes/blog/cloud-gaming-e-gaming-on-demand.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-creare-una-to-do-list-in-react.md": {
-    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-react.md-0bc015c5.js",
+    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-react.md-015767ae.js",
     "src": "src/routes/blog/come-creare-una-to-do-list-in-react.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-creare-una-to-do-list-in-svelte.md": {
-    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-svelte.md-efd533b9.js",
+    "file": "_app/immutable/pages/blog/come-creare-una-to-do-list-in-svelte.md-a14f2a40.js",
     "src": "src/routes/blog/come-creare-una-to-do-list-in-svelte.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md": {
-    "file": "_app/immutable/pages/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md-d8fede7c.js",
+    "file": "_app/immutable/pages/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md-36598eba.js",
     "src": "src/routes/blog/come-dare-un-nome-a-una-istanza-ec2-in-aws-cloudformation.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-far-girare-chrome-in-un-container-docker.md": {
-    "file": "_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-26669580.js",
+    "file": "_app/immutable/pages/blog/come-far-girare-chrome-in-un-container-docker.md-e9b1e9f6.js",
     "src": "src/routes/blog/come-far-girare-chrome-in-un-container-docker.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-generare-e-gestire-le-password.md": {
-    "file": "_app/immutable/pages/blog/come-generare-e-gestire-le-password.md-066b80af.js",
+    "file": "_app/immutable/pages/blog/come-generare-e-gestire-le-password.md-5d5c878c.js",
     "src": "src/routes/blog/come-generare-e-gestire-le-password.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-installare-projectlibre-su-linux.md": {
-    "file": "_app/immutable/pages/blog/come-installare-projectlibre-su-linux.md-d6044e83.js",
+    "file": "_app/immutable/pages/blog/come-installare-projectlibre-su-linux.md-d1011c6c.js",
     "src": "src/routes/blog/come-installare-projectlibre-su-linux.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-navigare-tra-le-finestre-di-popos.md": {
-    "file": "_app/immutable/pages/blog/come-navigare-tra-le-finestre-di-popos.md-417bc4d2.js",
+    "file": "_app/immutable/pages/blog/come-navigare-tra-le-finestre-di-popos.md-57ec3714.js",
     "src": "src/routes/blog/come-navigare-tra-le-finestre-di-popos.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-pubblicare-un-post-sul-blog.md": {
-    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-8e347ab2.js",
+    "file": "_app/immutable/pages/blog/come-pubblicare-un-post-sul-blog.md-7052c698.js",
     "src": "src/routes/blog/come-pubblicare-un-post-sul-blog.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone.md": {
-    "file": "_app/immutable/pages/blog/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone.md-14ba3d68.js",
+    "file": "_app/immutable/pages/blog/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone.md-b4508262.js",
     "src": "src/routes/blog/come-scambiare-facilmente-file-tra-linux-e-lo-smartphone.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/come-scrivere-un-post-in-markdown.md": {
-    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-3253afce.js",
+    "file": "_app/immutable/pages/blog/come-scrivere-un-post-in-markdown.md-116b3562.js",
     "src": "src/routes/blog/come-scrivere-un-post-in-markdown.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/cosa-sono-e-come-usare-i-web-socket.md": {
-    "file": "_app/immutable/pages/blog/cosa-sono-e-come-usare-i-web-socket.md-816ca78f.js",
+    "file": "_app/immutable/pages/blog/cosa-sono-e-come-usare-i-web-socket.md-a19ea5fa.js",
     "src": "src/routes/blog/cosa-sono-e-come-usare-i-web-socket.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md": {
-    "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-5fa2c9c1.js",
+    "file": "_app/immutable/pages/blog/cosa-sono-gli-nfc-e-come-usarli.md-31051761.js",
     "src": "src/routes/blog/cosa-sono-gli-nfc-e-come-usarli.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/effetto-di-parallasse-per-la-tua-pagina-web.md": {
-    "file": "_app/immutable/pages/blog/effetto-di-parallasse-per-la-tua-pagina-web.md-83bea3ad.js",
+    "file": "_app/immutable/pages/blog/effetto-di-parallasse-per-la-tua-pagina-web.md-138fe673.js",
     "src": "src/routes/blog/effetto-di-parallasse-per-la-tua-pagina-web.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/gli-orm-cosa-sono-e-come-funzionano.md": {
-    "file": "_app/immutable/pages/blog/gli-orm-cosa-sono-e-come-funzionano.md-dc5ffcdb.js",
+    "file": "_app/immutable/pages/blog/gli-orm-cosa-sono-e-come-funzionano.md-f7e467df.js",
     "src": "src/routes/blog/gli-orm-cosa-sono-e-come-funzionano.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md": {
-    "file": "_app/immutable/pages/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md-731b03da.js",
+    "file": "_app/immutable/pages/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md-98959572.js",
     "src": "src/routes/blog/go_e_rust_i_linguaggi_di_programmazione_emergenti.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/guida-acquisto-di-uno-smartphone.md": {
-    "file": "_app/immutable/pages/blog/guida-acquisto-di-uno-smartphone.md-26fdd58d.js",
+    "file": "_app/immutable/pages/blog/guida-acquisto-di-uno-smartphone.md-2a84abbc.js",
     "src": "src/routes/blog/guida-acquisto-di-uno-smartphone.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/il-blog-profmancusoa.md": {
-    "file": "_app/immutable/pages/blog/il-blog-profmancusoa.md-5ce434b3.js",
+    "file": "_app/immutable/pages/blog/il-blog-profmancusoa.md-fef8952d.js",
     "src": "src/routes/blog/il-blog-profmancusoa.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md": {
-    "file": "_app/immutable/pages/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md-6b110479.js",
+    "file": "_app/immutable/pages/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md-5c8d46cd.js",
     "src": "src/routes/blog/il-meccanismo-di-funzionamento-di-una-blockchain.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/il-package-manager-per-wine.md": {
-    "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-acf4c298.js",
+    "file": "_app/immutable/pages/blog/il-package-manager-per-wine.md-cf620260.js",
     "src": "src/routes/blog/il-package-manager-per-wine.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/il-protocollo-di-livello-2-spanning-tree.md": {
-    "file": "_app/immutable/pages/blog/il-protocollo-di-livello-2-spanning-tree.md-07924602.js",
+    "file": "_app/immutable/pages/blog/il-protocollo-di-livello-2-spanning-tree.md-5b0a1987.js",
     "src": "src/routes/blog/il-protocollo-di-livello-2-spanning-tree.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/introduzione-ai-social-network.md": {
-    "file": "_app/immutable/pages/blog/introduzione-ai-social-network.md-e912908b.js",
+    "file": "_app/immutable/pages/blog/introduzione-ai-social-network.md-a889cdcb.js",
     "src": "src/routes/blog/introduzione-ai-social-network.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/introduzione-al-metaverso.md": {
-    "file": "_app/immutable/pages/blog/introduzione-al-metaverso.md-6dcb6d4b.js",
+    "file": "_app/immutable/pages/blog/introduzione-al-metaverso.md-4a8d3f57.js",
     "src": "src/routes/blog/introduzione-al-metaverso.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/introduzione-alla-quantum-security.md": {
-    "file": "_app/immutable/pages/blog/introduzione-alla-quantum-security.md-f933c683.js",
+    "file": "_app/immutable/pages/blog/introduzione-alla-quantum-security.md-4baf77bd.js",
     "src": "src/routes/blog/introduzione-alla-quantum-security.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/introduzione-alla-virtual-reality.md": {
-    "file": "_app/immutable/pages/blog/introduzione-alla-virtual-reality.md-d7fafbc4.js",
+    "file": "_app/immutable/pages/blog/introduzione-alla-virtual-reality.md-617154b5.js",
     "src": "src/routes/blog/introduzione-alla-virtual-reality.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/introduzione-e-tipologie-di-reti-vpn.md": {
-    "file": "_app/immutable/pages/blog/introduzione-e-tipologie-di-reti-vpn.md-0d7fbc4b.js",
+    "file": "_app/immutable/pages/blog/introduzione-e-tipologie-di-reti-vpn.md-158bf901.js",
     "src": "src/routes/blog/introduzione-e-tipologie-di-reti-vpn.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/le-criptovalute-e-il-mining.md": {
-    "file": "_app/immutable/pages/blog/le-criptovalute-e-il-mining.md-45e097ae.js",
+    "file": "_app/immutable/pages/blog/le-criptovalute-e-il-mining.md-4493e3f6.js",
     "src": "src/routes/blog/le-criptovalute-e-il-mining.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/le-diverse-tipologie-di-database.md": {
-    "file": "_app/immutable/pages/blog/le-diverse-tipologie-di-database.md-63738974.js",
+    "file": "_app/immutable/pages/blog/le-diverse-tipologie-di-database.md-768ba101.js",
     "src": "src/routes/blog/le-diverse-tipologie-di-database.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-0.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-0.md-ec733ef1.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-0.md-e782cfb0.js",
     "src": "src/routes/blog/overthewire-bandit-livello-0.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-1.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-1.md-6dcb72c7.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-1.md-fa5911d3.js",
     "src": "src/routes/blog/overthewire-bandit-livello-1.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-2.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-2.md-f9a0ac44.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-2.md-83ebd745.js",
     "src": "src/routes/blog/overthewire-bandit-livello-2.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-3.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-3.md-4bbac0ba.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-3.md-0438c651.js",
     "src": "src/routes/blog/overthewire-bandit-livello-3.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-4.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-4.md-252e11d4.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-4.md-ab7904c8.js",
     "src": "src/routes/blog/overthewire-bandit-livello-4.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-5.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-5.md-6e6e79f7.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-5.md-62615973.js",
     "src": "src/routes/blog/overthewire-bandit-livello-5.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-6.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-6.md-e333f178.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-6.md-a5008ce8.js",
     "src": "src/routes/blog/overthewire-bandit-livello-6.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-bandit-livello-7.md": {
-    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-7.md-de86d980.js",
+    "file": "_app/immutable/pages/blog/overthewire-bandit-livello-7.md-3d8db0db.js",
     "src": "src/routes/blog/overthewire-bandit-livello-7.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/overthewire-introduzione-a-bandit.md": {
-    "file": "_app/immutable/pages/blog/overthewire-introduzione-a-bandit.md-5c7c8283.js",
+    "file": "_app/immutable/pages/blog/overthewire-introduzione-a-bandit.md-4eab7094.js",
     "src": "src/routes/blog/overthewire-introduzione-a-bandit.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_Video-f66759aa.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.md": {
-    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.md-7a1e29aa.js",
+    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.md-255de460.js",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ],
@@ -629,13 +629,13 @@
     ]
   },
   "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.md": {
-    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.md-3f9db241.js",
+    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.md-1b5c8534.js",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ],
@@ -644,13 +644,13 @@
     ]
   },
   "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md": {
-    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md-250da11c.js",
+    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md-b9662bdd.js",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ],
@@ -659,13 +659,13 @@
     ]
   },
   "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.md": {
-    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-una-griglia-responsive.md-2e09b44f.js",
+    "file": "_app/immutable/pages/blog/pillole-di-css---come-creare-una-griglia-responsive.md-3feb6e54.js",
     "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ],
@@ -674,13 +674,13 @@
     ]
   },
   "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.md": {
-    "file": "_app/immutable/pages/blog/pillole-di-css---come-rendere-un-immagine-responsive.md-be0a131c.js",
+    "file": "_app/immutable/pages/blog/pillole-di-css---come-rendere-un-immagine-responsive.md-8f8a23d8.js",
     "src": "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ],
@@ -689,13 +689,13 @@
     ]
   },
   "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.md": {
-    "file": "_app/immutable/pages/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.md-984e7e6c.js",
+    "file": "_app/immutable/pages/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.md-3210575e.js",
     "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ],
@@ -704,19 +704,19 @@
     ]
   },
   "src/routes/blog/screenshot-da-linea-di-comando-con-linux.md": {
-    "file": "_app/immutable/pages/blog/screenshot-da-linea-di-comando-con-linux.md-509ae244.js",
+    "file": "_app/immutable/pages/blog/screenshot-da-linea-di-comando-con-linux.md-e06b8297.js",
     "src": "src/routes/blog/screenshot-da-linea-di-comando-con-linux.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ba2b2825.js",
-      "__post-79929fc2.js",
+      "__post-5a01a328.js",
       "_helpers-e59642c8.js",
       "_Categoria.svelte_svelte_type_style_lang-d5b62848.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-fdef287b.js",
+    "file": "_app/immutable/pages/index.svelte-5b21fe1f.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -757,8 +757,8 @@
       "_index-7571d01b.js"
     ]
   },
-  "__post-79929fc2.js": {
-    "file": "_app/immutable/chunks/_post-79929fc2.js",
+  "__post-5a01a328.js": {
+    "file": "_app/immutable/chunks/_post-5a01a328.js",
     "imports": [
       "_index-ba2b2825.js",
       "_helpers-e59642c8.js",
@@ -781,14 +781,6 @@
     "file": "_app/immutable/assets/__layout-a8e249a4.css",
     "src": "src/routes/__layout.css"
   },
-  "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
-  },
-  "src/routes/about/index.css": {
-    "file": "_app/immutable/assets/index-b63ea6e0.css",
-    "src": "src/routes/about/index.css"
-  },
   "Categoria.css": {
     "file": "_app/immutable/assets/Categoria-d423eea6.css",
     "src": "Categoria.css"
@@ -797,9 +789,17 @@
     "file": "_app/immutable/assets/_post-b014c6b7.css",
     "src": "_post.css"
   },
+  "src/routes/about/index.css": {
+    "file": "_app/immutable/assets/index-b63ea6e0.css",
+    "src": "src/routes/about/index.css"
+  },
   "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css": {
     "file": "_app/immutable/assets/pillole-di-css---come-rendere-un-immagine-responsive-d1a0f0c6.css",
     "src": "src/routes/blog/pillole-di-css---come-rendere-un-immagine-responsive.css"
+  },
+  "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css": {
+    "file": "_app/immutable/assets/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento-2f82b8a6.css",
+    "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css"
   },
   "Video.css": {
     "file": "_app/immutable/assets/Video-0e9e0d1f.css",
@@ -809,20 +809,20 @@
     "file": "_app/immutable/assets/pillole-di-css---come-creare-una-griglia-responsive-99e73bc1.css",
     "src": "src/routes/blog/pillole-di-css---come-creare-una-griglia-responsive.css"
   },
-  "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
-    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
-    "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css"
+  "src/routes/index.css": {
+    "file": "_app/immutable/assets/index-c13f6480.css",
+    "src": "src/routes/index.css"
   },
-  "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css": {
-    "file": "_app/immutable/assets/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento-2f82b8a6.css",
-    "src": "src/routes/blog/pillole-di-css---controlliamo-aspect-ratio-di-un-elemento.css"
+  "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine-381f52a4.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-effetto-zoom-per-un-immagine.css"
   },
   "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css": {
     "file": "_app/immutable/assets/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo-30159f58.css",
     "src": "src/routes/blog/pillole-di-css---come-creare-un-testo-con-una-foto-come-sfondo.css"
   },
-  "src/routes/index.css": {
-    "file": "_app/immutable/assets/index-c13f6480.css",
-    "src": "src/routes/index.css"
+  "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css": {
+    "file": "_app/immutable/assets/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore-26089b64.css",
+    "src": "src/routes/blog/pillole-di-css---come-creare-un-bordo-con-un-gradiente-di-colore.css"
   }
 }

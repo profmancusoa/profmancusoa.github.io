@@ -88,6 +88,10 @@
 	<meta property="twitter:domain" content="prof.mancusoa.it" />
 	<meta property="twitter:url" content={post_url} />
 	<meta name="twitter:image" content="{base_post_url}{cover_assign(cover)}" />
+	<script
+		data-goatcounter="https://profmancusoa.goatcounter.com/count"
+		async
+		src="https://gc.zgo.at/count.js"></script>
 </svelte:head>
 
 <article>
