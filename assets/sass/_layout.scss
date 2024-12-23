@@ -72,7 +72,11 @@
     letter-spacing: 0.1px;
 
     @include media-query($on-mobile) {
-      max-width: 15rem;
+      max-width: 13rem;
+      // added to add elipses on mobile and truncate string
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
 
     a {
