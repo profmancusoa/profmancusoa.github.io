@@ -159,7 +159,7 @@ theme = "hugo-blog-awesome"
     weight = 4
 
 [Languages.it.params]
-  version = "1.1.0"
+  version = "1.1.1"
   sitename = "profmancusoa"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
@@ -176,6 +176,7 @@ theme = "hugo-blog-awesome"
   # When building for production it will be minified.
   # The file `custom.js` is loaded on each page (before body tag ends).
   dateFormat = "2 Jan 2006" # default date format used on various pages
+  #dateFormat = "2006-01-02T00:00:00.000+01:00"
   # See https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for available date formats.
   rssFeedDescription = "summary" # available options: 1) summary 2) full
   # summary - includes a short summary of the blog post in the RSS feed. Generated using Hugo .Summary .

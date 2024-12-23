@@ -43,12 +43,13 @@
         "author": {
         "@type": "Person",
         "name": "{{ .Site.Params.github }}"
+        "url": "https://blog.mancusoa.it/pages/about/"
         },
-        "datePublished": "{{ dateFormat "2006-01-02" .Date }}",
+        "datePublished": "{{ dateFormat "2 Jan 2006" .Date }}",
         "description": {{ .Description }},
         "wordCount": {{ .WordCount }},
         "mainEntityOfPage": "True",
-        "dateModified": "{{ dateFormat "2006-01-02" .Lastmod }}",
+        "dateModified": "{{ dateFormat "2 Jan 2006" .Lastmod }}",
         "image": {
         "@type": "imageObject",
         "url": "{{ with .Params.image }}{{ . | absURL }}{{ end }}"
