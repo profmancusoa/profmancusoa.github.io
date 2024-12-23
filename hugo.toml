@@ -35,8 +35,8 @@ theme = "hugo-blog-awesome"
 
 # To enable Disqus comments, provide Disqus Shortname below.
 # To disable Disqus comments, simply leave the field empty or remove the next two lines
-  [services.disqus]
-    shortname = 'https-blog-mancusoa-it'
+  #[services.disqus]
+    #shortname = 'https-blog-mancusoa-it'
 
 # set markup.highlight.noClasses=false to enable code highlight
 [markup]
@@ -48,6 +48,20 @@ theme = "hugo-blog-awesome"
 		startLevel = 2 # ToC starts from H2
 		endLevel = 4 # ToC ends at H4
 		ordered = false # generates <ul> instead of <ol>
+
+[params.giscus]
+  repo = "profmancusoa/profmancusoa.github.io"
+  repoID = "R_kgDOH0KF-Q"
+  category = "Articles"
+  categoryID = "DIC_kwDOH0KF-c4Cld0a"
+  mapping = "ur"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = "noborder_dark"
+  lang = "it"
+  loading = "lazy"
+
 
 ############################## English language ################################
 #[Languages.en-gb]

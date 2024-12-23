@@ -1,4 +1,10 @@
-{{- if .Site.Config.Services.Disqus.Shortname -}}
+<!-- {{- if .Site.Config.Services.Disqus.Shortname -}}
 <hr style="margin-top: 40px; margin-bottom: 40px;" />
 {{ template "_internal/disqus.html" . }}
+{{- end -}} -->
+
+
+{{- if isset .Site.Params "giscus" -}}
+    <hr style="margin-top: 60px; margin-bottom: 60px;" />
+    {{- partial "giscus.html" . -}}
 {{- end -}}
