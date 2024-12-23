@@ -45,11 +45,11 @@
         "name": "{{ .Site.Params.github }}",
         "url": "https://blog.mancusoa.it/pages/about/"
         },
-        "datePublished": "{{ dateFormat "2 Jan 2006" .Date }}",
+        "datePublished": "{{ dateFormat "2006-01-02T00:00:00Z" .Date }}",
         "description": {{ .Description }},
         "wordCount": {{ .WordCount }},
         "mainEntityOfPage": "True",
-        "dateModified": "{{ dateFormat "2 Jan 2006" .Lastmod }}",
+        "dateModified": "{{ dateFormat "2006-01-02T00:00:00Z" .Lastmod }}",
         "image": {
         "@type": "imageObject",
         "url": "{{ with .Params.image }}{{ . | absURL }}{{ end }}"
