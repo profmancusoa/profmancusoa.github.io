@@ -18,7 +18,7 @@ tags:
 
 ![warpinator](warpinator.webp)
 
-# Warpinator: Condividi File Facilmente in Rete Locale
+## Warpinator: Condividi File Facilmente in Rete Locale
 
 **Warpinator** è uno strumento open source e gratuito progettato per semplificare l'invio e la ricezione di file tra computer connessi alla stessa rete locale. Con Warpinator, puoi condividere file in modo rapido e sicuro senza utilizzare servizi cloud o dispositivi esterni.
 

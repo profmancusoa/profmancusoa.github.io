@@ -16,13 +16,13 @@ tags:
 
 ![Interfaccia grafica di Flameshot con strumenti di annotazione visibili su Linux](flameshot-screenshot-linux.webp)
 
-# **Cos'è Flameshot?**
+## **Cos'è Flameshot?**
 
 > _Flameshot è un software gratuito e open-source, multipiattaforma, che permette di catturare schermate con molte funzionalità integrate, ideali per risparmiare tempo._
 
 Durante il nostro lavoro quotidiano, catturare schermate (`screenshot`) è spesso indispensabile: che sia per presentazioni, tutorial, video o semplice condivisione di informazioni. Flameshot è uno strumento ideale per questo scopo, grazie alla sua facilità d’uso e alle numerose funzionalità. È disponibile su tutte le piattaforme principali, incluso Linux.
 
-## **Funzionalità principali di Flameshot**
+### **Funzionalità principali di Flameshot**
 
 Flameshot offre un'interfaccia grafica (GUI) intuitiva e versatile. Ecco alcune delle sue caratteristiche principali:
 
