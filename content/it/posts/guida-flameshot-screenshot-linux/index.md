@@ -5,7 +5,7 @@ author: profmancusoa
 description: Come utilizzare il potente strumento di cattura dello schermo Flameshot dalla linea di comando (CLI) di linux
 isStarred: true
 draft: false
-image: posts/screenshot-cli-linux/flameshot-screenshot-linux.webp
+image: posts/guida-flameshot-screenshot-linux/flameshot-screenshot-linux.webp
 category: ["linux"]
 categories: ["linux", "cli", "tools"]
 tags:
