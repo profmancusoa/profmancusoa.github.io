@@ -1,6 +1,6 @@
 ---
 title: "Flameshot: La Guida Completa per Screenshot Perfetti su Linux"
-date: 2024-12-22
+date: 2024-12-23
 author: profmancusoa
 description: Come utilizzare il potente strumento di cattura dello schermo Flameshot dalla linea di comando (CLI) di linux
 isStarred: true
