@@ -17,6 +17,17 @@
                 {{ .Content }}
             </div>
         </article>
+        <!-- articoli correlati -->
+        {{ $related := .Site.Pages.Related . }}
+        {{ if $related }}
+            <h3>Articoli Correlati</h3>
+            <ul>
+                {{ range $related }}
+                <li><a href="{{ .Permalink }}" class="related-articles">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+        <!-- commenti -->
         {{- partial "comments.html" . -}}
     </main>
 </div>

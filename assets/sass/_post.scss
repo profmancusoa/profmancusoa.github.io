@@ -233,3 +233,14 @@
 .post-updated-at {
   font-family: "Ubuntu mono", "monospace";
 }
+
+.related-articles {
+  color: $text-link-blue !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease;
+}
+
+.related-articles:hover {
+  // color: $text-link-blue-active !important;
+  font-weight: 800 !important;
+}

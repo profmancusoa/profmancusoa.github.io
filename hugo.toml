@@ -62,6 +62,17 @@ theme = "hugo-blog-awesome"
   lang = "it"
   loading = "lazy"
 
+[related]
+  threshold = 80
+  includeNewer = true
+
+[[related.indices]]
+  name = "tags"
+  weight = 100
+
+[[related.indices]]
+  name = "categories"
+  weight = 50
 
 ############################## English language ################################
 #[Languages.en-gb]
@@ -159,7 +170,7 @@ theme = "hugo-blog-awesome"
     weight = 4
 
 [Languages.it.params]
-  version = "1.1.5"
+  version = "1.2.0"
   sitename = "profmancusoa"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
