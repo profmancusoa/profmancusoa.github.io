@@ -8,12 +8,13 @@ isStarred: true
 draft: false
 image: posts/guida-warpinator-trasferimento-file-linux-smartphone/warpinator.webp
 category: ["linux"]
-categories: ["linux", "tools", "file share", "warpinator"]
+categories: ["linux", "tools", "file-share", "warpinator", "smartphone"]
 tags:
   - linux
   - tools
-  - file share
+  - file-share
   - warpinator
+  - smartphone
 ---
 
 ![warpinator](warpinator.webp)
