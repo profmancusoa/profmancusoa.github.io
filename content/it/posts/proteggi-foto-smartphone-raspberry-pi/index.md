@@ -73,10 +73,8 @@ Ecco i passaggi principali per l’installazione:
    docker run -d \
      --name=syncthing \
      --hostname=rpi-syncthing \
-     -p 8384:8384 \
-     -p 22000:22000 \
-     -p 21027:21027/udp \
-     -v /percorso/al/disco:/var/sync \
+     --network=host \
+     -v /percorso/al/disco:/var/syncthing \
      -e PUID=1000 \
      -e PGID=1000 \
      -e TZ=Europe/Rome \
