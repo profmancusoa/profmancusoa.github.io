@@ -2,7 +2,7 @@
 title: Condividi File Facilmente in Rete Locale con Linux
 date: 2025-01-05
 author: profmancusoa
-description: Scopri come usare Warpinator per trasferire file tra PC Linux e smartphone Android/iOS in rete locale. Guida completa: installazione, configurazione e uso!
+description: "Scopri come usare Warpinator per trasferire file tra PC Linux e smartphone Android/iOS in rete locale. Guida completa: installazione, configurazione e uso!"
 isStarred: true
 draft: false
 image: posts/guida-warpinator-trasferimento-file-linux-smartphone/warpinator.webp
