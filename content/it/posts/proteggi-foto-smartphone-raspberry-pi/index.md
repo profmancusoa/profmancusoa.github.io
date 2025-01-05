@@ -1,8 +1,8 @@
 ---
-title: "Proteggi le Tue Foto con un Raspberry Pi e Syncthing: Guida Passo-Passo"
-date: 2024-12-31
+title: "Proteggi le Tue Foto con un RaspberryPi e Syncthing:Guida Passo-Passo"
+date: 2025-01-05
 author: profmancusoa
-description: Scopri passo-passo come proteggere le tue foto da perdite accidentali con un metodo semplice, sicuro e rispettoso della privacy. Ti mostreremo come utilizzare un Raspberry Pi e Syncthing per creare un backup automatico delle foto del tuo smartphone, senza affidarti a servizi di terze parti.
+description: Proteggi le tue foto con un backup automatico e sicuro usando Raspberry Pi e Syncthing. Guida semplice per privacy totale, senza servizi terzi.
 isStarred: true
 draft: false
 image: posts/proteggi-foto-smartphone-raspberry-pi/backup-foto-smartphone-raspberry-pi-syncthing.webp
