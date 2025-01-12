@@ -2,12 +2,23 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">{{ .Title }}</title>
-<meta property="og:title" content="{{ .Title }}" />
-<meta name="twitter:title" content="{{ .Title }}" />
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+
+{{ if .Title }}
+  <title itemprop="name">{{ .Title }}</title>
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+{{ else }}
+  <title itemprop="name">{{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Site.Title }}" />
+  <meta itemprop="name" content="{{ .Site.Title }}" />
+  <meta name="application-name" content="{{ .Site.Title }}" />
+{{ end }}
+
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+
 
 {{/*  Define empty variable description  */}}
 {{- $description := "" -}}

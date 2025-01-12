@@ -170,7 +170,7 @@ theme = "hugo-blog-awesome"
     weight = 4
 
 [Languages.it.params]
-  version = "1.2.6"
+  version = "1.2.7"
   sitename = "profmancusoa"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
