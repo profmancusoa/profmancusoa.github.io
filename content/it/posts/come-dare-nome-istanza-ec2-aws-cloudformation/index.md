@@ -1,6 +1,6 @@
 ---
 title: Come Dare un Nome a una Istanza EC2 in AWS CloudFormation
-date: 2024-12-24
+date: 2025-01-08
 author: profmancusoa
 description: Analizziamo la tecnica per assegnare un nome ad un istanza EC2 in un template AWS CloudFormation
 isStarred: true

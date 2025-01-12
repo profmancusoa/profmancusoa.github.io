@@ -1,6 +1,6 @@
 ---
 title: "Proteggi le Tue Foto con un RaspberryPi e Syncthing:Guida Passo-Passo"
-date: 2025-01-05
+date: 2025-01-12
 author: profmancusoa
 description: Proteggi le tue foto con un backup automatico e sicuro usando Raspberry Pi e Syncthing. Guida semplice per privacy totale, senza servizi terzi.
 isStarred: true
