@@ -3,4 +3,4 @@ Allow: /
 
 Crawl-delay: 5
 
-Sitemap: https://blog.mancusoa.it/sitemap.xml
+Sitemap: https://mancusoa.it/sitemap.xml

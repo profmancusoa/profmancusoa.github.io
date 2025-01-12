@@ -1,5 +1,5 @@
 title = "Blog profmancusoa"
-baseURL = 'https://blog.mancusoa.it/'
+baseURL = 'https://mancusoa.it/'
 
 # This is what goes in <html lang="">
 languageCode = 'it-IT'
@@ -36,7 +36,7 @@ theme = "hugo-blog-awesome"
 # To enable Disqus comments, provide Disqus Shortname below.
 # To disable Disqus comments, simply leave the field empty or remove the next two lines
   #[services.disqus]
-    #shortname = 'https-blog-mancusoa-it'
+    #shortname = 'https-mancusoa-it'
 
 # set markup.highlight.noClasses=false to enable code highlight
 [markup]
@@ -170,7 +170,7 @@ theme = "hugo-blog-awesome"
     weight = 4
 
 [Languages.it.params]
-  version = "1.2.4"
+  version = "1.2.5"
   sitename = "profmancusoa"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
