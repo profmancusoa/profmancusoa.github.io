@@ -2,7 +2,7 @@
 title: Come eseguire Chrome in sicurezza con Docker
 date: 2025-01-25
 author: profmancusoa
-description: Vediamo come eseguire Chrome e navigare in sicurezza con l'aiuto di Docker
+description: Scopri come aumentare la sicurezza della tua navigazione eseguendo Google Chrome in un container Docker su Linux. Segui la guida passo passo per isolare il browser dal sistema operativo e proteggere i tuoi dati da minacce online, con istruzioni pratiche e consigli utili
 isStarred: true
 draft: false
 image: posts/guida-google-chrome-docker-sicuro/chrome-browser-in-docker-sicuro.webp
