@@ -1,6 +1,6 @@
 ---
 title: "Configurare Unbound come resolver DNS privato per AdGuard Home su Raspberry Pi usando Docker per massimizzare la privacy"
-date: 2025-07-03
+date: 2025-07-04
 author: profmancusoa
 description: "Guida passo passo per aumentare la privacy DNS integrando Unbound come resolver ricorsivo locale upstream di AdGuard Home, tutto containerizzato su Raspberry Pi."
 isStarred: true
