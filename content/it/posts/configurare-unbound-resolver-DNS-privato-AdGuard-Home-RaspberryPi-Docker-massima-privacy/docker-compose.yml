@@ -1,0 +1,9 @@
+services:
+  unbound:
+    image: unbound
+    container_name: unbound
+    volumes:
+      - ./config:/etc/unbound/unbound.conf.d
+    network_mode: host
+    restart: always
+

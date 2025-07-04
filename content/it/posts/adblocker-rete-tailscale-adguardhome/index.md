@@ -13,7 +13,7 @@ tags:
   - rete
   - privacy
 category: ["Reti"]
-categories: ["Reti", "Sicurezza", "Tutorial"]
+categories: ["Reti", "Sicurezza", "DNS", "adblocker", "Tutorial"]
 ---
 
 ![Schema AdBlocker rete con Tailscale e AdGuard Home](adblocker-rete-tailscale-adguardhome.webp "Schema AdBlocker rete con Tailscale e AdGuard Home")
