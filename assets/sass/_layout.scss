@@ -71,6 +71,8 @@
     font-weight: normal;
     letter-spacing: 0.1px;
 
+    width: 530px;
+
     @include media-query($on-mobile) {
       max-width: 13rem;
       // added to add elipses on mobile and truncate string
