@@ -58,7 +58,7 @@
         },
         "dateModified": "{{ dateFormat "2006-01-02T00:00:00Z" .Lastmod }}",
         "image": {
-        "@type": "imageObject",
+        "@type": "ImageObject",
         "url": "{{ with .Params.image }}{{ . | absURL }}{{ end }}"
         },
         "publisher": {
