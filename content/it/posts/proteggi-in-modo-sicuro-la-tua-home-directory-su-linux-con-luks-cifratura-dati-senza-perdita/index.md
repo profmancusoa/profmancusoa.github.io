@@ -2,7 +2,7 @@
 title: "Proteggi in modo sicuro la tua home su Linux con LUKS"
 date: 2025-07-21
 author: profmancusoa
-description: "Scopri come proteggere la tua home directory Linux esistente con la potente crittografia LUKS. Questa guida pratica ti mostrerà passo dopo passo come cifrare i tuoi dati in modo sicuro, senza rischio di perdita, e configurare il sistema per un'esperienza di login fluida con la tua password utente, ideale per sistemi XFCE4 con LightDM."
+description: "Cifra la home directory Linux con LUKS senza perdere dati: guida passo passo per proteggere il sistema con sblocco automatico al login su XFCE4/LightDM."
 isStarred: true
 draft: false
 image: posts/proteggi-in-modo-sicuro-la-tua-home-directory-su-linux-con-luks-cifratura-dati-senza-perdita/proteggi-home-directory-linux-luks-cifratura-sicura-16x9.webp
@@ -304,6 +304,8 @@ Seguendo questi passaggi, hai aumentato significativamente la sicurezza del tuo 
 In caso di smarrimento o furto del PC, chiunque trovi il dispositivo non potrà accedere ai tuoi file personali, grazie alla robusta cifratura con LUKS. Anche un accesso alla partizione root non consentirebbe di recuperare informazioni private contenute nella home.
 
 Se invece il tuo sistema ha una configurazione differente da quella illustrata in questa guida, ti invito a condividere le tue esperienze e modifiche nei commenti qui sotto, così da arricchire questa risorsa per la community Linux.
+
+Un ultimo consiglio: se vuoi evitare di digitare la passphrase ad ogni riavvio, puoi automatizzarne l'inserimento con un dispositivo USB dedicato — trovi la guida completa in [Configurare Digispark per automatizzare la password di sblocco LUKS](/posts/guida-completa-digispark-automatizzare-password-luks/).
 
 Proteggi la tua privacy e rendi il tuo sistema davvero sicuro con la cifratura della home directory!
 

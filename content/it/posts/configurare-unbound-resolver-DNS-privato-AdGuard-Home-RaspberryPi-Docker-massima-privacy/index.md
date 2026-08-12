@@ -1,5 +1,5 @@
 ---
-title: "Configurare Unbound come resolver DNS privato per AdGuard Home su Raspberry Pi usando Docker per massimizzare la privacy"
+title: "Unbound come Resolver DNS Privato per AdGuard Home su Docker"
 date: 2025-07-04
 author: profmancusoa
 description: "Guida passo passo per aumentare la privacy DNS integrando Unbound come resolver ricorsivo locale upstream di AdGuard Home, tutto containerizzato su Raspberry Pi."
@@ -123,7 +123,7 @@ unbound/
 
 Come si può vedere, l'immagine finale del nostro DNS resolver è basata su Linux Alpine, in modo da ottenere un'immagine compatta che pesa poco.
 
-Costruiamo l’immagine Docker con:
+Se vuoi approfondire l'uso di Docker per isolare e proteggere altri servizi, ho scritto anche una guida su [come eseguire Chrome in sicurezza con Docker](/posts/guida-google-chrome-docker-sicuro/), che segue un approccio simile di containerizzazione.
 
 ```bash
 docker build -t unbound .

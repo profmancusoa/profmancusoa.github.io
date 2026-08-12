@@ -2,7 +2,7 @@
 title: "Come creare un AdBlocker di rete con Tailscale e AdGuard Home"
 date: 2025-06-25
 author: profmancusoa
-description: "Crea un adblocker di rete per tutta la casa con Raspberry Pi, Tailscale e AdGuard Home: guida passo passo per bloccare pubblicità e aumentare la sicurezza su tutti i dispositivi, senza complicazioni e in totale privacy."
+description: "Crea un adblocker di rete con Tailscale e AdGuard Home su Raspberry Pi: guida passo passo per bloccare pubblicità e tracker su tutti i dispositivi."
 isStarred: true
 draft: false
 image: posts/adblocker-rete-tailscale-adguardhome/adblocker-rete-tailscale-adguardhome.webp
@@ -126,13 +126,13 @@ Per configurare correttamente il DNS, annota l’indirizzo IP assegnato al Raspb
 
 Ora vai nella tab relativa alla configurazione del DNS nella dashboard Tailscale e configura nel seguente modo:
 
-![dashboard-dns-tab](dashboard-dns-tab.webp)
+![impostazioni DNS](dashboard-dns-tab.webp)
 
 1. Modifica le impostazioni del DNS  
 2. Inserisci l’indirizzo IP del tuo Raspberry Pi (dove gira AdGuard Home)  
 3. Seleziona *Override DNS Server* per fare in modo che i tuoi client usino effettivamente il DNS da te specificato
 
-![taislcale-dns-config](taislcale-dns-config.webp)
+![configurazioni DNS](taislcale-dns-config.webp)
 
 > In questo modo i tuoi client, senza nessun’altra configurazione, utilizzeranno come server DNS il tuo AdGuard Home che gira sul Raspberry Pi. Questa configurazione garantisce alti livelli di privacy ed è totalmente sotto il tuo controllo.
 
@@ -185,50 +185,50 @@ docker compose up -d
 ```
 
 Dopo qualche secondo, il container sarà operativo e potrai accedere alla console web di gestione di AdGuard Home.
-![adguardhome-config-01](adguardhome-config-01.webp)
+![welcome to adguardhome](adguardhome-config-01.webp)
 
 Imposta le porte su cui è accessibile la dashboard di amministrazione e la porta DNS (i valori di default vanno benissimo).
-![adguardhome-config-02](adguardhome-config-02.webp)
+![adguardhome impostazione porta web ui](adguardhome-config-02.webp)
 
 Procedi senza modifiche
-![adguardhome-config-02a](adguardhome-config-02a.webp)
+![adguardhome wizard](adguardhome-config-02a.webp)
 
 Crea l'account di amministrazione
-![adguardhome-config-03](adguardhome-config-03.webp)
+![adguardhome configurazione credenziali accesso](adguardhome-config-03.webp)
 
 Procedi senza modifiche
-![adguardhome-config-04](adguardhome-config-04.webp)
+![adguardhome wizard](adguardhome-config-04.webp)
 
 Procedi senza modifiche
-![adguardhome-config-05](adguardhome-config-05.webp)
+![adguardhome pulsante apertura dashboard](adguardhome-config-05.webp)
 
 Bene, ora puoi fare il login come amministratore di Adguard Home
-![adguardhome-config-06](adguardhome-config-06.webp)
+![adguardhome login](adguardhome-config-06.webp)
 
 Se tutto va bene, vedrai la dashboard inizale con le informazioni statistiche
-![adguardhome-config-07](adguardhome-config-07.webp)
+![adguardhome home page](adguardhome-config-07.webp)
 
 *Settings->General Settings*
 
 Qui ti mostro le mie impostazioni, ma ovviamente ti consiglio di adattare queste configurazioni alle tue esigenze.  
 Se non sei sicuro del significato di ogni voce, puoi seguire la mia configurazione, che è provata e funzionante al 100%.
 
-![adguardhome-config-08a](adguardhome-config-08a.webp)
+![adguardhome genera settings](adguardhome-config-08a.webp)
 
-![adguardhome-config-08b](adguardhome-config-08b.webp)
+![adguardhome abilita log](adguardhome-config-08b.webp)
 
-![adguardhome-config-08c](adguardhome-config-08c.webp)
+![adguardhome abilita retention](adguardhome-config-08c.webp)
 
 *Settings->DNS Settings*
 
 Io come upstream DNS resolver uso *Quad9*, ma puoi scegliere il DNS resolver che preferisci, basta modificare l’indirizzo IP.
-![adguardhome-config-09a](adguardhome-config-09a.webp)
+![adguardhome configura upstream DNS](adguardhome-config-09a.webp)
 
-![adguardhome-config-09b](adguardhome-config-09b.webp)
+![adguardhome altre impostazioni DNS](adguardhome-config-09b.webp)
 
-![adguardhome-config-09c](adguardhome-config-09c.webp)
+![adguardhome DNS rate limiting](adguardhome-config-09c.webp)
 
-![adguardhome-config-09d](adguardhome-config-09d.webp)
+![adguardhome blocking mode](adguardhome-config-09d.webp)
 
 *Filters->DNS blocklist*
 
@@ -251,17 +251,17 @@ Il formato della blocklist è molto semplice:
 ||github-cloud.s3.amazonaws.com^
 ```
 
-![adguardhome-config-10a](adguardhome-config-10a.webp)
+![adguardhome DNS blocklist](adguardhome-config-10a.webp)
 
 *Filters->DNS allowlist*
 
 Allo stesso modo puoi configurare una allowlist (una lista di eccezioni che non vuoi filtrare). Puoi usare il meccanismo del gist come sopra.
-![adguardhome-config-11a](adguardhome-config-11a.webp)
+![adguardhome DNS allowlist](adguardhome-config-11a.webp)
 
 *Filters->Blocked services*
 
 Qui puoi filtrare servizi specifici, abilitando l’apposita configurazione.
-![adguardhome-config-12a](adguardhome-config-12a.webp)
+![adguardhome DNS block services](adguardhome-config-12a.webp)
 
 *Filters->Custom filtering rules*
 
@@ -273,12 +273,14 @@ Il formato è:
 - `||dominio.it^` per filtrare dominio.it e tutti i suoi sottodomini  
 - `@@||dominio.com^` per escludere dal filtraggio dominio.com e i suoi sottodomini
 
-![adguardhome-config-13a](adguardhome-config-13a.webp)
+![adguardhome DNS custom filtering](adguardhome-config-13a.webp)
 
 ## Conclusioni
 
 Complimenti per essere arrivato fino a qui! Ora hai un potente filtro DNS che blocca la maggior parte della pubblicità e ti protegge da tracker e siti malevoli.  
 Tutto in totale sicurezza: grazie a Tailscale, questo servizio è disponibile per tutti i tuoi dispositivi senza la necessità di installare applicazioni particolari o di dubbia provenienza.
+
+Se vuoi fare un ulteriore passo avanti sulla privacy delle tue query DNS, ho scritto una guida per [configurare Unbound come resolver DNS privato](/posts/configurare-unbound-resolver-DNS-privato-AdGuard-Home-RaspberryPi-Docker-massima-privacy/) da usare come upstream di AdGuard Home, al posto di un DNS pubblico.
 
 Se hai dubbi o domande, lascia un commento qui sotto. Se hai trovato utile questo articolo, condividilo con la tua rete!
 

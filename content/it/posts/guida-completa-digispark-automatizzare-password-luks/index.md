@@ -1,5 +1,5 @@
 ---
-title: "Guida Completa per Configurare Digispark e Automatizzare la Password di Sblocco LUKS"
+title: "Digispark: Automatizzare la Password di Sblocco LUKS"
 date: 2025-07-08
 author: profmancusoa
 description: "Guida completa per configurare Digispark e automatizzare l’inserimento della password di sblocco LUKS con Arduino IDE. Passo passo, dal bootloader al codice."
@@ -247,6 +247,8 @@ Il mio use case è:
 - Con Digispark posso usare una password molto più forte
 
 Bilanciando questi aspetti, ritengo che questa soluzione fornisca un livello di sicurezza *adeguat*o al mio caso d’uso, esponendomi al furto di dati solo in uno scenario a bassa probabilità.
+
+Se ti interessa il tema dell'hardening del sistema, un altro accorgimento utile è isolare le applicazioni più esposte: ho scritto una guida su [come eseguire Chrome in sicurezza con Docker](/posts/guida-google-chrome-docker-sicuro/), che segue la stessa filosofia di riduzione della superficie d'attacco
 
 ---
 

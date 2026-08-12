@@ -2,7 +2,7 @@
 title: Come eseguire Chrome in sicurezza con Docker
 date: 2025-01-25
 author: profmancusoa
-description: Scopri come aumentare la sicurezza della tua navigazione eseguendo Google Chrome in un container Docker su Linux. Segui la guida passo passo per isolare il browser dal sistema operativo e proteggere i tuoi dati da minacce online, con istruzioni pratiche e consigli utili
+description: "Isola Google Chrome in un container Docker per navigare in sicurezza: guida passo passo su Linux, dal Dockerfile all'alias per l'avvio rapido."
 isStarred: true
 draft: false
 image: posts/guida-google-chrome-docker-sicuro/chrome-browser-in-docker-sicuro.webp
@@ -123,6 +123,8 @@ Ovviamente puoi rinominare l'alias con un nome di tuo gradimento
 
 Utilizzando sapientemente gli strumenti messi a disposizione da Linux e sfruttando la _"magia"_ di Docker abbiamo la possibilità di aumentare la sicurezza delle nostre sessioni di navigazione Web.
 
-Grazie per aver letto questa guida su come eseguire Google Chrome in un container Docker per una navigazione più sicura. Se l'hai trovata utile, condividila con la tua rete e lasciami un commento qui sotto con le tue opinioni o domande
+Grazie per aver letto questa guida su come eseguire Google Chrome in un container Docker per una navigazione più sicura. Se l'hai trovata utile, condividila con la tua rete e lasciami un commento qui sotto con le tue opinioni o domande.
+
+Se l'isolamento delle applicazioni ti interessa, ho applicato un approccio simile anche per proteggere una password di sistema: guarda la guida su [Digispark per automatizzare lo sblocco LUKS](/posts/guida-completa-digispark-automatizzare-password-luks/).
 
 PS: puoi vedere il <a href="https://www.youtube.com/embed/t3-Rr5UzRgU">video</a> associato a questo post

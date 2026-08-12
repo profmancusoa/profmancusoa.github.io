@@ -2,7 +2,7 @@
 title: "Flameshot: La Guida Completa per Screenshot Perfetti su Linux"
 date: 2025-01-06
 author: profmancusoa
-description: Scopri Flameshot, il potente software open-source per screenshot su Linux. Impara a installarlo, usarlo con interfaccia grafica e da riga di comando, e sfrutta le sue funzionalità di annotazione e personalizzazione per catturare immagini perfette in modo semplice e veloce.
+description: "Scopri Flameshot: guida completa all'installazione e all'uso su Linux, da interfaccia grafica e riga di comando, per screenshot perfetti."
 isStarred: true
 draft: false
 image: posts/guida-flameshot-screenshot-linux/flameshot-screenshot-linux.webp

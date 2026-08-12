@@ -2,7 +2,7 @@
 title: Come Dare un Nome a una Istanza EC2 in AWS CloudFormation
 date: 2025-01-08
 author: profmancusoa
-description: Scopri come assegnare un nome personalizzato a un’istanza EC2 in AWS CloudFormation usando il tag “Name”. Segui la guida completa con esempi pratici in YAML per migliorare l’identificazione e la gestione delle tue risorse AWS in modo semplice ed efficace.
+description: "Assegna un nome personalizzato a un’istanza EC2 in AWS CloudFormation con il tag “Name”: guida con esempi pratici in YAML."
 isStarred: true
 draft: false
 image: posts/come-dare-nome-istanza-ec2-aws-cloudformation/aws-cloudformation-infrastructure-as-code.webp
@@ -17,7 +17,7 @@ tags:
 
 ![aws cloudformation infrastructure as code](aws-cloudformation-infrastructure-as-code.webp)
 
-## Come Dare un Nome a un'Istanze EC2 in AWS CloudFormation
+## Come Dare un Nome a un'istanza EC2 in AWS CloudFormation
 
 AWS CloudFormation è un potente servizio che consente di **modellare e configurare risorse AWS** utilizzando template testuali. Questo approccio implementa il paradigma dell'**Infrastructure as Code (IaC)**, rendendo la gestione delle risorse più efficiente e ripetibile.
 
@@ -57,7 +57,7 @@ Resources:
 
 Questo template crea un'istanza EC2 e un security group associato, ma nella console AWS, la colonna Nome dell'istanza EC2 rimarrà vuota. Questo può complicare l'identificazione delle risorse, soprattutto se hai più istanze nella stessa regione.
 
-## Perché Assegnare un Nome a un'Istanze EC2 è Importante?
+## Perché Assegnare un Nome a un'istanza EC2 è Importante?
 
 Assegnare un nome alle tue risorse AWS offre diversi vantaggi:
 
@@ -65,7 +65,7 @@ Assegnare un nome alle tue risorse AWS offre diversi vantaggi:
 - **Standardizzazione**: Seguire un pattern di naming coerente facilita la gestione.
 - **Documentazione interna**: I nomi descrittivi possono fornire contesto sui ruoli delle istanze.
 
-## Come Assegnare un Nome a un'Istanze EC2
+## Come Assegnare un Nome a un'istanza EC2
 
 Non esiste una proprietà "Name" diretta per le istanze EC2 in CloudFormation. Tuttavia, puoi utilizzare i Tag per definire un nome visibile nella console AWS.
 

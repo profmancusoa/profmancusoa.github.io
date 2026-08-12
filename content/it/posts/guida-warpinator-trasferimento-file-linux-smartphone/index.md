@@ -1,8 +1,8 @@
 ---
-title: Condividi File Facilmente in Rete Locale con Linux
+title: "Warpinator: Condividi File tra Linux e Smartphone in Rete Locale"
 date: 2025-01-10
-author: profma
-description: "Scopri come trasferire file tra Linux e smartphone in modo sicuro e veloce con Warpinator. Guida passo passo per installare, configurare e usare questo strumento open source. Provao ora!"
+author: profmancusoa
+description: "Scopri come trasferire file tra Linux e smartphone in modo sicuro e veloce con Warpinator: guida passo passo a installazione e configurazione."
 isStarred: true
 draft: false
 image: posts/guida-warpinator-trasferimento-file-linux-smartphone/warpinator.webp
