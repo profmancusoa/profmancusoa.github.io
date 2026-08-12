@@ -34,6 +34,7 @@
     {{- partial "browserconfig.html" . -}}
 
     <meta name="theme-color" content="{{ .Site.Params.webmanifest.theme_color | default "#434648" }}">
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .Summary }}{{ .Summary | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
     {{/* SVG favicon for the modern web */}}
     <link rel="icon" type="image/svg+xml" href="{{ (resources.Get "icons/favicon.svg").RelPermalink }}">
