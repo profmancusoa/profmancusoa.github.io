@@ -199,7 +199,7 @@ theme = "hugo-blog-awesome"
   avatar = "profmancusoa.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "profmancusoa"
-  name = "profmancusoa"
+  name = "Antonio Mancuso"
   description = "Blog profmancusoa tratta temi legati al mondo dell'informatica per studenti e appassionati"
 
 # Allow to override webmanifest options
@@ -220,6 +220,10 @@ theme = "hugo-blog-awesome"
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/profmancusoa"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/mancusoa74"
 
 #[[params.socialIcons]]
 #name = "twitter"

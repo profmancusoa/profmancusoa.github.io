@@ -42,13 +42,20 @@
         "headline": {{ .Title }},
         "author": {
         "@type": "Person",
-        "name": "{{ .Site.Params.github }}",
-        "url": "https://mancusoa.it/pages/about/"
+        "name": "{{ .Site.Params.author.name }}",
+        "jobTitle": "CIO",
+        "url": "https://mancusoa.it/pages/about/",
+        "sameAs": [
+            {{ $profiles := where .Site.Params.socialIcons "name" "!=" "Rss" }}{{ range $i, $s := $profiles }}{{ if $i }},{{ end }}"{{ $s.url }}"{{ end }}
+        ]
         },
         "datePublished": "{{ dateFormat "2006-01-02T00:00:00Z" .Date }}",
         "description": {{ .Description }},
         "wordCount": {{ .WordCount }},
-        "mainEntityOfPage": "True",
+        "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+        },
         "dateModified": "{{ dateFormat "2006-01-02T00:00:00Z" .Lastmod }}",
         "image": {
         "@type": "imageObject",
