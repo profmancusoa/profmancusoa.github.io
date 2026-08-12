@@ -2,8 +2,8 @@
 title: "Proteggi le Tue Foto con un RaspberryPi e Syncthing:Guida Passo-Passo"
 date: 2025-01-12
 author: profmancusoa
-description: Scopri come trasferire file tra Linux e smartphone in modo sicuro e veloce con Warpinator. Guida passo passo per installare, configurare e usare questo strumento open source. Provao ora!
 isStarred: true
+description: "Proteggi le tue foto dallo smartphone con un backup automatico su Raspberry Pi tramite Syncthing, senza cloud di terze parti. Guida passo passo per l'installazione e la configurazione."
 draft: false
 image: posts/proteggi-foto-smartphone-raspberry-pi/backup-foto-smartphone-raspberry-pi-syncthing.webp
 category: ["raspberry-pi"]
