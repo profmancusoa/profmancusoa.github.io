@@ -2,10 +2,10 @@ title = "Blog profmancusoa"
 baseURL = 'https://mancusoa.it/'
 
 # This is what goes in <html lang="">
-languageCode = 'en_US'
+languageCode = "en-gb"
 
 # This defines how dates are formatted
-defaultContentLanguage = "us"
+defaultContentLanguage = "en-gb"
 
 # Enable emojis globally
 enableEmoji = true
@@ -140,20 +140,20 @@ theme = "hugo-blog-awesome"
 #  display = "standalone"
 
 ############################## Italian language ################################
-[Languages.us]
+[Languages.en-gb]
   languageName = "English"
-  languageCode = "us"
+  languageCode = "en-gb"
   contentDir = "content/en"
   weight = 2
-  [Languages.us.menu]
-  [[Languages.us.menu.main]]
+  [Languages.en-gb.menu]
+  [[Languages.en-gb.menu.main]]
     # The page reference (pageRef) is useful for menu highlighting
     # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
     pageRef="/"
     name = 'Home'
     url = '/'
     weight = 1
-  [[Languages.us.menu.main]]
+  [[Languages.en-gb.menu.main]]
     pageRef="posts"
     name = 'Posts'
     url = '/posts/'
@@ -163,14 +163,14 @@ theme = "hugo-blog-awesome"
     name = 'Tags'
     url = '/tags/'
     weight = 2
-  [[Languages.us.menu.main]]
+  [[Languages.en-gb.menu.main]]
     pageRef="about"
     name = 'About'
     url = '/about/'
     weight = 4
 
-[Languages.us.params]
-  version = "1.3.0"
+[Languages.en-gb.params]
+  version = "1.3.1"
   sitename = "profmancusoa"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
@@ -195,7 +195,7 @@ theme = "hugo-blog-awesome"
   # By default (or if nothing is specified), summary is used.
   github = "profmancusoa"
 
-[Languages.us.params.author]
+[Languages.en-gb.params.author]
   email = "profmancusoa-at-gmail.com"
   avatar = "profmancusoa.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
@@ -204,7 +204,7 @@ theme = "hugo-blog-awesome"
   description = "The profmancusoa blog covers computer science topics for students and enthusiasts"
 
 # Allow to override webmanifest options
-[Languages.us.params.webmanifest]
+[Languages.en-gb.params.webmanifest]
   name = "profmancusoa" # will use "params.sitename" or "title" by default
   short_name = "profmancusoa" # same as name
   start_url = "/" # will use homepage url by default
