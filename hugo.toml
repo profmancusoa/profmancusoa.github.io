@@ -170,7 +170,7 @@ theme = "hugo-blog-awesome"
     weight = 4
 
 [Languages.it.params]
-  version = "1.2.16"
+  version = "1.2.17"
   sitename = "profmancusoa"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
@@ -196,6 +196,7 @@ theme = "hugo-blog-awesome"
   github = "profmancusoa"
 
 [Languages.it.params.author]
+  email = "profmancusoa-at-gmail.com"
   avatar = "profmancusoa.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "profmancusoa"

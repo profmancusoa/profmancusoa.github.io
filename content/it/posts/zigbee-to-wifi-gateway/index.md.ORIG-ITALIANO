@@ -1,0 +1,621 @@
+---
+title: "How to build a Zigbee to Wifi Gateway for Home Assistant"
+date: 2026-08-17
+author: profmancusoa
+description: "Step by step guide on how to practically build a Zigbee to Wifi Gateway for your Home Assistant setup"
+isStarred: true
+draft: false
+image: posts/zigbee-to-wifi-gateway.webp
+tags:
+  - zigbee
+  - wifi
+  - gateway
+  - home_assistant
+  - smart_home
+category: ["SmartHome"]
+categories: ["Smarthome", "DIY", "HomeAssistant"]
+---
+
+![Zigbee to Wifi Gateway](zigbee-to-wifi-gateway.webp "Zigbee to Wifi Gateway")
+
+
+## Introduction
+In the home automation world, Home Assistant plays a really important role. It's an open-source solution that's extremely flexible, backed by a large community online.
+
+I recently bought a digital thermometer, the [Shelly BLU H&T ZB](https://www.amazon.it/dp/B0G4W6XFDH?tag=antmansblo0e-21), which measures ambient temperature and humidity and transmits the readings over Bluetooth or Zigbee.
+
+To connect this sensor to my Home Assistant setup, I need a Zigbee coordinator to create the network and let the thermometer join it. This coordinator then has to talk to Home Assistant over WiFi.
+
+This post is a guide on how to configure the board [Espressif "ESP Thread Border Router / Zigbee Gateway v1.2" (ESP32-S3 + ESP32-H2)](https://www.amazon.it/Thread-Border-Router-Zigbee-Gateway/dp/B0C89H9MJ8/?tag=antmansblo0e-21) as Zigbee coordinator for Home Assistant, through Zigbee2MQTT and other open source projects.
+
+## Prerequisites 
+- Board ESP Thread BR/Zigbee Gateway v1.2 
+- USB-C data cable 
+- Docker installed on the host 
+- Home Assistant with MQTT reachable on the same network
+
+## The ESP Thread Border Router/Zigbee Gateway Board
+![ESP thread border router baord](esp-thread-border-router-board.webp)        
+This board (v1.2) is made up of two main sections:
+
+1. **ESP-H2**, which implements the IEEE 802.15.4 standard, common to both Zigbee and Thread
+2. **ESP-S3**, which supports Bluetooth and WiFi
+
+By combining these two components, we can build a gateway (more accurately, a bridge) that carries Zigbee packets to a WiFi host and back.
+
+Specifically:
+- ESP-H2 performs a complete and autonomous Zigbee NCP coordinator (esp-coordinator) that handles the radio communication with Zigbee devices (in my case, the Shelly thermometer).
+- ESP-S3 acts as a transparent TCP ↔ UART bridge (cdc2net) to the Wi-Fi network and is responsible for carrying Zigbee traffic to and from Home Assistant over WiFi. 
+- Zigbee2MQTT connects via TCP to the bridge
+
+## Ambiente di build
+
+Iniziamo a preparare l'ambiente di build per la creazione di due binari da caricare sui rispettivi ESP della board.
+
+Come spesso faccio, lavoro in un docker in modo da mantenere il mio sistema pulito e non riempirlo di librerie e strumenti specifici per un singolo progetto.
+
+Iniziamo a creare una diretory principale dove lavoreremo per il resto dell'articolo.
+
+```bash
+cd ~
+mkdir -p zb2wifi-gateway/espressif-data
+```
+
+### Creazione container docker 
+
+Ora creaimo un immagine docker che contiene le librerie e gli strumenti necessari per il resto del lavoro.
+
+Qui trovi il Dockerfile e il docler-compose.yml per lanciare il container che vanno creatii dentro la directory **zb2wifi-gateway**.
+
+**Dockerfile**
+
+```bash
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git wget flex bison gperf python3 python3-pip python3-venv python3-dev \
+    cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0 \
+    gcc g++ pkg-config curl libdbus-1-dev \
+    libglib2.0-dev libavahi-client-dev unzip \
+    libgirepository1.0-dev libcairo2-dev libreadline-dev \
+    libevent-dev default-jre \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+USER ubuntu
+WORKDIR /home/ubuntu
+```
+
+**docker-compose.yml**
+```yml
+services:
+  z2w-builder:
+    image: zb2wifi-builder:latest
+    container_name: zb2wifi-builder
+    user: "1000:1000"
+    group_add:
+      - "11"
+    volumes:
+      - ./esp-idf:/home/ubuntu/esp-idf
+      - ./esp-coordinator:/home/ubuntu/esp-coordinator
+      - ./cdc2net:/home/ubuntu/cdc2net
+      - ./espressif-data:/home/ubuntu/.espressif
+    working_dir: /home/ubuntu
+    stdin_open: true
+    tty: true
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    command: bash
+```
+
+Nota che questo docker-compose assume che id e guid del tuo utente siano 1000 e 1000 e che il device seriale quando connetti la scheda al PC sia ttyACM0.
+Nel caso tu avessi numeri differenti aggiorna il docker-compose in modo appropriato.
+
+A questo punto possiamo generare l'immagine del container con
+```bash
+docker build --no-cache -t zb2wifi-builder .
+
+
+[+] Building 1.7s (7/7) FINISHED                                                                                                                              docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                    0.0s
+ ....
+ ....
+ => exporting to image                                                                                                                                                  0.1s
+ => => exporting layers                                                                                                                                                 0.0s
+ => => naming to docker.io/library/zb2wifi-builder:latest                                                                                                               0.0s
+ => => unpacking to docker.io/library/zb2wifi-builder:latest    
+```
+
+### Avvio builder container 
+
+Ora siamo pronti a lanciare il nostro container per il build del progetto
+
+Collega la tua board ESP alla porta USB e poi esegui questi comandi 
+
+```bash
+cd zb2wifi-gateway
+
+docker compose run --rm z2w-builder
+```
+
+### Clone e preparazione sorgente firmware
+
+Ora dobbiamo clonare il sorgente del firmware da usare per la nostra board. Esegui i seguenti comandi
+
+```bash
+git clone -b v5.5.5 --recursive https://github.com/espressif/esp-idf.git
+
+cd esp-idf
+
+./install.sh esp32h2,esp32s3
+
+. ./export.sh
+```
+
+Per questo progetto uso la release v5.5 del SDK di espressif.
+
+*./install.sh* scarica il toolchain di compilazione (compilatori per esp32h2 ed esp32s3, più i pacchetti Python necessari) e lo installa dentro ~/.espressif — che, grazie al volume montato in docker-compose.yml, corrisponde fisicamente a espressif-data/ sull'host. Questo ci garantisce che tutti i pacchetti e tools per questo progetto rimangano confinati in zb2wifi-gateway senza "sporcare" il nostro sistema host. 
+
+
+*. ./export.sh* va eseguito ogni volta che entriamo nel container e serve a configurare correttamente l'ambiente di build.
+
+A questo punto cloniamo:
+- **esp-coordinator** che è il firmware da far girare su ESP-H2 che implementa il coordinatore Zigbee
+- **cdc2net** che è il firmware per ESP-S3 che implementa il brige UART WiFi
+
+```bash
+cd ~
+git clone https://github.com/tostmann/esp-coordinator.git
+git clone https://github.com/tostmann/cdc2net.git
+```
+
+### Identificazione delle porte USB
+
+La board Espressif "ESP Thread Border Router / Zigbee Gateway v1.2" ha due porte USB-C, una per ESP-S3 e una per ESP-H2.
+
+![ESP USB ports association to chip](esp-usb-ports.webp)
+
+E' importante ricordarsi che la porta USB1 è associata al chip ESP-H2 mentre la USB2 è associata al chip ESP-S3.
+Questo sarà utile quando flasheremo l'immagine del esp-coordinator e del bridge UART WiFi.
+
+## Build del esp-coordinator
+Ora passiamo alla fase di build del firmware esp-coordinator
+
+### Set del target corretto
+Iniziamo ad impostare ill target corretto che è esp32h2 
+
+```bash
+cd ~/esp-coordinator
+idf.py set-target esp32h2
+
+Adding "set-target"'s dependency "fullclean" to list of commands with default set of options.
+Executing action: fullclean
+Build directory '/home/ubuntu/esp-coordinator/build' not found. Nothing to clean.
+Executing action: set-target
+Set Target to: esp32h2, new sdkconfig will be created.
+Running cmake in directory /home/ubuntu/esp-coordinator/build
+....
+....
+-- Configuring done (21.8s)
+-- Generating done (0.5s)
+-- Build files have been written to: /home/ubuntu/esp-coordinator/build
+```
+
+### Verifica dimensione flash ESP32-H2
+Ora verifichiamo la dimensione della flash del ESP32-H2 (nel mio caso 2MB)
+
+```bash
+python3 -m esptool --port /dev/ttyACM0 flash_id
+
+esptool.py v4.12.0
+Serial port /dev/ttyACM0
+Connecting...
+Detecting chip type... ESP32-H2
+Chip is ESP32-H2 (revision v0.1)
+Features: BLE, IEEE802.15.4
+Crystal is 32MHz
+USB mode: USB-Serial/JTAG
+MAC: 48:31:b7:ff:fe:cb:1a:18
+BASE MAC: 48:31:b7:cb:1a:18
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Manufacturer: a1
+Device: 4015
+Detected flash size: 2MB
+Hard resetting via RTS pin...
+```
+
+Come si vede **Detected flash size: 2MB** conferma che la mia versione di chip ha 2MB di flash per ospitare il frmware.
+
+### Configurazione ESP32-H2
+
+La configurazione di default del esp-coordinator non è adatta alla nostra sccheda e quindi dobbiamo apportare minime modifiche.
+Nello specifico dobbiamo assicurarci che la comunicazione UART (seriale) avvenga sui pin 23 e 24 e che la console di debug sia sulla USB in modo da evitare conflitti con la porta seriale che viene utilizzata per comunicare con il chip ESP32-S3
+
+Lancia il menu di configurazione con
+
+```bash
+idf.py menuconfig
+```
+
+ed imposta i seguenti parametri:
+
+- NCP_UART_TX_GPIO = 24
+- NCP_UART_RX_GPIO = 23
+- ESP_CONSOLE_UART → USB Serial/JTAG Controller
+- SPI_FLASH_SIZE_OVERRIDE = y
+- ESPTOOLPY_FLASHSIZE = 2MB 
+- Flash size → 2 MB
+
+***Nota: premendo / è possibile ricercare direttamente una chiave all'interno del menu di configurazione***
+
+![ESP32-H2 menuconfig uart setion](esph2_menuconfig_uart.webp)
+
+![ESP32-H2 menuconfig uart pin section](esph2_menuconfig_uart_pin.web)
+
+Per configurare ESP_CONSOLE_UART vai al menu *Component config*, poi *ESP System Settings* poi *Channel for console output* e imposta **USB Serial/JTAG Controller**
+
+![ESP32-H2 menuconfig JTAG](esph2_menuconfig_jatg.webp)
+
+
+Ora impostiamo la dimensione della flash a 2MB (se il duo chip ha una dimensione diversa adatta in modo congruo)
+
+Per farlo vai al menu *Component config*, poi *SPI Flash driver*, poi *SPI_FLASH_SIZE_OVERRIDE* e selezionalo con il *tasto y*
+
+Ora dal menu *Serial flasher config*, scegli **ESPTOOLPY_FLASHSIZE** e seleziona 2MB
+
+![ESP32-H2 menuconfig flash size](esph2_menuconfig_flash_size.webp)
+
+Ora salva premendo il *tasto s*, poi *INVIO* per salvare e il *tasto q* per uscire dal menu di configurazione.
+
+### Configurazione partizioni flash
+Siccome abbiamo una flash da 2MB è necessario adattare la tabella delle partizioni contenuta nel file *partitions.csv*. 
+Edita questo file in modo che abbia questo contenuto:
+
+
+```bash
+# Name,   Type, SubType, Offset,  Size, Flags
+nvs,        data, nvs,      ,        0x6000,
+otadata,    data, ota,      ,        0x2000,
+phy_init,   data, phy,      ,        0x1000,
+ota_0,      app,  ota_0,    ,        900K,
+zb_storage, data, fat,      ,        16K,
+zb_fct,     data, fat,      ,        1K,
+```
+
+### Compilazione del firmware
+Bene ora abbiamo configurato correttamente il progetto esb-coordinator e siamo pronti per la compilazione. Esegui questi comandi
+
+```bash
+idf.py fullclean
+idf.py build
+
+Executing action: fullclean
+Executing action: remove_managed_components
+Done
+
+Executing action: all (aliases: build)
+Running ninja in directory /home/ubuntu/esp-coordinator/build
+Executing "ninja all"...
+[0/1] Re-running CMake...
+....
+....
+Merged 3 ELF sections
+Successfully created esp32h2 image.
+Generated /home/ubuntu/esp-coordinator/build/esp-coordinator.bin
+```
+
+Se non ci sono stati errori, l'immagine binaria del firmware è disponibile in *bin/esp-coordinator.bin*
+
+### Flash del firmware esp-coordinator su ESP32-H2
+
+Bene ora non ci resta che flashare il firmware appena generato sul chip ESP32-H2.
+Mi raccomando di eseguire questa operazione collegando il cavo USB alla porta **USB1** della scheda ESP.
+
+```bash
+idf.py -p /dev/ttyACM0 erase-flash
+idf.py -p /dev/ttyACM0 flash
+
+Erasing flash (this may take a while)...
+Chip erase completed successfully in 0.7 seconds.
+....
+....
+
+Compressed 8192 bytes to 31...
+Writing at 0x0000f000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000f000 in 0.0 seconds (effective 3177.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+Done
+```
+
+Ora potete verificare che il firmaware sta girando correttamente con il seguente comando:
+
+```bash
+idf.py -p /dev/ttyACM0 monitor
+
+Executing action: monitor
+Running idf_monitor in directory /home/ubuntu/esp-coordinator
+--- esp-idf-monitor 1.9.0 on /dev/ttyACM0 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+ESP-ROM:esp32h2-20221101
+Build:Nov  1 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803a52
+--- 0x40803a52: rv_utils_wait_for_intr at /home/ubuntu/esp-idf/components/riscv/include/riscv/rv_utils.h:79
+--- (inlined by) esp_cpu_wait_for_intr at /home/ubuntu/esp-idf/components/esp_hw_support/cpu.c:62
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x408460f0,len:0x59c
+load:0x4083c2d0,len:0xb60
+--- 0x4083c2d0: call_start_cpu0 at /home/ubuntu/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+load:0x4083efd0,len:0x25e0
+--- 0x4083efd0: esp_flash_encryption_enabled at /home/ubuntu/esp-idf/components/bootloader_support/src/flash_encrypt.c:89
+entry 0x4083c2d0
+--- 0x4083c2d0: call_start_cpu0 at /home/ubuntu/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+�ޭ�]P�
+```
+
+OK il firware ha fatto il boot ed è in attesa di inviare e ricevere i pacchetti ZigBee da e verso ESP32-S3  
+
+### Preprazione immagine unificata per ESP32-H2
+Quando prepareremo il firmware per ESP32-S3,
+ dovremo incorporare l'intero firmware dell'H2 dentro il firmware dell'S3 (che lo userà per riflashare l'H2 automaticamente quando necessario.). Per farlo, serve un singolo blocco di dati contiguo — non quattro file separati. Da qui la necessità di generare un binario unificato.
+ Per fare ciò esegui il seguente comando:
+
+```bash
+python3 -m esptool --chip esp32h2 merge_bin -o radio_h2_merged.bin \
+  --flash_mode dio --flash_freq 48m --flash_size 2MB \
+  0x0 build/bootloader/bootloader.bin \
+  0x8000 build/partition_table/partition-table.bin \
+  0xf000 build/ota_data_initial.bin \
+  0x20000 build/esp-coordinator.bin
+
+
+  esptool.py v4.12.0
+SHA digest in image updated
+Wrote 0xb3730 bytes to file radio_h2_merged.bin, ready to flash to offset 0x0
+```
+
+Questo ha generato il file *radio_h2_merged.bin* in esp-coordinator. Lo useremo successivamente.
+
+Bene con questo passo abbiamo completato il build del firmware per ESP32-H2. Ora passiamo al build del bridge UART WiFi per ESP32-S3.
+
+## Build fimrware cdc2net per ESP32-S3
+Questo firmware non usa l'SDK espressif ma usa platform.io, quindi è necessario installare quest'ambiente.
+
+```bash
+cd ~
+pip install platformio --break-system-packages
+```
+
+### Sostituzione firmware unificato per ESP32-H2
+
+Come anticipato prima, dobbiamo utilizzare l'immagine binaria corretta per ESP32-H2, quindi dobbiamo sostituire quello esistente:
+
+```bash
+cd cdc2net
+cp ~/esp-coordinator/radio_h2_merged.bin firmware/radio_fw/radio_h2.bin
+```
+
+Ora è necessario modificare la tabella delle partizioni per ESP32-S3 per ospitare correttamente il firmware radio_h2.bin.
+
+Modifica il file *~/cdc2net/firmware/partitions_ota.csv* in modo che risulti esattamente così (normalmente basta modificare solo l'ultima linea del file):
+
+```bash
+# Name,   Type, SubType, Offset,   Size,    Flags
+# 16 MB flash with two 3 MB OTA slots.  No factory partition — first
+# boot lives in ota_0.  esp_ota_get_next_update_partition() flips
+# between ota_0/ota_1 driven by ota_data.
+# coredump (64 KB) liegt hinter ota_1; ESP_COREDUMP_ENABLE_TO_FLASH=y
+# schreibt dort ein ELF nach Panic; auslesbar via espcoredump.py oder
+# /api/coredump.
+nvs,      data, nvs,     0x9000,   0x4000
+otadata,  data, ota,     0xd000,   0x2000
+phy_init, data, phy,     0xf000,   0x1000
+ota_0,    app,  ota_0,   0x10000,  0x300000
+ota_1,    app,  ota_1,   0x310000, 0x300000
+coredump, data, coredump,0x610000, 0x10000
+# radio_fw (768 KB, appended — existing layouts are unchanged, so OTA to a
+# device flashed before this partition existed still works): holds the merged
+# factory image of the companion radio SoC on boards that have one (S3+H2
+# gateway).  main/radio_flash.c reads it and writes it to the radio over the
+# inter-chip UART.  Espressif's own border-router firmware carries its ot_rcp
+# the same way (its rcp_fw partition).
+#
+# Deliberately a partition rather than EMBED_FILES in the app: PlatformIO builds
+# `main` with SCons and never expands EMBED_FILES (the .S is not generated), and
+# a partition also keeps the ~720 KB out of BOTH OTA slots and lets the two
+# chips be updated independently — an app OTA leaves the radio image alone.
+radio_fw, data, spiffs,  0x620000, 0x100000
+```
+
+**NOTA: questa tabella delle partizioni assume un ESP32-S3 con 8MB di flash. Se tu hai una versione diversa bisogna ricalcolare gli offset in modo appropriato**
+
+### Build del firmware con platformio
+Ora possiamo iniziare il build del firmware con i seguenti comandi:
+
+```bash
+cd ~/cdc2net/firmware
+export PLATFORMIO_BUILD_DIR=~/pio-build/cdc2net-build
+pio run -e zbgw-s3
+
+*****************************************************************************************************************************************************************************
+If you like PlatformIO, please:
+- star it on GitHub > https://github.com/platformio/platformio-core
+- follow us on LinkedIn to stay up-to-date on the latest project news > https://www.linkedin.com/company/platformio/
+- try PlatformIO IDE for embedded development > https://platformio.org/platformio-ide
+*****************************************************************************************************************************************************************************
+
+Processing zbgw-s3 (platform: espressif32@6.13.0; board: esp32-s3-devkitc-1; framework: espidf)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Platform Manager: Installing espressif32 @ 6.13.0
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Platform Manager: espressif32@6.13.0 has been installed!
+....
+....
+
+
+*****************************************************************************************************************************************************************************
+If you like PlatformIO, please:
+- star it on GitHub > https://github.com/platformio/platformio-core
+- follow us on LinkedIn to stay up-to-date on the latest project news > https://www.linkedin.com/company/platformio/
+- try PlatformIO IDE for embedded development > https://platformio.org/platformio-ide
+*****************************************************************************************************************************************************************************
+
+Processing zbgw-s3 (platform: espressif32@6.13.0; board: esp32-s3-devkitc-1; framework: espidf)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Platform Manager: Installing espressif32 @ 6.13.0
+Downloading  [####################################]  100%
+Unpacking  [####################################]  100%
+Platform Manager: espressif32@6.13.0 has been installed!
+....
+....
+Successfully created esp32s3 image.
+Linking /home/ubuntu/pio-build/cdc2net-build/zbgw-s3/firmware.elf
+Retrieving maximum program size /home/ubuntu/pio-build/cdc2net-build/zbgw-s3/firmware.elf
+Checking size /home/ubuntu/pio-build/cdc2net-build/zbgw-s3/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [===       ]  32.0% (used 104760 bytes from 327680 bytes)
+Flash: [====      ]  39.3% (used 1235789 bytes from 3145728 bytes)
+Building /home/ubuntu/pio-build/cdc2net-build/zbgw-s3/firmware.bin
+esptool.py v4.11.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+======================================================================= [SUCCESS] Took 877.98 seconds =======================================================================
+
+Environment    Status    Duration
+-------------  --------  ------------
+zbgw-s3        SUCCESS   00:14:37.976
+```
+
+Bene se non ci sono errori il file *firmware.bin* è presente in *~/pio-build/cdc2net-build/zbgw-s3*.
+
+
+### Generazione immagine unificata ESP32-S3
+
+Bene ora che il firmware del bridge UART WiFi è pronto, possiamo generare l'immagine finale da caricare su ESP32-S3. Questa include anche l'immagine H2 che abbiamo generato nei passi precedenti.
+
+Esegui questo comando:
+
+```bash
+cd ~/pio-build/cdc2net-build/zbgw-s3
+python3 -m esptool --chip esp32s3 merge_bin -o zb2wifi_gw.bin \
+  --flash_mode dio --flash_freq 80m --flash_size 8MB \
+  0x0 bootloader.bin \
+  0x8000 partitions.bin \
+  0xd000 ota_data_initial.bin \
+  0x10000 firmware.bin \
+  0x620000 ~/cdc2net/firmware/radio_fw/radio_h2.bin
+
+  SHA digest in image updated
+Wrote 0x6d3730 bytes to file zb2wifi_gw.bin, ready to flash to offset 0x0
+
+```
+
+Ok ora, se non ci sono stati errori, il file *zb2wifi_gw.bin* è presente in *~/pio-build/cdc2net-build/zbgw-s3*
+
+
+### Flash immagine ESP32-S3
+Ora possiamo flashare il formware del bridge UART WiFi con:
+
+**Importantissimo connettere ora i cavo USB alla porta USB2 associata a ESP32-S3**
+
+```bash
+cd ~/pio-build/cdc2net-build/zbgw-s3
+python3 -m esptool --chip esp32s3 -p /dev/ttyACM0 write_flash 0x0 zb2wifi_gw.bin 
+
+esptool.py v4.12.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+....
+....
+Wrote 7157552 bytes (1165590 compressed) at 0x00000000 in 25.2 seconds (effective 2273.0 kbit/s)...
+Hash of data verified.
+```
+
+Molto bene ora la nostra scheda ZigBee to WiFi Brige è completamente configurata e pronta per gestire i nostri dispositivi ZigBee.
+
+## Configurazione Gateway ZigBee to WiFi
+
+Siccome il nostro gateway si connette a Home Assistant via WiFi è necessario collegare la board ESP ad una rete WiFi (tipicamente la stessa rete dove è presente Home Assistant).
+
+Il firmware cdc2net è fatto molto bene e mette a disposizione un'interfaccia web per la configurazione.
+Siccome al primo boot il gateway non è collegato ad una rete WiFi, esporrà un AccessPoint con nome **CDC2NET NNNN***, nel mio caso CDC2NET 6824
+
+![CDC2NET access point](esph2_AP.webp)
+
+Collega ill tuo PC a questa rete ed accedi all'interfaccia di configurazione, aprendo nel tuo browser **http://192.168.4.1**
+
+![CDC2NET web portal](esph2_portal.webp)
+
+Ora nel riquadro WiFi espandi il menu *WiFi setup* e configura SSID e password della tua rete WiFi.
+In questo  modo il gateway ZigBee to WiFi si collegherà automaticamente alla tua rete WiFi e sarà accessibile da Home Assistant.
+
+![CDC2NET wifi config](esph2_wifi_config.webp)
+
+Dopo la configurazione del WiFi è necessario fare un reboot del gateway ZigBee to WiFi.
+
+Ora il gateway ZigBee to WiFi non espone più l'Acccess Point ma si è collegato alla rete WiFi. 
+
+Per sapere l'indirizzo IP del gateway esegui:
+
+```bash
+cd ~/cdc2net
+pio device monitor -p /dev/ttyACM0 -b 115200
+....
+....
+I (7614) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+␛[0;32mI (8574) esp_netif_handlers: sta ip: 10.193.128.150, mask: 255.255.255.0, gw: 10.193.128.174␛[0m
+␛[0;32mI (8574) net: STA got IP 10.193.128.150 gw 10.193.128.174␛[0m
+␛[0;32mI (8744) sink-tcp: raw-TCP listener on :2329␛[0m
+....
+....
+```
+
+Da questo output si può leggere chiaramente l'indirizzo IP assegnato alla board.
+Ora il portale web di configurazione è raggiungibile attraverso **http://<IP-ADDRESS-ASSIGNED>**
+
+## Configurazione di Zigbee2MQTT 
+
+Vediamo come configurare Zigbee2MQTT in HomeAssistant in modo da collegarsi al nostro ZigBee to WiFi Gateway.
+Per le altre configurazioni di HomeAssistant e l'uso di ZigBee2MQTT lascio il lettore consultare la documentazione ufficiale di Home Assistant.
+
+
+configuration.yaml 
+```yml
+homeassistant:
+  enabled: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost:1883
+serial:
+  adapter: zboss
+  port: tcp://<GATEWAY-IP-ADDRESS>:2329
+frontend:
+  enabled: true
+  port: 8080
+advanced:
+  log_level: info
+```
+
+Ora fai partire Zigbee2MQTT e fai il reboot del gateway ZigBee to Wifi, dopo pochi istanti nella console del gateway dovresti vedere una nuova connessione (questa è Zigbee2MQTT che si connette al gateway)
+
+![ESP gateway accepts client connection](esph2_client.webp)
+
+Molto bene questa è la conferma che tutto il processo ha funzionato ed ora il nostro ZigBee to WiFi gateway è attivo e correttamente connesso a Home Assistant attraverso Zigbee2MQTT.
+
+Ora provo ad accendere il mio termomemtro e dopo pochi istanti lo vedo disponibile e funzionante.
+
+![shelly available](shelly.webp)
+
+
