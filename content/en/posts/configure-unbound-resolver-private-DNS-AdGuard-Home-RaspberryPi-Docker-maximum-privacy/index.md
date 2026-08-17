@@ -1,72 +1,72 @@
 ---
-title: "Unbound come Resolver DNS Privato per AdGuard Home su Docker"
+title: "Unbound as a Private DNS Resolver for AdGuard Home on Docker"
 date: 2025-07-04
 author: profmancusoa
-description: "Guida passo passo per aumentare la privacy DNS integrando Unbound come resolver ricorsivo locale upstream di AdGuard Home, tutto containerizzato su Raspberry Pi."
+description: "A step-by-step guide to boosting DNS privacy by adding Unbound as a local recursive resolver upstream of AdGuard Home, fully containerized on a Raspberry Pi."
 isStarred: true
 draft: false
 image: posts/configurare-unbound-resolver-DNS-privato-AdGuard-Home-RaspberryPi-Docker-massima-privacy/dns-resolver-privato-docker.webp
 tags:
   - adblocker
   - adguardhome
-  - rete
+  - network
   - privacy
   - dns
   - unbound
-category: ["Reti", "Sicurezza", "DNS", "Privacy", "Tutorial"]
+category: ["Networking", "Security", "DNS", "Privacy", "Tutorial"]
 ---
 
 ![Schema DNS resolver privato con Docker e Unbound](dns-resolver-privato-docker.webp "Schema DNS resolver privato con Docker e Unbound")
 
-## Introduzione
+## Introduction
 
-In un mio precedente articolo ([Come creare un AdBlocker di rete con Tailscale e AdGuard Home](https://mancusoa.it/posts/adblocker-rete-tailscale-adguardhome/)) abbiamo visto come creare un Ad Blocker di rete che protegge efficacemente tutti i tuoi dispositivi (PC, laptop, smartphone, ecc.) usando AdGuard Home installato su Raspberry Pi e una rete privata tramite Tailscale.
+In an earlier article ([How to Build a Network-Wide AdBlocker with Tailscale and AdGuard Home](https://mancusoa.it/posts/adblocker-rete-tailscale-adguardhome/)), I showed how to build a network-wide adblocker that effectively protects all your devices (PCs, laptops, smartphones, and so on) using AdGuard Home installed on a Raspberry Pi, tied together with a private network via Tailscale.
 
-In questa architettura, tuttavia, c’è ancora un aspetto da considerare: AdGuard Home utilizza come DNS upstream un resolver pubblico (ad esempio 1.1.1.1, 8.8.8.8 o quello del tuo ISP).
+In that architecture, though, there's still one thing worth addressing: AdGuard Home uses a public resolver as its upstream DNS (say, 1.1.1.1, 8.8.8.8, or your ISP's own).
 
-Questo comporta alcuni limiti importanti per la privacy:
+That comes with a few real privacy limitations:
 
-- **Tracciamento e profilazione**  
-  I DNS resolver pubblici possono registrare tutte le richieste DNS che invii, associandole al tuo indirizzo IP. Questi dati possono essere usati per profilare le tue abitudini di navigazione.
+- **Tracking and profiling**
+  Public DNS resolvers can log every DNS request you send, tying it to your IP address. That data can be used to profile your browsing habits.
 
-- **Mancanza di anonimato**  
-  I provider DNS pubblici possono conservare i log delle richieste per periodi variabili, esponendo potenzialmente la tua cronologia DNS.
+- **No anonymity**
+  Public DNS providers can retain query logs for varying periods, potentially exposing your DNS history.
 
-- **Regole non in linea con il GDPR europeo**  
-  Molti DNS pubblici sono gestiti da aziende fuori dall’Unione Europea, con trasferimenti di dati verso paesi con normative sulla privacy meno restrittive rispetto al GDPR.
+- **Rules that don't line up with the European GDPR**
+  Many public DNS services are run by companies outside the EU, with data transfers to countries with weaker privacy protections than the GDPR.
 
-- **Filtraggio e censura**  
-  Alcuni DNS pubblici possono applicare filtri su determinati domini, limitando la libertà di accesso senza che l’utente ne sia pienamente consapevole.
+- **Filtering and censorship**
+  Some public DNS services apply filters to certain domains, limiting your freedom of access without you fully realizing it.
 
-Quindi, usare DNS pubblici non elimina i rischi di tracciamento, profilazione e conservazione dei dati. Solo un resolver DNS privato, gestito direttamente da te, può garantire il massimo controllo sulle tue richieste DNS e sulla loro privacy.
+So using public DNS doesn't eliminate the risks of tracking, profiling, and data retention. Only a private DNS resolver — one you run yourself — gives you real control over your DNS requests and their privacy.
 
-In questo articolo vedremo come estendere il sistema di ad blocking di rete per mitigare questi problemi, installando e configurando un DNS resolver privato tramite il software open-source **Unbound**.
+In this article, we'll extend the network adblocking setup to deal with these issues, by installing and configuring a private DNS resolver using the open-source software **Unbound**.
 
 ## Unbound
 
-**Unbound** è un DNS resolver ricorsivo con cache, open-source, progettato per essere veloce, leggero e sicuro. Supporta funzionalità moderne basate su standard aperti per aumentare la privacy online, come DNS-over-TLS e DNS-over-HTTPS, che permettono di criptare la comunicazione tra client e resolver.
+**Unbound** is an open-source, caching recursive DNS resolver, built to be fast, lightweight, and secure. It supports modern, open-standard features that boost online privacy, like DNS-over-TLS and DNS-over-HTTPS, which encrypt the communication between client and resolver.
 
-Inoltre, implementa tecniche avanzate per limitare la quantità di dati scambiati con i server autoritativi, migliorando privacy e robustezza, tra cui:
+It also implements advanced techniques to limit the amount of data exchanged with authoritative servers, improving both privacy and robustness, including:
 
-- Minimizzazione del nome della query (QNAME Minimization)
-- Uso aggressivo della cache validata tramite DNSSEC
-- Supporto per zone di autorità, utili a caricare copie locali della zona root
+- Query name minimization (QNAME Minimization)
+- Aggressive use of DNSSEC-validated caching
+- Support for authority zones, useful for loading local copies of the root zone
 
-## Architettura della soluzione
+## Solution Architecture
 
-Schema del flusso DNS: dispositivi → AdGuard Home → Unbound → Internet
+DNS flow diagram: devices → AdGuard Home → Unbound → Internet
 
 ![Architettura complessiva dns ricorsivo privato](architettura-complessiva-dns-ricorsivo-privato.webp "Architettura complessiva DNS ricorsivo privato")
 
-Come si vede dal diagramma, **Unbound** si integra perfettamente nell’architettura dell’AdBlocker di rete. Le funzionalità di filtraggio di AdGuard Home rimangono invariate, mentre cambia il modo in cui vengono risolti i nomi di dominio non filtrati.
+As you can see from the diagram, **Unbound** slots perfectly into the network adblocker architecture. AdGuard Home's filtering features stay exactly the same — what changes is how unfiltered domain names actually get resolved.
 
-Invece di usare un DNS pubblico, AdGuard Home utilizza Unbound come resolver ricorsivo locale. Grazie a una configurazione dedicata, Unbound minimizza le query inviate ai server pubblici, evitando di trasmettere il nome di dominio completo a terzi e aumentando così notevolmente la privacy durante la navigazione.
+Instead of using a public DNS, AdGuard Home uses Unbound as its local recursive resolver. Thanks to a dedicated configuration, Unbound minimizes the queries sent to public servers, avoiding sending the full domain name to third parties and substantially boosting your browsing privacy.
 
-## Creazione dell'immagine Docker di Unbound
+## Building the Unbound Docker Image
 
-Per eseguire Unbound in un container Docker, è necessario creare un’immagine personalizzata.
+To run Unbound in a Docker container, we need to build a custom image.
 
-Lavoriamo nella directory `services` sul Raspberry Pi e creiamo una cartella dedicata:
+Let's work inside the `services` directory on the Raspberry Pi and create a dedicated folder:
 
 ```bash
 cd ~
@@ -74,7 +74,7 @@ cd ~
 mkdir -p services/unbound
 ```
 
-Nella cartella `services/unbound` creiamo il file `entrypoint.sh` con questo contenuto:
+Inside `services/unbound`, create the file `entrypoint.sh` with this content:
 
 ```bash
 #!/bin/sh
@@ -95,7 +95,7 @@ echo "Running unbound........."
 exec su-exec unbound unbound -d -c /etc/unbound/unbound.conf
 ```
 
-Creiamo anche il `Dockerfile` nella stessa directory:
+Also create the `Dockerfile` in the same directory:
 
 ```bash
 FROM alpine:latest
@@ -113,7 +113,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 
-La struttura della directory sarà:
+The directory structure will look like this:
 
 ```bash
 unbound/
@@ -121,18 +121,18 @@ unbound/
 └── entrypoint.sh
 ```
 
-Come si può vedere, l'immagine finale del nostro DNS resolver è basata su Linux Alpine, in modo da ottenere un'immagine compatta che pesa poco.
+As you can see, our DNS resolver's final image is based on Alpine Linux, keeping things compact and lightweight.
 
-Se vuoi approfondire l'uso di Docker per isolare e proteggere altri servizi, ho scritto anche una guida su [come eseguire Chrome in sicurezza con Docker](/posts/guida-google-chrome-docker-sicuro/), che segue un approccio simile di containerizzazione.
+If you want to dig deeper into using Docker to isolate and secure other services, I've also written a guide on [running Chrome securely with Docker](/posts/guida-google-chrome-docker-sicuro/), which follows a similar containerization approach.
 
 ```bash
 docker build -t unbound .
 ```
 
 
-Lo script `entrypoint.sh` si occupa di creare e aggiornare il file *root.key* necessario a Unbound ad ogni avvio del container.
+The `entrypoint.sh` script takes care of creating and refreshing the *root.key* file Unbound needs, every time the container starts.
 
-Verifica la presenza dell’immagine con:
+Check the image is there with:
 
 ```bash
 docker image ls
@@ -142,21 +142,21 @@ adguard/adguardhome                          latest    a5f2eed84b99   5 weeks ag
 ```
 
 
-## Configurazione di Unbound
+## Configuring Unbound
 
-Creiamo una directory `config` e inseriamo la configurazione personalizzata in `unbound-custom.conf`:
+Let's create a `config` directory and put our custom configuration in `unbound-custom.conf`:
 
 ```bbash
 unbound/
 ├── config
-│   └── unbound-custom.conf
+│   └── unbound-custom.conf
 ├── docker-compose.yml
 ├── Dockerfile
 └── entrypoint.sh
 ```
 
 
-Ecco un esempio di configurazione base per `unbound-custom.conf`:
+Here's an example base configuration for `unbound-custom.conf`:
 
 ```bash
 server:
@@ -269,89 +269,89 @@ server:
 ```
 
 
-### Spiegazione di alcuni parametri chiave
+### Explanation of some key parameters
 
 - **harden-glue: yes**
 
-    Unbound verifica che i record glue siano coerenti e affidabili.
-    Riduce il rischio di accettare risposte DNS contraffatte che potrebbero compromettere la sicurezza della risoluzione.
-    Questo parametro è consigliato per aumentare la sicurezza del resolver
+    Unbound checks that glue records are consistent and trustworthy.
+    It cuts the risk of accepting forged DNS responses that could compromise the security of resolution.
+    This setting is recommended to harden the resolver's security.
 
 - **harden-dnssec-stripped: yes**
     
-    Serve a rafforzare la sicurezza della validazione DNSSEC. 
-    Protegge da attacchi in cui un server DNS upstream o un intermediario rimuove intenzionalmente le informazioni DNSSEC
+    Strengthens DNSSEC validation security.
+    Protects against attacks where an upstream DNS server or an intermediary intentionally strips out DNSSEC information.
 
 - **use-caps-for-id: yes**
     
-    Invia le query DNS alterando casualmente maiuscole e minuscole nei nomi di dominio.
-    Questo meccanismo aggiunge un ulteriore livello di difficoltà per chi tenta di effettuare attacchi di DNS spoofing o cache poisoning 
+    Sends DNS queries with randomized casing in domain names.
+    This adds an extra layer of difficulty for anyone attempting DNS spoofing or cache poisoning attacks.
 
 - **edns-buffer-size: 1232**
 
-    Definisce la dimensione massima del buffer (in byte) che il resolver annuncia nelle query DNS tramite EDNS0 (Extension mechanisms for DNS).
-    Il valore consigliato attualmente è 1232 byte, un buon compromesso tra dimensione e frammentazione
+    Sets the maximum buffer size (in bytes) the resolver advertises in DNS queries via EDNS0 (Extension mechanisms for DNS).
+    The currently recommended value is 1232 bytes, a good trade-off between size and fragmentation.
 
 - **prefetch: yes**
 
-    Permette al server DNS di rinnovare automaticamente le voci della cache prima che scadano.
-    Questo migliora la rapidità del servizio DNS.
+    Lets the DNS server automatically refresh cache entries before they expire.
+    This speeds up the DNS service.
     
-- **serve-expired: yes** e **serve-expired-ttl: 86400**
+- **serve-expired: yes** and **serve-expired-ttl: 86400**
 
-    Migliora la disponibilità e la velocità di risposta del resolver DNS in caso di problemi temporanei con i server autoritativi.
+    Improves the resolver's availability and response speed if there are temporary issues with authoritative servers.
     
 - **cache-min-ttl: 3600**
 
-    Definisce il tempo minimo (in secondi) per cui una risposta DNS viene mantenuta in cache, indipendentemente dal valore TTL originale fornito dal record DNS.
+    Sets the minimum time (in seconds) a DNS response is kept in cache, regardless of the original TTL value provided by the DNS record.
 
 - **cache-max-ttl: 86400**
 
-    Il tempo massimo (in secondi) per cui una risposta DNS viene mantenuta in cache, indipendentemente dal valore TTL originale fornito dal record DNS.
+    The maximum time (in seconds) a DNS response is kept in cache, regardless of the original TTL value provided by the DNS record.
 
 
 - **rrset-cache-size: 8m**
 
-    La dimensione della cache dedicata ai record DNS (RRset), cioè ai dati delle risposte DNS memorizzati per velocizzare le successive risoluzioni.
+    The size of the cache dedicated to DNS records (RRsets) — the response data stored to speed up future lookups.
 
 - **msg-cache-size: 4m**
     
-    La dimensione della cache per i messaggi DNS completi (cioè le risposte DNS memorizzate così come sono ricevute)
+    The size of the cache for complete DNS messages (the DNS responses stored exactly as received).
 
 - **num-threads: 4**
 
-    Specifica il numero di thread software che il server DNS creerà per gestire le richieste.
+    Sets the number of software threads the DNS server will spin up to handle requests.
 
 - **rrset-cache-slabs: 4**
 
-    Definisce il numero di "slabs" (segmenti) in cui viene suddivisa la cache RRset     
+    Sets the number of "slabs" (segments) the RRset cache is split into.
     
 - **hide-identity: yes**
 
-    Serve a nascondere l’identità del server DNS quando vengono effettuate query specifiche che chiedono informazioni sul server stesso.
+    Hides the DNS server's identity when specific queries ask for information about the server itself.
 
 - **qname-minimisation: yes**
     
-    Abilita una funzionalità di privacy e sicurezza chiamata **QNAME Minimization** (minimizzazione del nome di query).
-    QNAME Minimization riduce la quantità di informazioni inviate ai server DNS intermedi, inviando solo la parte minima del nome necessaria per ottenere la delega successiva.
+    Enables a privacy/security feature called **QNAME Minimization**.
+    QNAME Minimization cuts down the amount of information sent to intermediate DNS servers, sending only the minimum part of the name needed to get the next delegation.
     
-    **Migliora la privacy**: i server DNS intermedi vedono solo la porzione di dominio che devono conoscere, non l’intero nome.
+    **Improves privacy**: intermediate DNS servers only see the portion of the domain they actually need to know, not the whole name.
     
-    **Incrementa la sicurezza**: riduce la superficie di attacco per attacchi di tipo DNS spoofing o raccolta dati.
+    **Improves security**: shrinks the attack surface for DNS spoofing or data-harvesting attacks.
 
 - **aggressive-nsec: yes**
 
-    Riduzione del traffico DNS a tutti i livelli della gerarchia DNS.
-    Miglioramento delle prestazioni del resolver, soprattutto in presenza di molte query per nomi inesistenti.
+    Cuts DNS traffic at every level of the DNS hierarchy.
+    Improves resolver performance, especially with lots of queries for non-existent names.
 
 - **unwanted-reply-threshold: 1000000**
     
-    Conta le risposte DNS sospette per thread e, superata la soglia, esegue una pulizia della cache per proteggere il resolver da attacchi di cache poisoning.
+    Counts suspicious DNS replies per thread and, once the threshold is crossed, clears the cache to protect the resolver from cache poisoning attacks.
 
 
-## Avvio di Unbound in Docker
+## Starting Unbound in Docker
 
-Creiamo il file `docker-compose.yml` per avviare il container:
+Let's create the `docker-compose.yml` file to start the container:
 
 ```bash
 services:
@@ -365,7 +365,7 @@ services:
 ```
 
 
-Avviamo il container in background:
+Start the container in the background:
 
 
 ```bash
@@ -373,22 +373,22 @@ docker compose up -d
 ```
 
 
-## Configurazione di AdGuard Home per usare Unbound come DNS upstream
+## Configuring AdGuard Home to Use Unbound as Upstream DNS
 
-Per completare la configurazione, modifichiamo AdGuard Home per usare come DNS upstream il resolver locale Unbound all’indirizzo `127.0.0.1` sulla porta `5335`.
+To wrap up the setup, let's change AdGuard Home to use the local Unbound resolver as its upstream DNS, at `127.0.0.1` on port `5335`.
 
 ![Configurazione DNS resolver in AdGuard Home](dns-upstream-adguardhome.webp "Configurazione DNS resolver in AdGuard Home")
 
-Procedura:
+Steps:
 
-1. Vai in `Settings` → `DNS settings`
-2. Commenta o rimuovi eventuali DNS resolver pubblici presenti
-3. Inserisci `127.0.0.1:5335` come DNS upstream
-4. Premi `Apply` per salvare
+1. Go to `Settings` → `DNS settings`
+2. Comment out or remove any public DNS resolvers already listed
+3. Enter `127.0.0.1:5335` as the upstream DNS
+4. Click `Apply` to save
 
-## Verifica del funzionamento
+## Verifying It Works
 
-Per verificare che le query DNS vengano risolte localmente da Unbound, controlla i log del container:
+To confirm DNS queries are being resolved locally by Unbound, check the container's logs:
 
 ```bash
 cd ~/services/unbound
@@ -405,9 +405,9 @@ unbound  | 2025-07-04T09:58:37.235+00:00 unbound[1:1] info: Verified that unsign
 ```
 
 
-Quando navighi, ad esempio aprendo https://mancusoa.it, vedrai nei log le query DNS risolte da Unbound, con dettagli sulle risposte e i server autoritativi contattati.
+When you browse the web — say, by opening https://mancusoa.it — you'll see DNS queries being resolved by Unbound in the logs, with details on the responses and the authoritative servers contacted.
 
-Esempio di log:
+Log example:
 
 ```bash
 unbound  | 2025-07-04T10:14:31.616+00:00 unbound[1:1] query: 127.0.0.1 mancusoa.it. A IN
@@ -441,19 +441,14 @@ unbound  | 2025-07-04T10:14:31.670+00:00 unbound[1:1] info: reply from <it.> 194
 ...
 ```
 
-Questo ci conferma che il sistema sta funzionando correttamente.
+This confirms the system is working correctly.
 
 
 
-## Conclusioni
+## Conclusion
 
-Aumentare la privacy DNS con un resolver privato come Unbound è semplice e vantaggioso. Oltre a proteggere la tua navigazione da profilazioni e tracciamenti, potrai spesso ottenere risposte DNS più rapide grazie alla cache locale.
+Boosting DNS privacy with a private resolver like Unbound is simple and worthwhile. Beyond protecting your browsing from profiling and tracking, you'll often get faster DNS responses too, thanks to the local cache.
 
-In questo articolo abbiamo visto una configurazione base, senza abilitare protocolli come **DNS-over-TLS (DoT)** o **DNS-over-HTTPS (DoH)**, che possono ulteriormente criptare le richieste DNS per migliorare la privacy.
+In this article we covered a basic setup, without enabling protocols like **DNS-over-TLS (DoT)** or **DNS-over-HTTPS (DoH)**, which can further encrypt DNS requests for even better privacy.
 
-Ti invito a sperimentare questi protocolli e a condividere la tua esperienza e configurazione nei commenti.
-
-
-
-
-
+I'd encourage you to try out these protocols and share your experience and setup in the comments.

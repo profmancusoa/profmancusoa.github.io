@@ -2,10 +2,10 @@ title = "Blog profmancusoa"
 baseURL = 'https://mancusoa.it/'
 
 # This is what goes in <html lang="">
-languageCode = 'it-IT'
+languageCode = 'en_US'
 
 # This defines how dates are formatted
-defaultContentLanguage = "it"
+defaultContentLanguage = "us"
 
 # Enable emojis globally
 enableEmoji = true
@@ -140,43 +140,43 @@ theme = "hugo-blog-awesome"
 #  display = "standalone"
 
 ############################## Italian language ################################
-[Languages.it]
-  languageName = "Italian"
-  languageCode = "it"
-  contentDir = "content/it"
+[Languages.us]
+  languageName = "English"
+  languageCode = "us"
+  contentDir = "content/en"
   weight = 2
-  [Languages.it.menu]
-  [[Languages.it.menu.main]]
+  [Languages.us.menu]
+  [[Languages.us.menu.main]]
     # The page reference (pageRef) is useful for menu highlighting
     # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
     pageRef="/"
     name = 'Home'
     url = '/'
     weight = 1
-  [[Languages.it.menu.main]]
+  [[Languages.us.menu.main]]
     pageRef="posts"
-    name = 'Articoli'
+    name = 'Posts'
     url = '/posts/'
     weight = 2
-  [[Languages.it.menu.main]]
+  [[Languagesust.menu.main]]
     pageRef="tags"
     name = 'Tags'
     url = '/tags/'
     weight = 2
-  [[Languages.it.menu.main]]
+  [[Languages.us.menu.main]]
     pageRef="about"
     name = 'About'
     url = '/about/'
     weight = 4
 
-[Languages.it.params]
-  version = "1.2.17"
+[Languages.us.params]
+  version = "1.3.0"
   sitename = "profmancusoa"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "Blog profmancusoa tratta temi legati al mondo dell'informatica per studenti e appassionati"
+  description = "The profmancusoa blog covers computer science topics for students and enthusiasts"
   mainSections = ['posts']
   toc = false # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
@@ -195,16 +195,16 @@ theme = "hugo-blog-awesome"
   # By default (or if nothing is specified), summary is used.
   github = "profmancusoa"
 
-[Languages.it.params.author]
+[Languages.us.params.author]
   email = "profmancusoa-at-gmail.com"
   avatar = "profmancusoa.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "profmancusoa"
   name = "Antonio Mancuso"
-  description = "Blog profmancusoa tratta temi legati al mondo dell'informatica per studenti e appassionati"
+  description = "The profmancusoa blog covers computer science topics for students and enthusiasts"
 
 # Allow to override webmanifest options
-[Languages.it.params.webmanifest]
+[Languages.us.params.webmanifest]
   name = "profmancusoa" # will use "params.sitename" or "title" by default
   short_name = "profmancusoa" # same as name
   start_url = "/" # will use homepage url by default
